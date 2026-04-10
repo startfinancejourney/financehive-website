@@ -128,39 +128,23 @@
 
 <body class="bg-surface font-body text-on-surface doodle-bg min-h-screen flex flex-col">
 <!-- TopNavBar -->
-<header class="w-full border-b-4 border-black bg-[#fdfbe2] sticky top-0 z-50">
-  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-    <div class="flex justify-between items-center h-16">
-      <!-- Logo -->
-      <div class="flex-shrink-0 flex items-center">
-        <a href="index.html" class="font-black text-2xl tracking-tighter hover:text-[#6d24de] transition-colors">
-          Finance<span class="text-[#c0a0ff]">Hive</span>
-        </a>
-      </div>
-      
-      <!-- Desktop Menu -->
-      <nav class="hidden md:flex space-x-8 font-bold">
-        <a href="index.html" class="text-black hover:bg-[#c0a0ff] hover:shadow-[2px_2px_0px_rgba(0,0,0,1)] border-2 border-transparent hover:border-black px-3 py-1 transition-all rounded-sm">Home</a>
-        <a href="learn-finance.html" class="text-black hover:bg-[#c0a0ff] hover:shadow-[2px_2px_0px_rgba(0,0,0,1)] border-2 border-transparent hover:border-black px-3 py-1 transition-all rounded-sm">Learn</a>
-        <a href="about.html" class="text-black hover:bg-[#c0a0ff] hover:shadow-[2px_2px_0px_rgba(0,0,0,1)] border-2 border-transparent hover:border-black px-3 py-1 transition-all rounded-sm">About</a>
-      </nav>
+<nav class="bg-surface border-b-4 border-stone-800 flex justify-between items-center w-full px-6 py-4 max-w-7xl mx-auto sticky top-0 z-50 gap-8">
+<a href="index.html.html" class="text-3xl font-black text-[#383833] tracking-tighter font-marker">FinanceHive</a>
+<div class="hidden md:flex gap-6 items-center ml-auto">
+<a class="text-on-surface hover:text-secondary font-marker font-black text-base transition-all duration-200" href="learn-finance.html.html">Concepts</a>
+<a class="text-on-surface hover:text-secondary font-marker font-black text-base transition-all duration-200" href="sectors.html.html">Sectors</a>
+<a class="text-on-surface hover:text-secondary font-marker font-black text-base transition-all duration-200" href="request-topic.html.html">Request a Topic</a>
+<a class="text-on-surface hover:text-secondary font-marker font-black text-base transition-all duration-200" href="about.html.html">About</a>
+</div>
+<div class="flex items-center gap-4 lg:gap-6">
 
-      <!-- Mobile Button -->
-      <div class="md:hidden flex items-center">
-        <button id="mobile-menu-btn" class="border-2 border-black bg-[#c0a0ff] p-2 shadow-[2px_2px_0px_rgba(0,0,0,1)] active:shadow-none active:translate-y-[2px] active:translate-x-[2px]">
-          <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M4 6h16M4 12h16M4 18h16"></path></svg>
-        </button>
-      </div>
-    </div>
-  </div>
 
-  <!-- Mobile Menu -->
-  <div id="mobile-menu" class="hidden md:hidden border-t-4 border-black bg-white flex flex-col font-bold">
-    <a href="index.html" class="block px-6 py-4 border-b-2 border-black hover:bg-[#c0a0ff]">Home</a>
-    <a href="learn-finance.html" class="block px-6 py-4 border-b-2 border-black hover:bg-[#c0a0ff]">Learn</a>
-    <a href="about.html" class="block px-6 py-4 hover:bg-[#c0a0ff]">About</a>
-  </div>
-</header>
+
+<a href="learn-finance.html.html" class="bg-primary-container text-on-primary-container px-6 py-2 sketch-border font-black hover:translate-x-1 hover:translate-y-1 transition-all">
+ Start Learning
+  </a>
+</div>
+</nav>
 <main class="flex-grow max-w-screen-md mx-auto px-6 py-12 w-full">
  <div class="mb-12">
  <a href="learn-finance.html.html" class="inline-block text-[#383833] font-bold font-marker hover:text-secondary transition-colors text-lg">
@@ -263,15 +247,6 @@
         });
     </script>
 
-<script>
-  const btn = document.getElementById('mobile-menu-btn');
-  const menu = document.getElementById('mobile-menu');
-  if(btn && menu) {
-    btn.addEventListener('click', () => {
-      menu.classList.toggle('hidden');
-    });
-  }
-</script>
 </body>
 
 
@@ -339,15 +314,6 @@ function switchTab(level) {
         });
     </script>
 
-<script>
-  const btn = document.getElementById('mobile-menu-btn');
-  const menu = document.getElementById('mobile-menu');
-  if(btn && menu) {
-    btn.addEventListener('click', () => {
-      menu.classList.toggle('hidden');
-    });
-  }
-</script>
 </body>
 
 </html>
