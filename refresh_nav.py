@@ -38,11 +38,11 @@ script_content = """
             const navLinks = document.querySelectorAll('nav a');
             let currentPath = window.location.pathname.split('/').pop().split('?')[0].split('#')[0];
             if (!currentPath || currentPath === '') {
-                currentPath = 'index.html.html';
+                currentPath = 'index.html';
             }
             navLinks.forEach(link => {
                 const href = link.getAttribute('href');
-                if (href && (href === currentPath || (currentPath === 'index.html.html' && href === 'index.html.html'))) {
+                if (href && (href === currentPath || (currentPath === 'index.html' && href === 'index.html'))) {
                     link.classList.add('active');
                 }
             });
@@ -93,7 +93,7 @@ def process_file(filepath):
 
 count = 0
 for filepath in html_files:
-    if filepath.endswith(".html") or filepath.endswith(".html.html"):
+    if filepath.endswith(".html") or filepath.endswith(".html"):
         if process_file(filepath):
             count += 1
 

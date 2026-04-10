@@ -119,12 +119,12 @@ template = """<!DOCTYPE html>
 <body class="bg-surface font-body text-on-surface doodle-bg min-h-screen flex flex-col">
 <!-- TopNavBar -->
 <nav class="bg-surface border-b-4 border-stone-800 flex justify-between items-center w-full px-6 py-4 max-w-7xl mx-auto sticky top-0 z-50 gap-8">
-<a href="index.html.html" class="text-3xl font-black text-[#383833] tracking-tighter font-marker">FinanceHive</a>
+<a href="index.html" class="text-3xl font-black text-[#383833] tracking-tighter font-marker">FinanceHive</a>
 <div class="hidden md:flex gap-6 items-center">
-<a class="text-on-surface hover:text-secondary font-marker font-black text-base transition-all duration-200" href="learn-finance.html.html">Learn Finance</a>
-<a class="text-on-surface hover:text-secondary font-marker font-black text-base transition-all duration-200" href="sectors.html.html">Sectors</a>
-<a class="text-on-surface hover:text-secondary font-marker font-black text-base transition-all duration-200" href="request-topic.html.html">Request a Topic</a>
-<a class="text-on-surface hover:text-secondary font-marker font-black text-base transition-all duration-200" href="about.html.html">About</a>
+<a class="text-on-surface hover:text-secondary font-marker font-black text-base transition-all duration-200" href="learn-finance.html">Learn Finance</a>
+<a class="text-on-surface hover:text-secondary font-marker font-black text-base transition-all duration-200" href="sectors.html">Sectors</a>
+<a class="text-on-surface hover:text-secondary font-marker font-black text-base transition-all duration-200" href="request-topic.html">Request a Topic</a>
+<a class="text-on-surface hover:text-secondary font-marker font-black text-base transition-all duration-200" href="about.html">About</a>
 </div>
 <div class="flex items-center gap-4 lg:gap-6">
 <div class="relative group flex items-center">
@@ -137,14 +137,14 @@ template = """<!DOCTYPE html>
 <button class="p-2 hover:bg-primary-container rounded-full transition-colors flex items-center justify-center">
 <span class="material-symbols-outlined text-2xl font-black">account_circle</span>
 </button>
-<a href="learn-finance.html.html" class="bg-primary-container text-on-primary-container px-6 py-2 sketch-border font-black hover:translate-x-1 hover:translate-y-1 transition-all">
+<a href="learn-finance.html" class="bg-primary-container text-on-primary-container px-6 py-2 sketch-border font-black hover:translate-x-1 hover:translate-y-1 transition-all">
     Start Learning
   </a>
 </div>
 </nav>
 <main class="flex-grow max-w-screen-md mx-auto px-6 py-12 w-full">
     <div class="mb-12">
-        <a href="learn-finance.html.html" class="inline-block text-[#383833] font-bold font-marker hover:text-secondary transition-colors text-lg">
+        <a href="learn-finance.html" class="inline-block text-[#383833] font-bold font-marker hover:text-secondary transition-colors text-lg">
             &larr; Back to All Concepts
         </a>
     </div>
@@ -176,7 +176,7 @@ template = """<!DOCTYPE html>
 <footer class="bg-stone-900 text-white border-t-8 border-stone-800 flex flex-col md:flex-row justify-between items-center w-full px-8 py-16 gap-8">
 <div class="max-w-7xl mx-auto w-full flex flex-col md:flex-row justify-between items-baseline gap-8">
 <div class="flex flex-col items-start">
-<a href="index.html.html" class="text-3xl font-black text-white font-marker tracking-tighter">FinanceHive</a>
+<a href="index.html" class="text-3xl font-black text-white font-marker tracking-tighter">FinanceHive</a>
 <p class="text-stone-400 font-medium text-xs">Hand-drawn for Indian minds. ✏️</p>
 </div>
 <div class="flex flex-wrap justify-center gap-6 md:gap-8 font-marker font-black text-base">
@@ -184,9 +184,9 @@ template = """<!DOCTYPE html>
 <span class="text-stone-700 hidden md:inline">|</span>
 <a class="hover:text-primary transition-colors" href="#">Terms</a>
 <span class="text-stone-700 hidden md:inline">|</span>
-<a class="hover:text-primary transition-colors" href="disclaimer.html.html">Disclaimer</a>
+<a class="hover:text-primary transition-colors" href="disclaimer.html">Disclaimer</a>
 <span class="text-stone-700 hidden md:inline">|</span>
-<a class="hover:text-primary transition-colors" href="about.html.html">Contact</a>
+<a class="hover:text-primary transition-colors" href="about.html">Contact</a>
 </div>
 <div class="text-stone-500 font-bold text-sm whitespace-nowrap">© 2026 FinanceHive. All rights reserved.</div>
 </div>

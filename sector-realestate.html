@@ -1,103 +1,111 @@
 <!DOCTYPE html>
 
-<html class="light" lang="en"><head>
-<meta charset="utf-8"/>
-<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
-<title>Real Estate Sector | FinanceHive</title>
-<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
-<link href="https://fonts.googleapis.com/css2?family=Epilogue:wght@400;700;900&amp;family=Plus+Jakarta+Sans:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/>
-<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
-<script id="tailwind-config">
+<html class="light" lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>Real Estate Sector | FinanceHive</title>
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Epilogue:wght@400;700;900&amp;family=Plus+Jakarta+Sans:wght@400;500;600;700&amp;display=swap"
+        rel="stylesheet" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
+        rel="stylesheet" />
+    <script id="tailwind-config">
         tailwind.config = {
-          darkMode: "class",
-          theme: {
-            extend: {
-              "colors": {
-                      "on-primary": "#ffffff",
-                      "on-tertiary-fixed-variant": "#4a00a4",
-                      "error": "#be2d06",
-                      "surface-container": "#f5f4eb",
-                      "on-secondary-container": "#940014",
-                      "tertiary-container": "#c0a0ff",
-                      "surface-tint": "#776300",
-                      "on-error-container": "#520c00",
-                      "on-tertiary-fixed": "#200051",
-                      "error-container": "#f95630",
-                      "inverse-primary": "#fdd400",
-                      "primary-fixed": "#fdd400",
-                      "on-surface": "#383833",
-                      "on-background": "#383833",
-                      "surface-container-low": "#fbf9f1",
-                      "inverse-surface": "#0e0f0a",
-                      "on-secondary": "#ffffff",
-                      "surface-dim": "#e4e3d8",
-                      "on-secondary-fixed": "#70000d",
-                      "tertiary-fixed-dim": "#b48fff",
-                      "primary-dim": "#695700",
-                      "secondary-dim": "#b10e1e",
-                      "on-error": "#ffffff",
-                      "on-secondary-fixed-variant": "#a60018",
-                      "secondary": "#c31f29",
-                      "surface-container-high": "#efeee5",
-                      "secondary-fixed-dim": "#ffafaa",
-                      "on-primary-container": "#594a00",
-                      "outline": "#81817a",
-                      "tertiary-fixed": "#c0a0ff",
-                      "primary-container": "#fdd400",
-                      "surface-container-lowest": "#ffffff",
-                      "on-tertiary-container": "#3f008e",
-                      "secondary-container": "#ffc3be",
-                      "surface": "#fefcf4",
-                      "surface-variant": "#e9e9de",
-                      "inverse-on-surface": "#9e9d96",
-                      "error-dim": "#b92902",
-                      "on-primary-fixed": "#433700",
-                      "secondary-fixed": "#ffc3be",
-                      "background": "#fefcf4",
-                      "on-tertiary": "#ffffff",
-                      "surface-container-highest": "#e9e9de",
-                      "primary-fixed-dim": "#edc600",
-                      "outline-variant": "#bab9b2",
-                      "primary": "#776300",
-                      "on-surface-variant": "#65655f",
-                      "tertiary": "#7a37eb",
-                      "tertiary-dim": "#6d24de",
-                      "on-primary-fixed-variant": "#645300",
-                      "surface-bright": "#fefcf4"
-              },
-              "borderRadius": {
-                      "DEFAULT": "0.125rem",
-                      "lg": "0.25rem",
-                      "xl": "0.5rem",
-                      "full": "0.75rem"
-              },
-              "fontFamily": {
-                      "headline": ["Epilogue"],
-                      "body": ["Plus Jakarta Sans"],
-                      "label": ["Plus Jakarta Sans"]
-              }
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "on-primary": "#ffffff",
+                        "on-tertiary-fixed-variant": "#4a00a4",
+                        "error": "#be2d06",
+                        "surface-container": "#f5f4eb",
+                        "on-secondary-container": "#940014",
+                        "tertiary-container": "#c0a0ff",
+                        "surface-tint": "#776300",
+                        "on-error-container": "#520c00",
+                        "on-tertiary-fixed": "#200051",
+                        "error-container": "#f95630",
+                        "inverse-primary": "#fdd400",
+                        "primary-fixed": "#fdd400",
+                        "on-surface": "#383833",
+                        "on-background": "#383833",
+                        "surface-container-low": "#fbf9f1",
+                        "inverse-surface": "#0e0f0a",
+                        "on-secondary": "#ffffff",
+                        "surface-dim": "#e4e3d8",
+                        "on-secondary-fixed": "#70000d",
+                        "tertiary-fixed-dim": "#b48fff",
+                        "primary-dim": "#695700",
+                        "secondary-dim": "#b10e1e",
+                        "on-error": "#ffffff",
+                        "on-secondary-fixed-variant": "#a60018",
+                        "secondary": "#c31f29",
+                        "surface-container-high": "#efeee5",
+                        "secondary-fixed-dim": "#ffafaa",
+                        "on-primary-container": "#594a00",
+                        "outline": "#81817a",
+                        "tertiary-fixed": "#c0a0ff",
+                        "primary-container": "#fdd400",
+                        "surface-container-lowest": "#ffffff",
+                        "on-tertiary-container": "#3f008e",
+                        "secondary-container": "#ffc3be",
+                        "surface": "#fefcf4",
+                        "surface-variant": "#e9e9de",
+                        "inverse-on-surface": "#9e9d96",
+                        "error-dim": "#b92902",
+                        "on-primary-fixed": "#433700",
+                        "secondary-fixed": "#ffc3be",
+                        "background": "#fefcf4",
+                        "on-tertiary": "#ffffff",
+                        "surface-container-highest": "#e9e9de",
+                        "primary-fixed-dim": "#edc600",
+                        "outline-variant": "#bab9b2",
+                        "primary": "#776300",
+                        "on-surface-variant": "#65655f",
+                        "tertiary": "#7a37eb",
+                        "tertiary-dim": "#6d24de",
+                        "on-primary-fixed-variant": "#645300",
+                        "surface-bright": "#fefcf4"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.125rem",
+                        "lg": "0.25rem",
+                        "xl": "0.5rem",
+                        "full": "0.75rem"
+                    },
+                    "fontFamily": {
+                        "headline": ["Epilogue"],
+                        "body": ["Plus Jakarta Sans"],
+                        "label": ["Plus Jakarta Sans"]
+                    }
+                },
             },
-          },
         }
-      </script>
-<style>
+    </script>
+    <style>
         .sketch-border {
             border: 2px solid #383833;
             box-shadow: 4px 4px 0px 0px #383833;
         }
+
         .scribble-underline {
             background-image: linear-gradient(120deg, #FFD600 0%, #FFD600 100%);
             background-repeat: no-repeat;
             background-size: 100% 0.3em;
             background-position: 0 88%;
         }
+
         .marker-highlight {
             background: linear-gradient(100deg, rgba(255, 214, 0, 0.3) 0%, rgba(255, 214, 0, 0.7) 100%);
             padding: 0 4px;
         }
     </style>
 
-    
+
 
     <style>
         /* Active Navigation Link Styling */
@@ -111,217 +119,403 @@
 </head>
 
 <body class="bg-[#FFFDF5] text-on-surface font-body selection:bg-primary-container min-h-screen flex flex-col">
-<!-- TopNavBar -->
-<nav class="bg-surface border-b-4 border-stone-800 flex justify-between items-center w-full px-6 py-4 max-w-7xl mx-auto sticky top-0 z-50 gap-8">
-<a href="index.html.html" class="text-3xl font-black text-[#383833] tracking-tighter font-marker">FinanceHive</a>
-<div class="hidden md:flex gap-6 items-center ml-auto">
-<a class="text-on-surface hover:text-secondary font-marker font-black text-base transition-all duration-200" href="learn-finance.html.html">Concepts</a>
-<a class="text-on-surface hover:text-secondary font-marker font-black text-base transition-all duration-200" href="sectors.html.html">Sectors</a>
-<a class="text-on-surface hover:text-secondary font-marker font-black text-base transition-all duration-200" href="request-topic.html.html">Request a Topic</a>
-<a class="text-on-surface hover:text-secondary font-marker font-black text-base transition-all duration-200" href="about.html.html">About</a>
-</div>
-<div class="flex items-center gap-4 lg:gap-6">
+    <!-- TopNavBar -->
+    <nav
+        class="bg-surface border-b-4 border-stone-800 flex justify-between items-center w-full px-6 py-4 max-w-7xl mx-auto sticky top-0 z-50 gap-8">
+        <a href="index.html" class="text-3xl font-black text-[#383833] tracking-tighter font-marker">FinanceHive</a>
+        <div class="hidden md:flex gap-6 items-center ml-auto">
+            <a class="text-on-surface hover:text-secondary font-marker font-black text-base transition-all duration-200"
+                href="learn-finance.html">Concepts</a>
+            <a class="text-on-surface hover:text-secondary font-marker font-black text-base transition-all duration-200"
+                href="sectors.html">Sectors</a>
+            <a class="text-on-surface hover:text-secondary font-marker font-black text-base transition-all duration-200"
+                href="request-topic.html">Request a Topic</a>
+            <a class="text-on-surface hover:text-secondary font-marker font-black text-base transition-all duration-200"
+                href="about.html">About</a>
+        </div>
+        <div class="flex items-center gap-4 lg:gap-6">
 
 
 
-<a href="learn-finance.html.html" class="bg-primary-container text-on-primary-container px-6 py-2 sketch-border font-black hover:translate-x-1 hover:translate-y-1 transition-all">
-    Start Learning
-  </a>
-</div>
-</nav>
+            <a href="learn-finance.html"
+                class="bg-primary-container text-on-primary-container px-6 py-2 sketch-border font-black hover:translate-x-1 hover:translate-y-1 transition-all">
+                Start Learning
+            </a>
+        </div>
+    </nav>
 
-<main class="flex-grow max-w-screen-xl mx-auto px-6 py-12 w-full">
-    <div class="mb-12">
-        <a href="sectors.html" class="inline-block text-[#383833] font-bold font-headline hover:text-primary transition-colors text-lg font-black">
-            &larr; Back to All Sectors
-        </a>
-    </div>
+    <main class="flex-grow max-w-screen-xl mx-auto px-6 py-12 w-full">
+        <div class="mb-12">
+            <a href="sectors.html"
+                class="inline-block text-[#383833] font-bold font-headline hover:text-primary transition-colors text-lg font-black">
+                &larr; Back to All Sectors
+            </a>
+        </div>
 
-    <!-- Header Section -->
-    <header class="mb-16">
-        <h1 class="text-5xl md:text-7xl font-black font-headline text-on-surface mb-6 tracking-tighter leading-none"><span class="scribble-underline">Real Estate Sector</span></h1>
-        <p class="text-xl md:text-2xl font-medium text-on-surface/80 max-w-3xl border-l-4 border-primary pl-4 bg-primary/5 py-2">Land, buildings, and the businesses that build, sell, rent, and manage them</p>
-    </header>
+        <!-- Header Section -->
+        <header class="mb-16">
+            <h1
+                class="text-5xl md:text-7xl font-black font-headline text-on-surface mb-6 tracking-tighter leading-none">
+                <span class="scribble-underline">Real Estate Sector</span></h1>
+            <p
+                class="text-xl md:text-2xl font-medium text-on-surface/80 max-w-3xl border-l-4 border-primary pl-4 bg-primary/5 py-2">
+                Land, buildings, and the businesses that build, sell, rent, and manage them</p>
+        </header>
 
-    <div class="grid grid-cols-1 md:grid-cols-2 gap-8 mb-16">
-        <!-- SECTION 1 -->
-        <article class="bg-surface p-8 rounded-xl shadow-sm border-l-8 border-[#FFD600] border-t border-b border-r border-outline-variant/30 relative sketch-border hover:translate-y-[-2px] transition-transform duration-200">
-            <h2 class="font-headline font-black text-2xl mb-4 text-on-surface">How They Make Money</h2>
-            <div class="space-y-4 text-on-surface/80 leading-relaxed font-body">
-                <p>Real estate is simply land and the buildings on it — and the sector includes every business involved in building, selling, renting, managing, or investing in those properties. People need places to live, businesses need offices, stores need malls, and factories need warehouses. These are permanent, universal needs.</p>
-                <p>Revenue flows in several distinct ways. Residential and commercial developers earn by selling completed or under-construction properties — largely one-time per project. The key metric is pre-sales or bookings: how much value has been booked by customers even before construction is complete? High pre-sales de-risk a project and signal strong forward cash flows. REITs (Real Estate Investment Trusts) earn monthly rental income from tenants who sign 3-9 year leases with pre-agreed rent escalation — making REIT revenue highly predictable, like a bond with some capital appreciation. REITs must distribute at least 90% of net distributable cash flows to unitholders. City Gas-style recurring revenue also exists in real estate through Annual Maintenance Charges, parking sold separately, club memberships, and property management services — turning a one-time homebuyer into a lifelong recurring revenue relationship. Brokers and digital platforms earn 1-2% commission on each transaction, while newer models like NoBroker earn from subscriptions, home loan facilitation, and home services instead.</p>
-            </div>
-        </article>
-
-        <!-- SECTION 2 -->
-        <article class="bg-surface p-8 rounded-xl shadow-sm border-l-8 border-[#FFD600] border-t border-b border-r border-outline-variant/30 relative sketch-border hover:translate-y-[-2px] transition-transform duration-200">
-            <h2 class="font-headline font-black text-2xl mb-4 text-on-surface">Key Players in India</h2>
-            <div class="space-y-3 text-on-surface/80 leading-relaxed font-body">
-                <p><strong>Residential &amp; Commercial Developers:</strong> DLF (India's largest listed developer, dominant in Delhi-NCR and Gurugram), Macrotech or Lodha (Mumbai's largest developer, Palava township), Godrej Properties (JDA-heavy model, highest pre-sales in FY25 at ₹29,444 crore), Prestige Estates (South India's largest, strong in Bengaluru), Oberoi Realty (ultra-premium Mumbai developer, very high margins), Brigade Group (South India, mixed-use gateway developments), Sobha (in-house construction model, Bengaluru), Signature Global (affordable and mid-segment Delhi-NCR)</p>
-                <p><strong>Listed REITs:</strong> Embassy Office Parks REIT (India's first and largest, Bengaluru and Mumbai offices), Mindspace Business Parks REIT (Hyderabad and Mumbai, Blackstone-backed), Brookfield India Real Estate Trust (Brookfield-managed, pan-India offices), Nexus Select Trust (India's only retail REIT, 17 premium malls)</p>
-                <p><strong>Other Listed Players:</strong> Phoenix Mills (premium malls — Palladium, Marketcity), NoBroker (India's first proptech unicorn, commission-free platform)</p>
-            </div>
-        </article>
-
-        <!-- SECTION 3 -->
-        <article class="bg-surface p-8 rounded-xl shadow-sm border-l-8 border-[#FFD600] border-t border-b border-r border-outline-variant/30 relative sketch-border hover:translate-y-[-2px] transition-transform duration-200">
-            <h2 class="font-headline font-black text-2xl mb-4 text-on-surface">3 Terms Every Learner Must Know</h2>
-            <div class="space-y-4 text-on-surface/80 leading-relaxed font-body">
-                <p><strong>Pre-Sales or Bookings:</strong> The total value of units booked by customers — including those still under construction. This is the single most important forward-looking indicator for a developer. Rising pre-sales means strong demand and revenue visibility for the next 2-3 years. Falling pre-sales signals a demand slowdown and potential cash flow stress ahead. Top developers publish quarterly pre-sales numbers — watch for year-on-year growth.</p>
-                <p><strong>Inventory Overhang (Months of Inventory):</strong> How many months it would take to sell all unsold units at the current pace. Below 12 months is healthy. Above 24 months is a red flag — the developer still pays interest on project debt and maintenance costs on every unsold unit. High inventory overhang was the defining problem of the Indian real estate sector during the 2013-2019 slowdown.</p>
-                <p><strong>AT&amp;C Losses equivalent for Real Estate — RERA Escrow:</strong> Under RERA, all money collected from homebuyers must be kept in a project-specific escrow account and can only be used for that project. This single rule transformed Indian real estate by preventing developers from diverting funds from one project to pay for another — which was the root cause of thousands of stalled projects. RERA registration and escrow compliance are the minimum credibility standards for any developer today.</p>
-            </div>
-        </article>
-
-        <!-- SECTION 4 -->
-        <article class="bg-surface p-8 rounded-xl shadow-sm border-l-8 border-[#FFD600] border-t border-b border-r border-outline-variant/30 relative sketch-border hover:translate-y-[-2px] transition-transform duration-200">
-            <h2 class="font-headline font-black text-2xl mb-4 text-on-surface">What to Watch as a Learner</h2>
-            <ul class="list-disc pl-5 space-y-3 text-on-surface/80 leading-relaxed font-body font-medium">
-                <li>Pre-sales every quarter — the primary forward indicator for developers; watch year-on-year growth at DLF, Godrej Properties, Macrotech, and Prestige to gauge residential market health</li>
-                <li>Interest rate trajectory — RBI rate cuts make home loans cheaper and directly boost residential demand; rate hikes do the opposite; real estate is more sensitive to interest rates than almost any other sector</li>
-                <li>GCC (Global Capability Center) leasing data — GCCs accounted for ~40% of all office absorption in 2025 and are the dominant driver of commercial real estate; watch for Fortune 500 GCC announcements</li>
-                <li>REIT occupancy rates — India's listed REITs maintained ~91% occupancy in September 2025; any sustained decline signals weakening office demand and lower distributions to unitholders</li>
-                <li>Debt levels of developers — net debt to EBITDA above 4-5x is a red flag, especially when interest rates are rising or pre-sales are slowing; low-debt developers like Oberoi Realty are far more resilient through cycles</li>
-            </ul>
-        </article>
-    </div>
-
-    <!-- View Full Analysis Button -->
-    <div class="flex justify-center mb-16">
-        <button id="toggleAnalysisBtn" class="bg-primary-container text-on-primary-container px-8 py-3 text-lg sketch-border font-black hover:translate-x-1 hover:translate-y-1 transition-all">View Full Analysis ↓</button>
-    </div>
-
-    <!-- Hidden Sections (6 sections) -->
-    <div id="fullAnalysisSections" style="display: none;">
         <div class="grid grid-cols-1 md:grid-cols-2 gap-8 mb-16">
-            <!-- SECTION 5 -->
-            <article class="bg-surface p-8 rounded-xl shadow-sm border-l-8 border-[#FFD600] border-t border-b border-r border-outline-variant/30 relative sketch-border hover:translate-y-[-2px] transition-transform duration-200">
-                <h2 class="font-headline font-black text-2xl mb-4 text-on-surface">Value Chain</h2>
+            <!-- SECTION 1 -->
+            <article
+                class="bg-surface p-8 rounded-xl shadow-sm border-l-8 border-[#FFD600] border-t border-b border-r border-outline-variant/30 relative sketch-border hover:translate-y-[-2px] transition-transform duration-200">
+                <h2 class="font-headline font-black text-2xl mb-4 text-on-surface">How They Make Money</h2>
                 <div class="space-y-4 text-on-surface/80 leading-relaxed font-body">
-                    <p>The real estate value chain begins with land. A developer acquires land — either by outright purchase or through a Joint Development Agreement (JDA) where they agree to build on a landowner's land and share revenue instead of paying cash upfront. JDAs are increasingly popular because they dramatically reduce the capital required to enter a project and improve return on equity.</p>
-                    <p>After land comes regulatory approvals — RERA registration, environmental clearances, building plan approvals, and occupation certificates. Delays here are the most common cause of project cost overruns. Once approved, the developer designs, constructs, and markets the project — collecting booking amounts from homebuyers during construction. Under RERA, these funds sit in escrow and can only be used for that specific project.</p>
-                    <p>After handover, the same asset can generate money again — through annual maintenance charges, parking sales, and property management services. For commercial assets, the developer may hold and lease the building, sell it to a REIT, or bundle it into a rental vehicle. The REIT then distributes 90%+ of rental income to unitholders every quarter. Maximum value is created by premium residential developers in prime locations (20-30%+ EBITDA margins), commercial developers selling Grade A offices to REITs at premium valuations, and REITs earning steady rental income with long-term lease visibility. The thinnest margins are in affordable housing and EPC-style construction.</p>
+                    <p>Real estate is simply land and the buildings on it — and the sector includes every business
+                        involved in building, selling, renting, managing, or investing in those properties. People need
+                        places to live, businesses need offices, stores need malls, and factories need warehouses. These
+                        are permanent, universal needs.</p>
+                    <p>Revenue flows in several distinct ways. Residential and commercial developers earn by selling
+                        completed or under-construction properties — largely one-time per project. The key metric is
+                        pre-sales or bookings: how much value has been booked by customers even before construction is
+                        complete? High pre-sales de-risk a project and signal strong forward cash flows. REITs (Real
+                        Estate Investment Trusts) earn monthly rental income from tenants who sign 3-9 year leases with
+                        pre-agreed rent escalation — making REIT revenue highly predictable, like a bond with some
+                        capital appreciation. REITs must distribute at least 90% of net distributable cash flows to
+                        unitholders. City Gas-style recurring revenue also exists in real estate through Annual
+                        Maintenance Charges, parking sold separately, club memberships, and property management services
+                        — turning a one-time homebuyer into a lifelong recurring revenue relationship. Brokers and
+                        digital platforms earn 1-2% commission on each transaction, while newer models like NoBroker
+                        earn from subscriptions, home loan facilitation, and home services instead.</p>
                 </div>
             </article>
 
-            <!-- SECTION 6 -->
-            <article class="bg-surface p-8 rounded-xl shadow-sm border-l-8 border-[#FFD600] border-t border-b border-r border-outline-variant/30 relative sketch-border hover:translate-y-[-2px] transition-transform duration-200">
-                <h2 class="font-headline font-black text-2xl mb-4 text-on-surface">Revenue Model</h2>
-                <div class="space-y-4 text-on-surface/80 leading-relaxed font-body">
-                    <p>Developer pre-sale revenue is the dominant model — booking value collected from homebuyers before and during construction. Revenue is recognised progressively as construction milestones are achieved. The entire revenue stream from a project is spread over 2-5 years. One-time revenue risk is real: if a developer launches a project but sales are slow, they still service debt and pay contractors without incoming cash. Top developers by FY25 pre-sales: Godrej Properties at ₹29,444 crore, DLF at ₹21,223 crore, Macrotech at ₹17,630 crore.</p>
-                    <p>REIT rental revenue is recurring, monthly, and highly predictable — tenants sign 3-9 year leases with rent escalation clauses (typically 15% every 3 years or 5% annually). India's listed REITs reported 91% average occupancy in September 2025 and distribution yields of 6-7% in FY25. Flex and co-working operators earn the spread between what they pay the building owner and what they charge per seat — typically ₹8,000-₹25,000 per seat per month depending on location.</p>
-                    <p>Cross-selling compounds developer revenue — parking (₹5-25 lakh per space in premium projects), club memberships, annual maintenance charges, home loan facilitation fees, and in-house property management services turn a one-time homebuyer into a recurring revenue relationship across years.</p>
-                    <p>Brokerage platforms earn 1-2% of deal value per transaction. NoBroker disrupted this by charging fixed low fees and then earning from subscriptions, packers &amp; movers, home loans, and property management — multiple revenue lines from one customer relationship.</p>
+            <!-- SECTION 2 -->
+            <article
+                class="bg-surface p-8 rounded-xl shadow-sm border-l-8 border-[#FFD600] border-t border-b border-r border-outline-variant/30 relative sketch-border hover:translate-y-[-2px] transition-transform duration-200">
+                <h2 class="font-headline font-black text-2xl mb-4 text-on-surface">Key Players in India</h2>
+                <div class="space-y-3 text-on-surface/80 leading-relaxed font-body">
+                    <p><strong>Residential &amp; Commercial Developers:</strong> DLF (India's largest listed developer,
+                        dominant in Delhi-NCR and Gurugram), Macrotech or Lodha (Mumbai's largest developer, Palava
+                        township), Godrej Properties (JDA-heavy model, highest pre-sales in FY25 at ₹29,444 crore),
+                        Prestige Estates (South India's largest, strong in Bengaluru), Oberoi Realty (ultra-premium
+                        Mumbai developer, very high margins), Brigade Group (South India, mixed-use gateway
+                        developments), Sobha (in-house construction model, Bengaluru), Signature Global (affordable and
+                        mid-segment Delhi-NCR)</p>
+                    <p><strong>Listed REITs:</strong> Embassy Office Parks REIT (India's first and largest, Bengaluru
+                        and Mumbai offices), Mindspace Business Parks REIT (Hyderabad and Mumbai, Blackstone-backed),
+                        Brookfield India Real Estate Trust (Brookfield-managed, pan-India offices), Nexus Select Trust
+                        (India's only retail REIT, 17 premium malls)</p>
+                    <p><strong>Other Listed Players:</strong> Phoenix Mills (premium malls — Palladium, Marketcity),
+                        NoBroker (India's first proptech unicorn, commission-free platform)</p>
                 </div>
             </article>
 
-            <!-- SECTION 7 -->
-            <article class="bg-surface p-8 rounded-xl shadow-sm border-l-8 border-[#FFD600] border-t border-b border-r border-outline-variant/30 relative sketch-border hover:translate-y-[-2px] transition-transform duration-200">
-                <h2 class="font-headline font-black text-2xl mb-4 text-on-surface">Cost Structure</h2>
+            <!-- SECTION 3 -->
+            <article
+                class="bg-surface p-8 rounded-xl shadow-sm border-l-8 border-[#FFD600] border-t border-b border-r border-outline-variant/30 relative sketch-border hover:translate-y-[-2px] transition-transform duration-200">
+                <h2 class="font-headline font-black text-2xl mb-4 text-on-surface">3 Terms Every Learner Must Know</h2>
                 <div class="space-y-4 text-on-surface/80 leading-relaxed font-body">
-                    <p>Land cost is the largest and most variable cost — in prime city locations like South Mumbai, Gurugram, and Bengaluru CBD, land can account for 30-50% of total project cost. JDAs reduce this to near-zero upfront cash outflow, replacing it with a revenue share to the landowner at project completion — dramatically improving capital efficiency for developers with strong project execution credentials.</p>
-                    <p>Construction cost is the second major expense — typically ₹2,500-₹4,500 per sq ft for mid-segment residential and ₹4,000-₹7,000 for Grade A commercial (which requires HVAC systems, high-speed lifts, smart building technology, and green building certifications). Cement, steel, sand, and labour are the primary inputs — all subject to commodity cycle volatility.</p>
-                    <p>Financing cost is the most dangerous cost — real estate projects take 3-7 years to complete, during which developers borrow heavily from banks and NBFCs. When interest rates rise, developers are hit from both sides: higher cost on their own project debt AND lower sales because home loan EMIs become unaffordable for buyers. This double impact is what makes high-debt developers fragile in a tightening cycle.</p>
-                    <p>Approval and compliance costs — RERA registration, environmental clearances, aviation authority height approvals, and local municipal sanctions — take time and money. RERA escrow requirements also limit cash flexibility between projects.</p>
-                    <p>Marketing and sales cost ranges from 3-6% of project revenue for large developers — TV and digital campaigns, site offices, model flats, and broker channel commissions of 1-3% of sales value paid to bring buyers.</p>
-                    <p>For REITs, ongoing costs are property taxes, facility management, insurance, maintenance capex, and administration — largely predictable because tenants in triple-net leases pay some operating costs directly.</p>
+                    <p><strong>Pre-Sales or Bookings:</strong> The total value of units booked by customers — including
+                        those still under construction. This is the single most important forward-looking indicator for
+                        a developer. Rising pre-sales means strong demand and revenue visibility for the next 2-3 years.
+                        Falling pre-sales signals a demand slowdown and potential cash flow stress ahead. Top developers
+                        publish quarterly pre-sales numbers — watch for year-on-year growth.</p>
+                    <p><strong>Inventory Overhang (Months of Inventory):</strong> How many months it would take to sell
+                        all unsold units at the current pace. Below 12 months is healthy. Above 24 months is a red flag
+                        — the developer still pays interest on project debt and maintenance costs on every unsold unit.
+                        High inventory overhang was the defining problem of the Indian real estate sector during the
+                        2013-2019 slowdown.</p>
+                    <p><strong>AT&amp;C Losses equivalent for Real Estate — RERA Escrow:</strong> Under RERA, all money
+                        collected from homebuyers must be kept in a project-specific escrow account and can only be used
+                        for that project. This single rule transformed Indian real estate by preventing developers from
+                        diverting funds from one project to pay for another — which was the root cause of thousands of
+                        stalled projects. RERA registration and escrow compliance are the minimum credibility standards
+                        for any developer today.</p>
                 </div>
             </article>
 
-            <!-- SECTION 8 -->
-            <article class="bg-surface p-8 rounded-xl shadow-sm border-l-8 border-[#FFD600] border-t border-b border-r border-outline-variant/30 relative sketch-border hover:translate-y-[-2px] transition-transform duration-200">
-                <h2 class="font-headline font-black text-2xl mb-4 text-on-surface">Key KPIs</h2>
-                <div class="space-y-4 text-on-surface/80 leading-relaxed font-body">
-                    <p><strong>Pre-Sales or Booking Value:</strong> Total value of units booked by customers in a quarter — the single most important forward-looking metric for developers. Rising pre-sales means revenue visibility for the next 2-3 years. Falling pre-sales signals demand slowdown. Watch year-on-year growth quarterly for DLF, Godrej Properties, Macrotech, and Prestige.</p>
-                    <p><strong>Inventory Overhang (Months):</strong> Unsold units divided by monthly sales pace. Below 12 months is healthy. 12-24 months warrants caution. Above 24 months is a red flag — the developer is carrying debt and maintenance costs on unsold stock with no cash inflow.</p>
-                    <p><strong>Occupancy Rate (REITs and commercial assets):</strong> Percentage of space occupied by paying tenants. India's listed REITs held ~91% occupancy in September 2025 — very healthy. Below 80% occupancy means significant rental income is being lost. Falling occupancy is a warning sign for REIT distributions.</p>
-                    <p><strong>Average Selling Price (ASP per sq ft):</strong> What the developer is earning per square foot across sold units. Rising ASP signals strong market demand or a deliberate shift toward higher-value luxury projects. Stagnating ASP despite volume growth signals pricing pressure or market saturation.</p>
-                    <p><strong>Net Debt to EBITDA:</strong> Measures how many years of operating profit it would take to repay all debt. Below 2x is generally manageable. Above 4-5x is high risk — especially if interest rates rise or pre-sales slow simultaneously.</p>
-                    <p><strong>REIT Distribution Yield:</strong> Annual distributions per unit divided by the unit price. India's listed REITs yielded 6-7% in FY25. Falling yield (without a rising unit price) signals lower distributions — often from falling occupancy or tenant disputes.</p>
-                    <p><strong>Project Completion Timeline:</strong> Is the developer delivering projects on time as promised to RERA? Consistent on-time delivery builds brand trust and commands pricing premium. Frequent delays signal operational weakness or financial stress — check RERA portals for completion certificates versus promised dates.</p>
-                </div>
-            </article>
-
-            <!-- SECTION 9 -->
-            <article class="bg-surface p-8 rounded-xl shadow-sm border-l-8 border-[#FFD600] border-t border-b border-r border-outline-variant/30 relative sketch-border hover:translate-y-[-2px] transition-transform duration-200">
-                <h2 class="font-headline font-black text-2xl mb-4 text-on-surface">Growth Drivers</h2>
-                <div class="space-y-4 text-on-surface/80 leading-relaxed font-body">
-                    <p>Urbanisation is the most powerful structural driver — hundreds of millions of Indians are moving from villages to cities, and every new urban household needs a home. Every new urban business needs an office. This is a decades-long, multi-generational demand story that is still only partially played out.</p>
-                    <p>Rising incomes and homeownership aspiration are converting demand into transactions — India's middle class is growing, the cultural aspiration to own property is deep, and luxury demand has surged with HNIs buying ₹10 crore+ apartments in record numbers across Mumbai, Gurugram, and Bengaluru.</p>
-                    <p>GCC-driven office boom is the defining commercial real estate story — India had 1,700+ Global Capability Centers as of 2025 and GCCs accounted for ~40% of all office absorption. Office leasing surpassed 50 million sq ft in just the first nine months of 2025, with projections of 70-75 million sq ft for full year 2026.</p>
-                    <p>Infrastructure development multiplies real estate value — every new metro line, expressway, and airport makes surrounding land more livable and valuable. Metro rail expansion in Delhi, Mumbai, Bengaluru, Pune, and Hyderabad is opening new residential catchment areas. 50 new airports planned over the next 5 years will boost regional real estate markets.</p>
-                    <p>Warehousing and logistics demand is structural — the e-commerce explosion (Flipkart, Amazon, Zepto, Blinkit) requires massive warehousing networks across India. Industrial and logistics leasing reached 27.1 million sq ft in H1 2025 alone — up 63% year-on-year.</p>
-                    <p>REIT growth is democratising commercial real estate — before REITs, only institutions could own prime office buildings. Now retail investors can buy REIT units for a few thousand rupees and earn stable rental income. India's REIT market cap grew 6x from FY2020 to late 2025. SM-REITs for fractional ownership of smaller assets are the next frontier.</p>
-                    <p>RERA and policy support have restored buyer trust — escrow requirements, project registration, and penalty for delays have reduced fraud and brought formal capital back into developer financing.</p>
-                </div>
-            </article>
-
-            <!-- SECTION 10 -->
-            <article class="bg-surface p-8 rounded-xl shadow-sm border-l-8 border-[#FFD600] border-t border-b border-r border-outline-variant/30 relative sketch-border hover:translate-y-[-2px] transition-transform duration-200">
-                <h2 class="font-headline font-black text-2xl mb-4 text-on-surface">Risks</h2>
-                <div class="space-y-4 text-on-surface/80 leading-relaxed font-body">
-                    <p><strong>Interest Rate Risk — The Most Important Macro Risk:</strong> Rising interest rates suppress housing demand and increase developer financing costs simultaneously. When RBI raises rates, home loan EMIs rise and middle-class buyers postpone purchases — while developers pay higher interest on their own project debt. This double hit is what makes real estate uniquely vulnerable to rate cycles. The RBI cut the repo rate by over 100 basis points in 2025, supporting demand — the reverse would compress it sharply.</p>
-                    <p><strong>Project Delays:</strong> Delays happen due to approval failures, contractor problems, land disputes, or developer financial stress. A 3-year project becomes a 7-10 year project. The developer cannot repay the construction loan, the bank classifies it as NPA, and homebuyers wait years for possession. India still has lakhs of stalled homes. RERA has reduced this significantly but not eliminated it.</p>
-                    <p><strong>High Debt Levels:</strong> Real estate is capital-intensive. Developers who borrow heavily to fund land and construction become fragile when sales slow. The IL&amp;FS crisis (2018) and NBFC stress showed how interconnected developer debt and the financial sector are — dozens of projects froze when NBFCs stopped lending.</p>
-                    <p><strong>Unsold Inventory:</strong> If a developer launches too many units and demand is weak, unsold inventory builds. The developer still pays interest on project debt and maintenance on every unsold unit — with no cash inflow. High inventory overhang above 24 months is the clearest financial red flag for any developer.</p>
-                    <p><strong>Regulatory Approval Risk:</strong> Changes in Floor Space Index (FSI), zoning laws, aviation authority height restrictions, or environmental rules can alter project economics overnight. Long approval timelines in municipal and state authorities remain one of the biggest sources of project cost overruns.</p>
-                    <p><strong>REIT Occupancy Risk:</strong> If major tenants vacate office buildings due to automation, downsizing, or recession, occupancy drops and distributions to unitholders fall. Work-from-home concerns have eased for now — India's office market has recovered strongly — but a future shift in corporate real estate strategy could revive this risk.</p>
-                    <p><strong>Overpricing and Affordability Gap:</strong> In prime locations of Mumbai, Delhi-NCR, and Bengaluru, apartment prices have risen 50-100% in 5 years in some markets — faster than salary growth. If buyers are priced out, a demand ceiling forms and price discovery becomes difficult. Whether this is structural value or speculative froth is the most debated question in Indian premium housing today.</p>
-                </div>
+            <!-- SECTION 4 -->
+            <article
+                class="bg-surface p-8 rounded-xl shadow-sm border-l-8 border-[#FFD600] border-t border-b border-r border-outline-variant/30 relative sketch-border hover:translate-y-[-2px] transition-transform duration-200">
+                <h2 class="font-headline font-black text-2xl mb-4 text-on-surface">What to Watch as a Learner</h2>
+                <ul class="list-disc pl-5 space-y-3 text-on-surface/80 leading-relaxed font-body font-medium">
+                    <li>Pre-sales every quarter — the primary forward indicator for developers; watch year-on-year
+                        growth at DLF, Godrej Properties, Macrotech, and Prestige to gauge residential market health
+                    </li>
+                    <li>Interest rate trajectory — RBI rate cuts make home loans cheaper and directly boost residential
+                        demand; rate hikes do the opposite; real estate is more sensitive to interest rates than almost
+                        any other sector</li>
+                    <li>GCC (Global Capability Center) leasing data — GCCs accounted for ~40% of all office absorption
+                        in 2025 and are the dominant driver of commercial real estate; watch for Fortune 500 GCC
+                        announcements</li>
+                    <li>REIT occupancy rates — India's listed REITs maintained ~91% occupancy in September 2025; any
+                        sustained decline signals weakening office demand and lower distributions to unitholders</li>
+                    <li>Debt levels of developers — net debt to EBITDA above 4-5x is a red flag, especially when
+                        interest rates are rising or pre-sales are slowing; low-debt developers like Oberoi Realty are
+                        far more resilient through cycles</li>
+                </ul>
             </article>
         </div>
-    </div>
 
-</main>
+        <!-- View Full Analysis Button -->
+        <div class="flex justify-center mb-16">
+            <button id="toggleAnalysisBtn"
+                class="bg-primary-container text-on-primary-container px-8 py-3 text-lg sketch-border font-black hover:translate-x-1 hover:translate-y-1 transition-all">View
+                Full Analysis ↓</button>
+        </div>
 
-<script>
-    document.addEventListener('DOMContentLoaded', () => {
-        const btn = document.getElementById('toggleAnalysisBtn');
-        const sections = document.getElementById('fullAnalysisSections');
-        
-        btn.addEventListener('click', () => {
-            if (sections.style.display === 'none') {
-                sections.style.display = 'block';
-                btn.innerText = 'Hide Analysis ↑';
-            } else {
-                sections.style.display = 'none';
-                btn.innerText = 'View Full Analysis ↓';
-            }
+        <!-- Hidden Sections (6 sections) -->
+        <div id="fullAnalysisSections" style="display: none;">
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8 mb-16">
+                <!-- SECTION 5 -->
+                <article
+                    class="bg-surface p-8 rounded-xl shadow-sm border-l-8 border-[#FFD600] border-t border-b border-r border-outline-variant/30 relative sketch-border hover:translate-y-[-2px] transition-transform duration-200">
+                    <h2 class="font-headline font-black text-2xl mb-4 text-on-surface">Value Chain</h2>
+                    <div class="space-y-4 text-on-surface/80 leading-relaxed font-body">
+                        <p>The real estate value chain begins with land. A developer acquires land — either by outright
+                            purchase or through a Joint Development Agreement (JDA) where they agree to build on a
+                            landowner's land and share revenue instead of paying cash upfront. JDAs are increasingly
+                            popular because they dramatically reduce the capital required to enter a project and improve
+                            return on equity.</p>
+                        <p>After land comes regulatory approvals — RERA registration, environmental clearances, building
+                            plan approvals, and occupation certificates. Delays here are the most common cause of
+                            project cost overruns. Once approved, the developer designs, constructs, and markets the
+                            project — collecting booking amounts from homebuyers during construction. Under RERA, these
+                            funds sit in escrow and can only be used for that specific project.</p>
+                        <p>After handover, the same asset can generate money again — through annual maintenance charges,
+                            parking sales, and property management services. For commercial assets, the developer may
+                            hold and lease the building, sell it to a REIT, or bundle it into a rental vehicle. The REIT
+                            then distributes 90%+ of rental income to unitholders every quarter. Maximum value is
+                            created by premium residential developers in prime locations (20-30%+ EBITDA margins),
+                            commercial developers selling Grade A offices to REITs at premium valuations, and REITs
+                            earning steady rental income with long-term lease visibility. The thinnest margins are in
+                            affordable housing and EPC-style construction.</p>
+                    </div>
+                </article>
+
+                <!-- SECTION 6 -->
+                <article
+                    class="bg-surface p-8 rounded-xl shadow-sm border-l-8 border-[#FFD600] border-t border-b border-r border-outline-variant/30 relative sketch-border hover:translate-y-[-2px] transition-transform duration-200">
+                    <h2 class="font-headline font-black text-2xl mb-4 text-on-surface">Revenue Model</h2>
+                    <div class="space-y-4 text-on-surface/80 leading-relaxed font-body">
+                        <p>Developer pre-sale revenue is the dominant model — booking value collected from homebuyers
+                            before and during construction. Revenue is recognised progressively as construction
+                            milestones are achieved. The entire revenue stream from a project is spread over 2-5 years.
+                            One-time revenue risk is real: if a developer launches a project but sales are slow, they
+                            still service debt and pay contractors without incoming cash. Top developers by FY25
+                            pre-sales: Godrej Properties at ₹29,444 crore, DLF at ₹21,223 crore, Macrotech at ₹17,630
+                            crore.</p>
+                        <p>REIT rental revenue is recurring, monthly, and highly predictable — tenants sign 3-9 year
+                            leases with rent escalation clauses (typically 15% every 3 years or 5% annually). India's
+                            listed REITs reported 91% average occupancy in September 2025 and distribution yields of
+                            6-7% in FY25. Flex and co-working operators earn the spread between what they pay the
+                            building owner and what they charge per seat — typically ₹8,000-₹25,000 per seat per month
+                            depending on location.</p>
+                        <p>Cross-selling compounds developer revenue — parking (₹5-25 lakh per space in premium
+                            projects), club memberships, annual maintenance charges, home loan facilitation fees, and
+                            in-house property management services turn a one-time homebuyer into a recurring revenue
+                            relationship across years.</p>
+                        <p>Brokerage platforms earn 1-2% of deal value per transaction. NoBroker disrupted this by
+                            charging fixed low fees and then earning from subscriptions, packers &amp; movers, home
+                            loans, and property management — multiple revenue lines from one customer relationship.</p>
+                    </div>
+                </article>
+
+                <!-- SECTION 7 -->
+                <article
+                    class="bg-surface p-8 rounded-xl shadow-sm border-l-8 border-[#FFD600] border-t border-b border-r border-outline-variant/30 relative sketch-border hover:translate-y-[-2px] transition-transform duration-200">
+                    <h2 class="font-headline font-black text-2xl mb-4 text-on-surface">Cost Structure</h2>
+                    <div class="space-y-4 text-on-surface/80 leading-relaxed font-body">
+                        <p>Land cost is the largest and most variable cost — in prime city locations like South Mumbai,
+                            Gurugram, and Bengaluru CBD, land can account for 30-50% of total project cost. JDAs reduce
+                            this to near-zero upfront cash outflow, replacing it with a revenue share to the landowner
+                            at project completion — dramatically improving capital efficiency for developers with strong
+                            project execution credentials.</p>
+                        <p>Construction cost is the second major expense — typically ₹2,500-₹4,500 per sq ft for
+                            mid-segment residential and ₹4,000-₹7,000 for Grade A commercial (which requires HVAC
+                            systems, high-speed lifts, smart building technology, and green building certifications).
+                            Cement, steel, sand, and labour are the primary inputs — all subject to commodity cycle
+                            volatility.</p>
+                        <p>Financing cost is the most dangerous cost — real estate projects take 3-7 years to complete,
+                            during which developers borrow heavily from banks and NBFCs. When interest rates rise,
+                            developers are hit from both sides: higher cost on their own project debt AND lower sales
+                            because home loan EMIs become unaffordable for buyers. This double impact is what makes
+                            high-debt developers fragile in a tightening cycle.</p>
+                        <p>Approval and compliance costs — RERA registration, environmental clearances, aviation
+                            authority height approvals, and local municipal sanctions — take time and money. RERA escrow
+                            requirements also limit cash flexibility between projects.</p>
+                        <p>Marketing and sales cost ranges from 3-6% of project revenue for large developers — TV and
+                            digital campaigns, site offices, model flats, and broker channel commissions of 1-3% of
+                            sales value paid to bring buyers.</p>
+                        <p>For REITs, ongoing costs are property taxes, facility management, insurance, maintenance
+                            capex, and administration — largely predictable because tenants in triple-net leases pay
+                            some operating costs directly.</p>
+                    </div>
+                </article>
+
+                <!-- SECTION 8 -->
+                <article
+                    class="bg-surface p-8 rounded-xl shadow-sm border-l-8 border-[#FFD600] border-t border-b border-r border-outline-variant/30 relative sketch-border hover:translate-y-[-2px] transition-transform duration-200">
+                    <h2 class="font-headline font-black text-2xl mb-4 text-on-surface">Key KPIs</h2>
+                    <div class="space-y-4 text-on-surface/80 leading-relaxed font-body">
+                        <p><strong>Pre-Sales or Booking Value:</strong> Total value of units booked by customers in a
+                            quarter — the single most important forward-looking metric for developers. Rising pre-sales
+                            means revenue visibility for the next 2-3 years. Falling pre-sales signals demand slowdown.
+                            Watch year-on-year growth quarterly for DLF, Godrej Properties, Macrotech, and Prestige.</p>
+                        <p><strong>Inventory Overhang (Months):</strong> Unsold units divided by monthly sales pace.
+                            Below 12 months is healthy. 12-24 months warrants caution. Above 24 months is a red flag —
+                            the developer is carrying debt and maintenance costs on unsold stock with no cash inflow.
+                        </p>
+                        <p><strong>Occupancy Rate (REITs and commercial assets):</strong> Percentage of space occupied
+                            by paying tenants. India's listed REITs held ~91% occupancy in September 2025 — very
+                            healthy. Below 80% occupancy means significant rental income is being lost. Falling
+                            occupancy is a warning sign for REIT distributions.</p>
+                        <p><strong>Average Selling Price (ASP per sq ft):</strong> What the developer is earning per
+                            square foot across sold units. Rising ASP signals strong market demand or a deliberate shift
+                            toward higher-value luxury projects. Stagnating ASP despite volume growth signals pricing
+                            pressure or market saturation.</p>
+                        <p><strong>Net Debt to EBITDA:</strong> Measures how many years of operating profit it would
+                            take to repay all debt. Below 2x is generally manageable. Above 4-5x is high risk —
+                            especially if interest rates rise or pre-sales slow simultaneously.</p>
+                        <p><strong>REIT Distribution Yield:</strong> Annual distributions per unit divided by the unit
+                            price. India's listed REITs yielded 6-7% in FY25. Falling yield (without a rising unit
+                            price) signals lower distributions — often from falling occupancy or tenant disputes.</p>
+                        <p><strong>Project Completion Timeline:</strong> Is the developer delivering projects on time as
+                            promised to RERA? Consistent on-time delivery builds brand trust and commands pricing
+                            premium. Frequent delays signal operational weakness or financial stress — check RERA
+                            portals for completion certificates versus promised dates.</p>
+                    </div>
+                </article>
+
+                <!-- SECTION 9 -->
+                <article
+                    class="bg-surface p-8 rounded-xl shadow-sm border-l-8 border-[#FFD600] border-t border-b border-r border-outline-variant/30 relative sketch-border hover:translate-y-[-2px] transition-transform duration-200">
+                    <h2 class="font-headline font-black text-2xl mb-4 text-on-surface">Growth Drivers</h2>
+                    <div class="space-y-4 text-on-surface/80 leading-relaxed font-body">
+                        <p>Urbanisation is the most powerful structural driver — hundreds of millions of Indians are
+                            moving from villages to cities, and every new urban household needs a home. Every new urban
+                            business needs an office. This is a decades-long, multi-generational demand story that is
+                            still only partially played out.</p>
+                        <p>Rising incomes and homeownership aspiration are converting demand into transactions — India's
+                            middle class is growing, the cultural aspiration to own property is deep, and luxury demand
+                            has surged with HNIs buying ₹10 crore+ apartments in record numbers across Mumbai, Gurugram,
+                            and Bengaluru.</p>
+                        <p>GCC-driven office boom is the defining commercial real estate story — India had 1,700+ Global
+                            Capability Centers as of 2025 and GCCs accounted for ~40% of all office absorption. Office
+                            leasing surpassed 50 million sq ft in just the first nine months of 2025, with projections
+                            of 70-75 million sq ft for full year 2026.</p>
+                        <p>Infrastructure development multiplies real estate value — every new metro line, expressway,
+                            and airport makes surrounding land more livable and valuable. Metro rail expansion in Delhi,
+                            Mumbai, Bengaluru, Pune, and Hyderabad is opening new residential catchment areas. 50 new
+                            airports planned over the next 5 years will boost regional real estate markets.</p>
+                        <p>Warehousing and logistics demand is structural — the e-commerce explosion (Flipkart, Amazon,
+                            Zepto, Blinkit) requires massive warehousing networks across India. Industrial and logistics
+                            leasing reached 27.1 million sq ft in H1 2025 alone — up 63% year-on-year.</p>
+                        <p>REIT growth is democratising commercial real estate — before REITs, only institutions could
+                            own prime office buildings. Now retail investors can buy REIT units for a few thousand
+                            rupees and earn stable rental income. India's REIT market cap grew 6x from FY2020 to late
+                            2025. SM-REITs for fractional ownership of smaller assets are the next frontier.</p>
+                        <p>RERA and policy support have restored buyer trust — escrow requirements, project
+                            registration, and penalty for delays have reduced fraud and brought formal capital back into
+                            developer financing.</p>
+                    </div>
+                </article>
+
+                <!-- SECTION 10 -->
+                <article
+                    class="bg-surface p-8 rounded-xl shadow-sm border-l-8 border-[#FFD600] border-t border-b border-r border-outline-variant/30 relative sketch-border hover:translate-y-[-2px] transition-transform duration-200">
+                    <h2 class="font-headline font-black text-2xl mb-4 text-on-surface">Risks</h2>
+                    <div class="space-y-4 text-on-surface/80 leading-relaxed font-body">
+                        <p><strong>Interest Rate Risk — The Most Important Macro Risk:</strong> Rising interest rates
+                            suppress housing demand and increase developer financing costs simultaneously. When RBI
+                            raises rates, home loan EMIs rise and middle-class buyers postpone purchases — while
+                            developers pay higher interest on their own project debt. This double hit is what makes real
+                            estate uniquely vulnerable to rate cycles. The RBI cut the repo rate by over 100 basis
+                            points in 2025, supporting demand — the reverse would compress it sharply.</p>
+                        <p><strong>Project Delays:</strong> Delays happen due to approval failures, contractor problems,
+                            land disputes, or developer financial stress. A 3-year project becomes a 7-10 year project.
+                            The developer cannot repay the construction loan, the bank classifies it as NPA, and
+                            homebuyers wait years for possession. India still has lakhs of stalled homes. RERA has
+                            reduced this significantly but not eliminated it.</p>
+                        <p><strong>High Debt Levels:</strong> Real estate is capital-intensive. Developers who borrow
+                            heavily to fund land and construction become fragile when sales slow. The IL&amp;FS crisis
+                            (2018) and NBFC stress showed how interconnected developer debt and the financial sector are
+                            — dozens of projects froze when NBFCs stopped lending.</p>
+                        <p><strong>Unsold Inventory:</strong> If a developer launches too many units and demand is weak,
+                            unsold inventory builds. The developer still pays interest on project debt and maintenance
+                            on every unsold unit — with no cash inflow. High inventory overhang above 24 months is the
+                            clearest financial red flag for any developer.</p>
+                        <p><strong>Regulatory Approval Risk:</strong> Changes in Floor Space Index (FSI), zoning laws,
+                            aviation authority height restrictions, or environmental rules can alter project economics
+                            overnight. Long approval timelines in municipal and state authorities remain one of the
+                            biggest sources of project cost overruns.</p>
+                        <p><strong>REIT Occupancy Risk:</strong> If major tenants vacate office buildings due to
+                            automation, downsizing, or recession, occupancy drops and distributions to unitholders fall.
+                            Work-from-home concerns have eased for now — India's office market has recovered strongly —
+                            but a future shift in corporate real estate strategy could revive this risk.</p>
+                        <p><strong>Overpricing and Affordability Gap:</strong> In prime locations of Mumbai, Delhi-NCR,
+                            and Bengaluru, apartment prices have risen 50-100% in 5 years in some markets — faster than
+                            salary growth. If buyers are priced out, a demand ceiling forms and price discovery becomes
+                            difficult. Whether this is structural value or speculative froth is the most debated
+                            question in Indian premium housing today.</p>
+                    </div>
+                </article>
+            </div>
+        </div>
+
+    </main>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const btn = document.getElementById('toggleAnalysisBtn');
+            const sections = document.getElementById('fullAnalysisSections');
+
+            btn.addEventListener('click', () => {
+                if (sections.style.display === 'none') {
+                    sections.style.display = 'block';
+                    btn.innerText = 'Hide Analysis ↑';
+                } else {
+                    sections.style.display = 'none';
+                    btn.innerText = 'View Full Analysis ↓';
+                }
+            });
         });
-    });
-</script>
+    </script>
     <!-- Sector Navigation -->
-    <div style="display: flex; justify-content: space-between; align-items: center; width: 100%; max-width: 900px; margin: 60px auto 40px auto; padding-top: 20px; border-top: 2px solid #E5E7EB; box-sizing: border-box;">
-        <a href="sector-utilities.html" class="inline-block text-[#383833] font-bold font-headline hover:text-primary transition-colors text-lg font-black">
+    <div
+        style="display: flex; justify-content: space-between; align-items: center; width: 100%; max-width: 900px; margin: 60px auto 40px auto; padding-top: 20px; border-top: 2px solid #E5E7EB; box-sizing: border-box;">
+        <a href="sector-utilities.html"
+            class="inline-block text-[#383833] font-bold font-headline hover:text-primary transition-colors text-lg font-black">
             &larr; Previous Sector
         </a>
         <span></span>
     </div>
 
-<!-- Footer -->
-<footer class="bg-stone-900 text-white border-t-8 border-stone-800 flex flex-col md:flex-row justify-between items-center w-full px-8 py-16 gap-8">
-<div class="max-w-7xl mx-auto w-full flex flex-col md:flex-row justify-between items-baseline gap-8">
-<div class="flex flex-col items-start">
-<a href="index.html.html" class="text-3xl font-black text-white font-marker tracking-tighter">FinanceHive</a>
-<p class="text-stone-400 font-medium text-xs">Hand-drawn for Indian minds. ✏️</p>
-</div>
-<div class="flex flex-wrap justify-center gap-6 md:gap-8 font-marker font-black text-base">
-<a class="hover:text-primary transition-colors" href="privacy.html">Privacy</a>
-<span class="text-stone-700 hidden md:inline">|</span>
-<a class="hover:text-primary transition-colors" href="terms.html">Terms</a>
-<span class="text-stone-700 hidden md:inline">|</span>
-<a class="hover:text-primary transition-colors" href="disclaimer.html.html">Disclaimer</a>
-<span class="text-stone-700 hidden md:inline">|</span>
-<a class="hover:text-primary transition-colors" href="mailto:startfinanacejourney@gmail.com?subject=Inquiry%20from%20FinanceHive">Contact</a>
-</div>
-<div class="text-stone-500 font-bold text-sm whitespace-nowrap">© 2026 FinanceHive. All rights reserved.</div>
-</div>
-</footer>
-<script>
-(function(){if(!window.chatbase||window.chatbase("getState")!=="initialized"){window.chatbase=(...arguments)=>{if(!window.chatbase.q){window.chatbase.q=[]}window.chatbase.q.push(arguments)};window.chatbase=new Proxy(window.chatbase,{get(target,prop){if(prop==="q"){return target.q}return(...args)=>target(prop,...args)}})}const onLoad=function(){const script=document.createElement("script");script.src="https://www.chatbase.co/embed.min.js";script.id="okRPgozu3doX4vY4MK0UV";script.domain="www.chatbase.co";document.body.appendChild(script)};if(document.readyState==="complete"){onLoad()}else{window.addEventListener("load",onLoad)}})();
-</script>
+    <!-- Footer -->
+    <footer
+        class="bg-stone-900 text-white border-t-8 border-stone-800 flex flex-col md:flex-row justify-between items-center w-full px-8 py-16 gap-8">
+        <div class="max-w-7xl mx-auto w-full flex flex-col md:flex-row justify-between items-baseline gap-8">
+            <div class="flex flex-col items-start">
+                <a href="index.html" class="text-3xl font-black text-white font-marker tracking-tighter">FinanceHive</a>
+                <p class="text-stone-400 font-medium text-xs">Hand-drawn for Indian minds. ✏️</p>
+            </div>
+            <div class="flex flex-wrap justify-center gap-6 md:gap-8 font-marker font-black text-base">
+                <a class="hover:text-primary transition-colors" href="privacy.html">Privacy</a>
+                <span class="text-stone-700 hidden md:inline">|</span>
+                <a class="hover:text-primary transition-colors" href="terms.html">Terms</a>
+                <span class="text-stone-700 hidden md:inline">|</span>
+                <a class="hover:text-primary transition-colors" href="disclaimer.html">Disclaimer</a>
+                <span class="text-stone-700 hidden md:inline">|</span>
+                <a class="hover:text-primary transition-colors"
+                    href="mailto:startfinanacejourney@gmail.com?subject=Inquiry%20from%20FinanceHive">Contact</a>
+            </div>
+            <div class="text-stone-500 font-bold text-sm whitespace-nowrap">© 2026 FinanceHive. All rights reserved.
+            </div>
+        </div>
+    </footer>
+    <script>
+        (function () { if (!window.chatbase || window.chatbase("getState") !== "initialized") { window.chatbase = (...arguments) => { if (!window.chatbase.q) { window.chatbase.q = [] } window.chatbase.q.push(arguments) }; window.chatbase = new Proxy(window.chatbase, { get(target, prop) { if (prop === "q") { return target.q } return (...args) => target(prop, ...args) } }) } const onLoad = function () { const script = document.createElement("script"); script.src = "https://www.chatbase.co/embed.min.js"; script.id = "okRPgozu3doX4vY4MK0UV"; script.domain = "www.chatbase.co"; document.body.appendChild(script) }; if (document.readyState === "complete") { onLoad() } else { window.addEventListener("load", onLoad) } })();
+    </script>
 
-    
+
 
     <script>
         document.addEventListener('DOMContentLoaded', () => {
@@ -334,11 +528,11 @@
                     searchIcon.addEventListener('click', () => searchInput.focus());
                 }
 
-                searchInput.addEventListener('input', function() {
+                searchInput.addEventListener('input', function () {
                     const query = this.value.toLowerCase().trim();
                     // Target concept cards (article) and sector cards (sketch-border items in grids)
                     const cards = document.querySelectorAll('article, .grid > .sketch-border, .grid > div[onclick*="sector-"]');
-                    
+
                     cards.forEach(card => {
                         const text = card.textContent.toLowerCase();
                         if (text.includes(query)) {
@@ -349,16 +543,16 @@
                     });
                 });
             }
-            
+
             // Active Navigation Highlighting
             const navLinks = document.querySelectorAll('nav a');
             let currentPath = window.location.pathname.split('/').pop().split('?')[0].split('#')[0];
             if (!currentPath || currentPath === '') {
-                currentPath = 'index.html.html';
+                currentPath = 'index.html';
             }
             navLinks.forEach(link => {
                 const href = link.getAttribute('href');
-                if (href && (href === currentPath || (currentPath === 'index.html.html' && href === 'index.html.html'))) {
+                if (href && (href === currentPath || (currentPath === 'index.html' && href === 'index.html'))) {
                     link.classList.add('active');
                 }
             });
@@ -366,4 +560,5 @@
     </script>
 
 </body>
+
 </html>

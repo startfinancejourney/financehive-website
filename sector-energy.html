@@ -1,103 +1,111 @@
 <!DOCTYPE html>
 
-<html class="light" lang="en"><head>
-<meta charset="utf-8"/>
-<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
-<title>Energy Sector | FinanceHive</title>
-<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
-<link href="https://fonts.googleapis.com/css2?family=Epilogue:wght@400;700;900&amp;family=Plus+Jakarta+Sans:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/>
-<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
-<script id="tailwind-config">
+<html class="light" lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>Energy Sector | FinanceHive</title>
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Epilogue:wght@400;700;900&amp;family=Plus+Jakarta+Sans:wght@400;500;600;700&amp;display=swap"
+        rel="stylesheet" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
+        rel="stylesheet" />
+    <script id="tailwind-config">
         tailwind.config = {
-          darkMode: "class",
-          theme: {
-            extend: {
-              "colors": {
-                      "on-primary": "#ffffff",
-                      "on-tertiary-fixed-variant": "#4a00a4",
-                      "error": "#be2d06",
-                      "surface-container": "#f5f4eb",
-                      "on-secondary-container": "#940014",
-                      "tertiary-container": "#c0a0ff",
-                      "surface-tint": "#776300",
-                      "on-error-container": "#520c00",
-                      "on-tertiary-fixed": "#200051",
-                      "error-container": "#f95630",
-                      "inverse-primary": "#fdd400",
-                      "primary-fixed": "#fdd400",
-                      "on-surface": "#383833",
-                      "on-background": "#383833",
-                      "surface-container-low": "#fbf9f1",
-                      "inverse-surface": "#0e0f0a",
-                      "on-secondary": "#ffffff",
-                      "surface-dim": "#e4e3d8",
-                      "on-secondary-fixed": "#70000d",
-                      "tertiary-fixed-dim": "#b48fff",
-                      "primary-dim": "#695700",
-                      "secondary-dim": "#b10e1e",
-                      "on-error": "#ffffff",
-                      "on-secondary-fixed-variant": "#a60018",
-                      "secondary": "#c31f29",
-                      "surface-container-high": "#efeee5",
-                      "secondary-fixed-dim": "#ffafaa",
-                      "on-primary-container": "#594a00",
-                      "outline": "#81817a",
-                      "tertiary-fixed": "#c0a0ff",
-                      "primary-container": "#fdd400",
-                      "surface-container-lowest": "#ffffff",
-                      "on-tertiary-container": "#3f008e",
-                      "secondary-container": "#ffc3be",
-                      "surface": "#fefcf4",
-                      "surface-variant": "#e9e9de",
-                      "inverse-on-surface": "#9e9d96",
-                      "error-dim": "#b92902",
-                      "on-primary-fixed": "#433700",
-                      "secondary-fixed": "#ffc3be",
-                      "background": "#fefcf4",
-                      "on-tertiary": "#ffffff",
-                      "surface-container-highest": "#e9e9de",
-                      "primary-fixed-dim": "#edc600",
-                      "outline-variant": "#bab9b2",
-                      "primary": "#776300",
-                      "on-surface-variant": "#65655f",
-                      "tertiary": "#7a37eb",
-                      "tertiary-dim": "#6d24de",
-                      "on-primary-fixed-variant": "#645300",
-                      "surface-bright": "#fefcf4"
-              },
-              "borderRadius": {
-                      "DEFAULT": "0.125rem",
-                      "lg": "0.25rem",
-                      "xl": "0.5rem",
-                      "full": "0.75rem"
-              },
-              "fontFamily": {
-                      "headline": ["Epilogue"],
-                      "body": ["Plus Jakarta Sans"],
-                      "label": ["Plus Jakarta Sans"]
-              }
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "on-primary": "#ffffff",
+                        "on-tertiary-fixed-variant": "#4a00a4",
+                        "error": "#be2d06",
+                        "surface-container": "#f5f4eb",
+                        "on-secondary-container": "#940014",
+                        "tertiary-container": "#c0a0ff",
+                        "surface-tint": "#776300",
+                        "on-error-container": "#520c00",
+                        "on-tertiary-fixed": "#200051",
+                        "error-container": "#f95630",
+                        "inverse-primary": "#fdd400",
+                        "primary-fixed": "#fdd400",
+                        "on-surface": "#383833",
+                        "on-background": "#383833",
+                        "surface-container-low": "#fbf9f1",
+                        "inverse-surface": "#0e0f0a",
+                        "on-secondary": "#ffffff",
+                        "surface-dim": "#e4e3d8",
+                        "on-secondary-fixed": "#70000d",
+                        "tertiary-fixed-dim": "#b48fff",
+                        "primary-dim": "#695700",
+                        "secondary-dim": "#b10e1e",
+                        "on-error": "#ffffff",
+                        "on-secondary-fixed-variant": "#a60018",
+                        "secondary": "#c31f29",
+                        "surface-container-high": "#efeee5",
+                        "secondary-fixed-dim": "#ffafaa",
+                        "on-primary-container": "#594a00",
+                        "outline": "#81817a",
+                        "tertiary-fixed": "#c0a0ff",
+                        "primary-container": "#fdd400",
+                        "surface-container-lowest": "#ffffff",
+                        "on-tertiary-container": "#3f008e",
+                        "secondary-container": "#ffc3be",
+                        "surface": "#fefcf4",
+                        "surface-variant": "#e9e9de",
+                        "inverse-on-surface": "#9e9d96",
+                        "error-dim": "#b92902",
+                        "on-primary-fixed": "#433700",
+                        "secondary-fixed": "#ffc3be",
+                        "background": "#fefcf4",
+                        "on-tertiary": "#ffffff",
+                        "surface-container-highest": "#e9e9de",
+                        "primary-fixed-dim": "#edc600",
+                        "outline-variant": "#bab9b2",
+                        "primary": "#776300",
+                        "on-surface-variant": "#65655f",
+                        "tertiary": "#7a37eb",
+                        "tertiary-dim": "#6d24de",
+                        "on-primary-fixed-variant": "#645300",
+                        "surface-bright": "#fefcf4"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.125rem",
+                        "lg": "0.25rem",
+                        "xl": "0.5rem",
+                        "full": "0.75rem"
+                    },
+                    "fontFamily": {
+                        "headline": ["Epilogue"],
+                        "body": ["Plus Jakarta Sans"],
+                        "label": ["Plus Jakarta Sans"]
+                    }
+                },
             },
-          },
         }
-      </script>
-<style>
+    </script>
+    <style>
         .sketch-border {
             border: 2px solid #383833;
             box-shadow: 4px 4px 0px 0px #383833;
         }
+
         .scribble-underline {
             background-image: linear-gradient(120deg, #FFD600 0%, #FFD600 100%);
             background-repeat: no-repeat;
             background-size: 100% 0.3em;
             background-position: 0 88%;
         }
+
         .marker-highlight {
             background: linear-gradient(100deg, rgba(255, 214, 0, 0.3) 0%, rgba(255, 214, 0, 0.7) 100%);
             padding: 0 4px;
         }
     </style>
 
-    
+
 
     <style>
         /* Active Navigation Link Styling */
@@ -111,210 +119,318 @@
 </head>
 
 <body class="bg-[#FFFDF5] text-on-surface font-body selection:bg-primary-container min-h-screen flex flex-col">
-<!-- TopNavBar -->
-<nav class="bg-surface border-b-4 border-stone-800 flex justify-between items-center w-full px-6 py-4 max-w-7xl mx-auto sticky top-0 z-50 gap-8">
-<a href="index.html.html" class="text-3xl font-black text-[#383833] tracking-tighter font-marker">FinanceHive</a>
-<div class="hidden md:flex gap-6 items-center ml-auto">
-<a class="text-on-surface hover:text-secondary font-marker font-black text-base transition-all duration-200" href="learn-finance.html.html">Concepts</a>
-<a class="text-on-surface hover:text-secondary font-marker font-black text-base transition-all duration-200" href="sectors.html.html">Sectors</a>
-<a class="text-on-surface hover:text-secondary font-marker font-black text-base transition-all duration-200" href="request-topic.html.html">Request a Topic</a>
-<a class="text-on-surface hover:text-secondary font-marker font-black text-base transition-all duration-200" href="about.html.html">About</a>
-</div>
-<div class="flex items-center gap-4 lg:gap-6">
+    <!-- TopNavBar -->
+    <nav
+        class="bg-surface border-b-4 border-stone-800 flex justify-between items-center w-full px-6 py-4 max-w-7xl mx-auto sticky top-0 z-50 gap-8">
+        <a href="index.html" class="text-3xl font-black text-[#383833] tracking-tighter font-marker">FinanceHive</a>
+        <div class="hidden md:flex gap-6 items-center ml-auto">
+            <a class="text-on-surface hover:text-secondary font-marker font-black text-base transition-all duration-200"
+                href="learn-finance.html">Concepts</a>
+            <a class="text-on-surface hover:text-secondary font-marker font-black text-base transition-all duration-200"
+                href="sectors.html">Sectors</a>
+            <a class="text-on-surface hover:text-secondary font-marker font-black text-base transition-all duration-200"
+                href="request-topic.html">Request a Topic</a>
+            <a class="text-on-surface hover:text-secondary font-marker font-black text-base transition-all duration-200"
+                href="about.html">About</a>
+        </div>
+        <div class="flex items-center gap-4 lg:gap-6">
 
 
 
-<a href="learn-finance.html.html" class="bg-primary-container text-on-primary-container px-6 py-2 sketch-border font-black hover:translate-x-1 hover:translate-y-1 transition-all">
-    Start Learning
-  </a>
-</div>
-</nav>
+            <a href="learn-finance.html"
+                class="bg-primary-container text-on-primary-container px-6 py-2 sketch-border font-black hover:translate-x-1 hover:translate-y-1 transition-all">
+                Start Learning
+            </a>
+        </div>
+    </nav>
 
-<main class="flex-grow max-w-screen-xl mx-auto px-6 py-12 w-full">
-    <div class="mb-12">
-        <a href="sectors.html.html" class="inline-block text-[#383833] font-bold font-headline hover:text-primary transition-colors text-lg font-black">
-            &larr; Back to All Sectors
-        </a>
-    </div>
+    <main class="flex-grow max-w-screen-xl mx-auto px-6 py-12 w-full">
+        <div class="mb-12">
+            <a href="sectors.html"
+                class="inline-block text-[#383833] font-bold font-headline hover:text-primary transition-colors text-lg font-black">
+                &larr; Back to All Sectors
+            </a>
+        </div>
 
-    <!-- Header Section -->
-    <header class="mb-16">
-        <h1 class="text-5xl md:text-7xl font-black font-headline text-on-surface mb-6 tracking-tighter leading-none"><span class="scribble-underline">Energy Sector</span></h1>
-        <p class="text-xl md:text-2xl font-medium text-on-surface/80 max-w-3xl border-l-4 border-primary pl-4 bg-primary/5 py-2">How oil, power, and renewables keep India running</p>
-    </header>
+        <!-- Header Section -->
+        <header class="mb-16">
+            <h1
+                class="text-5xl md:text-7xl font-black font-headline text-on-surface mb-6 tracking-tighter leading-none">
+                <span class="scribble-underline">Energy Sector</span></h1>
+            <p
+                class="text-xl md:text-2xl font-medium text-on-surface/80 max-w-3xl border-l-4 border-primary pl-4 bg-primary/5 py-2">
+                How oil, power, and renewables keep India running</p>
+        </header>
 
-    <div class="grid grid-cols-1 md:grid-cols-2 gap-8 mb-16">
-        <!-- SECTION 1 -->
-        <article class="bg-surface p-8 rounded-xl shadow-sm border-l-8 border-[#FFD600] border-t border-b border-r border-outline-variant/30 relative sketch-border hover:translate-y-[-2px] transition-transform duration-200">
-            <h2 class="font-headline font-black text-2xl mb-4 text-on-surface">How They Make Money</h2>
-            <p class="text-on-surface/80 leading-relaxed font-body">
-                The energy sector earns money in three completely different ways depending on which part you look at. Oil and gas companies like ONGC earn by selling crude oil at global market prices — when oil is high, they earn big; when it falls, revenue drops sharply. Refiners like Reliance and Indian Oil buy crude cheaply and sell refined products at a margin called the Gross Refining Margin. Power generators like NTPC earn predictable income through 20-25 year contracts called Power Purchase Agreements — essentially a guaranteed revenue stream for decades. Renewable energy companies earn the same way once built — long-term contracts with near-zero fuel cost since sunlight and wind are free.
-            </p>
-        </article>
-
-        <!-- SECTION 2 -->
-        <article class="bg-surface p-8 rounded-xl shadow-sm border-l-8 border-[#FFD600] border-t border-b border-r border-outline-variant/30 relative sketch-border hover:translate-y-[-2px] transition-transform duration-200">
-            <h2 class="font-headline font-black text-2xl mb-4 text-on-surface">Key Players in India</h2>
-            <div class="space-y-3 text-on-surface/80 leading-relaxed font-body">
-                <p><strong>Oil and Gas:</strong> ONGC, Reliance Industries, Oil India, GAIL</p>
-                <p><strong>Refiners:</strong> Indian Oil, BPCL, HPCL, Reliance</p>
-                <p><strong>Power Generation:</strong> NTPC, Adani Power, Tata Power, JSW Energy</p>
-                <p><strong>Transmission:</strong> Power Grid Corporation of India</p>
-                <p><strong>Renewable Energy:</strong> Adani Green Energy, Tata Power Renewables, ReNew Power, Greenko</p>
-                <p><strong>City Gas Distribution:</strong> Indraprastha Gas (IGL), Mahanagar Gas (MGL), Gujarat Gas</p>
-            </div>
-        </article>
-
-        <!-- SECTION 3 -->
-        <article class="bg-surface p-8 rounded-xl shadow-sm border-l-8 border-[#FFD600] border-t border-b border-r border-outline-variant/30 relative sketch-border hover:translate-y-[-2px] transition-transform duration-200">
-            <h2 class="font-headline font-black text-2xl mb-4 text-on-surface">3 Terms Every Learner Must Know</h2>
-            <div class="space-y-4 text-on-surface/80 leading-relaxed font-body">
-                <p><strong>PLF (Plant Load Factor):</strong> What percentage of a power plant's maximum capacity was actually used. A 1,000 MW plant running at 70% PLF generated 700 MW on average. Higher PLF means more units sold and higher revenue.</p>
-                <p><strong>GRM (Gross Refining Margin):</strong> The per-barrel profit of a refinery — revenue from selling refined products minus the cost of crude oil. A GRM of $8-10 per barrel is considered healthy for a complex Indian refinery.</p>
-                <p><strong>PPA (Power Purchase Agreement):</strong> A 20-25 year contract between a power generator and a distribution company to supply electricity at a fixed price. This gives power companies predictable income for decades — like a very long salary guarantee.</p>
-            </div>
-        </article>
-
-        <!-- SECTION 4 -->
-        <article class="bg-surface p-8 rounded-xl shadow-sm border-l-8 border-[#FFD600] border-t border-b border-r border-outline-variant/30 relative sketch-border hover:translate-y-[-2px] transition-transform duration-200">
-            <h2 class="font-headline font-black text-2xl mb-4 text-on-surface">What to Watch as a Learner</h2>
-            <ul class="list-disc pl-5 space-y-3 text-on-surface/80 leading-relaxed font-body font-medium">
-                <li>Global crude oil prices — they directly affect ONGC's revenue and refiner margins overnight</li>
-                <li>PLF numbers in quarterly results — falling PLF signals weak demand or oversupply</li>
-                <li>Renewable energy capacity additions — India's 500 GW target by 2030 is creating massive investment opportunities</li>
-                <li>DISCOM payment dues — when state electricity companies delay payments, power generators suffer cash flow stress</li>
-            </ul>
-        </article>
-    </div>
-
-    <!-- View Full Analysis Button -->
-    <div class="flex justify-center mb-16">
-        <button id="toggleAnalysisBtn" class="bg-primary-container text-on-primary-container px-8 py-3 text-lg sketch-border font-black hover:translate-x-1 hover:translate-y-1 transition-all">View Full Analysis ↓</button>
-    </div>
-
-    <!-- Hidden Sections (6 sections) -->
-    <div id="fullAnalysisSections" style="display: none;">
         <div class="grid grid-cols-1 md:grid-cols-2 gap-8 mb-16">
-            <!-- SECTION 5 -->
-            <article class="bg-surface p-8 rounded-xl shadow-sm border-l-8 border-[#FFD600] border-t border-b border-r border-outline-variant/30 relative sketch-border hover:translate-y-[-2px] transition-transform duration-200">
-                <h2 class="font-headline font-black text-2xl mb-4 text-on-surface">Value Chain</h2>
+            <!-- SECTION 1 -->
+            <article
+                class="bg-surface p-8 rounded-xl shadow-sm border-l-8 border-[#FFD600] border-t border-b border-r border-outline-variant/30 relative sketch-border hover:translate-y-[-2px] transition-transform duration-200">
+                <h2 class="font-headline font-black text-2xl mb-4 text-on-surface">How They Make Money</h2>
                 <p class="text-on-surface/80 leading-relaxed font-body">
-                    In oil and gas, the journey starts with exploration — companies like ONGC drill deep into the earth to find crude oil reserves. Extracted crude is transported to massive refineries like Reliance's Jamnagar — the world's largest single-location refinery — where it is converted into petrol, diesel, LPG, and aviation fuel. Refined products move through pipelines, tankers, and trucks to petrol pumps and industrial customers via companies like Indian Oil and BPCL.
-                </p>
-                <p class="text-on-surface/80 leading-relaxed font-body mt-4">
-                    In power, electricity flows from generation plants (NTPC burns coal to spin turbines) through high-voltage transmission lines managed by Power Grid Corporation across hundreds of kilometres, then down to local distribution networks managed by state DISCOMs, and finally into your home. DISCOMs are the weakest link — they often buy power at higher costs but sell to farmers and households at regulated below-cost prices, creating chronic financial stress.
-                </p>
-            </article>
-
-            <!-- SECTION 6 -->
-            <article class="bg-surface p-8 rounded-xl shadow-sm border-l-8 border-[#FFD600] border-t border-b border-r border-outline-variant/30 relative sketch-border hover:translate-y-[-2px] transition-transform duration-200">
-                <h2 class="font-headline font-black text-2xl mb-4 text-on-surface">Revenue Model</h2>
-                <div class="space-y-4 text-on-surface/80 leading-relaxed font-body">
-                    <p><strong>Upstream oil and gas (ONGC):</strong> Revenue = volume of oil and gas produced multiplied by global market price. Highly volatile — tied entirely to global commodity cycles.</p>
-                    <p><strong>Refiners (Reliance, Indian Oil):</strong> Earn on the Gross Refining Margin — the gap between selling price of refined products and cost of crude plus refining expenses.</p>
-                    <p><strong>Power generators (NTPC, Adani Power):</strong> Earn through long-term Power Purchase Agreements at pre-agreed rates — extremely predictable income, almost like a fixed annuity for 20-25 years.</p>
-                    <p><strong>Transmission (Power Grid):</strong> Earn a regulated return of around 15.5% on transmission assets — income depends on kilometres of lines operational, not on power volumes.</p>
-                    <p><strong>Renewable energy (Adani Green, Tata Power):</strong> Long-term PPAs with near-zero fuel cost once operational. Very high debt during construction, but strong free cash flow once running.</p>
-                    <p><strong>City Gas Distribution (IGL, MGL):</strong> Buy gas from producers and sell to households (PNG), CNG vehicles, and industries. Earn on the spread between procurement cost and selling price within their licensed area.</p>
-                </div>
-            </article>
-
-            <!-- SECTION 7 -->
-            <article class="bg-surface p-8 rounded-xl shadow-sm border-l-8 border-[#FFD600] border-t border-b border-r border-outline-variant/30 relative sketch-border hover:translate-y-[-2px] transition-transform duration-200">
-                <h2 class="font-headline font-black text-2xl mb-4 text-on-surface">Cost Structure</h2>
-                <p class="text-on-surface/80 leading-relaxed font-body">
-                    Fuel is the biggest variable cost — coal for thermal plants, crude oil for refiners, natural gas for gas-based plants. When global commodity prices spike, these costs surge. Capital expenditure is enormous — building a 1,000 MW power plant or a large oil refinery costs thousands of crores before earning a single rupee. Interest on debt is a massive fixed cost — a ₹10,000 crore project financed with ₹7,000 crore of debt must pay interest every quarter regardless of revenue. For renewable energy companies, there is no fuel cost once built — but land acquisition, grid connection charges, and high construction financing costs are significant. Government levies royalties and cess on oil production, and heavy taxes make retail fuel prices in India roughly double the actual production cost.
+                    The energy sector earns money in three completely different ways depending on which part you look
+                    at. Oil and gas companies like ONGC earn by selling crude oil at global market prices — when oil is
+                    high, they earn big; when it falls, revenue drops sharply. Refiners like Reliance and Indian Oil buy
+                    crude cheaply and sell refined products at a margin called the Gross Refining Margin. Power
+                    generators like NTPC earn predictable income through 20-25 year contracts called Power Purchase
+                    Agreements — essentially a guaranteed revenue stream for decades. Renewable energy companies earn
+                    the same way once built — long-term contracts with near-zero fuel cost since sunlight and wind are
+                    free.
                 </p>
             </article>
 
-            <!-- SECTION 8 -->
-            <article class="bg-surface p-8 rounded-xl shadow-sm border-l-8 border-[#FFD600] border-t border-b border-r border-outline-variant/30 relative sketch-border hover:translate-y-[-2px] transition-transform duration-200">
-                <h2 class="font-headline font-black text-2xl mb-4 text-on-surface">Key KPIs</h2>
-                <div class="space-y-4 text-on-surface/80 leading-relaxed font-body">
-                    <p><strong>PLF (Plant Load Factor):</strong> Percentage of maximum capacity actually used by a thermal power plant. India's thermal PLF hovers at 55-65%. A falling PLF signals weak demand or too much capacity in the system.</p>
-                    <p><strong>GRM (Gross Refining Margin):</strong> Per-barrel profit of a refinery. $8-10 per barrel is healthy for complex Indian refineries. Narrowing GRM is an early warning sign for refining companies.</p>
-                    <p><strong>Debt-to-Equity Ratio:</strong> Energy companies carry enormous debt. D/E above 4-5x is a red flag — especially if revenues are uncertain or interest rates are rising. Many Indian power companies went bankrupt between 2014-2020 due to excessive debt.</p>
-                    <p><strong>ROCE (Return on Capital Employed):</strong> How efficiently the company earns profit from all invested capital. For regulated businesses like Power Grid, ROCE is guaranteed at 15-16%. For ONGC, ROCE swings dramatically with oil prices.</p>
-                    <p><strong>AT&C Losses:</strong> For DISCOMs — electricity generated but not paid for due to line losses, theft, and billing failures. India's DISCOMs average 15-20% AT&C losses — among the highest in the world. Lower is better.</p>
-                    <p><strong>Renewable Capacity (MW):</strong> For green energy companies — installed MW operational, MW under construction, and PPAs signed. These three numbers tell you the present, near-future, and long-term revenue pipeline.</p>
+            <!-- SECTION 2 -->
+            <article
+                class="bg-surface p-8 rounded-xl shadow-sm border-l-8 border-[#FFD600] border-t border-b border-r border-outline-variant/30 relative sketch-border hover:translate-y-[-2px] transition-transform duration-200">
+                <h2 class="font-headline font-black text-2xl mb-4 text-on-surface">Key Players in India</h2>
+                <div class="space-y-3 text-on-surface/80 leading-relaxed font-body">
+                    <p><strong>Oil and Gas:</strong> ONGC, Reliance Industries, Oil India, GAIL</p>
+                    <p><strong>Refiners:</strong> Indian Oil, BPCL, HPCL, Reliance</p>
+                    <p><strong>Power Generation:</strong> NTPC, Adani Power, Tata Power, JSW Energy</p>
+                    <p><strong>Transmission:</strong> Power Grid Corporation of India</p>
+                    <p><strong>Renewable Energy:</strong> Adani Green Energy, Tata Power Renewables, ReNew Power,
+                        Greenko</p>
+                    <p><strong>City Gas Distribution:</strong> Indraprastha Gas (IGL), Mahanagar Gas (MGL), Gujarat Gas
+                    </p>
                 </div>
             </article>
 
-            <!-- SECTION 9 -->
-            <article class="bg-surface p-8 rounded-xl shadow-sm border-l-8 border-[#FFD600] border-t border-b border-r border-outline-variant/30 relative sketch-border hover:translate-y-[-2px] transition-transform duration-200">
-                <h2 class="font-headline font-black text-2xl mb-4 text-on-surface">Growth Drivers</h2>
+            <!-- SECTION 3 -->
+            <article
+                class="bg-surface p-8 rounded-xl shadow-sm border-l-8 border-[#FFD600] border-t border-b border-r border-outline-variant/30 relative sketch-border hover:translate-y-[-2px] transition-transform duration-200">
+                <h2 class="font-headline font-black text-2xl mb-4 text-on-surface">3 Terms Every Learner Must Know</h2>
                 <div class="space-y-4 text-on-surface/80 leading-relaxed font-body">
-                    <p>India's per capita electricity consumption is far below developed countries. As more Indians buy air conditioners, refrigerators, and electric vehicles, electricity demand will grow for decades — a powerful structural tailwind for power generators and transmission companies.</p>
-                    <p>India has set a target of 500 GW of non-fossil fuel power capacity by 2030 — one of the largest clean energy build-outs in the world. This is driving massive investment in solar (Rajasthan, Gujarat) and wind (Tamil Nadu, Andhra Pradesh) projects by companies like Adani Green, Tata Power, and ReNew Power.</p>
-                    <p>Every electric vehicle replacing a petrol vehicle reduces oil demand but increases electricity demand — a shift that will reshape which energy companies grow and which face headwinds over the next decade.</p>
-                    <p>India imports roughly 85% of its crude oil. The government is pushing hard to increase domestic production and diversify import sources — creating opportunities for ONGC and private exploration companies.</p>
+                    <p><strong>PLF (Plant Load Factor):</strong> What percentage of a power plant's maximum capacity was
+                        actually used. A 1,000 MW plant running at 70% PLF generated 700 MW on average. Higher PLF means
+                        more units sold and higher revenue.</p>
+                    <p><strong>GRM (Gross Refining Margin):</strong> The per-barrel profit of a refinery — revenue from
+                        selling refined products minus the cost of crude oil. A GRM of $8-10 per barrel is considered
+                        healthy for a complex Indian refinery.</p>
+                    <p><strong>PPA (Power Purchase Agreement):</strong> A 20-25 year contract between a power generator
+                        and a distribution company to supply electricity at a fixed price. This gives power companies
+                        predictable income for decades — like a very long salary guarantee.</p>
                 </div>
             </article>
 
-            <!-- SECTION 10 -->
-            <article class="bg-surface p-8 rounded-xl shadow-sm border-l-8 border-[#FFD600] border-t border-b border-r border-outline-variant/30 relative sketch-border hover:translate-y-[-2px] transition-transform duration-200">
-                <h2 class="font-headline font-black text-2xl mb-4 text-on-surface">Risks</h2>
-                <div class="space-y-4 text-on-surface/80 leading-relaxed font-body">
-                    <p><strong>Commodity Price Volatility:</strong> Global crude, coal, and gas prices can spike or collapse due to wars, OPEC decisions, or supply disruptions. India experienced this in 2021-2022 when energy prices surged globally — refiners faced margin pressure and power plants struggled with higher coal costs.</p>
-                    <p><strong>Very High Debt:</strong> Energy projects require thousands of crores of upfront investment before earning any revenue. If projects are delayed or revenues disappoint, companies cannot service their debt. Several Indian power companies went bankrupt during 2014-2020 due to this exact problem.</p>
-                    <p><strong>Regulatory and Policy Risk:</strong> The Indian government controls energy pricing across petrol, gas, and electricity. A sudden price cap on natural gas directly cuts ONGC's revenue overnight. State government decisions on electricity tariffs can instantly hurt DISCOMs and power generators.</p>
-                    <p><strong>DISCOM Financial Stress:</strong> State electricity distribution companies regularly run large losses — buying power at market rates but selling below cost for political reasons. When DISCOMs delay payments, power generators face working capital stress even when their plants are running well.</p>
-                    <p><strong>Transition Risk:</strong> Thermal power plants built today may be underutilized within 15-20 years as renewables take over. Companies that do not pivot from coal and oil toward clean energy risk holding stranded assets that lose value faster than expected.</p>
-                </div>
+            <!-- SECTION 4 -->
+            <article
+                class="bg-surface p-8 rounded-xl shadow-sm border-l-8 border-[#FFD600] border-t border-b border-r border-outline-variant/30 relative sketch-border hover:translate-y-[-2px] transition-transform duration-200">
+                <h2 class="font-headline font-black text-2xl mb-4 text-on-surface">What to Watch as a Learner</h2>
+                <ul class="list-disc pl-5 space-y-3 text-on-surface/80 leading-relaxed font-body font-medium">
+                    <li>Global crude oil prices — they directly affect ONGC's revenue and refiner margins overnight</li>
+                    <li>PLF numbers in quarterly results — falling PLF signals weak demand or oversupply</li>
+                    <li>Renewable energy capacity additions — India's 500 GW target by 2030 is creating massive
+                        investment opportunities</li>
+                    <li>DISCOM payment dues — when state electricity companies delay payments, power generators suffer
+                        cash flow stress</li>
+                </ul>
             </article>
         </div>
-    </div>
 
-</main>
+        <!-- View Full Analysis Button -->
+        <div class="flex justify-center mb-16">
+            <button id="toggleAnalysisBtn"
+                class="bg-primary-container text-on-primary-container px-8 py-3 text-lg sketch-border font-black hover:translate-x-1 hover:translate-y-1 transition-all">View
+                Full Analysis ↓</button>
+        </div>
 
-<script>
-    document.addEventListener('DOMContentLoaded', () => {
-        const btn = document.getElementById('toggleAnalysisBtn');
-        const sections = document.getElementById('fullAnalysisSections');
-        
-        btn.addEventListener('click', () => {
-            if (sections.style.display === 'none') {
-                sections.style.display = 'block';
-                btn.innerText = 'Hide Analysis ↑';
-            } else {
-                sections.style.display = 'none';
-                btn.innerText = 'View Full Analysis ↓';
-            }
+        <!-- Hidden Sections (6 sections) -->
+        <div id="fullAnalysisSections" style="display: none;">
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8 mb-16">
+                <!-- SECTION 5 -->
+                <article
+                    class="bg-surface p-8 rounded-xl shadow-sm border-l-8 border-[#FFD600] border-t border-b border-r border-outline-variant/30 relative sketch-border hover:translate-y-[-2px] transition-transform duration-200">
+                    <h2 class="font-headline font-black text-2xl mb-4 text-on-surface">Value Chain</h2>
+                    <p class="text-on-surface/80 leading-relaxed font-body">
+                        In oil and gas, the journey starts with exploration — companies like ONGC drill deep into the
+                        earth to find crude oil reserves. Extracted crude is transported to massive refineries like
+                        Reliance's Jamnagar — the world's largest single-location refinery — where it is converted into
+                        petrol, diesel, LPG, and aviation fuel. Refined products move through pipelines, tankers, and
+                        trucks to petrol pumps and industrial customers via companies like Indian Oil and BPCL.
+                    </p>
+                    <p class="text-on-surface/80 leading-relaxed font-body mt-4">
+                        In power, electricity flows from generation plants (NTPC burns coal to spin turbines) through
+                        high-voltage transmission lines managed by Power Grid Corporation across hundreds of kilometres,
+                        then down to local distribution networks managed by state DISCOMs, and finally into your home.
+                        DISCOMs are the weakest link — they often buy power at higher costs but sell to farmers and
+                        households at regulated below-cost prices, creating chronic financial stress.
+                    </p>
+                </article>
+
+                <!-- SECTION 6 -->
+                <article
+                    class="bg-surface p-8 rounded-xl shadow-sm border-l-8 border-[#FFD600] border-t border-b border-r border-outline-variant/30 relative sketch-border hover:translate-y-[-2px] transition-transform duration-200">
+                    <h2 class="font-headline font-black text-2xl mb-4 text-on-surface">Revenue Model</h2>
+                    <div class="space-y-4 text-on-surface/80 leading-relaxed font-body">
+                        <p><strong>Upstream oil and gas (ONGC):</strong> Revenue = volume of oil and gas produced
+                            multiplied by global market price. Highly volatile — tied entirely to global commodity
+                            cycles.</p>
+                        <p><strong>Refiners (Reliance, Indian Oil):</strong> Earn on the Gross Refining Margin — the gap
+                            between selling price of refined products and cost of crude plus refining expenses.</p>
+                        <p><strong>Power generators (NTPC, Adani Power):</strong> Earn through long-term Power Purchase
+                            Agreements at pre-agreed rates — extremely predictable income, almost like a fixed annuity
+                            for 20-25 years.</p>
+                        <p><strong>Transmission (Power Grid):</strong> Earn a regulated return of around 15.5% on
+                            transmission assets — income depends on kilometres of lines operational, not on power
+                            volumes.</p>
+                        <p><strong>Renewable energy (Adani Green, Tata Power):</strong> Long-term PPAs with near-zero
+                            fuel cost once operational. Very high debt during construction, but strong free cash flow
+                            once running.</p>
+                        <p><strong>City Gas Distribution (IGL, MGL):</strong> Buy gas from producers and sell to
+                            households (PNG), CNG vehicles, and industries. Earn on the spread between procurement cost
+                            and selling price within their licensed area.</p>
+                    </div>
+                </article>
+
+                <!-- SECTION 7 -->
+                <article
+                    class="bg-surface p-8 rounded-xl shadow-sm border-l-8 border-[#FFD600] border-t border-b border-r border-outline-variant/30 relative sketch-border hover:translate-y-[-2px] transition-transform duration-200">
+                    <h2 class="font-headline font-black text-2xl mb-4 text-on-surface">Cost Structure</h2>
+                    <p class="text-on-surface/80 leading-relaxed font-body">
+                        Fuel is the biggest variable cost — coal for thermal plants, crude oil for refiners, natural gas
+                        for gas-based plants. When global commodity prices spike, these costs surge. Capital expenditure
+                        is enormous — building a 1,000 MW power plant or a large oil refinery costs thousands of crores
+                        before earning a single rupee. Interest on debt is a massive fixed cost — a ₹10,000 crore
+                        project financed with ₹7,000 crore of debt must pay interest every quarter regardless of
+                        revenue. For renewable energy companies, there is no fuel cost once built — but land
+                        acquisition, grid connection charges, and high construction financing costs are significant.
+                        Government levies royalties and cess on oil production, and heavy taxes make retail fuel prices
+                        in India roughly double the actual production cost.
+                    </p>
+                </article>
+
+                <!-- SECTION 8 -->
+                <article
+                    class="bg-surface p-8 rounded-xl shadow-sm border-l-8 border-[#FFD600] border-t border-b border-r border-outline-variant/30 relative sketch-border hover:translate-y-[-2px] transition-transform duration-200">
+                    <h2 class="font-headline font-black text-2xl mb-4 text-on-surface">Key KPIs</h2>
+                    <div class="space-y-4 text-on-surface/80 leading-relaxed font-body">
+                        <p><strong>PLF (Plant Load Factor):</strong> Percentage of maximum capacity actually used by a
+                            thermal power plant. India's thermal PLF hovers at 55-65%. A falling PLF signals weak demand
+                            or too much capacity in the system.</p>
+                        <p><strong>GRM (Gross Refining Margin):</strong> Per-barrel profit of a refinery. $8-10 per
+                            barrel is healthy for complex Indian refineries. Narrowing GRM is an early warning sign for
+                            refining companies.</p>
+                        <p><strong>Debt-to-Equity Ratio:</strong> Energy companies carry enormous debt. D/E above 4-5x
+                            is a red flag — especially if revenues are uncertain or interest rates are rising. Many
+                            Indian power companies went bankrupt between 2014-2020 due to excessive debt.</p>
+                        <p><strong>ROCE (Return on Capital Employed):</strong> How efficiently the company earns profit
+                            from all invested capital. For regulated businesses like Power Grid, ROCE is guaranteed at
+                            15-16%. For ONGC, ROCE swings dramatically with oil prices.</p>
+                        <p><strong>AT&C Losses:</strong> For DISCOMs — electricity generated but not paid for due to
+                            line losses, theft, and billing failures. India's DISCOMs average 15-20% AT&C losses — among
+                            the highest in the world. Lower is better.</p>
+                        <p><strong>Renewable Capacity (MW):</strong> For green energy companies — installed MW
+                            operational, MW under construction, and PPAs signed. These three numbers tell you the
+                            present, near-future, and long-term revenue pipeline.</p>
+                    </div>
+                </article>
+
+                <!-- SECTION 9 -->
+                <article
+                    class="bg-surface p-8 rounded-xl shadow-sm border-l-8 border-[#FFD600] border-t border-b border-r border-outline-variant/30 relative sketch-border hover:translate-y-[-2px] transition-transform duration-200">
+                    <h2 class="font-headline font-black text-2xl mb-4 text-on-surface">Growth Drivers</h2>
+                    <div class="space-y-4 text-on-surface/80 leading-relaxed font-body">
+                        <p>India's per capita electricity consumption is far below developed countries. As more Indians
+                            buy air conditioners, refrigerators, and electric vehicles, electricity demand will grow for
+                            decades — a powerful structural tailwind for power generators and transmission companies.
+                        </p>
+                        <p>India has set a target of 500 GW of non-fossil fuel power capacity by 2030 — one of the
+                            largest clean energy build-outs in the world. This is driving massive investment in solar
+                            (Rajasthan, Gujarat) and wind (Tamil Nadu, Andhra Pradesh) projects by companies like Adani
+                            Green, Tata Power, and ReNew Power.</p>
+                        <p>Every electric vehicle replacing a petrol vehicle reduces oil demand but increases
+                            electricity demand — a shift that will reshape which energy companies grow and which face
+                            headwinds over the next decade.</p>
+                        <p>India imports roughly 85% of its crude oil. The government is pushing hard to increase
+                            domestic production and diversify import sources — creating opportunities for ONGC and
+                            private exploration companies.</p>
+                    </div>
+                </article>
+
+                <!-- SECTION 10 -->
+                <article
+                    class="bg-surface p-8 rounded-xl shadow-sm border-l-8 border-[#FFD600] border-t border-b border-r border-outline-variant/30 relative sketch-border hover:translate-y-[-2px] transition-transform duration-200">
+                    <h2 class="font-headline font-black text-2xl mb-4 text-on-surface">Risks</h2>
+                    <div class="space-y-4 text-on-surface/80 leading-relaxed font-body">
+                        <p><strong>Commodity Price Volatility:</strong> Global crude, coal, and gas prices can spike or
+                            collapse due to wars, OPEC decisions, or supply disruptions. India experienced this in
+                            2021-2022 when energy prices surged globally — refiners faced margin pressure and power
+                            plants struggled with higher coal costs.</p>
+                        <p><strong>Very High Debt:</strong> Energy projects require thousands of crores of upfront
+                            investment before earning any revenue. If projects are delayed or revenues disappoint,
+                            companies cannot service their debt. Several Indian power companies went bankrupt during
+                            2014-2020 due to this exact problem.</p>
+                        <p><strong>Regulatory and Policy Risk:</strong> The Indian government controls energy pricing
+                            across petrol, gas, and electricity. A sudden price cap on natural gas directly cuts ONGC's
+                            revenue overnight. State government decisions on electricity tariffs can instantly hurt
+                            DISCOMs and power generators.</p>
+                        <p><strong>DISCOM Financial Stress:</strong> State electricity distribution companies regularly
+                            run large losses — buying power at market rates but selling below cost for political
+                            reasons. When DISCOMs delay payments, power generators face working capital stress even when
+                            their plants are running well.</p>
+                        <p><strong>Transition Risk:</strong> Thermal power plants built today may be underutilized
+                            within 15-20 years as renewables take over. Companies that do not pivot from coal and oil
+                            toward clean energy risk holding stranded assets that lose value faster than expected.</p>
+                    </div>
+                </article>
+            </div>
+        </div>
+
+    </main>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const btn = document.getElementById('toggleAnalysisBtn');
+            const sections = document.getElementById('fullAnalysisSections');
+
+            btn.addEventListener('click', () => {
+                if (sections.style.display === 'none') {
+                    sections.style.display = 'block';
+                    btn.innerText = 'Hide Analysis ↑';
+                } else {
+                    sections.style.display = 'none';
+                    btn.innerText = 'View Full Analysis ↓';
+                }
+            });
         });
-    });
-</script>
+    </script>
     <!-- Sector Navigation -->
-    <div style="display: flex; justify-content: space-between; align-items: center; width: 100%; max-width: 900px; margin: 60px auto 40px auto; padding-top: 20px; border-top: 2px solid #E5E7EB; box-sizing: border-box;">
+    <div
+        style="display: flex; justify-content: space-between; align-items: center; width: 100%; max-width: 900px; margin: 60px auto 40px auto; padding-top: 20px; border-top: 2px solid #E5E7EB; box-sizing: border-box;">
         <span></span>
-        <a href="sector-finance.html" class="inline-block text-[#383833] font-bold font-headline hover:text-primary transition-colors text-lg font-black">
+        <a href="sector-finance.html"
+            class="inline-block text-[#383833] font-bold font-headline hover:text-primary transition-colors text-lg font-black">
             Next Sector &rarr;
         </a>
     </div>
 
-<!-- Footer -->
-<footer class="bg-stone-900 text-white border-t-8 border-stone-800 flex flex-col md:flex-row justify-between items-center w-full px-8 py-16 gap-8">
-<div class="max-w-7xl mx-auto w-full flex flex-col md:flex-row justify-between items-baseline gap-8">
-<div class="flex flex-col items-start">
-<a href="index.html.html" class="text-3xl font-black text-white font-marker tracking-tighter">FinanceHive</a>
-<p class="text-stone-400 font-medium text-xs">Hand-drawn for Indian minds. ✏️</p>
-</div>
-<div class="flex flex-wrap justify-center gap-6 md:gap-8 font-marker font-black text-base">
-<a class="hover:text-primary transition-colors" href="privacy.html">Privacy</a>
-<span class="text-stone-700 hidden md:inline">|</span>
-<a class="hover:text-primary transition-colors" href="terms.html">Terms</a>
-<span class="text-stone-700 hidden md:inline">|</span>
-<a class="hover:text-primary transition-colors" href="disclaimer.html.html">Disclaimer</a>
-<span class="text-stone-700 hidden md:inline">|</span>
-<a class="hover:text-primary transition-colors" href="mailto:startfinanacejourney@gmail.com?subject=Inquiry%20from%20FinanceHive">Contact</a>
-</div>
-<div class="text-stone-500 font-bold text-sm whitespace-nowrap">© 2026 FinanceHive. All rights reserved.</div>
-</div>
-</footer>
-<script>
-(function(){if(!window.chatbase||window.chatbase("getState")!=="initialized"){window.chatbase=(...arguments)=>{if(!window.chatbase.q){window.chatbase.q=[]}window.chatbase.q.push(arguments)};window.chatbase=new Proxy(window.chatbase,{get(target,prop){if(prop==="q"){return target.q}return(...args)=>target(prop,...args)}})}const onLoad=function(){const script=document.createElement("script");script.src="https://www.chatbase.co/embed.min.js";script.id="okRPgozu3doX4vY4MK0UV";script.domain="www.chatbase.co";document.body.appendChild(script)};if(document.readyState==="complete"){onLoad()}else{window.addEventListener("load",onLoad)}})();
-</script>
+    <!-- Footer -->
+    <footer
+        class="bg-stone-900 text-white border-t-8 border-stone-800 flex flex-col md:flex-row justify-between items-center w-full px-8 py-16 gap-8">
+        <div class="max-w-7xl mx-auto w-full flex flex-col md:flex-row justify-between items-baseline gap-8">
+            <div class="flex flex-col items-start">
+                <a href="index.html" class="text-3xl font-black text-white font-marker tracking-tighter">FinanceHive</a>
+                <p class="text-stone-400 font-medium text-xs">Hand-drawn for Indian minds. ✏️</p>
+            </div>
+            <div class="flex flex-wrap justify-center gap-6 md:gap-8 font-marker font-black text-base">
+                <a class="hover:text-primary transition-colors" href="privacy.html">Privacy</a>
+                <span class="text-stone-700 hidden md:inline">|</span>
+                <a class="hover:text-primary transition-colors" href="terms.html">Terms</a>
+                <span class="text-stone-700 hidden md:inline">|</span>
+                <a class="hover:text-primary transition-colors" href="disclaimer.html">Disclaimer</a>
+                <span class="text-stone-700 hidden md:inline">|</span>
+                <a class="hover:text-primary transition-colors"
+                    href="mailto:startfinanacejourney@gmail.com?subject=Inquiry%20from%20FinanceHive">Contact</a>
+            </div>
+            <div class="text-stone-500 font-bold text-sm whitespace-nowrap">© 2026 FinanceHive. All rights reserved.
+            </div>
+        </div>
+    </footer>
+    <script>
+        (function () { if (!window.chatbase || window.chatbase("getState") !== "initialized") { window.chatbase = (...arguments) => { if (!window.chatbase.q) { window.chatbase.q = [] } window.chatbase.q.push(arguments) }; window.chatbase = new Proxy(window.chatbase, { get(target, prop) { if (prop === "q") { return target.q } return (...args) => target(prop, ...args) } }) } const onLoad = function () { const script = document.createElement("script"); script.src = "https://www.chatbase.co/embed.min.js"; script.id = "okRPgozu3doX4vY4MK0UV"; script.domain = "www.chatbase.co"; document.body.appendChild(script) }; if (document.readyState === "complete") { onLoad() } else { window.addEventListener("load", onLoad) } })();
+    </script>
 
-    
+
 
     <script>
         document.addEventListener('DOMContentLoaded', () => {
@@ -327,11 +443,11 @@
                     searchIcon.addEventListener('click', () => searchInput.focus());
                 }
 
-                searchInput.addEventListener('input', function() {
+                searchInput.addEventListener('input', function () {
                     const query = this.value.toLowerCase().trim();
                     // Target concept cards (article) and sector cards (sketch-border items in grids)
                     const cards = document.querySelectorAll('article, .grid > .sketch-border, .grid > div[onclick*="sector-"]');
-                    
+
                     cards.forEach(card => {
                         const text = card.textContent.toLowerCase();
                         if (text.includes(query)) {
@@ -342,16 +458,16 @@
                     });
                 });
             }
-            
+
             // Active Navigation Highlighting
             const navLinks = document.querySelectorAll('nav a');
             let currentPath = window.location.pathname.split('/').pop().split('?')[0].split('#')[0];
             if (!currentPath || currentPath === '') {
-                currentPath = 'index.html.html';
+                currentPath = 'index.html';
             }
             navLinks.forEach(link => {
                 const href = link.getAttribute('href');
-                if (href && (href === currentPath || (currentPath === 'index.html.html' && href === 'index.html.html'))) {
+                if (href && (href === currentPath || (currentPath === 'index.html' && href === 'index.html'))) {
                     link.classList.add('active');
                 }
             });
@@ -359,4 +475,5 @@
     </script>
 
 </body>
+
 </html>

@@ -8,7 +8,7 @@ script_to_add = """<script>
 """
 
 html_files = []
-for ext in ('*.html', '*.html.html'):
+for ext in ('*.html', '*.html'):
     html_files.extend(glob.glob(os.path.join(directory, ext)))
 
 html_files = list(set(html_files))

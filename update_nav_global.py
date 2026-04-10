@@ -1,7 +1,7 @@
 """
 Global Navigation Update Script
 - Task 1: Rename "Learn Finance" nav link text to "Concepts" in ALL .html files
-- Task 2: Remove search bar from ALL .html files EXCEPT learn-finance.html.html
+- Task 2: Remove search bar from ALL .html files EXCEPT learn-finance.html
 - Does NOT touch the "Start Learning" button
 - Does NOT change any href paths
 """
@@ -29,18 +29,18 @@ for filepath in html_files:
         original = content
         
         # ===== TASK 1: Rename "Learn Finance" to "Concepts" =====
-        # Match the nav link with href="learn-finance.html.html" and text "Learn Finance"
+        # Match the nav link with href="learn-finance.html" and text "Learn Finance"
         # Be careful NOT to match the "Start Learning" button
         # Pattern: the nav link text ">Learn Finance</a>" (not touching href)
-        old_nav = 'href="learn-finance.html.html">Learn Finance</a>'
-        new_nav = 'href="learn-finance.html.html">Concepts</a>'
+        old_nav = 'href="learn-finance.html">Learn Finance</a>'
+        new_nav = 'href="learn-finance.html">Concepts</a>'
         
         if old_nav in content:
             content = content.replace(old_nav, new_nav)
             task1_count += 1
         
-        # ===== TASK 2: Remove search bar (EXCEPT learn-finance.html.html) =====
-        if filename != "learn-finance.html.html":
+        # ===== TASK 2: Remove search bar (EXCEPT learn-finance.html) =====
+        if filename != "learn-finance.html":
             # The search bar is a div containing input + search icon span
             # Pattern varies slightly but structure is consistent:
             # <div class="relative group flex items-center">

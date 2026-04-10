@@ -6,7 +6,7 @@ import os, glob
 workspace = r"c:\Users\user\OneDrive\Desktop\FinanceHive-Website"
 html_files = glob.glob(os.path.join(workspace, "*.html"))
 
-old = 'href="about.html.html">Contact</a>'
+old = 'href="about.html">Contact</a>'
 new = 'href="mailto:startfinanacejourney@gmail.com?subject=Inquiry%20from%20FinanceHive">Contact</a>'
 
 updated = 0

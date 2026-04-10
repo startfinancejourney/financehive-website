@@ -1,103 +1,111 @@
 <!DOCTYPE html>
 
-<html class="light" lang="en"><head>
-<meta charset="utf-8"/>
-<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
-<title>Utilities Sector | FinanceHive</title>
-<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
-<link href="https://fonts.googleapis.com/css2?family=Epilogue:wght@400;700;900&amp;family=Plus+Jakarta+Sans:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/>
-<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
-<script id="tailwind-config">
+<html class="light" lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>Utilities Sector | FinanceHive</title>
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Epilogue:wght@400;700;900&amp;family=Plus+Jakarta+Sans:wght@400;500;600;700&amp;display=swap"
+        rel="stylesheet" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
+        rel="stylesheet" />
+    <script id="tailwind-config">
         tailwind.config = {
-          darkMode: "class",
-          theme: {
-            extend: {
-              "colors": {
-                      "on-primary": "#ffffff",
-                      "on-tertiary-fixed-variant": "#4a00a4",
-                      "error": "#be2d06",
-                      "surface-container": "#f5f4eb",
-                      "on-secondary-container": "#940014",
-                      "tertiary-container": "#c0a0ff",
-                      "surface-tint": "#776300",
-                      "on-error-container": "#520c00",
-                      "on-tertiary-fixed": "#200051",
-                      "error-container": "#f95630",
-                      "inverse-primary": "#fdd400",
-                      "primary-fixed": "#fdd400",
-                      "on-surface": "#383833",
-                      "on-background": "#383833",
-                      "surface-container-low": "#fbf9f1",
-                      "inverse-surface": "#0e0f0a",
-                      "on-secondary": "#ffffff",
-                      "surface-dim": "#e4e3d8",
-                      "on-secondary-fixed": "#70000d",
-                      "tertiary-fixed-dim": "#b48fff",
-                      "primary-dim": "#695700",
-                      "secondary-dim": "#b10e1e",
-                      "on-error": "#ffffff",
-                      "on-secondary-fixed-variant": "#a60018",
-                      "secondary": "#c31f29",
-                      "surface-container-high": "#efeee5",
-                      "secondary-fixed-dim": "#ffafaa",
-                      "on-primary-container": "#594a00",
-                      "outline": "#81817a",
-                      "tertiary-fixed": "#c0a0ff",
-                      "primary-container": "#fdd400",
-                      "surface-container-lowest": "#ffffff",
-                      "on-tertiary-container": "#3f008e",
-                      "secondary-container": "#ffc3be",
-                      "surface": "#fefcf4",
-                      "surface-variant": "#e9e9de",
-                      "inverse-on-surface": "#9e9d96",
-                      "error-dim": "#b92902",
-                      "on-primary-fixed": "#433700",
-                      "secondary-fixed": "#ffc3be",
-                      "background": "#fefcf4",
-                      "on-tertiary": "#ffffff",
-                      "surface-container-highest": "#e9e9de",
-                      "primary-fixed-dim": "#edc600",
-                      "outline-variant": "#bab9b2",
-                      "primary": "#776300",
-                      "on-surface-variant": "#65655f",
-                      "tertiary": "#7a37eb",
-                      "tertiary-dim": "#6d24de",
-                      "on-primary-fixed-variant": "#645300",
-                      "surface-bright": "#fefcf4"
-              },
-              "borderRadius": {
-                      "DEFAULT": "0.125rem",
-                      "lg": "0.25rem",
-                      "xl": "0.5rem",
-                      "full": "0.75rem"
-              },
-              "fontFamily": {
-                      "headline": ["Epilogue"],
-                      "body": ["Plus Jakarta Sans"],
-                      "label": ["Plus Jakarta Sans"]
-              }
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "on-primary": "#ffffff",
+                        "on-tertiary-fixed-variant": "#4a00a4",
+                        "error": "#be2d06",
+                        "surface-container": "#f5f4eb",
+                        "on-secondary-container": "#940014",
+                        "tertiary-container": "#c0a0ff",
+                        "surface-tint": "#776300",
+                        "on-error-container": "#520c00",
+                        "on-tertiary-fixed": "#200051",
+                        "error-container": "#f95630",
+                        "inverse-primary": "#fdd400",
+                        "primary-fixed": "#fdd400",
+                        "on-surface": "#383833",
+                        "on-background": "#383833",
+                        "surface-container-low": "#fbf9f1",
+                        "inverse-surface": "#0e0f0a",
+                        "on-secondary": "#ffffff",
+                        "surface-dim": "#e4e3d8",
+                        "on-secondary-fixed": "#70000d",
+                        "tertiary-fixed-dim": "#b48fff",
+                        "primary-dim": "#695700",
+                        "secondary-dim": "#b10e1e",
+                        "on-error": "#ffffff",
+                        "on-secondary-fixed-variant": "#a60018",
+                        "secondary": "#c31f29",
+                        "surface-container-high": "#efeee5",
+                        "secondary-fixed-dim": "#ffafaa",
+                        "on-primary-container": "#594a00",
+                        "outline": "#81817a",
+                        "tertiary-fixed": "#c0a0ff",
+                        "primary-container": "#fdd400",
+                        "surface-container-lowest": "#ffffff",
+                        "on-tertiary-container": "#3f008e",
+                        "secondary-container": "#ffc3be",
+                        "surface": "#fefcf4",
+                        "surface-variant": "#e9e9de",
+                        "inverse-on-surface": "#9e9d96",
+                        "error-dim": "#b92902",
+                        "on-primary-fixed": "#433700",
+                        "secondary-fixed": "#ffc3be",
+                        "background": "#fefcf4",
+                        "on-tertiary": "#ffffff",
+                        "surface-container-highest": "#e9e9de",
+                        "primary-fixed-dim": "#edc600",
+                        "outline-variant": "#bab9b2",
+                        "primary": "#776300",
+                        "on-surface-variant": "#65655f",
+                        "tertiary": "#7a37eb",
+                        "tertiary-dim": "#6d24de",
+                        "on-primary-fixed-variant": "#645300",
+                        "surface-bright": "#fefcf4"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.125rem",
+                        "lg": "0.25rem",
+                        "xl": "0.5rem",
+                        "full": "0.75rem"
+                    },
+                    "fontFamily": {
+                        "headline": ["Epilogue"],
+                        "body": ["Plus Jakarta Sans"],
+                        "label": ["Plus Jakarta Sans"]
+                    }
+                },
             },
-          },
         }
-      </script>
-<style>
+    </script>
+    <style>
         .sketch-border {
             border: 2px solid #383833;
             box-shadow: 4px 4px 0px 0px #383833;
         }
+
         .scribble-underline {
             background-image: linear-gradient(120deg, #FFD600 0%, #FFD600 100%);
             background-repeat: no-repeat;
             background-size: 100% 0.3em;
             background-position: 0 88%;
         }
+
         .marker-highlight {
             background: linear-gradient(100deg, rgba(255, 214, 0, 0.3) 0%, rgba(255, 214, 0, 0.7) 100%);
             padding: 0 4px;
         }
     </style>
 
-    
+
 
     <style>
         /* Active Navigation Link Styling */
@@ -111,221 +119,417 @@
 </head>
 
 <body class="bg-[#FFFDF5] text-on-surface font-body selection:bg-primary-container min-h-screen flex flex-col">
-<!-- TopNavBar -->
-<nav class="bg-surface border-b-4 border-stone-800 flex justify-between items-center w-full px-6 py-4 max-w-7xl mx-auto sticky top-0 z-50 gap-8">
-<a href="index.html.html" class="text-3xl font-black text-[#383833] tracking-tighter font-marker">FinanceHive</a>
-<div class="hidden md:flex gap-6 items-center ml-auto">
-<a class="text-on-surface hover:text-secondary font-marker font-black text-base transition-all duration-200" href="learn-finance.html.html">Concepts</a>
-<a class="text-on-surface hover:text-secondary font-marker font-black text-base transition-all duration-200" href="sectors.html.html">Sectors</a>
-<a class="text-on-surface hover:text-secondary font-marker font-black text-base transition-all duration-200" href="request-topic.html.html">Request a Topic</a>
-<a class="text-on-surface hover:text-secondary font-marker font-black text-base transition-all duration-200" href="about.html.html">About</a>
-</div>
-<div class="flex items-center gap-4 lg:gap-6">
+    <!-- TopNavBar -->
+    <nav
+        class="bg-surface border-b-4 border-stone-800 flex justify-between items-center w-full px-6 py-4 max-w-7xl mx-auto sticky top-0 z-50 gap-8">
+        <a href="index.html" class="text-3xl font-black text-[#383833] tracking-tighter font-marker">FinanceHive</a>
+        <div class="hidden md:flex gap-6 items-center ml-auto">
+            <a class="text-on-surface hover:text-secondary font-marker font-black text-base transition-all duration-200"
+                href="learn-finance.html">Concepts</a>
+            <a class="text-on-surface hover:text-secondary font-marker font-black text-base transition-all duration-200"
+                href="sectors.html">Sectors</a>
+            <a class="text-on-surface hover:text-secondary font-marker font-black text-base transition-all duration-200"
+                href="request-topic.html">Request a Topic</a>
+            <a class="text-on-surface hover:text-secondary font-marker font-black text-base transition-all duration-200"
+                href="about.html">About</a>
+        </div>
+        <div class="flex items-center gap-4 lg:gap-6">
 
 
 
-<a href="learn-finance.html.html" class="bg-primary-container text-on-primary-container px-6 py-2 sketch-border font-black hover:translate-x-1 hover:translate-y-1 transition-all">
-    Start Learning
-  </a>
-</div>
-</nav>
+            <a href="learn-finance.html"
+                class="bg-primary-container text-on-primary-container px-6 py-2 sketch-border font-black hover:translate-x-1 hover:translate-y-1 transition-all">
+                Start Learning
+            </a>
+        </div>
+    </nav>
 
-<main class="flex-grow max-w-screen-xl mx-auto px-6 py-12 w-full">
-    <div class="mb-12">
-        <a href="sectors.html" class="inline-block text-[#383833] font-bold font-headline hover:text-primary transition-colors text-lg font-black">
-            &larr; Back to All Sectors
-        </a>
-    </div>
+    <main class="flex-grow max-w-screen-xl mx-auto px-6 py-12 w-full">
+        <div class="mb-12">
+            <a href="sectors.html"
+                class="inline-block text-[#383833] font-bold font-headline hover:text-primary transition-colors text-lg font-black">
+                &larr; Back to All Sectors
+            </a>
+        </div>
 
-    <!-- Header Section -->
-    <header class="mb-16">
-        <h1 class="text-5xl md:text-7xl font-black font-headline text-on-surface mb-6 tracking-tighter leading-none"><span class="scribble-underline">Utilities Sector</span></h1>
-        <p class="text-xl md:text-2xl font-medium text-on-surface/80 max-w-3xl border-l-4 border-primary pl-4 bg-primary/5 py-2">The invisible infrastructure that powers every light, every stove, every tap</p>
-    </header>
+        <!-- Header Section -->
+        <header class="mb-16">
+            <h1
+                class="text-5xl md:text-7xl font-black font-headline text-on-surface mb-6 tracking-tighter leading-none">
+                <span class="scribble-underline">Utilities Sector</span></h1>
+            <p
+                class="text-xl md:text-2xl font-medium text-on-surface/80 max-w-3xl border-l-4 border-primary pl-4 bg-primary/5 py-2">
+                The invisible infrastructure that powers every light, every stove, every tap</p>
+        </header>
 
-    <div class="grid grid-cols-1 md:grid-cols-2 gap-8 mb-16">
-        <!-- SECTION 1 -->
-        <article class="bg-surface p-8 rounded-xl shadow-sm border-l-8 border-[#FFD600] border-t border-b border-r border-outline-variant/30 relative sketch-border hover:translate-y-[-2px] transition-transform duration-200">
-            <h2 class="font-headline font-black text-2xl mb-4 text-on-surface">How They Make Money</h2>
-            <div class="space-y-4 text-on-surface/80 leading-relaxed font-body">
-                <p>Utilities are the invisible infrastructure that make modern life possible. When you switch on a light, cook on a gas stove, or charge your phone — you are consuming a utility service. These are not products you choose; they are essential services delivered through fixed physical networks directly to your home or factory.</p>
-                <p>Because you cannot have five different sets of power lines running to every home, utilities are natural monopolies in their service areas — regulated by the government, which sets the prices they can charge and the returns they can earn.</p>
-                <p>Revenue flows in several distinct ways. Transmission companies like Power Grid Corporation earn a fixed regulated return on their assets regardless of how much electricity flows through the lines — effectively a guaranteed interest payment approved by the regulator. Power generators like NTPC sign 25-year Power Purchase Agreements (PPAs) with distribution companies, earning capacity charges just for keeping the plant available plus energy charges per unit actually supplied. Renewable energy companies under PPAs earn a fixed price per unit for 25 years — creating an annuity-like stream as long as the sun shines or the wind blows. City Gas Distribution companies like IGL and MGL earn on the margin between what they pay for gas and what they sell it for — growing revenue by connecting more households and CNG stations. The safest businesses in utilities are those with regulated or contracted returns. Market-linked utilities that sell power at spot prices are far more risky.</p>
-            </div>
-        </article>
-
-        <!-- SECTION 2 -->
-        <article class="bg-surface p-8 rounded-xl shadow-sm border-l-8 border-[#FFD600] border-t border-b border-r border-outline-variant/30 relative sketch-border hover:translate-y-[-2px] transition-transform duration-200">
-            <h2 class="font-headline font-black text-2xl mb-4 text-on-surface">Key Players in India</h2>
-            <div class="space-y-3 text-on-surface/80 leading-relaxed font-body">
-                <p><strong>Power Generation:</strong> NTPC Limited (India's largest power generator, 70+ GW capacity, government-owned), Tata Power (integrated generation and distribution), Adani Power (India's largest private thermal generator)</p>
-                <p><strong>Power Transmission:</strong> Power Grid Corporation or Powergrid (India's inter-state transmission monopoly), Adani Energy Solutions or formerly Adani Transmission (largest private transmission company)</p>
-                <p><strong>Renewable Energy:</strong> Adani Green Energy (India's largest renewable company by capacity), Tata Power Renewables, NTPC Renewable Energy</p>
-                <p><strong>Gas Utilities:</strong> GAIL India (national gas pipeline network and gas marketing), Indraprastha Gas or IGL (Delhi's CGD monopoly), Mahanagar Gas or MGL (Mumbai's CGD monopoly), Petronet LNG (India's largest LNG terminal at Dahej)</p>
-                <p><strong>Water &amp; Environment:</strong> VA Tech Wabag (water treatment EPC and O&amp;M), Ion Exchange India (water treatment chemicals and systems)</p>
-            </div>
-        </article>
-
-        <!-- SECTION 3 -->
-        <article class="bg-surface p-8 rounded-xl shadow-sm border-l-8 border-[#FFD600] border-t border-b border-r border-outline-variant/30 relative sketch-border hover:translate-y-[-2px] transition-transform duration-200">
-            <h2 class="font-headline font-black text-2xl mb-4 text-on-surface">3 Terms Every Learner Must Know</h2>
-            <div class="space-y-4 text-on-surface/80 leading-relaxed font-body">
-                <p><strong>PPA (Power Purchase Agreement):</strong> A 25-year contract between a power generator and a buyer — usually a state distribution company — fixing the price of electricity. For the generator, a PPA eliminates revenue uncertainty for a generation. For investors, a power plant with a PPA behaves like a bond — steady, predictable cash flows. This is why renewable projects can raise large amounts of debt despite their high upfront capital cost. The PPA is effectively collateral for the debt. The risk is whether the distribution company actually pays on time.</p>
-                <p><strong>AT&amp;C Losses (Aggregate Technical and Commercial Losses):</strong> The percentage of electricity that enters a distribution network but is never billed or collected — due to technical losses (heat dissipation in wires) and commercial losses (theft and meter tampering). AT&amp;C losses of 20% mean for every 100 units purchased, only 80 are recovered as revenue. Every unit of AT&amp;C loss is a direct financial loss for the distribution company. India's DISCOM crisis is partly rooted in chronically high AT&amp;C losses. Smart meters with prepaid functionality are the most effective solution — consumers pay before consuming.</p>
-                <p><strong>PLF (Plant Load Factor):</strong> Actual units generated divided by maximum possible units at full capacity. A 70% PLF means the plant ran at 70% of its potential. Higher PLF means more units sold and more revenue from energy charges. India's thermal PLF has broadly declined as cheaper renewable power has grown — DISCOMs prefer drawing the cheapest available power first. Low PLF signals either weak demand, cheaper competing power sources, or plant technical problems.</p>
-            </div>
-        </article>
-
-        <!-- SECTION 4 -->
-        <article class="bg-surface p-8 rounded-xl shadow-sm border-l-8 border-[#FFD600] border-t border-b border-r border-outline-variant/30 relative sketch-border hover:translate-y-[-2px] transition-transform duration-200">
-            <h2 class="font-headline font-black text-2xl mb-4 text-on-surface">What to Watch as a Learner</h2>
-            <ul class="list-disc pl-5 space-y-3 text-on-surface/80 leading-relaxed font-body font-medium">
-                <li>DISCOM financial health — the most chronic structural risk in Indian utilities; when distribution companies lose money they delay payments to generators, straining the entire value chain from NTPC to Adani Green</li>
-                <li>AT&amp;C losses and smart meter rollout — the RDSS scheme targets reducing distribution losses through smart meters; watch progress quarterly as it directly improves DISCOM viability</li>
-                <li>Renewable capacity additions — India's 500 GW by 2030 target is the biggest single investment driver in the sector; track operational capacity vs under-construction capacity for Adani Green, Tata Power Renewables, and NTPC Renewables</li>
-                <li>CNG and PNG volumes for CGD companies — rising volumes mean revenue growth and better fixed cost absorption; watch for EV disruption of CNG in commercial transport as a long-term structural risk</li>
-                <li>Debt levels of renewable and infrastructure companies — high project debt is acceptable when PPAs are in place and DISCOMs pay on time, but fragile if either condition breaks down</li>
-            </ul>
-        </article>
-    </div>
-
-    <!-- View Full Analysis Button -->
-    <div class="flex justify-center mb-16">
-        <button id="toggleAnalysisBtn" class="bg-primary-container text-on-primary-container px-8 py-3 text-lg sketch-border font-black hover:translate-x-1 hover:translate-y-1 transition-all">View Full Analysis ↓</button>
-    </div>
-
-    <!-- Hidden Sections (6 sections) -->
-    <div id="fullAnalysisSections" style="display: none;">
         <div class="grid grid-cols-1 md:grid-cols-2 gap-8 mb-16">
-            <!-- SECTION 5 -->
-            <article class="bg-surface p-8 rounded-xl shadow-sm border-l-8 border-[#FFD600] border-t border-b border-r border-outline-variant/30 relative sketch-border hover:translate-y-[-2px] transition-transform duration-200">
-                <h2 class="font-headline font-black text-2xl mb-4 text-on-surface">Value Chain</h2>
+            <!-- SECTION 1 -->
+            <article
+                class="bg-surface p-8 rounded-xl shadow-sm border-l-8 border-[#FFD600] border-t border-b border-r border-outline-variant/30 relative sketch-border hover:translate-y-[-2px] transition-transform duration-200">
+                <h2 class="font-headline font-black text-2xl mb-4 text-on-surface">How They Make Money</h2>
                 <div class="space-y-4 text-on-surface/80 leading-relaxed font-body">
-                    <p>The utilities value chain begins at the fuel or natural source. For electricity: coal from a Coal India mine goes to an NTPC thermal plant that converts it to electricity at very high voltage. Power Grid Corporation's inter-state transmission lines carry it hundreds of kilometres to the state boundary. The state distribution company (DISCOM) steps voltage down through substations and delivers it to your home meter at 230V. You switch on your fan. At month end, your bill pays the DISCOM, who pays NTPC for electricity bought under a PPA, who pays Coal India for coal. Each link in this chain earns a regulated margin set by CERC or the State Electricity Regulatory Commission.</p>
-                    <p>For gas: an LNG ship arrives at Petronet LNG's Dahej terminal; gas is regasified and enters GAIL's national pipeline network; it travels to a city where IGL or MGL distributes through local pipelines to your kitchen stove or a CNG filling station. The CGD company earns on the spread between procurement price and selling price.</p>
-                    <p>For water: surface or groundwater is treated at plants operated by VA Tech Wabag or Ion Exchange under O&amp;M contracts for municipalities, then distributed through local networks to taps. Maximum value is created at regulated transmission (Power Grid earns ~15.5% return on equity regardless of volumes), contracted renewable generation (25-year PPAs provide annuity revenue), and gas infrastructure with take-or-pay capacity charges.</p>
+                    <p>Utilities are the invisible infrastructure that make modern life possible. When you switch on a
+                        light, cook on a gas stove, or charge your phone — you are consuming a utility service. These
+                        are not products you choose; they are essential services delivered through fixed physical
+                        networks directly to your home or factory.</p>
+                    <p>Because you cannot have five different sets of power lines running to every home, utilities are
+                        natural monopolies in their service areas — regulated by the government, which sets the prices
+                        they can charge and the returns they can earn.</p>
+                    <p>Revenue flows in several distinct ways. Transmission companies like Power Grid Corporation earn a
+                        fixed regulated return on their assets regardless of how much electricity flows through the
+                        lines — effectively a guaranteed interest payment approved by the regulator. Power generators
+                        like NTPC sign 25-year Power Purchase Agreements (PPAs) with distribution companies, earning
+                        capacity charges just for keeping the plant available plus energy charges per unit actually
+                        supplied. Renewable energy companies under PPAs earn a fixed price per unit for 25 years —
+                        creating an annuity-like stream as long as the sun shines or the wind blows. City Gas
+                        Distribution companies like IGL and MGL earn on the margin between what they pay for gas and
+                        what they sell it for — growing revenue by connecting more households and CNG stations. The
+                        safest businesses in utilities are those with regulated or contracted returns. Market-linked
+                        utilities that sell power at spot prices are far more risky.</p>
                 </div>
             </article>
 
-            <!-- SECTION 6 -->
-            <article class="bg-surface p-8 rounded-xl shadow-sm border-l-8 border-[#FFD600] border-t border-b border-r border-outline-variant/30 relative sketch-border hover:translate-y-[-2px] transition-transform duration-200">
-                <h2 class="font-headline font-black text-2xl mb-4 text-on-surface">Revenue Model</h2>
-                <div class="space-y-4 text-on-surface/80 leading-relaxed font-body">
-                    <p>Regulated return on assets is the most predictable revenue model — Power Grid earns an approved return on its transmission assets regardless of electricity volumes. Revenue equals (approved capital cost × allowed return rate) plus O&amp;M allowance plus depreciation. This is as close to a guaranteed income stream as exists in the listed equity universe.</p>
-                    <p>PPA-based generation revenue has two components. Capacity charges are paid by the distribution company just for keeping the plant available — a fixed payment even if no electricity is drawn. Energy charges are paid per unit actually supplied. NTPC's regulated PPAs guarantee full recovery of fuel cost plus a return on equity. Renewable PPAs fix a price per unit for 25 years — turning a solar or wind farm into an annuity.</p>
-                    <p>Volume-times-margin is the CGD model — city gas companies buy gas from producers and sell it as PNG to homes and industries or as CNG to vehicles. Revenue grows as more households are connected and more CNG stations are built. Growing the network connection count is the primary growth driver.</p>
-                    <p>Take-or-pay capacity charges power the LNG terminal model — Petronet LNG's customers book regasification capacity and pay whether or not they actually use it. This makes terminal revenue almost immune to volume swings — a classic toll-road structure applied to gas infrastructure.</p>
-                    <p>O&amp;M contracts provide recurring revenue for water utilities — once VA Tech Wabag builds and commissions a treatment plant, it earns a fixed monthly operations fee for years, requiring no new capital.</p>
+            <!-- SECTION 2 -->
+            <article
+                class="bg-surface p-8 rounded-xl shadow-sm border-l-8 border-[#FFD600] border-t border-b border-r border-outline-variant/30 relative sketch-border hover:translate-y-[-2px] transition-transform duration-200">
+                <h2 class="font-headline font-black text-2xl mb-4 text-on-surface">Key Players in India</h2>
+                <div class="space-y-3 text-on-surface/80 leading-relaxed font-body">
+                    <p><strong>Power Generation:</strong> NTPC Limited (India's largest power generator, 70+ GW
+                        capacity, government-owned), Tata Power (integrated generation and distribution), Adani Power
+                        (India's largest private thermal generator)</p>
+                    <p><strong>Power Transmission:</strong> Power Grid Corporation or Powergrid (India's inter-state
+                        transmission monopoly), Adani Energy Solutions or formerly Adani Transmission (largest private
+                        transmission company)</p>
+                    <p><strong>Renewable Energy:</strong> Adani Green Energy (India's largest renewable company by
+                        capacity), Tata Power Renewables, NTPC Renewable Energy</p>
+                    <p><strong>Gas Utilities:</strong> GAIL India (national gas pipeline network and gas marketing),
+                        Indraprastha Gas or IGL (Delhi's CGD monopoly), Mahanagar Gas or MGL (Mumbai's CGD monopoly),
+                        Petronet LNG (India's largest LNG terminal at Dahej)</p>
+                    <p><strong>Water &amp; Environment:</strong> VA Tech Wabag (water treatment EPC and O&amp;M), Ion
+                        Exchange India (water treatment chemicals and systems)</p>
                 </div>
             </article>
 
-            <!-- SECTION 7 -->
-            <article class="bg-surface p-8 rounded-xl shadow-sm border-l-8 border-[#FFD600] border-t border-b border-r border-outline-variant/30 relative sketch-border hover:translate-y-[-2px] transition-transform duration-200">
-                <h2 class="font-headline font-black text-2xl mb-4 text-on-surface">Cost Structure</h2>
+            <!-- SECTION 3 -->
+            <article
+                class="bg-surface p-8 rounded-xl shadow-sm border-l-8 border-[#FFD600] border-t border-b border-r border-outline-variant/30 relative sketch-border hover:translate-y-[-2px] transition-transform duration-200">
+                <h2 class="font-headline font-black text-2xl mb-4 text-on-surface">3 Terms Every Learner Must Know</h2>
                 <div class="space-y-4 text-on-surface/80 leading-relaxed font-body">
-                    <p>Fuel cost is the largest expense for thermal power generators — 60-70% of generation cost for coal and gas plants. Under regulated PPAs, fuel cost is passed through to distribution companies and ultimately to consumers, insulating generators. But plants selling on the merchant market (without PPAs) bear full fuel price volatility — dangerous when global coal or LNG prices spike.</p>
-                    <p>Power purchase cost is the largest expense for distribution companies — 75-85% of total cost. When generators raise fuel cost recovery requests and retail tariffs are not revised by regulators or state governments, the DISCOM absorbs the difference as losses. This is the central financial stress mechanism in India's power sector.</p>
-                    <p>Capital infrastructure cost is enormous — utilities are among the most capital-intensive businesses anywhere. A transmission line costs crores per kilometre. A 500 MW solar farm costs thousands of crores. A gas pipeline costs tens of crores per kilometre. This capex is funded primarily by debt, making financing cost the second-largest cost category across the sector.</p>
-                    <p>Interest on debt is the dominant second cost — NTPC, Power Grid, and Adani Green all carry very large debt books. For regulated utilities, interest cost is factored into the approved tariff and effectively recovered from customers. For unregulated or partially-regulated players, rising interest rates are a direct profit risk.</p>
-                    <p>O&amp;M costs are largely fixed — power plants require continuous maintenance regardless of output, transmission lines need periodic inspection, and CGD networks need valve and leak management. Well-maintained assets achieve higher availability and earn more revenue under regulated frameworks.</p>
+                    <p><strong>PPA (Power Purchase Agreement):</strong> A 25-year contract between a power generator and
+                        a buyer — usually a state distribution company — fixing the price of electricity. For the
+                        generator, a PPA eliminates revenue uncertainty for a generation. For investors, a power plant
+                        with a PPA behaves like a bond — steady, predictable cash flows. This is why renewable projects
+                        can raise large amounts of debt despite their high upfront capital cost. The PPA is effectively
+                        collateral for the debt. The risk is whether the distribution company actually pays on time.</p>
+                    <p><strong>AT&amp;C Losses (Aggregate Technical and Commercial Losses):</strong> The percentage of
+                        electricity that enters a distribution network but is never billed or collected — due to
+                        technical losses (heat dissipation in wires) and commercial losses (theft and meter tampering).
+                        AT&amp;C losses of 20% mean for every 100 units purchased, only 80 are recovered as revenue.
+                        Every unit of AT&amp;C loss is a direct financial loss for the distribution company. India's
+                        DISCOM crisis is partly rooted in chronically high AT&amp;C losses. Smart meters with prepaid
+                        functionality are the most effective solution — consumers pay before consuming.</p>
+                    <p><strong>PLF (Plant Load Factor):</strong> Actual units generated divided by maximum possible
+                        units at full capacity. A 70% PLF means the plant ran at 70% of its potential. Higher PLF means
+                        more units sold and more revenue from energy charges. India's thermal PLF has broadly declined
+                        as cheaper renewable power has grown — DISCOMs prefer drawing the cheapest available power
+                        first. Low PLF signals either weak demand, cheaper competing power sources, or plant technical
+                        problems.</p>
                 </div>
             </article>
 
-            <!-- SECTION 8 -->
-            <article class="bg-surface p-8 rounded-xl shadow-sm border-l-8 border-[#FFD600] border-t border-b border-r border-outline-variant/30 relative sketch-border hover:translate-y-[-2px] transition-transform duration-200">
-                <h2 class="font-headline font-black text-2xl mb-4 text-on-surface">Key KPIs</h2>
-                <div class="space-y-4 text-on-surface/80 leading-relaxed font-body">
-                    <p><strong>Plant Load Factor (PLF):</strong> Actual units generated divided by maximum possible units at full capacity. Higher PLF means more units sold and more revenue. India's thermal PLF has been declining as cheap renewable power grows — a structural headwind for coal-based generators. Low PLF signals weak demand, cheaper competing power, or technical problems.</p>
-                    <p><strong>AT&amp;C Losses (%):</strong> Electricity purchased but never billed or collected. At 20% AT&amp;C losses, for every 100 units entering the network, only 80 generate revenue. Smart metering with prepaid functionality is the most effective reduction tool. National average AT&amp;C losses have declined but remain elevated in many states.</p>
-                    <p><strong>Transmission Availability (%):</strong> Percentage of time the transmission system is available to carry power. Near-100% is the target. Below the approved threshold, Power Grid cannot claim full capacity charges. The primary operational metric for transmission companies.</p>
-                    <p><strong>EBITDA Margin (%):</strong> Varies sharply by sub-sector. Transmission companies earn 70-80%+ (essentially a return-on-assets business with thin operating costs). Renewable generation earns 85-90% EBITDA margin (no fuel cost) but net margins can be thin after high interest payments. Regulated generation earns 25-35%. DISCOMs vary widely — some profitable, most loss-making.</p>
-                    <p><strong>Debt-to-Equity Ratio:</strong> Utilities carry high debt by design — long-lived assets and predictable cash flows support leverage. Power Grid at 2.5-3x D/E is comfortable. Renewable companies like Adani Green at 4-6x D/E are acceptable if DISCOM payments are timely. Rising D/E beyond what contracted cash flows can service signals financial stress ahead.</p>
-                    <p><strong>Gas Volume Growth (CGD companies):</strong> CNG volumes (vehicle fuelling) and PNG connections (households and industries) are the primary growth metrics for IGL, MGL, and Gujarat Gas. Rising volumes improve fixed cost absorption and signal network expansion momentum.</p>
-                    <p><strong>Collection Efficiency (%):</strong> Percentage of billed electricity revenue actually collected by DISCOMs. Below 90% is a red flag — cash flow stress follows, then delayed payments to generators. Smart metering with prepaid functionality eliminates collection risk entirely by requiring payment before consumption.</p>
-                </div>
-            </article>
-
-            <!-- SECTION 9 -->
-            <article class="bg-surface p-8 rounded-xl shadow-sm border-l-8 border-[#FFD600] border-t border-b border-r border-outline-variant/30 relative sketch-border hover:translate-y-[-2px] transition-transform duration-200">
-                <h2 class="font-headline font-black text-2xl mb-4 text-on-surface">Growth Drivers</h2>
-                <div class="space-y-4 text-on-surface/80 leading-relaxed font-body">
-                    <p>Rising electricity demand is structural and persistent — India's per capita consumption is well below global averages. As income rises, air conditioners, refrigerators, and electric appliances become standard. Industrial growth adds factories, data centres, and warehouses. Peak power demand has been crossing new records every summer. This structural growth supports new generation capacity, transmission network expansion, and ongoing capital investment across the entire utilities chain.</p>
-                    <p>India's 500 GW renewable energy target by 2030 is one of the largest clean energy build-outs anywhere in the world. Adani Green Energy, Tata Power Renewables, NTPC Renewables, and ReNew Power are racing to build solar and wind capacity, with each new project also creating transmission connectivity needs, grid management requirements, and energy storage demand — expanding the entire ecosystem.</p>
-                    <p>Electrification of new loads is adding structural demand — EV adoption in two-wheelers and commercial vehicles shifts fuel consumption from oil to electricity. Indian Railways, already the largest single electricity customer by volume, is transitioning to full network electrification. These are multi-decade structural demand additions.</p>
-                    <p>DISCOM reforms through the RDSS scheme provide funding for smart meters, feeder separation, and SCADA systems — reducing AT&amp;C losses and improving collection. Financially healthier DISCOMs pay generators on time, enabling more investment and better power supply, creating a virtuous cycle across the sector.</p>
-                    <p>City gas network expansion into Tier 2 and Tier 3 cities, industrial zones, and highway corridors is a long-term recurring revenue builder — each new household connected becomes a PNG customer for decades.</p>
-                    <p>Jal Jeevan Mission — the government's program to provide tap water to every rural household — is the largest water infrastructure program India has ever undertaken, creating sustained demand for water treatment plants, pipelines, and O&amp;M contracts for VA Tech Wabag and Ion Exchange.</p>
-                </div>
-            </article>
-
-            <!-- SECTION 10 -->
-            <article class="bg-surface p-8 rounded-xl shadow-sm border-l-8 border-[#FFD600] border-t border-b border-r border-outline-variant/30 relative sketch-border hover:translate-y-[-2px] transition-transform duration-200">
-                <h2 class="font-headline font-black text-2xl mb-4 text-on-surface">Risks</h2>
-                <div class="space-y-4 text-on-surface/80 leading-relaxed font-body">
-                    <p><strong>DISCOM Payment Defaults and Delays:</strong> State distribution companies lose money because they buy electricity at market cost but sell at politically set below-cost tariffs. Losses accumulate and DISCOMs delay payment to generators. Receivables pile up at NTPC and Adani Power even though revenue is earned. For renewable projects with high debt, delayed DISCOM payments can threaten debt service. This is the most chronic, structural risk in India's electricity sector — multiple reform programs have partially improved but not solved it.</p>
-                    <p><strong>Tariff Regulatory Risk:</strong> Electricity and gas tariffs are set by regulators. Political pressure may cause regulators to hold tariffs below cost-recovery levels. If tariffs are not revised to reflect rising fuel costs, DISCOM losses widen. States with historically poor regulatory records and frequent political interference in tariff policy carry significantly higher risk for utility investors.</p>
-                    <p><strong>Fuel Supply Risk:</strong> Coal supply to power plants can be disrupted by railway logistics failures, mine flooding, or quality issues. Gas supply can be disrupted by geopolitical events affecting LNG imports. India experienced acute coal supply stress in 2021-22, causing power shortages. Gas-based power plants have been chronically underutilised due to insufficient domestic gas and expensive LNG imports.</p>
-                    <p><strong>High Debt in Renewable and Infrastructure Companies:</strong> A 1,000 MW solar farm is typically funded with 70-75% debt. If interest rates rise, refinancing costs more. If the DISCOM counterparty delays payments, cash flows cannot service debt. If construction is delayed, interest accrues with no revenue. Adani Green and similar companies carry high debt that is acceptable when executed perfectly but fragile if multiple things go wrong simultaneously.</p>
-                    <p><strong>EV Disruption of CNG Demand:</strong> IGL and MGL have built significant revenue on CNG for taxis, auto-rickshaws, and commercial vehicles in Delhi and Mumbai. As two-wheeler and three-wheeler EV adoption grows, CNG transport volumes will structurally decline over the next decade. Whether household PNG and industrial gas growth can fully offset this is a genuine long-term uncertainty for CGD companies.</p>
-                    <p><strong>Grid Integration of Renewables:</strong> Solar and wind power is intermittent — the sun sets, the wind drops. Large volumes of renewable power create grid stability challenges. DISCOMs may curtail renewable plants when the grid cannot absorb output — the generator earns nothing during curtailment despite being available. Without adequate grid-scale storage, India's renewable ambitions are constrained by grid management capacity.</p>
-                    <p><strong>Political Interference:</strong> Electricity is politically sensitive — state governments routinely promise free power to farmers as electoral commitments. DISCOMs are forced to supply below-cost power, losses mount, and the entire value chain is disrupted. This is a long-standing structural risk that has repeatedly prevented private investment in distribution.</p>
-                </div>
+            <!-- SECTION 4 -->
+            <article
+                class="bg-surface p-8 rounded-xl shadow-sm border-l-8 border-[#FFD600] border-t border-b border-r border-outline-variant/30 relative sketch-border hover:translate-y-[-2px] transition-transform duration-200">
+                <h2 class="font-headline font-black text-2xl mb-4 text-on-surface">What to Watch as a Learner</h2>
+                <ul class="list-disc pl-5 space-y-3 text-on-surface/80 leading-relaxed font-body font-medium">
+                    <li>DISCOM financial health — the most chronic structural risk in Indian utilities; when
+                        distribution companies lose money they delay payments to generators, straining the entire value
+                        chain from NTPC to Adani Green</li>
+                    <li>AT&amp;C losses and smart meter rollout — the RDSS scheme targets reducing distribution losses
+                        through smart meters; watch progress quarterly as it directly improves DISCOM viability</li>
+                    <li>Renewable capacity additions — India's 500 GW by 2030 target is the biggest single investment
+                        driver in the sector; track operational capacity vs under-construction capacity for Adani Green,
+                        Tata Power Renewables, and NTPC Renewables</li>
+                    <li>CNG and PNG volumes for CGD companies — rising volumes mean revenue growth and better fixed cost
+                        absorption; watch for EV disruption of CNG in commercial transport as a long-term structural
+                        risk</li>
+                    <li>Debt levels of renewable and infrastructure companies — high project debt is acceptable when
+                        PPAs are in place and DISCOMs pay on time, but fragile if either condition breaks down</li>
+                </ul>
             </article>
         </div>
-    </div>
 
-</main>
+        <!-- View Full Analysis Button -->
+        <div class="flex justify-center mb-16">
+            <button id="toggleAnalysisBtn"
+                class="bg-primary-container text-on-primary-container px-8 py-3 text-lg sketch-border font-black hover:translate-x-1 hover:translate-y-1 transition-all">View
+                Full Analysis ↓</button>
+        </div>
 
-<script>
-    document.addEventListener('DOMContentLoaded', () => {
-        const btn = document.getElementById('toggleAnalysisBtn');
-        const sections = document.getElementById('fullAnalysisSections');
-        
-        btn.addEventListener('click', () => {
-            if (sections.style.display === 'none') {
-                sections.style.display = 'block';
-                btn.innerText = 'Hide Analysis ↑';
-            } else {
-                sections.style.display = 'none';
-                btn.innerText = 'View Full Analysis ↓';
-            }
+        <!-- Hidden Sections (6 sections) -->
+        <div id="fullAnalysisSections" style="display: none;">
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8 mb-16">
+                <!-- SECTION 5 -->
+                <article
+                    class="bg-surface p-8 rounded-xl shadow-sm border-l-8 border-[#FFD600] border-t border-b border-r border-outline-variant/30 relative sketch-border hover:translate-y-[-2px] transition-transform duration-200">
+                    <h2 class="font-headline font-black text-2xl mb-4 text-on-surface">Value Chain</h2>
+                    <div class="space-y-4 text-on-surface/80 leading-relaxed font-body">
+                        <p>The utilities value chain begins at the fuel or natural source. For electricity: coal from a
+                            Coal India mine goes to an NTPC thermal plant that converts it to electricity at very high
+                            voltage. Power Grid Corporation's inter-state transmission lines carry it hundreds of
+                            kilometres to the state boundary. The state distribution company (DISCOM) steps voltage down
+                            through substations and delivers it to your home meter at 230V. You switch on your fan. At
+                            month end, your bill pays the DISCOM, who pays NTPC for electricity bought under a PPA, who
+                            pays Coal India for coal. Each link in this chain earns a regulated margin set by CERC or
+                            the State Electricity Regulatory Commission.</p>
+                        <p>For gas: an LNG ship arrives at Petronet LNG's Dahej terminal; gas is regasified and enters
+                            GAIL's national pipeline network; it travels to a city where IGL or MGL distributes through
+                            local pipelines to your kitchen stove or a CNG filling station. The CGD company earns on the
+                            spread between procurement price and selling price.</p>
+                        <p>For water: surface or groundwater is treated at plants operated by VA Tech Wabag or Ion
+                            Exchange under O&amp;M contracts for municipalities, then distributed through local networks
+                            to taps. Maximum value is created at regulated transmission (Power Grid earns ~15.5% return
+                            on equity regardless of volumes), contracted renewable generation (25-year PPAs provide
+                            annuity revenue), and gas infrastructure with take-or-pay capacity charges.</p>
+                    </div>
+                </article>
+
+                <!-- SECTION 6 -->
+                <article
+                    class="bg-surface p-8 rounded-xl shadow-sm border-l-8 border-[#FFD600] border-t border-b border-r border-outline-variant/30 relative sketch-border hover:translate-y-[-2px] transition-transform duration-200">
+                    <h2 class="font-headline font-black text-2xl mb-4 text-on-surface">Revenue Model</h2>
+                    <div class="space-y-4 text-on-surface/80 leading-relaxed font-body">
+                        <p>Regulated return on assets is the most predictable revenue model — Power Grid earns an
+                            approved return on its transmission assets regardless of electricity volumes. Revenue equals
+                            (approved capital cost × allowed return rate) plus O&amp;M allowance plus depreciation. This
+                            is as close to a guaranteed income stream as exists in the listed equity universe.</p>
+                        <p>PPA-based generation revenue has two components. Capacity charges are paid by the
+                            distribution company just for keeping the plant available — a fixed payment even if no
+                            electricity is drawn. Energy charges are paid per unit actually supplied. NTPC's regulated
+                            PPAs guarantee full recovery of fuel cost plus a return on equity. Renewable PPAs fix a
+                            price per unit for 25 years — turning a solar or wind farm into an annuity.</p>
+                        <p>Volume-times-margin is the CGD model — city gas companies buy gas from producers and sell it
+                            as PNG to homes and industries or as CNG to vehicles. Revenue grows as more households are
+                            connected and more CNG stations are built. Growing the network connection count is the
+                            primary growth driver.</p>
+                        <p>Take-or-pay capacity charges power the LNG terminal model — Petronet LNG's customers book
+                            regasification capacity and pay whether or not they actually use it. This makes terminal
+                            revenue almost immune to volume swings — a classic toll-road structure applied to gas
+                            infrastructure.</p>
+                        <p>O&amp;M contracts provide recurring revenue for water utilities — once VA Tech Wabag builds
+                            and commissions a treatment plant, it earns a fixed monthly operations fee for years,
+                            requiring no new capital.</p>
+                    </div>
+                </article>
+
+                <!-- SECTION 7 -->
+                <article
+                    class="bg-surface p-8 rounded-xl shadow-sm border-l-8 border-[#FFD600] border-t border-b border-r border-outline-variant/30 relative sketch-border hover:translate-y-[-2px] transition-transform duration-200">
+                    <h2 class="font-headline font-black text-2xl mb-4 text-on-surface">Cost Structure</h2>
+                    <div class="space-y-4 text-on-surface/80 leading-relaxed font-body">
+                        <p>Fuel cost is the largest expense for thermal power generators — 60-70% of generation cost for
+                            coal and gas plants. Under regulated PPAs, fuel cost is passed through to distribution
+                            companies and ultimately to consumers, insulating generators. But plants selling on the
+                            merchant market (without PPAs) bear full fuel price volatility — dangerous when global coal
+                            or LNG prices spike.</p>
+                        <p>Power purchase cost is the largest expense for distribution companies — 75-85% of total cost.
+                            When generators raise fuel cost recovery requests and retail tariffs are not revised by
+                            regulators or state governments, the DISCOM absorbs the difference as losses. This is the
+                            central financial stress mechanism in India's power sector.</p>
+                        <p>Capital infrastructure cost is enormous — utilities are among the most capital-intensive
+                            businesses anywhere. A transmission line costs crores per kilometre. A 500 MW solar farm
+                            costs thousands of crores. A gas pipeline costs tens of crores per kilometre. This capex is
+                            funded primarily by debt, making financing cost the second-largest cost category across the
+                            sector.</p>
+                        <p>Interest on debt is the dominant second cost — NTPC, Power Grid, and Adani Green all carry
+                            very large debt books. For regulated utilities, interest cost is factored into the approved
+                            tariff and effectively recovered from customers. For unregulated or partially-regulated
+                            players, rising interest rates are a direct profit risk.</p>
+                        <p>O&amp;M costs are largely fixed — power plants require continuous maintenance regardless of
+                            output, transmission lines need periodic inspection, and CGD networks need valve and leak
+                            management. Well-maintained assets achieve higher availability and earn more revenue under
+                            regulated frameworks.</p>
+                    </div>
+                </article>
+
+                <!-- SECTION 8 -->
+                <article
+                    class="bg-surface p-8 rounded-xl shadow-sm border-l-8 border-[#FFD600] border-t border-b border-r border-outline-variant/30 relative sketch-border hover:translate-y-[-2px] transition-transform duration-200">
+                    <h2 class="font-headline font-black text-2xl mb-4 text-on-surface">Key KPIs</h2>
+                    <div class="space-y-4 text-on-surface/80 leading-relaxed font-body">
+                        <p><strong>Plant Load Factor (PLF):</strong> Actual units generated divided by maximum possible
+                            units at full capacity. Higher PLF means more units sold and more revenue. India's thermal
+                            PLF has been declining as cheap renewable power grows — a structural headwind for coal-based
+                            generators. Low PLF signals weak demand, cheaper competing power, or technical problems.</p>
+                        <p><strong>AT&amp;C Losses (%):</strong> Electricity purchased but never billed or collected. At
+                            20% AT&amp;C losses, for every 100 units entering the network, only 80 generate revenue.
+                            Smart metering with prepaid functionality is the most effective reduction tool. National
+                            average AT&amp;C losses have declined but remain elevated in many states.</p>
+                        <p><strong>Transmission Availability (%):</strong> Percentage of time the transmission system is
+                            available to carry power. Near-100% is the target. Below the approved threshold, Power Grid
+                            cannot claim full capacity charges. The primary operational metric for transmission
+                            companies.</p>
+                        <p><strong>EBITDA Margin (%):</strong> Varies sharply by sub-sector. Transmission companies earn
+                            70-80%+ (essentially a return-on-assets business with thin operating costs). Renewable
+                            generation earns 85-90% EBITDA margin (no fuel cost) but net margins can be thin after high
+                            interest payments. Regulated generation earns 25-35%. DISCOMs vary widely — some profitable,
+                            most loss-making.</p>
+                        <p><strong>Debt-to-Equity Ratio:</strong> Utilities carry high debt by design — long-lived
+                            assets and predictable cash flows support leverage. Power Grid at 2.5-3x D/E is comfortable.
+                            Renewable companies like Adani Green at 4-6x D/E are acceptable if DISCOM payments are
+                            timely. Rising D/E beyond what contracted cash flows can service signals financial stress
+                            ahead.</p>
+                        <p><strong>Gas Volume Growth (CGD companies):</strong> CNG volumes (vehicle fuelling) and PNG
+                            connections (households and industries) are the primary growth metrics for IGL, MGL, and
+                            Gujarat Gas. Rising volumes improve fixed cost absorption and signal network expansion
+                            momentum.</p>
+                        <p><strong>Collection Efficiency (%):</strong> Percentage of billed electricity revenue actually
+                            collected by DISCOMs. Below 90% is a red flag — cash flow stress follows, then delayed
+                            payments to generators. Smart metering with prepaid functionality eliminates collection risk
+                            entirely by requiring payment before consumption.</p>
+                    </div>
+                </article>
+
+                <!-- SECTION 9 -->
+                <article
+                    class="bg-surface p-8 rounded-xl shadow-sm border-l-8 border-[#FFD600] border-t border-b border-r border-outline-variant/30 relative sketch-border hover:translate-y-[-2px] transition-transform duration-200">
+                    <h2 class="font-headline font-black text-2xl mb-4 text-on-surface">Growth Drivers</h2>
+                    <div class="space-y-4 text-on-surface/80 leading-relaxed font-body">
+                        <p>Rising electricity demand is structural and persistent — India's per capita consumption is
+                            well below global averages. As income rises, air conditioners, refrigerators, and electric
+                            appliances become standard. Industrial growth adds factories, data centres, and warehouses.
+                            Peak power demand has been crossing new records every summer. This structural growth
+                            supports new generation capacity, transmission network expansion, and ongoing capital
+                            investment across the entire utilities chain.</p>
+                        <p>India's 500 GW renewable energy target by 2030 is one of the largest clean energy build-outs
+                            anywhere in the world. Adani Green Energy, Tata Power Renewables, NTPC Renewables, and ReNew
+                            Power are racing to build solar and wind capacity, with each new project also creating
+                            transmission connectivity needs, grid management requirements, and energy storage demand —
+                            expanding the entire ecosystem.</p>
+                        <p>Electrification of new loads is adding structural demand — EV adoption in two-wheelers and
+                            commercial vehicles shifts fuel consumption from oil to electricity. Indian Railways,
+                            already the largest single electricity customer by volume, is transitioning to full network
+                            electrification. These are multi-decade structural demand additions.</p>
+                        <p>DISCOM reforms through the RDSS scheme provide funding for smart meters, feeder separation,
+                            and SCADA systems — reducing AT&amp;C losses and improving collection. Financially healthier
+                            DISCOMs pay generators on time, enabling more investment and better power supply, creating a
+                            virtuous cycle across the sector.</p>
+                        <p>City gas network expansion into Tier 2 and Tier 3 cities, industrial zones, and highway
+                            corridors is a long-term recurring revenue builder — each new household connected becomes a
+                            PNG customer for decades.</p>
+                        <p>Jal Jeevan Mission — the government's program to provide tap water to every rural household —
+                            is the largest water infrastructure program India has ever undertaken, creating sustained
+                            demand for water treatment plants, pipelines, and O&amp;M contracts for VA Tech Wabag and
+                            Ion Exchange.</p>
+                    </div>
+                </article>
+
+                <!-- SECTION 10 -->
+                <article
+                    class="bg-surface p-8 rounded-xl shadow-sm border-l-8 border-[#FFD600] border-t border-b border-r border-outline-variant/30 relative sketch-border hover:translate-y-[-2px] transition-transform duration-200">
+                    <h2 class="font-headline font-black text-2xl mb-4 text-on-surface">Risks</h2>
+                    <div class="space-y-4 text-on-surface/80 leading-relaxed font-body">
+                        <p><strong>DISCOM Payment Defaults and Delays:</strong> State distribution companies lose money
+                            because they buy electricity at market cost but sell at politically set below-cost tariffs.
+                            Losses accumulate and DISCOMs delay payment to generators. Receivables pile up at NTPC and
+                            Adani Power even though revenue is earned. For renewable projects with high debt, delayed
+                            DISCOM payments can threaten debt service. This is the most chronic, structural risk in
+                            India's electricity sector — multiple reform programs have partially improved but not solved
+                            it.</p>
+                        <p><strong>Tariff Regulatory Risk:</strong> Electricity and gas tariffs are set by regulators.
+                            Political pressure may cause regulators to hold tariffs below cost-recovery levels. If
+                            tariffs are not revised to reflect rising fuel costs, DISCOM losses widen. States with
+                            historically poor regulatory records and frequent political interference in tariff policy
+                            carry significantly higher risk for utility investors.</p>
+                        <p><strong>Fuel Supply Risk:</strong> Coal supply to power plants can be disrupted by railway
+                            logistics failures, mine flooding, or quality issues. Gas supply can be disrupted by
+                            geopolitical events affecting LNG imports. India experienced acute coal supply stress in
+                            2021-22, causing power shortages. Gas-based power plants have been chronically underutilised
+                            due to insufficient domestic gas and expensive LNG imports.</p>
+                        <p><strong>High Debt in Renewable and Infrastructure Companies:</strong> A 1,000 MW solar farm
+                            is typically funded with 70-75% debt. If interest rates rise, refinancing costs more. If the
+                            DISCOM counterparty delays payments, cash flows cannot service debt. If construction is
+                            delayed, interest accrues with no revenue. Adani Green and similar companies carry high debt
+                            that is acceptable when executed perfectly but fragile if multiple things go wrong
+                            simultaneously.</p>
+                        <p><strong>EV Disruption of CNG Demand:</strong> IGL and MGL have built significant revenue on
+                            CNG for taxis, auto-rickshaws, and commercial vehicles in Delhi and Mumbai. As two-wheeler
+                            and three-wheeler EV adoption grows, CNG transport volumes will structurally decline over
+                            the next decade. Whether household PNG and industrial gas growth can fully offset this is a
+                            genuine long-term uncertainty for CGD companies.</p>
+                        <p><strong>Grid Integration of Renewables:</strong> Solar and wind power is intermittent — the
+                            sun sets, the wind drops. Large volumes of renewable power create grid stability challenges.
+                            DISCOMs may curtail renewable plants when the grid cannot absorb output — the generator
+                            earns nothing during curtailment despite being available. Without adequate grid-scale
+                            storage, India's renewable ambitions are constrained by grid management capacity.</p>
+                        <p><strong>Political Interference:</strong> Electricity is politically sensitive — state
+                            governments routinely promise free power to farmers as electoral commitments. DISCOMs are
+                            forced to supply below-cost power, losses mount, and the entire value chain is disrupted.
+                            This is a long-standing structural risk that has repeatedly prevented private investment in
+                            distribution.</p>
+                    </div>
+                </article>
+            </div>
+        </div>
+
+    </main>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const btn = document.getElementById('toggleAnalysisBtn');
+            const sections = document.getElementById('fullAnalysisSections');
+
+            btn.addEventListener('click', () => {
+                if (sections.style.display === 'none') {
+                    sections.style.display = 'block';
+                    btn.innerText = 'Hide Analysis ↑';
+                } else {
+                    sections.style.display = 'none';
+                    btn.innerText = 'View Full Analysis ↓';
+                }
+            });
         });
-    });
-</script>
+    </script>
     <!-- Sector Navigation -->
-    <div style="display: flex; justify-content: space-between; align-items: center; width: 100%; max-width: 900px; margin: 60px auto 40px auto; padding-top: 20px; border-top: 2px solid #E5E7EB; box-sizing: border-box;">
-        <a href="sector-industrial.html" class="inline-block text-[#383833] font-bold font-headline hover:text-primary transition-colors text-lg font-black">
+    <div
+        style="display: flex; justify-content: space-between; align-items: center; width: 100%; max-width: 900px; margin: 60px auto 40px auto; padding-top: 20px; border-top: 2px solid #E5E7EB; box-sizing: border-box;">
+        <a href="sector-industrial.html"
+            class="inline-block text-[#383833] font-bold font-headline hover:text-primary transition-colors text-lg font-black">
             &larr; Previous Sector
         </a>
-        <a href="sector-realestate.html" class="inline-block text-[#383833] font-bold font-headline hover:text-primary transition-colors text-lg font-black">
+        <a href="sector-realestate.html"
+            class="inline-block text-[#383833] font-bold font-headline hover:text-primary transition-colors text-lg font-black">
             Next Sector &rarr;
         </a>
     </div>
 
-<!-- Footer -->
-<footer class="bg-stone-900 text-white border-t-8 border-stone-800 flex flex-col md:flex-row justify-between items-center w-full px-8 py-16 gap-8">
-<div class="max-w-7xl mx-auto w-full flex flex-col md:flex-row justify-between items-baseline gap-8">
-<div class="flex flex-col items-start">
-<a href="index.html.html" class="text-3xl font-black text-white font-marker tracking-tighter">FinanceHive</a>
-<p class="text-stone-400 font-medium text-xs">Hand-drawn for Indian minds. ✏️</p>
-</div>
-<div class="flex flex-wrap justify-center gap-6 md:gap-8 font-marker font-black text-base">
-<a class="hover:text-primary transition-colors" href="privacy.html">Privacy</a>
-<span class="text-stone-700 hidden md:inline">|</span>
-<a class="hover:text-primary transition-colors" href="terms.html">Terms</a>
-<span class="text-stone-700 hidden md:inline">|</span>
-<a class="hover:text-primary transition-colors" href="disclaimer.html.html">Disclaimer</a>
-<span class="text-stone-700 hidden md:inline">|</span>
-<a class="hover:text-primary transition-colors" href="mailto:startfinanacejourney@gmail.com?subject=Inquiry%20from%20FinanceHive">Contact</a>
-</div>
-<div class="text-stone-500 font-bold text-sm whitespace-nowrap">© 2026 FinanceHive. All rights reserved.</div>
-</div>
-</footer>
-<script>
-(function(){if(!window.chatbase||window.chatbase("getState")!=="initialized"){window.chatbase=(...arguments)=>{if(!window.chatbase.q){window.chatbase.q=[]}window.chatbase.q.push(arguments)};window.chatbase=new Proxy(window.chatbase,{get(target,prop){if(prop==="q"){return target.q}return(...args)=>target(prop,...args)}})}const onLoad=function(){const script=document.createElement("script");script.src="https://www.chatbase.co/embed.min.js";script.id="okRPgozu3doX4vY4MK0UV";script.domain="www.chatbase.co";document.body.appendChild(script)};if(document.readyState==="complete"){onLoad()}else{window.addEventListener("load",onLoad)}})();
-</script>
+    <!-- Footer -->
+    <footer
+        class="bg-stone-900 text-white border-t-8 border-stone-800 flex flex-col md:flex-row justify-between items-center w-full px-8 py-16 gap-8">
+        <div class="max-w-7xl mx-auto w-full flex flex-col md:flex-row justify-between items-baseline gap-8">
+            <div class="flex flex-col items-start">
+                <a href="index.html" class="text-3xl font-black text-white font-marker tracking-tighter">FinanceHive</a>
+                <p class="text-stone-400 font-medium text-xs">Hand-drawn for Indian minds. ✏️</p>
+            </div>
+            <div class="flex flex-wrap justify-center gap-6 md:gap-8 font-marker font-black text-base">
+                <a class="hover:text-primary transition-colors" href="privacy.html">Privacy</a>
+                <span class="text-stone-700 hidden md:inline">|</span>
+                <a class="hover:text-primary transition-colors" href="terms.html">Terms</a>
+                <span class="text-stone-700 hidden md:inline">|</span>
+                <a class="hover:text-primary transition-colors" href="disclaimer.html">Disclaimer</a>
+                <span class="text-stone-700 hidden md:inline">|</span>
+                <a class="hover:text-primary transition-colors"
+                    href="mailto:startfinanacejourney@gmail.com?subject=Inquiry%20from%20FinanceHive">Contact</a>
+            </div>
+            <div class="text-stone-500 font-bold text-sm whitespace-nowrap">© 2026 FinanceHive. All rights reserved.
+            </div>
+        </div>
+    </footer>
+    <script>
+        (function () { if (!window.chatbase || window.chatbase("getState") !== "initialized") { window.chatbase = (...arguments) => { if (!window.chatbase.q) { window.chatbase.q = [] } window.chatbase.q.push(arguments) }; window.chatbase = new Proxy(window.chatbase, { get(target, prop) { if (prop === "q") { return target.q } return (...args) => target(prop, ...args) } }) } const onLoad = function () { const script = document.createElement("script"); script.src = "https://www.chatbase.co/embed.min.js"; script.id = "okRPgozu3doX4vY4MK0UV"; script.domain = "www.chatbase.co"; document.body.appendChild(script) }; if (document.readyState === "complete") { onLoad() } else { window.addEventListener("load", onLoad) } })();
+    </script>
 
-    
+
 
     <script>
         document.addEventListener('DOMContentLoaded', () => {
@@ -338,11 +542,11 @@
                     searchIcon.addEventListener('click', () => searchInput.focus());
                 }
 
-                searchInput.addEventListener('input', function() {
+                searchInput.addEventListener('input', function () {
                     const query = this.value.toLowerCase().trim();
                     // Target concept cards (article) and sector cards (sketch-border items in grids)
                     const cards = document.querySelectorAll('article, .grid > .sketch-border, .grid > div[onclick*="sector-"]');
-                    
+
                     cards.forEach(card => {
                         const text = card.textContent.toLowerCase();
                         if (text.includes(query)) {
@@ -353,16 +557,16 @@
                     });
                 });
             }
-            
+
             // Active Navigation Highlighting
             const navLinks = document.querySelectorAll('nav a');
             let currentPath = window.location.pathname.split('/').pop().split('?')[0].split('#')[0];
             if (!currentPath || currentPath === '') {
-                currentPath = 'index.html.html';
+                currentPath = 'index.html';
             }
             navLinks.forEach(link => {
                 const href = link.getAttribute('href');
-                if (href && (href === currentPath || (currentPath === 'index.html.html' && href === 'index.html.html'))) {
+                if (href && (href === currentPath || (currentPath === 'index.html' && href === 'index.html'))) {
                     link.classList.add('active');
                 }
             });
@@ -370,4 +574,5 @@
     </script>
 
 </body>
+
 </html>

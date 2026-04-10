@@ -1,103 +1,111 @@
 <!DOCTYPE html>
 
-<html class="light" lang="en"><head>
-<meta charset="utf-8"/>
-<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
-<title>Finance Sector | FinanceHive</title>
-<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
-<link href="https://fonts.googleapis.com/css2?family=Epilogue:wght@400;700;900&amp;family=Plus+Jakarta+Sans:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/>
-<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
-<script id="tailwind-config">
+<html class="light" lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>Finance Sector | FinanceHive</title>
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Epilogue:wght@400;700;900&amp;family=Plus+Jakarta+Sans:wght@400;500;600;700&amp;display=swap"
+        rel="stylesheet" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
+        rel="stylesheet" />
+    <script id="tailwind-config">
         tailwind.config = {
-          darkMode: "class",
-          theme: {
-            extend: {
-              "colors": {
-                      "on-primary": "#ffffff",
-                      "on-tertiary-fixed-variant": "#4a00a4",
-                      "error": "#be2d06",
-                      "surface-container": "#f5f4eb",
-                      "on-secondary-container": "#940014",
-                      "tertiary-container": "#c0a0ff",
-                      "surface-tint": "#776300",
-                      "on-error-container": "#520c00",
-                      "on-tertiary-fixed": "#200051",
-                      "error-container": "#f95630",
-                      "inverse-primary": "#fdd400",
-                      "primary-fixed": "#fdd400",
-                      "on-surface": "#383833",
-                      "on-background": "#383833",
-                      "surface-container-low": "#fbf9f1",
-                      "inverse-surface": "#0e0f0a",
-                      "on-secondary": "#ffffff",
-                      "surface-dim": "#e4e3d8",
-                      "on-secondary-fixed": "#70000d",
-                      "tertiary-fixed-dim": "#b48fff",
-                      "primary-dim": "#695700",
-                      "secondary-dim": "#b10e1e",
-                      "on-error": "#ffffff",
-                      "on-secondary-fixed-variant": "#a60018",
-                      "secondary": "#c31f29",
-                      "surface-container-high": "#efeee5",
-                      "secondary-fixed-dim": "#ffafaa",
-                      "on-primary-container": "#594a00",
-                      "outline": "#81817a",
-                      "tertiary-fixed": "#c0a0ff",
-                      "primary-container": "#fdd400",
-                      "surface-container-lowest": "#ffffff",
-                      "on-tertiary-container": "#3f008e",
-                      "secondary-container": "#ffc3be",
-                      "surface": "#fefcf4",
-                      "surface-variant": "#e9e9de",
-                      "inverse-on-surface": "#9e9d96",
-                      "error-dim": "#b92902",
-                      "on-primary-fixed": "#433700",
-                      "secondary-fixed": "#ffc3be",
-                      "background": "#fefcf4",
-                      "on-tertiary": "#ffffff",
-                      "surface-container-highest": "#e9e9de",
-                      "primary-fixed-dim": "#edc600",
-                      "outline-variant": "#bab9b2",
-                      "primary": "#776300",
-                      "on-surface-variant": "#65655f",
-                      "tertiary": "#7a37eb",
-                      "tertiary-dim": "#6d24de",
-                      "on-primary-fixed-variant": "#645300",
-                      "surface-bright": "#fefcf4"
-              },
-              "borderRadius": {
-                      "DEFAULT": "0.125rem",
-                      "lg": "0.25rem",
-                      "xl": "0.5rem",
-                      "full": "0.75rem"
-              },
-              "fontFamily": {
-                      "headline": ["Epilogue"],
-                      "body": ["Plus Jakarta Sans"],
-                      "label": ["Plus Jakarta Sans"]
-              }
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "on-primary": "#ffffff",
+                        "on-tertiary-fixed-variant": "#4a00a4",
+                        "error": "#be2d06",
+                        "surface-container": "#f5f4eb",
+                        "on-secondary-container": "#940014",
+                        "tertiary-container": "#c0a0ff",
+                        "surface-tint": "#776300",
+                        "on-error-container": "#520c00",
+                        "on-tertiary-fixed": "#200051",
+                        "error-container": "#f95630",
+                        "inverse-primary": "#fdd400",
+                        "primary-fixed": "#fdd400",
+                        "on-surface": "#383833",
+                        "on-background": "#383833",
+                        "surface-container-low": "#fbf9f1",
+                        "inverse-surface": "#0e0f0a",
+                        "on-secondary": "#ffffff",
+                        "surface-dim": "#e4e3d8",
+                        "on-secondary-fixed": "#70000d",
+                        "tertiary-fixed-dim": "#b48fff",
+                        "primary-dim": "#695700",
+                        "secondary-dim": "#b10e1e",
+                        "on-error": "#ffffff",
+                        "on-secondary-fixed-variant": "#a60018",
+                        "secondary": "#c31f29",
+                        "surface-container-high": "#efeee5",
+                        "secondary-fixed-dim": "#ffafaa",
+                        "on-primary-container": "#594a00",
+                        "outline": "#81817a",
+                        "tertiary-fixed": "#c0a0ff",
+                        "primary-container": "#fdd400",
+                        "surface-container-lowest": "#ffffff",
+                        "on-tertiary-container": "#3f008e",
+                        "secondary-container": "#ffc3be",
+                        "surface": "#fefcf4",
+                        "surface-variant": "#e9e9de",
+                        "inverse-on-surface": "#9e9d96",
+                        "error-dim": "#b92902",
+                        "on-primary-fixed": "#433700",
+                        "secondary-fixed": "#ffc3be",
+                        "background": "#fefcf4",
+                        "on-tertiary": "#ffffff",
+                        "surface-container-highest": "#e9e9de",
+                        "primary-fixed-dim": "#edc600",
+                        "outline-variant": "#bab9b2",
+                        "primary": "#776300",
+                        "on-surface-variant": "#65655f",
+                        "tertiary": "#7a37eb",
+                        "tertiary-dim": "#6d24de",
+                        "on-primary-fixed-variant": "#645300",
+                        "surface-bright": "#fefcf4"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.125rem",
+                        "lg": "0.25rem",
+                        "xl": "0.5rem",
+                        "full": "0.75rem"
+                    },
+                    "fontFamily": {
+                        "headline": ["Epilogue"],
+                        "body": ["Plus Jakarta Sans"],
+                        "label": ["Plus Jakarta Sans"]
+                    }
+                },
             },
-          },
         }
-      </script>
-<style>
+    </script>
+    <style>
         .sketch-border {
             border: 2px solid #383833;
             box-shadow: 4px 4px 0px 0px #383833;
         }
+
         .scribble-underline {
             background-image: linear-gradient(120deg, #FFD600 0%, #FFD600 100%);
             background-repeat: no-repeat;
             background-size: 100% 0.3em;
             background-position: 0 88%;
         }
+
         .marker-highlight {
             background: linear-gradient(100deg, rgba(255, 214, 0, 0.3) 0%, rgba(255, 214, 0, 0.7) 100%);
             padding: 0 4px;
         }
     </style>
 
-    
+
 
     <style>
         /* Active Navigation Link Styling */
@@ -111,202 +119,289 @@
 </head>
 
 <body class="bg-[#FFFDF5] text-on-surface font-body selection:bg-primary-container min-h-screen flex flex-col">
-<!-- TopNavBar -->
-<nav class="bg-surface border-b-4 border-stone-800 flex justify-between items-center w-full px-6 py-4 max-w-7xl mx-auto sticky top-0 z-50 gap-8">
-<a href="index.html.html" class="text-3xl font-black text-[#383833] tracking-tighter font-marker">FinanceHive</a>
-<div class="hidden md:flex gap-6 items-center ml-auto">
-<a class="text-on-surface hover:text-secondary font-marker font-black text-base transition-all duration-200" href="learn-finance.html.html">Concepts</a>
-<a class="text-on-surface hover:text-secondary font-marker font-black text-base transition-all duration-200" href="sectors.html.html">Sectors</a>
-<a class="text-on-surface hover:text-secondary font-marker font-black text-base transition-all duration-200" href="request-topic.html.html">Request a Topic</a>
-<a class="text-on-surface hover:text-secondary font-marker font-black text-base transition-all duration-200" href="about.html.html">About</a>
-</div>
-<div class="flex items-center gap-4 lg:gap-6">
+    <!-- TopNavBar -->
+    <nav
+        class="bg-surface border-b-4 border-stone-800 flex justify-between items-center w-full px-6 py-4 max-w-7xl mx-auto sticky top-0 z-50 gap-8">
+        <a href="index.html" class="text-3xl font-black text-[#383833] tracking-tighter font-marker">FinanceHive</a>
+        <div class="hidden md:flex gap-6 items-center ml-auto">
+            <a class="text-on-surface hover:text-secondary font-marker font-black text-base transition-all duration-200"
+                href="learn-finance.html">Concepts</a>
+            <a class="text-on-surface hover:text-secondary font-marker font-black text-base transition-all duration-200"
+                href="sectors.html">Sectors</a>
+            <a class="text-on-surface hover:text-secondary font-marker font-black text-base transition-all duration-200"
+                href="request-topic.html">Request a Topic</a>
+            <a class="text-on-surface hover:text-secondary font-marker font-black text-base transition-all duration-200"
+                href="about.html">About</a>
+        </div>
+        <div class="flex items-center gap-4 lg:gap-6">
 
 
 
-<a href="learn-finance.html.html" class="bg-primary-container text-on-primary-container px-6 py-2 sketch-border font-black hover:translate-x-1 hover:translate-y-1 transition-all">
-    Start Learning
-  </a>
-</div>
-</nav>
+            <a href="learn-finance.html"
+                class="bg-primary-container text-on-primary-container px-6 py-2 sketch-border font-black hover:translate-x-1 hover:translate-y-1 transition-all">
+                Start Learning
+            </a>
+        </div>
+    </nav>
 
-<main class="flex-grow max-w-screen-xl mx-auto px-6 py-12 w-full">
-    <div class="mb-12">
-        <a href="sectors.html.html" class="inline-block text-[#383833] font-bold font-headline hover:text-primary transition-colors text-lg font-black">
-            &larr; Back to All Sectors
-        </a>
-    </div>
+    <main class="flex-grow max-w-screen-xl mx-auto px-6 py-12 w-full">
+        <div class="mb-12">
+            <a href="sectors.html"
+                class="inline-block text-[#383833] font-bold font-headline hover:text-primary transition-colors text-lg font-black">
+                &larr; Back to All Sectors
+            </a>
+        </div>
 
-    <!-- Header Section -->
-    <header class="mb-16">
-        <h1 class="text-5xl md:text-7xl font-black font-headline text-on-surface mb-6 tracking-tighter leading-none"><span class="scribble-underline">Finance Sector</span></h1>
-        <p class="text-xl md:text-2xl font-medium text-on-surface/80 max-w-3xl border-l-4 border-primary pl-4 bg-primary/5 py-2">How banks, insurers, and mutual funds actually make money</p>
-    </header>
+        <!-- Header Section -->
+        <header class="mb-16">
+            <h1
+                class="text-5xl md:text-7xl font-black font-headline text-on-surface mb-6 tracking-tighter leading-none">
+                <span class="scribble-underline">Finance Sector</span></h1>
+            <p
+                class="text-xl md:text-2xl font-medium text-on-surface/80 max-w-3xl border-l-4 border-primary pl-4 bg-primary/5 py-2">
+                How banks, insurers, and mutual funds actually make money</p>
+        </header>
 
-    <div class="grid grid-cols-1 md:grid-cols-2 gap-8 mb-16">
-        <!-- SECTION 1 -->
-        <article class="bg-surface p-8 rounded-xl shadow-sm border-l-8 border-[#FFD600] border-t border-b border-r border-outline-variant/30 relative sketch-border hover:translate-y-[-2px] transition-transform duration-200">
-            <h2 class="font-headline font-black text-2xl mb-4 text-on-surface">How They Make Money</h2>
-            <p class="text-on-surface/80 leading-relaxed font-body">
-                The finance sector connects people who have money with people who need it. Banks collect deposits and lend at higher interest rates, keeping the spread as profit. Insurance companies collect premiums from millions, invest that pool, and pay claims from it. Mutual funds pool small investments and charge a management fee on total assets.
-            </p>
-        </article>
-
-        <!-- SECTION 2 -->
-        <article class="bg-surface p-8 rounded-xl shadow-sm border-l-8 border-[#FFD600] border-t border-b border-r border-outline-variant/30 relative sketch-border hover:translate-y-[-2px] transition-transform duration-200">
-            <h2 class="font-headline font-black text-2xl mb-4 text-on-surface">Key Players in India</h2>
-            <div class="space-y-3 text-on-surface/80 leading-relaxed font-body">
-                <p><strong>Banks:</strong> HDFC Bank, ICICI Bank, SBI, Kotak Bank</p>
-                <p><strong>NBFCs:</strong> Bajaj Finance, Muthoot Finance</p>
-                <p><strong>Insurance:</strong> LIC, HDFC Life, ICICI Lombard</p>
-                <p><strong>AMCs:</strong> SBI MF, HDFC AMC, Nippon India AMC</p>
-                <p><strong>Brokers:</strong> Zerodha, Groww, Angel One</p>
-            </div>
-        </article>
-
-        <!-- SECTION 3 -->
-        <article class="bg-surface p-8 rounded-xl shadow-sm border-l-8 border-[#FFD600] border-t border-b border-r border-outline-variant/30 relative sketch-border hover:translate-y-[-2px] transition-transform duration-200">
-            <h2 class="font-headline font-black text-2xl mb-4 text-on-surface">3 Terms Every Learner Must Know</h2>
-            <div class="space-y-4 text-on-surface/80 leading-relaxed font-body">
-                <p><strong>NIM (Net Interest Margin):</strong> The difference between what a bank earns on loans and what it pays on deposits. Higher NIM = more profitable bank.</p>
-                <p><strong>NPA (Non-Performing Asset):</strong> A loan that the borrower has stopped repaying. High NPAs hurt bank profits badly.</p>
-                <p><strong>AUM (Assets Under Management):</strong> Total money a mutual fund manages. More AUM = more fee income for the fund house.</p>
-            </div>
-        </article>
-
-        <!-- SECTION 4 -->
-        <article class="bg-surface p-8 rounded-xl shadow-sm border-l-8 border-[#FFD600] border-t border-b border-r border-outline-variant/30 relative sketch-border hover:translate-y-[-2px] transition-transform duration-200">
-            <h2 class="font-headline font-black text-2xl mb-4 text-on-surface">What to Watch as a Learner</h2>
-            <ul class="list-disc pl-5 space-y-3 text-on-surface/80 leading-relaxed font-body font-medium">
-                <li>NIM and NPA numbers when reading bank results</li>
-                <li>AUM growth for mutual fund companies</li>
-                <li>RBI policy rate changes — they affect all lending rates instantly</li>
-            </ul>
-        </article>
-    </div>
-
-    <!-- View Full Analysis Button -->
-    <div class="flex justify-center mb-16">
-        <button id="toggleAnalysisBtn" class="bg-primary-container text-on-primary-container px-8 py-3 text-lg sketch-border font-black hover:translate-x-1 hover:translate-y-1 transition-all">View Full Analysis ↓</button>
-    </div>
-
-    <!-- Hidden Sections (6 sections) -->
-    <div id="fullAnalysisSections" style="display: none;">
         <div class="grid grid-cols-1 md:grid-cols-2 gap-8 mb-16">
-            <!-- SECTION 5 -->
-            <article class="bg-surface p-8 rounded-xl shadow-sm border-l-8 border-[#FFD600] border-t border-b border-r border-outline-variant/30 relative sketch-border hover:translate-y-[-2px] transition-transform duration-200">
-                <h2 class="font-headline font-black text-2xl mb-4 text-on-surface">Value Chain</h2>
+            <!-- SECTION 1 -->
+            <article
+                class="bg-surface p-8 rounded-xl shadow-sm border-l-8 border-[#FFD600] border-t border-b border-r border-outline-variant/30 relative sketch-border hover:translate-y-[-2px] transition-transform duration-200">
+                <h2 class="font-headline font-black text-2xl mb-4 text-on-surface">How They Make Money</h2>
                 <p class="text-on-surface/80 leading-relaxed font-body">
-                    The finance sector connects savers with borrowers through trusted intermediaries. In banking, depositors provide funds which banks lend to businesses and individuals at higher rates, keeping the spread as profit. In insurance, millions of policyholders pay small premiums which are pooled and invested — claims are paid from this pool. In mutual funds, small SIP contributions are aggregated into large portfolios managed by professionals. Regulators like RBI, SEBI, and IRDAI oversee every step to ensure savers can trust the system with their money.
+                    The finance sector connects people who have money with people who need it. Banks collect deposits
+                    and lend at higher interest rates, keeping the spread as profit. Insurance companies collect
+                    premiums from millions, invest that pool, and pay claims from it. Mutual funds pool small
+                    investments and charge a management fee on total assets.
                 </p>
             </article>
 
-            <!-- SECTION 6 -->
-            <article class="bg-surface p-8 rounded-xl shadow-sm border-l-8 border-[#FFD600] border-t border-b border-r border-outline-variant/30 relative sketch-border hover:translate-y-[-2px] transition-transform duration-200">
-                <h2 class="font-headline font-black text-2xl mb-4 text-on-surface">Revenue Model</h2>
-                <p class="text-on-surface/80 leading-relaxed font-body">
-                    Banks and NBFCs earn through Net Interest Income (NII) — the gap between what they charge on loans and what they pay on deposits. HDFC Bank lends at around 10% and pays 5.5% on deposits — earning 4.5% on every rupee deployed. Insurance companies earn from premiums collected plus investment income earned on that pool before claims are paid. AMCs charge an annual expense ratio of 0.5–2% on total Assets Under Management — as AUM grows, fee income scales automatically with almost no extra cost. Brokerages earn per trade executed, while fintechs earn from merchant fees, loan interest, and distributing financial products through their apps.
-                </p>
-            </article>
-
-            <!-- SECTION 7 -->
-            <article class="bg-surface p-8 rounded-xl shadow-sm border-l-8 border-[#FFD600] border-t border-b border-r border-outline-variant/30 relative sketch-border hover:translate-y-[-2px] transition-transform duration-200">
-                <h2 class="font-headline font-black text-2xl mb-4 text-on-surface">Cost Structure</h2>
-                <p class="text-on-surface/80 leading-relaxed font-body">
-                    For banks and NBFCs, the biggest cost is the cost of funds — interest paid to depositors and lenders. When RBI raises rates, deposit costs rise immediately, squeezing margins. Provisioning is the most dangerous cost — when loans go bad, banks must set aside money from profits, which can wipe out an entire year's earnings. For insurance companies, claims cost is the largest and most unpredictable expense. For AMCs, costs are mostly fixed — fund managers, analysts, and technology — which means every additional rupee of AUM flows almost entirely to profit. Across all sub-sectors, regulatory compliance costs (CRR, SLR for banks; Solvency Ratio for insurers) are non-negotiable and represent the price of operating in a regulated sector.
-                </p>
-            </article>
-
-            <!-- SECTION 8 -->
-            <article class="bg-surface p-8 rounded-xl shadow-sm border-l-8 border-[#FFD600] border-t border-b border-r border-outline-variant/30 relative sketch-border hover:translate-y-[-2px] transition-transform duration-200">
-                <h2 class="font-headline font-black text-2xl mb-4 text-on-surface">Key KPIs</h2>
-                <div class="space-y-4 text-on-surface/80 leading-relaxed font-body">
-                    <p><strong>NIM (Net Interest Margin):</strong> Net Interest Income divided by average earning assets. The single most watched profitability ratio for banks. Top private banks run at 4–5%. A falling NIM is an early warning sign.</p>
-                    <p><strong>GNPA % (Gross Non-Performing Assets):</strong> Bad loans as a percentage of total loans. Above 5% is a warning zone. Above 10% is crisis territory. India's PSU banks hit 15–20% during 2016–2019.</p>
-                    <p><strong>CASA Ratio:</strong> Current and Savings Account deposits as a percentage of total deposits. Higher CASA means cheaper funding and stronger margins. HDFC Bank's consistently high CASA is a core competitive advantage.</p>
-                    <p><strong>AUM and SIP Flows:</strong> For AMCs, total Assets Under Management drives all fee income. Monthly SIP inflow data shows retail investor health. Rising AUM in all market conditions signals a trusted franchise.</p>
-                    <p><strong>Combined Ratio:</strong> For general insurers — claims plus expenses as a percentage of premiums. Below 100% means underwriting profit. Above 100% means the insurer relies on investment income to survive.</p>
-                    <p><strong>ROE (Return on Equity):</strong> Net profit divided by equity. Target 15–20% for well-managed banks. A consistently falling ROE signals structural problems.</p>
+            <!-- SECTION 2 -->
+            <article
+                class="bg-surface p-8 rounded-xl shadow-sm border-l-8 border-[#FFD600] border-t border-b border-r border-outline-variant/30 relative sketch-border hover:translate-y-[-2px] transition-transform duration-200">
+                <h2 class="font-headline font-black text-2xl mb-4 text-on-surface">Key Players in India</h2>
+                <div class="space-y-3 text-on-surface/80 leading-relaxed font-body">
+                    <p><strong>Banks:</strong> HDFC Bank, ICICI Bank, SBI, Kotak Bank</p>
+                    <p><strong>NBFCs:</strong> Bajaj Finance, Muthoot Finance</p>
+                    <p><strong>Insurance:</strong> LIC, HDFC Life, ICICI Lombard</p>
+                    <p><strong>AMCs:</strong> SBI MF, HDFC AMC, Nippon India AMC</p>
+                    <p><strong>Brokers:</strong> Zerodha, Groww, Angel One</p>
                 </div>
             </article>
 
-            <!-- SECTION 9 -->
-            <article class="bg-surface p-8 rounded-xl shadow-sm border-l-8 border-[#FFD600] border-t border-b border-r border-outline-variant/30 relative sketch-border hover:translate-y-[-2px] transition-transform duration-200">
-                <h2 class="font-headline font-black text-2xl mb-4 text-on-surface">Growth Drivers</h2>
+            <!-- SECTION 3 -->
+            <article
+                class="bg-surface p-8 rounded-xl shadow-sm border-l-8 border-[#FFD600] border-t border-b border-r border-outline-variant/30 relative sketch-border hover:translate-y-[-2px] transition-transform duration-200">
+                <h2 class="font-headline font-black text-2xl mb-4 text-on-surface">3 Terms Every Learner Must Know</h2>
                 <div class="space-y-4 text-on-surface/80 leading-relaxed font-body">
-                    <p>India's credit-to-GDP ratio remains well below developed economies — meaning enormous lending potential is untapped. Retail lending (home loans, personal loans, auto loans) and MSME lending are growing fastest as aspiration-driven Indian consumers buy first homes and vehicles.</p>
-                    <p>India's insurance penetration remains significantly below the global average. Post-COVID awareness, rising healthcare costs, and digital distribution through apps like PolicyBazaar are bringing millions of new households into formal insurance for the first time.</p>
-                    <p>India's mutual fund AUM has grown dramatically driven by the SIP culture and rising financial literacy. Monthly SIP inflows now continue even through market volatility — showing genuine behavioral change among Indian savers.</p>
-                    <p>The JAM Trinity (Jan Dhan, Aadhaar, Mobile) has brought hundreds of millions into formal banking. Converting these account holders into borrowers, investors, and insurance buyers is a decade-long opportunity for every sub-sector of finance.</p>
+                    <p><strong>NIM (Net Interest Margin):</strong> The difference between what a bank earns on loans and
+                        what it pays on deposits. Higher NIM = more profitable bank.</p>
+                    <p><strong>NPA (Non-Performing Asset):</strong> A loan that the borrower has stopped repaying. High
+                        NPAs hurt bank profits badly.</p>
+                    <p><strong>AUM (Assets Under Management):</strong> Total money a mutual fund manages. More AUM =
+                        more fee income for the fund house.</p>
                 </div>
             </article>
 
-            <!-- SECTION 10 -->
-            <article class="bg-surface p-8 rounded-xl shadow-sm border-l-8 border-[#FFD600] border-t border-b border-r border-outline-variant/30 relative sketch-border hover:translate-y-[-2px] transition-transform duration-200">
-                <h2 class="font-headline font-black text-2xl mb-4 text-on-surface">Risks</h2>
-                <div class="space-y-4 text-on-surface/80 leading-relaxed font-body">
-                    <p><strong>NPA Risk (Banks and NBFCs):</strong> When borrowers stop repaying, banks must provision from profits. India's PSU banks experienced GNPA ratios of 15–20% during 2016–2019, wiping out years of profits and requiring government recapitalization. This is the most dangerous risk for any lender.</p>
-                    <p><strong>NBFC Liquidity Risk:</strong> NBFCs borrow short-term to lend long-term. When funding dries up suddenly — as after IL&FS defaulted in 2018 — NBFCs face an immediate crisis. DHFL collapsed entirely. Sectors they served (real estate, auto, MSME) faced credit crunches for years.</p>
-                    <p><strong>Regulatory Risk:</strong> RBI, SEBI, and IRDAI can change rules overnight. Higher risk weights on personal loans (as imposed in late 2023) forced banks to slow growth. SEBI's changes to F&O rules directly hit brokerage volumes. Regulatory risk is the most powerful external force in this sector.</p>
-                    <p><strong>Market Risk (AMCs and Brokerages):</strong> When equity markets fall sharply, AMC fee income falls automatically as AUM shrinks. Brokerages see trading volumes collapse in bear markets. Companies with lean cost structures survive — those with high fixed costs face serious stress.</p>
-                    <p><strong>Mis-selling Risk:</strong> Agents selling products that maximize commissions rather than customer benefit creates regulatory backlash and reputational damage. IRDAI and SEBI have both imposed commission caps to address this.</p>
-                </div>
+            <!-- SECTION 4 -->
+            <article
+                class="bg-surface p-8 rounded-xl shadow-sm border-l-8 border-[#FFD600] border-t border-b border-r border-outline-variant/30 relative sketch-border hover:translate-y-[-2px] transition-transform duration-200">
+                <h2 class="font-headline font-black text-2xl mb-4 text-on-surface">What to Watch as a Learner</h2>
+                <ul class="list-disc pl-5 space-y-3 text-on-surface/80 leading-relaxed font-body font-medium">
+                    <li>NIM and NPA numbers when reading bank results</li>
+                    <li>AUM growth for mutual fund companies</li>
+                    <li>RBI policy rate changes — they affect all lending rates instantly</li>
+                </ul>
             </article>
         </div>
-    </div>
 
-</main>
+        <!-- View Full Analysis Button -->
+        <div class="flex justify-center mb-16">
+            <button id="toggleAnalysisBtn"
+                class="bg-primary-container text-on-primary-container px-8 py-3 text-lg sketch-border font-black hover:translate-x-1 hover:translate-y-1 transition-all">View
+                Full Analysis ↓</button>
+        </div>
 
-<script>
-    document.addEventListener('DOMContentLoaded', () => {
-        const btn = document.getElementById('toggleAnalysisBtn');
-        const sections = document.getElementById('fullAnalysisSections');
-        
-        btn.addEventListener('click', () => {
-            if (sections.style.display === 'none') {
-                sections.style.display = 'block';
-                btn.innerText = 'Hide Analysis ↑';
-            } else {
-                sections.style.display = 'none';
-                btn.innerText = 'View Full Analysis ↓';
-            }
+        <!-- Hidden Sections (6 sections) -->
+        <div id="fullAnalysisSections" style="display: none;">
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8 mb-16">
+                <!-- SECTION 5 -->
+                <article
+                    class="bg-surface p-8 rounded-xl shadow-sm border-l-8 border-[#FFD600] border-t border-b border-r border-outline-variant/30 relative sketch-border hover:translate-y-[-2px] transition-transform duration-200">
+                    <h2 class="font-headline font-black text-2xl mb-4 text-on-surface">Value Chain</h2>
+                    <p class="text-on-surface/80 leading-relaxed font-body">
+                        The finance sector connects savers with borrowers through trusted intermediaries. In banking,
+                        depositors provide funds which banks lend to businesses and individuals at higher rates, keeping
+                        the spread as profit. In insurance, millions of policyholders pay small premiums which are
+                        pooled and invested — claims are paid from this pool. In mutual funds, small SIP contributions
+                        are aggregated into large portfolios managed by professionals. Regulators like RBI, SEBI, and
+                        IRDAI oversee every step to ensure savers can trust the system with their money.
+                    </p>
+                </article>
+
+                <!-- SECTION 6 -->
+                <article
+                    class="bg-surface p-8 rounded-xl shadow-sm border-l-8 border-[#FFD600] border-t border-b border-r border-outline-variant/30 relative sketch-border hover:translate-y-[-2px] transition-transform duration-200">
+                    <h2 class="font-headline font-black text-2xl mb-4 text-on-surface">Revenue Model</h2>
+                    <p class="text-on-surface/80 leading-relaxed font-body">
+                        Banks and NBFCs earn through Net Interest Income (NII) — the gap between what they charge on
+                        loans and what they pay on deposits. HDFC Bank lends at around 10% and pays 5.5% on deposits —
+                        earning 4.5% on every rupee deployed. Insurance companies earn from premiums collected plus
+                        investment income earned on that pool before claims are paid. AMCs charge an annual expense
+                        ratio of 0.5–2% on total Assets Under Management — as AUM grows, fee income scales automatically
+                        with almost no extra cost. Brokerages earn per trade executed, while fintechs earn from merchant
+                        fees, loan interest, and distributing financial products through their apps.
+                    </p>
+                </article>
+
+                <!-- SECTION 7 -->
+                <article
+                    class="bg-surface p-8 rounded-xl shadow-sm border-l-8 border-[#FFD600] border-t border-b border-r border-outline-variant/30 relative sketch-border hover:translate-y-[-2px] transition-transform duration-200">
+                    <h2 class="font-headline font-black text-2xl mb-4 text-on-surface">Cost Structure</h2>
+                    <p class="text-on-surface/80 leading-relaxed font-body">
+                        For banks and NBFCs, the biggest cost is the cost of funds — interest paid to depositors and
+                        lenders. When RBI raises rates, deposit costs rise immediately, squeezing margins. Provisioning
+                        is the most dangerous cost — when loans go bad, banks must set aside money from profits, which
+                        can wipe out an entire year's earnings. For insurance companies, claims cost is the largest and
+                        most unpredictable expense. For AMCs, costs are mostly fixed — fund managers, analysts, and
+                        technology — which means every additional rupee of AUM flows almost entirely to profit. Across
+                        all sub-sectors, regulatory compliance costs (CRR, SLR for banks; Solvency Ratio for insurers)
+                        are non-negotiable and represent the price of operating in a regulated sector.
+                    </p>
+                </article>
+
+                <!-- SECTION 8 -->
+                <article
+                    class="bg-surface p-8 rounded-xl shadow-sm border-l-8 border-[#FFD600] border-t border-b border-r border-outline-variant/30 relative sketch-border hover:translate-y-[-2px] transition-transform duration-200">
+                    <h2 class="font-headline font-black text-2xl mb-4 text-on-surface">Key KPIs</h2>
+                    <div class="space-y-4 text-on-surface/80 leading-relaxed font-body">
+                        <p><strong>NIM (Net Interest Margin):</strong> Net Interest Income divided by average earning
+                            assets. The single most watched profitability ratio for banks. Top private banks run at
+                            4–5%. A falling NIM is an early warning sign.</p>
+                        <p><strong>GNPA % (Gross Non-Performing Assets):</strong> Bad loans as a percentage of total
+                            loans. Above 5% is a warning zone. Above 10% is crisis territory. India's PSU banks hit
+                            15–20% during 2016–2019.</p>
+                        <p><strong>CASA Ratio:</strong> Current and Savings Account deposits as a percentage of total
+                            deposits. Higher CASA means cheaper funding and stronger margins. HDFC Bank's consistently
+                            high CASA is a core competitive advantage.</p>
+                        <p><strong>AUM and SIP Flows:</strong> For AMCs, total Assets Under Management drives all fee
+                            income. Monthly SIP inflow data shows retail investor health. Rising AUM in all market
+                            conditions signals a trusted franchise.</p>
+                        <p><strong>Combined Ratio:</strong> For general insurers — claims plus expenses as a percentage
+                            of premiums. Below 100% means underwriting profit. Above 100% means the insurer relies on
+                            investment income to survive.</p>
+                        <p><strong>ROE (Return on Equity):</strong> Net profit divided by equity. Target 15–20% for
+                            well-managed banks. A consistently falling ROE signals structural problems.</p>
+                    </div>
+                </article>
+
+                <!-- SECTION 9 -->
+                <article
+                    class="bg-surface p-8 rounded-xl shadow-sm border-l-8 border-[#FFD600] border-t border-b border-r border-outline-variant/30 relative sketch-border hover:translate-y-[-2px] transition-transform duration-200">
+                    <h2 class="font-headline font-black text-2xl mb-4 text-on-surface">Growth Drivers</h2>
+                    <div class="space-y-4 text-on-surface/80 leading-relaxed font-body">
+                        <p>India's credit-to-GDP ratio remains well below developed economies — meaning enormous lending
+                            potential is untapped. Retail lending (home loans, personal loans, auto loans) and MSME
+                            lending are growing fastest as aspiration-driven Indian consumers buy first homes and
+                            vehicles.</p>
+                        <p>India's insurance penetration remains significantly below the global average. Post-COVID
+                            awareness, rising healthcare costs, and digital distribution through apps like PolicyBazaar
+                            are bringing millions of new households into formal insurance for the first time.</p>
+                        <p>India's mutual fund AUM has grown dramatically driven by the SIP culture and rising financial
+                            literacy. Monthly SIP inflows now continue even through market volatility — showing genuine
+                            behavioral change among Indian savers.</p>
+                        <p>The JAM Trinity (Jan Dhan, Aadhaar, Mobile) has brought hundreds of millions into formal
+                            banking. Converting these account holders into borrowers, investors, and insurance buyers is
+                            a decade-long opportunity for every sub-sector of finance.</p>
+                    </div>
+                </article>
+
+                <!-- SECTION 10 -->
+                <article
+                    class="bg-surface p-8 rounded-xl shadow-sm border-l-8 border-[#FFD600] border-t border-b border-r border-outline-variant/30 relative sketch-border hover:translate-y-[-2px] transition-transform duration-200">
+                    <h2 class="font-headline font-black text-2xl mb-4 text-on-surface">Risks</h2>
+                    <div class="space-y-4 text-on-surface/80 leading-relaxed font-body">
+                        <p><strong>NPA Risk (Banks and NBFCs):</strong> When borrowers stop repaying, banks must
+                            provision from profits. India's PSU banks experienced GNPA ratios of 15–20% during
+                            2016–2019, wiping out years of profits and requiring government recapitalization. This is
+                            the most dangerous risk for any lender.</p>
+                        <p><strong>NBFC Liquidity Risk:</strong> NBFCs borrow short-term to lend long-term. When funding
+                            dries up suddenly — as after IL&FS defaulted in 2018 — NBFCs face an immediate crisis. DHFL
+                            collapsed entirely. Sectors they served (real estate, auto, MSME) faced credit crunches for
+                            years.</p>
+                        <p><strong>Regulatory Risk:</strong> RBI, SEBI, and IRDAI can change rules overnight. Higher
+                            risk weights on personal loans (as imposed in late 2023) forced banks to slow growth. SEBI's
+                            changes to F&O rules directly hit brokerage volumes. Regulatory risk is the most powerful
+                            external force in this sector.</p>
+                        <p><strong>Market Risk (AMCs and Brokerages):</strong> When equity markets fall sharply, AMC fee
+                            income falls automatically as AUM shrinks. Brokerages see trading volumes collapse in bear
+                            markets. Companies with lean cost structures survive — those with high fixed costs face
+                            serious stress.</p>
+                        <p><strong>Mis-selling Risk:</strong> Agents selling products that maximize commissions rather
+                            than customer benefit creates regulatory backlash and reputational damage. IRDAI and SEBI
+                            have both imposed commission caps to address this.</p>
+                    </div>
+                </article>
+            </div>
+        </div>
+
+    </main>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const btn = document.getElementById('toggleAnalysisBtn');
+            const sections = document.getElementById('fullAnalysisSections');
+
+            btn.addEventListener('click', () => {
+                if (sections.style.display === 'none') {
+                    sections.style.display = 'block';
+                    btn.innerText = 'Hide Analysis ↑';
+                } else {
+                    sections.style.display = 'none';
+                    btn.innerText = 'View Full Analysis ↓';
+                }
+            });
         });
-    });
-</script>
+    </script>
     <!-- Sector Navigation -->
-    <div style="display: flex; justify-content: space-between; align-items: center; width: 100%; max-width: 900px; margin: 60px auto 40px auto; padding-top: 20px; border-top: 2px solid #E5E7EB; box-sizing: border-box;">
-        <a href="sector-energy.html" class="inline-block text-[#383833] font-bold font-headline hover:text-primary transition-colors text-lg font-black">
+    <div
+        style="display: flex; justify-content: space-between; align-items: center; width: 100%; max-width: 900px; margin: 60px auto 40px auto; padding-top: 20px; border-top: 2px solid #E5E7EB; box-sizing: border-box;">
+        <a href="sector-energy.html"
+            class="inline-block text-[#383833] font-bold font-headline hover:text-primary transition-colors text-lg font-black">
             &larr; Previous Sector
         </a>
-        <a href="sector-fmcg.html" class="inline-block text-[#383833] font-bold font-headline hover:text-primary transition-colors text-lg font-black">
+        <a href="sector-fmcg.html"
+            class="inline-block text-[#383833] font-bold font-headline hover:text-primary transition-colors text-lg font-black">
             Next Sector &rarr;
         </a>
     </div>
 
-<!-- Footer -->
-<footer class="bg-stone-900 text-white border-t-8 border-stone-800 flex flex-col md:flex-row justify-between items-center w-full px-8 py-16 gap-8">
-<div class="max-w-7xl mx-auto w-full flex flex-col md:flex-row justify-between items-baseline gap-8">
-<div class="flex flex-col items-start">
-<a href="index.html.html" class="text-3xl font-black text-white font-marker tracking-tighter">FinanceHive</a>
-<p class="text-stone-400 font-medium text-xs">Hand-drawn for Indian minds. ✏️</p>
-</div>
-<div class="flex flex-wrap justify-center gap-6 md:gap-8 font-marker font-black text-base">
-<a class="hover:text-primary transition-colors" href="privacy.html">Privacy</a>
-<span class="text-stone-700 hidden md:inline">|</span>
-<a class="hover:text-primary transition-colors" href="terms.html">Terms</a>
-<span class="text-stone-700 hidden md:inline">|</span>
-<a class="hover:text-primary transition-colors" href="disclaimer.html.html">Disclaimer</a>
-<span class="text-stone-700 hidden md:inline">|</span>
-<a class="hover:text-primary transition-colors" href="mailto:startfinanacejourney@gmail.com?subject=Inquiry%20from%20FinanceHive">Contact</a>
-</div>
-<div class="text-stone-500 font-bold text-sm whitespace-nowrap">© 2026 FinanceHive. All rights reserved.</div>
-</div>
-</footer>
-<script>
-(function(){if(!window.chatbase||window.chatbase("getState")!=="initialized"){window.chatbase=(...arguments)=>{if(!window.chatbase.q){window.chatbase.q=[]}window.chatbase.q.push(arguments)};window.chatbase=new Proxy(window.chatbase,{get(target,prop){if(prop==="q"){return target.q}return(...args)=>target(prop,...args)}})}const onLoad=function(){const script=document.createElement("script");script.src="https://www.chatbase.co/embed.min.js";script.id="okRPgozu3doX4vY4MK0UV";script.domain="www.chatbase.co";document.body.appendChild(script)};if(document.readyState==="complete"){onLoad()}else{window.addEventListener("load",onLoad)}})();
-</script>
+    <!-- Footer -->
+    <footer
+        class="bg-stone-900 text-white border-t-8 border-stone-800 flex flex-col md:flex-row justify-between items-center w-full px-8 py-16 gap-8">
+        <div class="max-w-7xl mx-auto w-full flex flex-col md:flex-row justify-between items-baseline gap-8">
+            <div class="flex flex-col items-start">
+                <a href="index.html" class="text-3xl font-black text-white font-marker tracking-tighter">FinanceHive</a>
+                <p class="text-stone-400 font-medium text-xs">Hand-drawn for Indian minds. ✏️</p>
+            </div>
+            <div class="flex flex-wrap justify-center gap-6 md:gap-8 font-marker font-black text-base">
+                <a class="hover:text-primary transition-colors" href="privacy.html">Privacy</a>
+                <span class="text-stone-700 hidden md:inline">|</span>
+                <a class="hover:text-primary transition-colors" href="terms.html">Terms</a>
+                <span class="text-stone-700 hidden md:inline">|</span>
+                <a class="hover:text-primary transition-colors" href="disclaimer.html">Disclaimer</a>
+                <span class="text-stone-700 hidden md:inline">|</span>
+                <a class="hover:text-primary transition-colors"
+                    href="mailto:startfinanacejourney@gmail.com?subject=Inquiry%20from%20FinanceHive">Contact</a>
+            </div>
+            <div class="text-stone-500 font-bold text-sm whitespace-nowrap">© 2026 FinanceHive. All rights reserved.
+            </div>
+        </div>
+    </footer>
+    <script>
+        (function () { if (!window.chatbase || window.chatbase("getState") !== "initialized") { window.chatbase = (...arguments) => { if (!window.chatbase.q) { window.chatbase.q = [] } window.chatbase.q.push(arguments) }; window.chatbase = new Proxy(window.chatbase, { get(target, prop) { if (prop === "q") { return target.q } return (...args) => target(prop, ...args) } }) } const onLoad = function () { const script = document.createElement("script"); script.src = "https://www.chatbase.co/embed.min.js"; script.id = "okRPgozu3doX4vY4MK0UV"; script.domain = "www.chatbase.co"; document.body.appendChild(script) }; if (document.readyState === "complete") { onLoad() } else { window.addEventListener("load", onLoad) } })();
+    </script>
 
-    
+
 
     <script>
         document.addEventListener('DOMContentLoaded', () => {
@@ -319,11 +414,11 @@
                     searchIcon.addEventListener('click', () => searchInput.focus());
                 }
 
-                searchInput.addEventListener('input', function() {
+                searchInput.addEventListener('input', function () {
                     const query = this.value.toLowerCase().trim();
                     // Target concept cards (article) and sector cards (sketch-border items in grids)
                     const cards = document.querySelectorAll('article, .grid > .sketch-border, .grid > div[onclick*="sector-"]');
-                    
+
                     cards.forEach(card => {
                         const text = card.textContent.toLowerCase();
                         if (text.includes(query)) {
@@ -334,16 +429,16 @@
                     });
                 });
             }
-            
+
             // Active Navigation Highlighting
             const navLinks = document.querySelectorAll('nav a');
             let currentPath = window.location.pathname.split('/').pop().split('?')[0].split('#')[0];
             if (!currentPath || currentPath === '') {
-                currentPath = 'index.html.html';
+                currentPath = 'index.html';
             }
             navLinks.forEach(link => {
                 const href = link.getAttribute('href');
-                if (href && (href === currentPath || (currentPath === 'index.html.html' && href === 'index.html.html'))) {
+                if (href && (href === currentPath || (currentPath === 'index.html' && href === 'index.html'))) {
                     link.classList.add('active');
                 }
             });
@@ -351,4 +446,5 @@
     </script>
 
 </body>
+
 </html>

@@ -2,7 +2,7 @@
 Fix nav link spacing after search bar removal.
 Adds 'ml-auto' to the nav links container div to push it rightward,
 creating visual balance between the Logo (left) and Start Learning button (right).
-Skips learn-finance.html.html which still has its search bar.
+Skips learn-finance.html which still has its search bar.
 """
 import os
 import glob
@@ -17,8 +17,8 @@ already_done = 0
 for filepath in html_files:
     filename = os.path.basename(filepath)
     
-    # Skip learn-finance.html.html completely
-    if filename == "learn-finance.html.html":
+    # Skip learn-finance.html completely
+    if filename == "learn-finance.html":
         skipped += 1
         continue
     

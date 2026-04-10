@@ -35,10 +35,10 @@ script_to_add = """
             
             // Active Navigation Highlighting
             const navLinks = document.querySelectorAll('nav a');
-            // get current page filename, default to index.html.html if empty
+            // get current page filename, default to index.html if empty
             let currentPath = window.location.pathname.split('/').pop().split('?')[0].split('#')[0];
             if (!currentPath || currentPath === '') {
-                currentPath = 'index.html.html';
+                currentPath = 'index.html';
             }
             navLinks.forEach(link => {
                 const href = link.getAttribute('href');
@@ -65,7 +65,7 @@ style_to_add = """
 
 count = 0
 for filepath in html_files:
-    if not (filepath.endswith(".html") or filepath.endswith(".html.html")):
+    if not (filepath.endswith(".html") or filepath.endswith(".html")):
         continue
     with open(filepath, "r", encoding="utf-8") as f:
         content = f.read()

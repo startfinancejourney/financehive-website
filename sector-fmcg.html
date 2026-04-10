@@ -1,103 +1,111 @@
 <!DOCTYPE html>
 
-<html class="light" lang="en"><head>
-<meta charset="utf-8"/>
-<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
-<title>FMCG Sector | FinanceHive</title>
-<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
-<link href="https://fonts.googleapis.com/css2?family=Epilogue:wght@400;700;900&amp;family=Plus+Jakarta+Sans:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/>
-<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
-<script id="tailwind-config">
+<html class="light" lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>FMCG Sector | FinanceHive</title>
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Epilogue:wght@400;700;900&amp;family=Plus+Jakarta+Sans:wght@400;500;600;700&amp;display=swap"
+        rel="stylesheet" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
+        rel="stylesheet" />
+    <script id="tailwind-config">
         tailwind.config = {
-          darkMode: "class",
-          theme: {
-            extend: {
-              "colors": {
-                      "on-primary": "#ffffff",
-                      "on-tertiary-fixed-variant": "#4a00a4",
-                      "error": "#be2d06",
-                      "surface-container": "#f5f4eb",
-                      "on-secondary-container": "#940014",
-                      "tertiary-container": "#c0a0ff",
-                      "surface-tint": "#776300",
-                      "on-error-container": "#520c00",
-                      "on-tertiary-fixed": "#200051",
-                      "error-container": "#f95630",
-                      "inverse-primary": "#fdd400",
-                      "primary-fixed": "#fdd400",
-                      "on-surface": "#383833",
-                      "on-background": "#383833",
-                      "surface-container-low": "#fbf9f1",
-                      "inverse-surface": "#0e0f0a",
-                      "on-secondary": "#ffffff",
-                      "surface-dim": "#e4e3d8",
-                      "on-secondary-fixed": "#70000d",
-                      "tertiary-fixed-dim": "#b48fff",
-                      "primary-dim": "#695700",
-                      "secondary-dim": "#b10e1e",
-                      "on-error": "#ffffff",
-                      "on-secondary-fixed-variant": "#a60018",
-                      "secondary": "#c31f29",
-                      "surface-container-high": "#efeee5",
-                      "secondary-fixed-dim": "#ffafaa",
-                      "on-primary-container": "#594a00",
-                      "outline": "#81817a",
-                      "tertiary-fixed": "#c0a0ff",
-                      "primary-container": "#fdd400",
-                      "surface-container-lowest": "#ffffff",
-                      "on-tertiary-container": "#3f008e",
-                      "secondary-container": "#ffc3be",
-                      "surface": "#fefcf4",
-                      "surface-variant": "#e9e9de",
-                      "inverse-on-surface": "#9e9d96",
-                      "error-dim": "#b92902",
-                      "on-primary-fixed": "#433700",
-                      "secondary-fixed": "#ffc3be",
-                      "background": "#fefcf4",
-                      "on-tertiary": "#ffffff",
-                      "surface-container-highest": "#e9e9de",
-                      "primary-fixed-dim": "#edc600",
-                      "outline-variant": "#bab9b2",
-                      "primary": "#776300",
-                      "on-surface-variant": "#65655f",
-                      "tertiary": "#7a37eb",
-                      "tertiary-dim": "#6d24de",
-                      "on-primary-fixed-variant": "#645300",
-                      "surface-bright": "#fefcf4"
-              },
-              "borderRadius": {
-                      "DEFAULT": "0.125rem",
-                      "lg": "0.25rem",
-                      "xl": "0.5rem",
-                      "full": "0.75rem"
-              },
-              "fontFamily": {
-                      "headline": ["Epilogue"],
-                      "body": ["Plus Jakarta Sans"],
-                      "label": ["Plus Jakarta Sans"]
-              }
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "on-primary": "#ffffff",
+                        "on-tertiary-fixed-variant": "#4a00a4",
+                        "error": "#be2d06",
+                        "surface-container": "#f5f4eb",
+                        "on-secondary-container": "#940014",
+                        "tertiary-container": "#c0a0ff",
+                        "surface-tint": "#776300",
+                        "on-error-container": "#520c00",
+                        "on-tertiary-fixed": "#200051",
+                        "error-container": "#f95630",
+                        "inverse-primary": "#fdd400",
+                        "primary-fixed": "#fdd400",
+                        "on-surface": "#383833",
+                        "on-background": "#383833",
+                        "surface-container-low": "#fbf9f1",
+                        "inverse-surface": "#0e0f0a",
+                        "on-secondary": "#ffffff",
+                        "surface-dim": "#e4e3d8",
+                        "on-secondary-fixed": "#70000d",
+                        "tertiary-fixed-dim": "#b48fff",
+                        "primary-dim": "#695700",
+                        "secondary-dim": "#b10e1e",
+                        "on-error": "#ffffff",
+                        "on-secondary-fixed-variant": "#a60018",
+                        "secondary": "#c31f29",
+                        "surface-container-high": "#efeee5",
+                        "secondary-fixed-dim": "#ffafaa",
+                        "on-primary-container": "#594a00",
+                        "outline": "#81817a",
+                        "tertiary-fixed": "#c0a0ff",
+                        "primary-container": "#fdd400",
+                        "surface-container-lowest": "#ffffff",
+                        "on-tertiary-container": "#3f008e",
+                        "secondary-container": "#ffc3be",
+                        "surface": "#fefcf4",
+                        "surface-variant": "#e9e9de",
+                        "inverse-on-surface": "#9e9d96",
+                        "error-dim": "#b92902",
+                        "on-primary-fixed": "#433700",
+                        "secondary-fixed": "#ffc3be",
+                        "background": "#fefcf4",
+                        "on-tertiary": "#ffffff",
+                        "surface-container-highest": "#e9e9de",
+                        "primary-fixed-dim": "#edc600",
+                        "outline-variant": "#bab9b2",
+                        "primary": "#776300",
+                        "on-surface-variant": "#65655f",
+                        "tertiary": "#7a37eb",
+                        "tertiary-dim": "#6d24de",
+                        "on-primary-fixed-variant": "#645300",
+                        "surface-bright": "#fefcf4"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.125rem",
+                        "lg": "0.25rem",
+                        "xl": "0.5rem",
+                        "full": "0.75rem"
+                    },
+                    "fontFamily": {
+                        "headline": ["Epilogue"],
+                        "body": ["Plus Jakarta Sans"],
+                        "label": ["Plus Jakarta Sans"]
+                    }
+                },
             },
-          },
         }
-      </script>
-<style>
+    </script>
+    <style>
         .sketch-border {
             border: 2px solid #383833;
             box-shadow: 4px 4px 0px 0px #383833;
         }
+
         .scribble-underline {
             background-image: linear-gradient(120deg, #FFD600 0%, #FFD600 100%);
             background-repeat: no-repeat;
             background-size: 100% 0.3em;
             background-position: 0 88%;
         }
+
         .marker-highlight {
             background: linear-gradient(100deg, rgba(255, 214, 0, 0.3) 0%, rgba(255, 214, 0, 0.7) 100%);
             padding: 0 4px;
         }
     </style>
 
-    
+
 
     <style>
         /* Active Navigation Link Styling */
@@ -111,204 +119,323 @@
 </head>
 
 <body class="bg-[#FFFDF5] text-on-surface font-body selection:bg-primary-container min-h-screen flex flex-col">
-<!-- TopNavBar -->
-<nav class="bg-surface border-b-4 border-stone-800 flex justify-between items-center w-full px-6 py-4 max-w-7xl mx-auto sticky top-0 z-50 gap-8">
-<a href="index.html.html" class="text-3xl font-black text-[#383833] tracking-tighter font-marker">FinanceHive</a>
-<div class="hidden md:flex gap-6 items-center ml-auto">
-<a class="text-on-surface hover:text-secondary font-marker font-black text-base transition-all duration-200" href="learn-finance.html.html">Concepts</a>
-<a class="text-on-surface hover:text-secondary font-marker font-black text-base transition-all duration-200" href="sectors.html.html">Sectors</a>
-<a class="text-on-surface hover:text-secondary font-marker font-black text-base transition-all duration-200" href="request-topic.html.html">Request a Topic</a>
-<a class="text-on-surface hover:text-secondary font-marker font-black text-base transition-all duration-200" href="about.html.html">About</a>
-</div>
-<div class="flex items-center gap-4 lg:gap-6">
+    <!-- TopNavBar -->
+    <nav
+        class="bg-surface border-b-4 border-stone-800 flex justify-between items-center w-full px-6 py-4 max-w-7xl mx-auto sticky top-0 z-50 gap-8">
+        <a href="index.html" class="text-3xl font-black text-[#383833] tracking-tighter font-marker">FinanceHive</a>
+        <div class="hidden md:flex gap-6 items-center ml-auto">
+            <a class="text-on-surface hover:text-secondary font-marker font-black text-base transition-all duration-200"
+                href="learn-finance.html">Concepts</a>
+            <a class="text-on-surface hover:text-secondary font-marker font-black text-base transition-all duration-200"
+                href="sectors.html">Sectors</a>
+            <a class="text-on-surface hover:text-secondary font-marker font-black text-base transition-all duration-200"
+                href="request-topic.html">Request a Topic</a>
+            <a class="text-on-surface hover:text-secondary font-marker font-black text-base transition-all duration-200"
+                href="about.html">About</a>
+        </div>
+        <div class="flex items-center gap-4 lg:gap-6">
 
 
 
-<a href="learn-finance.html.html" class="bg-primary-container text-on-primary-container px-6 py-2 sketch-border font-black hover:translate-x-1 hover:translate-y-1 transition-all">
-    Start Learning
-  </a>
-</div>
-</nav>
+            <a href="learn-finance.html"
+                class="bg-primary-container text-on-primary-container px-6 py-2 sketch-border font-black hover:translate-x-1 hover:translate-y-1 transition-all">
+                Start Learning
+            </a>
+        </div>
+    </nav>
 
-<main class="flex-grow max-w-screen-xl mx-auto px-6 py-12 w-full">
-    <div class="mb-12">
-        <a href="sectors.html.html" class="inline-block text-[#383833] font-bold font-headline hover:text-primary transition-colors text-lg font-black">
-            &larr; Back to All Sectors
-        </a>
-    </div>
+    <main class="flex-grow max-w-screen-xl mx-auto px-6 py-12 w-full">
+        <div class="mb-12">
+            <a href="sectors.html"
+                class="inline-block text-[#383833] font-bold font-headline hover:text-primary transition-colors text-lg font-black">
+                &larr; Back to All Sectors
+            </a>
+        </div>
 
-    <!-- Header Section -->
-    <header class="mb-16">
-        <h1 class="text-5xl md:text-7xl font-black font-headline text-on-surface mb-6 tracking-tighter leading-none"><span class="scribble-underline">FMCG Sector</span></h1>
-        <p class="text-xl md:text-2xl font-medium text-on-surface/80 max-w-3xl border-l-4 border-primary pl-4 bg-primary/5 py-2">How a ₹10 biscuit becomes a billion-dollar business</p>
-    </header>
+        <!-- Header Section -->
+        <header class="mb-16">
+            <h1
+                class="text-5xl md:text-7xl font-black font-headline text-on-surface mb-6 tracking-tighter leading-none">
+                <span class="scribble-underline">FMCG Sector</span></h1>
+            <p
+                class="text-xl md:text-2xl font-medium text-on-surface/80 max-w-3xl border-l-4 border-primary pl-4 bg-primary/5 py-2">
+                How a ₹10 biscuit becomes a billion-dollar business</p>
+        </header>
 
-    <div class="grid grid-cols-1 md:grid-cols-2 gap-8 mb-16">
-        <!-- SECTION 1 -->
-        <article class="bg-surface p-8 rounded-xl shadow-sm border-l-8 border-[#FFD600] border-t border-b border-r border-outline-variant/30 relative sketch-border hover:translate-y-[-2px] transition-transform duration-200">
-            <h2 class="font-headline font-black text-2xl mb-4 text-on-surface">How They Make Money</h2>
-            <p class="text-on-surface/80 leading-relaxed font-body">
-                FMCG companies earn through one beautifully simple formula — Volume multiplied by Price per unit. What makes this magical is repeat purchase. A soap company sells to the same household every single month. A tea company sells to the same family 52 times a year. Revenue = Volume Sold × Price Per Unit, collected over and over again from the same loyal consumers. The real money is made through brand premium — a Dove soap costs ₹8 to make but sells for ₹45-60 because of the brand. That gap between manufacturing cost and selling price is the power of FMCG branding. Companies like HUL, ITC, Nestle, and Dabur also cross-sell aggressively — once you trust Dabur for Chyawanprash, they sell you Real juice, Dabur Honey, and Amla hair oil too.
-            </p>
-        </article>
-
-        <!-- SECTION 2 -->
-        <article class="bg-surface p-8 rounded-xl shadow-sm border-l-8 border-[#FFD600] border-t border-b border-r border-outline-variant/30 relative sketch-border hover:translate-y-[-2px] transition-transform duration-200">
-            <h2 class="font-headline font-black text-2xl mb-4 text-on-surface">Key Players in India</h2>
-            <div class="space-y-3 text-on-surface/80 leading-relaxed font-body">
-                <p><strong>Large FMCG Conglomerates:</strong> HUL (Hindustan Unilever), ITC, Nestle India, Dabur, Marico, Godrej Consumer Products, Colgate-Palmolive</p>
-                <p><strong>Food and Beverages:</strong> Britannia, Tata Consumer Products, Adani Wilmar, Varun Beverages</p>
-                <p><strong>Personal Care:</strong> Emami, Himalaya, Patanjali</p>
-                <p><strong>Quick Commerce Platforms:</strong> Blinkit (Zomato), Zepto, Swiggy Instamart</p>
-            </div>
-        </article>
-
-        <!-- SECTION 3 -->
-        <article class="bg-surface p-8 rounded-xl shadow-sm border-l-8 border-[#FFD600] border-t border-b border-r border-outline-variant/30 relative sketch-border hover:translate-y-[-2px] transition-transform duration-200">
-            <h2 class="font-headline font-black text-2xl mb-4 text-on-surface">3 Terms Every Learner Must Know</h2>
-            <div class="space-y-4 text-on-surface/80 leading-relaxed font-body">
-                <p><strong>Gross Margin:</strong> Revenue minus raw material and manufacturing cost, expressed as a percentage. A higher gross margin means the brand commands a stronger price premium. HUL's gross margin is typically 48-52% — meaning they keep nearly half of every rupee earned before other costs.</p>
-                <p><strong>Distribution Reach:</strong> The number of retail outlets a company's products are available in. HUL reaches 9 million+ retail touchpoints across India — from Mumbai malls to remote village kirana stores. Wider distribution reach directly drives volume growth.</p>
-                <p><strong>Volume Growth vs Value Growth:</strong> Volume growth means selling more units. Value growth means earning more money per unit (through price hikes or premiumisation). The best FMCG companies grow both simultaneously — more units sold at higher prices.</p>
-            </div>
-        </article>
-
-        <!-- SECTION 4 -->
-        <article class="bg-surface p-8 rounded-xl shadow-sm border-l-8 border-[#FFD600] border-t border-b border-r border-outline-variant/30 relative sketch-border hover:translate-y-[-2px] transition-transform duration-200">
-            <h2 class="font-headline font-black text-2xl mb-4 text-on-surface">What to Watch as a Learner</h2>
-            <ul class="list-disc pl-5 space-y-3 text-on-surface/80 leading-relaxed font-body font-medium">
-                <li>Rural volume growth numbers — rural India drives 35-40% of FMCG sales and is the strongest signal of sector health</li>
-                <li>Raw material price trends — especially palm oil, wheat, and edible oils which directly impact margins for most FMCG companies</li>
-                <li>Premiumisation signals — are consumers trading up to better products or down to cheaper ones? This tells you about consumer confidence</li>
-                <li>Quick commerce growth — Blinkit, Zepto, and Swiggy Instamart are reshaping how urban Indians buy FMCG and creating new winners and losers among brands</li>
-            </ul>
-        </article>
-    </div>
-
-    <!-- View Full Analysis Button -->
-    <div class="flex justify-center mb-16">
-        <button id="toggleAnalysisBtn" class="bg-primary-container text-on-primary-container px-8 py-3 text-lg sketch-border font-black hover:translate-x-1 hover:translate-y-1 transition-all">View Full Analysis ↓</button>
-    </div>
-
-    <!-- Hidden Sections (6 sections) -->
-    <div id="fullAnalysisSections" style="display: none;">
         <div class="grid grid-cols-1 md:grid-cols-2 gap-8 mb-16">
-            <!-- SECTION 5 -->
-            <article class="bg-surface p-8 rounded-xl shadow-sm border-l-8 border-[#FFD600] border-t border-b border-r border-outline-variant/30 relative sketch-border hover:translate-y-[-2px] transition-transform duration-200">
-                <h2 class="font-headline font-black text-2xl mb-4 text-on-surface">Value Chain</h2>
+            <!-- SECTION 1 -->
+            <article
+                class="bg-surface p-8 rounded-xl shadow-sm border-l-8 border-[#FFD600] border-t border-b border-r border-outline-variant/30 relative sketch-border hover:translate-y-[-2px] transition-transform duration-200">
+                <h2 class="font-headline font-black text-2xl mb-4 text-on-surface">How They Make Money</h2>
                 <p class="text-on-surface/80 leading-relaxed font-body">
-                    The FMCG journey starts with raw materials — palm oil for soap, wheat for biscuits, tea leaves from Assam for your morning cup, tobacco from Andhra Pradesh for ITC cigarettes. These raw materials are processed in large factories (HUL operates 35 factories, Nestle has 9 across India) and transformed into finished products. The product then receives its most valuable transformation — branding and packaging — where a plain soap becomes Dove, and a simple noodle becomes Maggi. From the factory, products move through a hub-and-spoke distribution system: Factory → Carrying and Forwarding Agent (CFA) in each state → Regional Distributor → Sub-distributor → Retailer. India has 12 million kirana stores which are the primary channel for FMCG, especially in rural areas. The brand is where maximum value is created — a shampoo bottle costing ₹20 to make sells for ₹200 because of the brand's perceived quality and trust.
+                    FMCG companies earn through one beautifully simple formula — Volume multiplied by Price per unit.
+                    What makes this magical is repeat purchase. A soap company sells to the same household every single
+                    month. A tea company sells to the same family 52 times a year. Revenue = Volume Sold × Price Per
+                    Unit, collected over and over again from the same loyal consumers. The real money is made through
+                    brand premium — a Dove soap costs ₹8 to make but sells for ₹45-60 because of the brand. That gap
+                    between manufacturing cost and selling price is the power of FMCG branding. Companies like HUL, ITC,
+                    Nestle, and Dabur also cross-sell aggressively — once you trust Dabur for Chyawanprash, they sell
+                    you Real juice, Dabur Honey, and Amla hair oil too.
                 </p>
             </article>
 
-            <!-- SECTION 6 -->
-            <article class="bg-surface p-8 rounded-xl shadow-sm border-l-8 border-[#FFD600] border-t border-b border-r border-outline-variant/30 relative sketch-border hover:translate-y-[-2px] transition-transform duration-200">
-                <h2 class="font-headline font-black text-2xl mb-4 text-on-surface">Revenue Model</h2>
-                <p class="text-on-surface/80 leading-relaxed font-body">
-                    FMCG revenue is built on repeat purchase — the same consumer buying the same product week after week, year after year. The core model is Volume × Price, compounded by brand loyalty that keeps consumers from switching. Companies protect revenue through two strategies simultaneously. First, mass products (Lifebuoy, Wheel detergent) drive enormous volume at low margins. Second, premium products (Dove, Surf Excel) drive fewer units at much higher margins. Cross-selling multiplies revenue without needing new customers — HUL sells you Dove soap, then Dove shampoo, then Dove body wash, then Dove face wash, all from the same brand trust. Cigarettes (ITC) represent the highest-margin FMCG model — addictive product with strong pricing power and government-controlled supply, generating over 80% of ITC's total profits despite being a fraction of revenue.
-                </p>
-            </article>
-
-            <!-- SECTION 7 -->
-            <article class="bg-surface p-8 rounded-xl shadow-sm border-l-8 border-[#FFD600] border-t border-b border-r border-outline-variant/30 relative sketch-border hover:translate-y-[-2px] transition-transform duration-200">
-                <h2 class="font-headline font-black text-2xl mb-4 text-on-surface">Cost Structure</h2>
-                <p class="text-on-surface/80 leading-relaxed font-body">
-                    Raw materials are the biggest cost — consuming 40-55% of revenue for most FMCG companies. Palm oil prices directly squeeze soap and shampoo margins. Wheat prices affect biscuit and noodle makers. Tea leaf prices impact beverage companies. These commodity costs are largely outside the company's control. Packaging consumes 10-15% of revenue — the bottle, box, sachet, and label. India's sachet revolution (₹1-5 packs of shampoo or cream) made premium products affordable for rural consumers. Advertising is 8-14% of revenue — HUL alone spends ₹4,000-5,000 crore per year. In FMCG, advertising is not a luxury but a necessity — stop advertising and consumers switch to competitors within months. Distribution and logistics is a massive cost covering primary freight from factory to warehouse, secondary logistics to distributors and retailers, and a nationwide sales force visiting 30-50 kirana stores per person per day. Retailer margins of 8-15% of MRP are paid to kirana stores and modern trade.
-                </p>
-            </article>
-
-            <!-- SECTION 8 -->
-            <article class="bg-surface p-8 rounded-xl shadow-sm border-l-8 border-[#FFD600] border-t border-b border-r border-outline-variant/30 relative sketch-border hover:translate-y-[-2px] transition-transform duration-200">
-                <h2 class="font-headline font-black text-2xl mb-4 text-on-surface">Key KPIs</h2>
-                <div class="space-y-4 text-on-surface/80 leading-relaxed font-body">
-                    <p><strong>Volume Growth:</strong> Units sold growth year on year — the most fundamental health metric for an FMCG company. Positive volume growth means consumers are buying more. Negative volume growth is a serious red flag even if revenue looks okay (price hikes can mask volume decline).</p>
-                    <p><strong>Gross Margin %:</strong> Revenue minus material and manufacturing cost as a percentage. For large Indian FMCG companies, gross margins typically range from 45-55%. A falling gross margin means raw material inflation is hurting the company.</p>
-                    <p><strong>EBITDA Margin:</strong> Operating profit as a percentage of revenue. Large Indian FMCG companies target 20-25% EBITDA margins. This is what's left after raw materials, packaging, advertising, and distribution — before interest and taxes.</p>
-                    <p><strong>Distribution Reach:</strong> Number of retail outlets covered. HUL's 9 million+ outlets vs a regional brand's 500,000 outlets shows the scale gap. Expanding reach into rural India is a direct volume growth driver.</p>
-                    <p><strong>Market Share:</strong> Percentage of total category sales captured by the company. Gaining market share while the category grows is the best outcome. Losing share even in a growing market is a warning sign.</p>
-                    <p><strong>Rural vs Urban Split:</strong> What percentage of sales comes from rural India. A higher rural mix means more exposure to monsoon cycles and agricultural income — both more volatile than urban income.</p>
+            <!-- SECTION 2 -->
+            <article
+                class="bg-surface p-8 rounded-xl shadow-sm border-l-8 border-[#FFD600] border-t border-b border-r border-outline-variant/30 relative sketch-border hover:translate-y-[-2px] transition-transform duration-200">
+                <h2 class="font-headline font-black text-2xl mb-4 text-on-surface">Key Players in India</h2>
+                <div class="space-y-3 text-on-surface/80 leading-relaxed font-body">
+                    <p><strong>Large FMCG Conglomerates:</strong> HUL (Hindustan Unilever), ITC, Nestle India, Dabur,
+                        Marico, Godrej Consumer Products, Colgate-Palmolive</p>
+                    <p><strong>Food and Beverages:</strong> Britannia, Tata Consumer Products, Adani Wilmar, Varun
+                        Beverages</p>
+                    <p><strong>Personal Care:</strong> Emami, Himalaya, Patanjali</p>
+                    <p><strong>Quick Commerce Platforms:</strong> Blinkit (Zomato), Zepto, Swiggy Instamart</p>
                 </div>
             </article>
 
-            <!-- SECTION 9 -->
-            <article class="bg-surface p-8 rounded-xl shadow-sm border-l-8 border-[#FFD600] border-t border-b border-r border-outline-variant/30 relative sketch-border hover:translate-y-[-2px] transition-transform duration-200">
-                <h2 class="font-headline font-black text-2xl mb-4 text-on-surface">Growth Drivers</h2>
+            <!-- SECTION 3 -->
+            <article
+                class="bg-surface p-8 rounded-xl shadow-sm border-l-8 border-[#FFD600] border-t border-b border-r border-outline-variant/30 relative sketch-border hover:translate-y-[-2px] transition-transform duration-200">
+                <h2 class="font-headline font-black text-2xl mb-4 text-on-surface">3 Terms Every Learner Must Know</h2>
                 <div class="space-y-4 text-on-surface/80 leading-relaxed font-body">
-                    <p>India's 1.4 billion people and a middle class expected to reach 580 million by 2030 represent the single most powerful growth driver for FMCG. Even tiny increases in per-capita consumption create massive revenue growth at this scale.</p>
-                    <p>Rural India accounts for 35-40% of FMCG sales by value but over 50% of volume. In early 2025, rural volume growth ran 4x faster than urban growth, driven by good monsoons, higher agricultural prices, and government welfare transfers. Good monsoon equals higher farmer income equals more branded FMCG purchases.</p>
-                    <p>Urban India is driving premiumisation — consumers trading from regular soap to body wash, from basic hair oil to serums, from loose tea to premium tea bags. Premiumisation is a double win — higher prices and better margins simultaneously.</p>
-                    <p>Quick commerce (Blinkit, Zepto, Swiggy Instamart) is reshaping urban FMCG. Quick commerce GMV was $6-7 billion in 2024, growing at 40% annually, with Blinkit holding 50%+ market share. Brands now compete for digital shelf space on apps just as fiercely as for kirana shelves.</p>
-                    <p>Post-COVID health and hygiene awareness permanently elevated demand for Dettol, hygiene products, health drinks, and natural and ayurvedic brands. Large FMCG companies have responded by acquiring D2C health brands — HUL bought Minimalist, Marico acquired True Elements, ITC acquired Yoga Bar.</p>
+                    <p><strong>Gross Margin:</strong> Revenue minus raw material and manufacturing cost, expressed as a
+                        percentage. A higher gross margin means the brand commands a stronger price premium. HUL's gross
+                        margin is typically 48-52% — meaning they keep nearly half of every rupee earned before other
+                        costs.</p>
+                    <p><strong>Distribution Reach:</strong> The number of retail outlets a company's products are
+                        available in. HUL reaches 9 million+ retail touchpoints across India — from Mumbai malls to
+                        remote village kirana stores. Wider distribution reach directly drives volume growth.</p>
+                    <p><strong>Volume Growth vs Value Growth:</strong> Volume growth means selling more units. Value
+                        growth means earning more money per unit (through price hikes or premiumisation). The best FMCG
+                        companies grow both simultaneously — more units sold at higher prices.</p>
                 </div>
             </article>
 
-            <!-- SECTION 10 -->
-            <article class="bg-surface p-8 rounded-xl shadow-sm border-l-8 border-[#FFD600] border-t border-b border-r border-outline-variant/30 relative sketch-border hover:translate-y-[-2px] transition-transform duration-200">
-                <h2 class="font-headline font-black text-2xl mb-4 text-on-surface">Risks</h2>
-                <div class="space-y-4 text-on-surface/80 leading-relaxed font-body">
-                    <p><strong>Raw Material Inflation:</strong> When palm oil, edible oils, wheat, or packaging materials spike in price, FMCG margins are squeezed immediately. The company must choose — raise prices (risk losing volume) or absorb the cost (profits fall). Edible oils rose 5.6% in Q1 2025, squeezing food FMCG companies across the board.</p>
-                    <p><strong>Intense Competition:</strong> Every FMCG category is crowded. HUL fights P&G, ITC, Reckitt, Godrej Consumer, Marico, and hundreds of regional brands simultaneously. D2C brands like Mamaearth, WOW, and Plum have now captured significant urban personal care market share using only Instagram ads and quick commerce — without a single physical distribution salesperson.</p>
-                    <p><strong>Rural Slowdown Risk:</strong> A bad monsoon or falling crop prices can rapidly dampen rural consumer spending. Rural India's volume growth dropped from 9.2% to 8.4% quarter on quarter in FY25 — showing how sensitive this engine is to agricultural conditions.</p>
-                    <p><strong>Down-trading:</strong> Economic stress pushes consumers from premium to mass products — from Surf Excel to Wheel, from 500ml bottles to ₹5 sachets. Total FMCG volumes may not fall but revenue realization per unit drops, hurting margins.</p>
-                    <p><strong>Regulatory Risk:</strong> Tobacco is heavily taxed and regulated — every budget brings risk of higher cigarette taxes reducing volumes for ITC. Packaged food labeling regulations, front-of-pack health warnings, and restrictions on single-use plastic packaging add compliance costs across all FMCG categories.</p>
-                    <p><strong>Changing Consumer Preferences:</strong> Urban Indian consumers, especially Gen Z, are shifting toward natural, organic, and D2C brands rapidly. Established brands that do not adapt risk losing the next generation of consumers to newer, more authentic competitors.</p>
-                </div>
+            <!-- SECTION 4 -->
+            <article
+                class="bg-surface p-8 rounded-xl shadow-sm border-l-8 border-[#FFD600] border-t border-b border-r border-outline-variant/30 relative sketch-border hover:translate-y-[-2px] transition-transform duration-200">
+                <h2 class="font-headline font-black text-2xl mb-4 text-on-surface">What to Watch as a Learner</h2>
+                <ul class="list-disc pl-5 space-y-3 text-on-surface/80 leading-relaxed font-body font-medium">
+                    <li>Rural volume growth numbers — rural India drives 35-40% of FMCG sales and is the strongest
+                        signal of sector health</li>
+                    <li>Raw material price trends — especially palm oil, wheat, and edible oils which directly impact
+                        margins for most FMCG companies</li>
+                    <li>Premiumisation signals — are consumers trading up to better products or down to cheaper ones?
+                        This tells you about consumer confidence</li>
+                    <li>Quick commerce growth — Blinkit, Zepto, and Swiggy Instamart are reshaping how urban Indians buy
+                        FMCG and creating new winners and losers among brands</li>
+                </ul>
             </article>
         </div>
-    </div>
 
-</main>
+        <!-- View Full Analysis Button -->
+        <div class="flex justify-center mb-16">
+            <button id="toggleAnalysisBtn"
+                class="bg-primary-container text-on-primary-container px-8 py-3 text-lg sketch-border font-black hover:translate-x-1 hover:translate-y-1 transition-all">View
+                Full Analysis ↓</button>
+        </div>
 
-<script>
-    document.addEventListener('DOMContentLoaded', () => {
-        const btn = document.getElementById('toggleAnalysisBtn');
-        const sections = document.getElementById('fullAnalysisSections');
-        
-        btn.addEventListener('click', () => {
-            if (sections.style.display === 'none') {
-                sections.style.display = 'block';
-                btn.innerText = 'Hide Analysis ↑';
-            } else {
-                sections.style.display = 'none';
-                btn.innerText = 'View Full Analysis ↓';
-            }
+        <!-- Hidden Sections (6 sections) -->
+        <div id="fullAnalysisSections" style="display: none;">
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8 mb-16">
+                <!-- SECTION 5 -->
+                <article
+                    class="bg-surface p-8 rounded-xl shadow-sm border-l-8 border-[#FFD600] border-t border-b border-r border-outline-variant/30 relative sketch-border hover:translate-y-[-2px] transition-transform duration-200">
+                    <h2 class="font-headline font-black text-2xl mb-4 text-on-surface">Value Chain</h2>
+                    <p class="text-on-surface/80 leading-relaxed font-body">
+                        The FMCG journey starts with raw materials — palm oil for soap, wheat for biscuits, tea leaves
+                        from Assam for your morning cup, tobacco from Andhra Pradesh for ITC cigarettes. These raw
+                        materials are processed in large factories (HUL operates 35 factories, Nestle has 9 across
+                        India) and transformed into finished products. The product then receives its most valuable
+                        transformation — branding and packaging — where a plain soap becomes Dove, and a simple noodle
+                        becomes Maggi. From the factory, products move through a hub-and-spoke distribution system:
+                        Factory → Carrying and Forwarding Agent (CFA) in each state → Regional Distributor →
+                        Sub-distributor → Retailer. India has 12 million kirana stores which are the primary channel for
+                        FMCG, especially in rural areas. The brand is where maximum value is created — a shampoo bottle
+                        costing ₹20 to make sells for ₹200 because of the brand's perceived quality and trust.
+                    </p>
+                </article>
+
+                <!-- SECTION 6 -->
+                <article
+                    class="bg-surface p-8 rounded-xl shadow-sm border-l-8 border-[#FFD600] border-t border-b border-r border-outline-variant/30 relative sketch-border hover:translate-y-[-2px] transition-transform duration-200">
+                    <h2 class="font-headline font-black text-2xl mb-4 text-on-surface">Revenue Model</h2>
+                    <p class="text-on-surface/80 leading-relaxed font-body">
+                        FMCG revenue is built on repeat purchase — the same consumer buying the same product week after
+                        week, year after year. The core model is Volume × Price, compounded by brand loyalty that keeps
+                        consumers from switching. Companies protect revenue through two strategies simultaneously.
+                        First, mass products (Lifebuoy, Wheel detergent) drive enormous volume at low margins. Second,
+                        premium products (Dove, Surf Excel) drive fewer units at much higher margins. Cross-selling
+                        multiplies revenue without needing new customers — HUL sells you Dove soap, then Dove shampoo,
+                        then Dove body wash, then Dove face wash, all from the same brand trust. Cigarettes (ITC)
+                        represent the highest-margin FMCG model — addictive product with strong pricing power and
+                        government-controlled supply, generating over 80% of ITC's total profits despite being a
+                        fraction of revenue.
+                    </p>
+                </article>
+
+                <!-- SECTION 7 -->
+                <article
+                    class="bg-surface p-8 rounded-xl shadow-sm border-l-8 border-[#FFD600] border-t border-b border-r border-outline-variant/30 relative sketch-border hover:translate-y-[-2px] transition-transform duration-200">
+                    <h2 class="font-headline font-black text-2xl mb-4 text-on-surface">Cost Structure</h2>
+                    <p class="text-on-surface/80 leading-relaxed font-body">
+                        Raw materials are the biggest cost — consuming 40-55% of revenue for most FMCG companies. Palm
+                        oil prices directly squeeze soap and shampoo margins. Wheat prices affect biscuit and noodle
+                        makers. Tea leaf prices impact beverage companies. These commodity costs are largely outside the
+                        company's control. Packaging consumes 10-15% of revenue — the bottle, box, sachet, and label.
+                        India's sachet revolution (₹1-5 packs of shampoo or cream) made premium products affordable for
+                        rural consumers. Advertising is 8-14% of revenue — HUL alone spends ₹4,000-5,000 crore per year.
+                        In FMCG, advertising is not a luxury but a necessity — stop advertising and consumers switch to
+                        competitors within months. Distribution and logistics is a massive cost covering primary freight
+                        from factory to warehouse, secondary logistics to distributors and retailers, and a nationwide
+                        sales force visiting 30-50 kirana stores per person per day. Retailer margins of 8-15% of MRP
+                        are paid to kirana stores and modern trade.
+                    </p>
+                </article>
+
+                <!-- SECTION 8 -->
+                <article
+                    class="bg-surface p-8 rounded-xl shadow-sm border-l-8 border-[#FFD600] border-t border-b border-r border-outline-variant/30 relative sketch-border hover:translate-y-[-2px] transition-transform duration-200">
+                    <h2 class="font-headline font-black text-2xl mb-4 text-on-surface">Key KPIs</h2>
+                    <div class="space-y-4 text-on-surface/80 leading-relaxed font-body">
+                        <p><strong>Volume Growth:</strong> Units sold growth year on year — the most fundamental health
+                            metric for an FMCG company. Positive volume growth means consumers are buying more. Negative
+                            volume growth is a serious red flag even if revenue looks okay (price hikes can mask volume
+                            decline).</p>
+                        <p><strong>Gross Margin %:</strong> Revenue minus material and manufacturing cost as a
+                            percentage. For large Indian FMCG companies, gross margins typically range from 45-55%. A
+                            falling gross margin means raw material inflation is hurting the company.</p>
+                        <p><strong>EBITDA Margin:</strong> Operating profit as a percentage of revenue. Large Indian
+                            FMCG companies target 20-25% EBITDA margins. This is what's left after raw materials,
+                            packaging, advertising, and distribution — before interest and taxes.</p>
+                        <p><strong>Distribution Reach:</strong> Number of retail outlets covered. HUL's 9 million+
+                            outlets vs a regional brand's 500,000 outlets shows the scale gap. Expanding reach into
+                            rural India is a direct volume growth driver.</p>
+                        <p><strong>Market Share:</strong> Percentage of total category sales captured by the company.
+                            Gaining market share while the category grows is the best outcome. Losing share even in a
+                            growing market is a warning sign.</p>
+                        <p><strong>Rural vs Urban Split:</strong> What percentage of sales comes from rural India. A
+                            higher rural mix means more exposure to monsoon cycles and agricultural income — both more
+                            volatile than urban income.</p>
+                    </div>
+                </article>
+
+                <!-- SECTION 9 -->
+                <article
+                    class="bg-surface p-8 rounded-xl shadow-sm border-l-8 border-[#FFD600] border-t border-b border-r border-outline-variant/30 relative sketch-border hover:translate-y-[-2px] transition-transform duration-200">
+                    <h2 class="font-headline font-black text-2xl mb-4 text-on-surface">Growth Drivers</h2>
+                    <div class="space-y-4 text-on-surface/80 leading-relaxed font-body">
+                        <p>India's 1.4 billion people and a middle class expected to reach 580 million by 2030 represent
+                            the single most powerful growth driver for FMCG. Even tiny increases in per-capita
+                            consumption create massive revenue growth at this scale.</p>
+                        <p>Rural India accounts for 35-40% of FMCG sales by value but over 50% of volume. In early 2025,
+                            rural volume growth ran 4x faster than urban growth, driven by good monsoons, higher
+                            agricultural prices, and government welfare transfers. Good monsoon equals higher farmer
+                            income equals more branded FMCG purchases.</p>
+                        <p>Urban India is driving premiumisation — consumers trading from regular soap to body wash,
+                            from basic hair oil to serums, from loose tea to premium tea bags. Premiumisation is a
+                            double win — higher prices and better margins simultaneously.</p>
+                        <p>Quick commerce (Blinkit, Zepto, Swiggy Instamart) is reshaping urban FMCG. Quick commerce GMV
+                            was $6-7 billion in 2024, growing at 40% annually, with Blinkit holding 50%+ market share.
+                            Brands now compete for digital shelf space on apps just as fiercely as for kirana shelves.
+                        </p>
+                        <p>Post-COVID health and hygiene awareness permanently elevated demand for Dettol, hygiene
+                            products, health drinks, and natural and ayurvedic brands. Large FMCG companies have
+                            responded by acquiring D2C health brands — HUL bought Minimalist, Marico acquired True
+                            Elements, ITC acquired Yoga Bar.</p>
+                    </div>
+                </article>
+
+                <!-- SECTION 10 -->
+                <article
+                    class="bg-surface p-8 rounded-xl shadow-sm border-l-8 border-[#FFD600] border-t border-b border-r border-outline-variant/30 relative sketch-border hover:translate-y-[-2px] transition-transform duration-200">
+                    <h2 class="font-headline font-black text-2xl mb-4 text-on-surface">Risks</h2>
+                    <div class="space-y-4 text-on-surface/80 leading-relaxed font-body">
+                        <p><strong>Raw Material Inflation:</strong> When palm oil, edible oils, wheat, or packaging
+                            materials spike in price, FMCG margins are squeezed immediately. The company must choose —
+                            raise prices (risk losing volume) or absorb the cost (profits fall). Edible oils rose 5.6%
+                            in Q1 2025, squeezing food FMCG companies across the board.</p>
+                        <p><strong>Intense Competition:</strong> Every FMCG category is crowded. HUL fights P&G, ITC,
+                            Reckitt, Godrej Consumer, Marico, and hundreds of regional brands simultaneously. D2C brands
+                            like Mamaearth, WOW, and Plum have now captured significant urban personal care market share
+                            using only Instagram ads and quick commerce — without a single physical distribution
+                            salesperson.</p>
+                        <p><strong>Rural Slowdown Risk:</strong> A bad monsoon or falling crop prices can rapidly dampen
+                            rural consumer spending. Rural India's volume growth dropped from 9.2% to 8.4% quarter on
+                            quarter in FY25 — showing how sensitive this engine is to agricultural conditions.</p>
+                        <p><strong>Down-trading:</strong> Economic stress pushes consumers from premium to mass products
+                            — from Surf Excel to Wheel, from 500ml bottles to ₹5 sachets. Total FMCG volumes may not
+                            fall but revenue realization per unit drops, hurting margins.</p>
+                        <p><strong>Regulatory Risk:</strong> Tobacco is heavily taxed and regulated — every budget
+                            brings risk of higher cigarette taxes reducing volumes for ITC. Packaged food labeling
+                            regulations, front-of-pack health warnings, and restrictions on single-use plastic packaging
+                            add compliance costs across all FMCG categories.</p>
+                        <p><strong>Changing Consumer Preferences:</strong> Urban Indian consumers, especially Gen Z, are
+                            shifting toward natural, organic, and D2C brands rapidly. Established brands that do not
+                            adapt risk losing the next generation of consumers to newer, more authentic competitors.</p>
+                    </div>
+                </article>
+            </div>
+        </div>
+
+    </main>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const btn = document.getElementById('toggleAnalysisBtn');
+            const sections = document.getElementById('fullAnalysisSections');
+
+            btn.addEventListener('click', () => {
+                if (sections.style.display === 'none') {
+                    sections.style.display = 'block';
+                    btn.innerText = 'Hide Analysis ↑';
+                } else {
+                    sections.style.display = 'none';
+                    btn.innerText = 'View Full Analysis ↓';
+                }
+            });
         });
-    });
-</script>
+    </script>
     <!-- Sector Navigation -->
-    <div style="display: flex; justify-content: space-between; align-items: center; width: 100%; max-width: 900px; margin: 60px auto 40px auto; padding-top: 20px; border-top: 2px solid #E5E7EB; box-sizing: border-box;">
-        <a href="sector-finance.html" class="inline-block text-[#383833] font-bold font-headline hover:text-primary transition-colors text-lg font-black">
+    <div
+        style="display: flex; justify-content: space-between; align-items: center; width: 100%; max-width: 900px; margin: 60px auto 40px auto; padding-top: 20px; border-top: 2px solid #E5E7EB; box-sizing: border-box;">
+        <a href="sector-finance.html"
+            class="inline-block text-[#383833] font-bold font-headline hover:text-primary transition-colors text-lg font-black">
             &larr; Previous Sector
         </a>
-        <a href="sector-it.html" class="inline-block text-[#383833] font-bold font-headline hover:text-primary transition-colors text-lg font-black">
+        <a href="sector-it.html"
+            class="inline-block text-[#383833] font-bold font-headline hover:text-primary transition-colors text-lg font-black">
             Next Sector &rarr;
         </a>
     </div>
 
-<!-- Footer -->
-<footer class="bg-stone-900 text-white border-t-8 border-stone-800 flex flex-col md:flex-row justify-between items-center w-full px-8 py-16 gap-8">
-<div class="max-w-7xl mx-auto w-full flex flex-col md:flex-row justify-between items-baseline gap-8">
-<div class="flex flex-col items-start">
-<a href="index.html.html" class="text-3xl font-black text-white font-marker tracking-tighter">FinanceHive</a>
-<p class="text-stone-400 font-medium text-xs">Hand-drawn for Indian minds. ✏️</p>
-</div>
-<div class="flex flex-wrap justify-center gap-6 md:gap-8 font-marker font-black text-base">
-<a class="hover:text-primary transition-colors" href="privacy.html">Privacy</a>
-<span class="text-stone-700 hidden md:inline">|</span>
-<a class="hover:text-primary transition-colors" href="terms.html">Terms</a>
-<span class="text-stone-700 hidden md:inline">|</span>
-<a class="hover:text-primary transition-colors" href="disclaimer.html.html">Disclaimer</a>
-<span class="text-stone-700 hidden md:inline">|</span>
-<a class="hover:text-primary transition-colors" href="mailto:startfinanacejourney@gmail.com?subject=Inquiry%20from%20FinanceHive">Contact</a>
-</div>
-<div class="text-stone-500 font-bold text-sm whitespace-nowrap">© 2026 FinanceHive. All rights reserved.</div>
-</div>
-</footer>
-<script>
-(function(){if(!window.chatbase||window.chatbase("getState")!=="initialized"){window.chatbase=(...arguments)=>{if(!window.chatbase.q){window.chatbase.q=[]}window.chatbase.q.push(arguments)};window.chatbase=new Proxy(window.chatbase,{get(target,prop){if(prop==="q"){return target.q}return(...args)=>target(prop,...args)}})}const onLoad=function(){const script=document.createElement("script");script.src="https://www.chatbase.co/embed.min.js";script.id="okRPgozu3doX4vY4MK0UV";script.domain="www.chatbase.co";document.body.appendChild(script)};if(document.readyState==="complete"){onLoad()}else{window.addEventListener("load",onLoad)}})();
-</script>
+    <!-- Footer -->
+    <footer
+        class="bg-stone-900 text-white border-t-8 border-stone-800 flex flex-col md:flex-row justify-between items-center w-full px-8 py-16 gap-8">
+        <div class="max-w-7xl mx-auto w-full flex flex-col md:flex-row justify-between items-baseline gap-8">
+            <div class="flex flex-col items-start">
+                <a href="index.html" class="text-3xl font-black text-white font-marker tracking-tighter">FinanceHive</a>
+                <p class="text-stone-400 font-medium text-xs">Hand-drawn for Indian minds. ✏️</p>
+            </div>
+            <div class="flex flex-wrap justify-center gap-6 md:gap-8 font-marker font-black text-base">
+                <a class="hover:text-primary transition-colors" href="privacy.html">Privacy</a>
+                <span class="text-stone-700 hidden md:inline">|</span>
+                <a class="hover:text-primary transition-colors" href="terms.html">Terms</a>
+                <span class="text-stone-700 hidden md:inline">|</span>
+                <a class="hover:text-primary transition-colors" href="disclaimer.html">Disclaimer</a>
+                <span class="text-stone-700 hidden md:inline">|</span>
+                <a class="hover:text-primary transition-colors"
+                    href="mailto:startfinanacejourney@gmail.com?subject=Inquiry%20from%20FinanceHive">Contact</a>
+            </div>
+            <div class="text-stone-500 font-bold text-sm whitespace-nowrap">© 2026 FinanceHive. All rights reserved.
+            </div>
+        </div>
+    </footer>
+    <script>
+        (function () { if (!window.chatbase || window.chatbase("getState") !== "initialized") { window.chatbase = (...arguments) => { if (!window.chatbase.q) { window.chatbase.q = [] } window.chatbase.q.push(arguments) }; window.chatbase = new Proxy(window.chatbase, { get(target, prop) { if (prop === "q") { return target.q } return (...args) => target(prop, ...args) } }) } const onLoad = function () { const script = document.createElement("script"); script.src = "https://www.chatbase.co/embed.min.js"; script.id = "okRPgozu3doX4vY4MK0UV"; script.domain = "www.chatbase.co"; document.body.appendChild(script) }; if (document.readyState === "complete") { onLoad() } else { window.addEventListener("load", onLoad) } })();
+    </script>
 
-    
+
 
     <script>
         document.addEventListener('DOMContentLoaded', () => {
@@ -321,11 +448,11 @@
                     searchIcon.addEventListener('click', () => searchInput.focus());
                 }
 
-                searchInput.addEventListener('input', function() {
+                searchInput.addEventListener('input', function () {
                     const query = this.value.toLowerCase().trim();
                     // Target concept cards (article) and sector cards (sketch-border items in grids)
                     const cards = document.querySelectorAll('article, .grid > .sketch-border, .grid > div[onclick*="sector-"]');
-                    
+
                     cards.forEach(card => {
                         const text = card.textContent.toLowerCase();
                         if (text.includes(query)) {
@@ -336,16 +463,16 @@
                     });
                 });
             }
-            
+
             // Active Navigation Highlighting
             const navLinks = document.querySelectorAll('nav a');
             let currentPath = window.location.pathname.split('/').pop().split('?')[0].split('#')[0];
             if (!currentPath || currentPath === '') {
-                currentPath = 'index.html.html';
+                currentPath = 'index.html';
             }
             navLinks.forEach(link => {
                 const href = link.getAttribute('href');
-                if (href && (href === currentPath || (currentPath === 'index.html.html' && href === 'index.html.html'))) {
+                if (href && (href === currentPath || (currentPath === 'index.html' && href === 'index.html'))) {
                     link.classList.add('active');
                 }
             });
@@ -353,4 +480,5 @@
     </script>
 
 </body>
+
 </html>

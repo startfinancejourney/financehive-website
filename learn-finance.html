@@ -1,0 +1,1178 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>Learn Finance - FinanceHive</title>
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Epilogue:wght@800;900&amp;family=Plus+Jakarta+Sans:wght@400;500;600;700&amp;display=swap"
+        rel="stylesheet" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
+        rel="stylesheet" />
+    <script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "secondary-dim": "#b10e1e",
+                        "on-tertiary-container": "#3f008e",
+                        "tertiary-fixed-dim": "#b48fff",
+                        "primary-fixed": "#fdd400",
+                        "outline": "#81817a",
+                        "on-tertiary": "#ffffff",
+                        "secondary": "#c31f29",
+                        "on-surface-variant": "#65655f",
+                        "secondary-container": "#ffc3be",
+                        "on-primary-fixed-variant": "#645300",
+                        "on-primary-fixed": "#433700",
+                        "inverse-surface": "#0e0f0a",
+                        "error": "#be2d06",
+                        "on-error": "#ffffff",
+                        "on-tertiary-fixed-variant": "#4a00a4",
+                        "inverse-primary": "#fdd400",
+                        "error-container": "#f95630",
+                        "surface-container-highest": "#e9e9de",
+                        "tertiary-fixed": "#c0a0ff",
+                        "on-secondary": "#ffffff",
+                        "surface-variant": "#e9e9de",
+                        "on-secondary-fixed": "#70000d",
+                        "surface": "#fefcf4",
+                        "on-secondary-fixed-variant": "#a60018",
+                        "primary-fixed-dim": "#edc600",
+                        "on-tertiary-fixed": "#200051",
+                        "background": "#fefcf4",
+                        "surface-container-low": "#fbf9f1",
+                        "surface-container": "#f5f4eb",
+                        "on-background": "#383833",
+                        "surface-container-high": "#efeee5",
+                        "tertiary": "#7a37eb",
+                        "on-error-container": "#520c00",
+                        "surface-bright": "#fefcf4",
+                        "primary-container": "#fdd400",
+                        "surface-dim": "#e4e3d8",
+                        "on-surface": "#383833",
+                        "error-dim": "#b92902",
+                        "tertiary-container": "#c0a0ff",
+                        "outline-variant": "#bab9b2",
+                        "on-secondary-container": "#940014",
+                        "secondary-fixed": "#ffc3be",
+                        "on-primary": "#ffffff",
+                        "secondary-fixed-dim": "#ffafaa",
+                        "on-primary-container": "#594a00"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.125rem",
+                        "lg": "0.25rem",
+                        "xl": "0.5rem",
+                        "full": "0.75rem"
+                    },
+                    "fontFamily": {
+                        "headline": ["Epilogue"],
+                        "body": ["Plus Jakarta Sans"],
+                        "label": ["Plus Jakarta Sans"]
+                    }
+                },
+            },
+        }
+    </script>
+    <style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+
+        .sketch-border {
+            border: 2px solid #383833;
+            box-shadow: 4px 4px 0px 0px #383833;
+        }
+
+        .scribble-underline {
+            background-image: url("data:image/svg+xml,%3Csvg width='200' height='20' viewBox='0 0 200 20' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M2 15C20 12 180 12 198 15' stroke='%23FFD600' stroke-width='4' stroke-linecap='round'/%3E%3C/svg%3E");
+            background-repeat: no-repeat;
+            background-position: bottom;
+            padding-bottom: 8px;
+        }
+
+        .doodle-bg {
+            background-image: url("data:image/svg+xml,%3Csvg width='100' height='100' viewBox='0 0 100 100' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M10 10L20 20M20 10L10 20' stroke='%23383833' stroke-opacity='0.02'/%3E%3C/svg%3E");
+        }
+
+        .footer-doodle-line {
+            height: 4px;
+            background-image: url("data:image/svg+xml,%3Csvg width='400' height='10' viewBox='0 0 400 10' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M0 5C50 2 100 8 150 5C200 2 250 8 300 5C350 2 400 8 450 5' stroke='%23383833' stroke-width='2' stroke-linecap='round' opacity='0.2'/%3E%3C/svg%3E");
+            background-repeat: repeat-x;
+        }
+
+        .doodle-icon {
+            filter: drop-shadow(1px 1px 0px rgba(0, 0, 0, 0.1));
+        }
+
+        .sketch-texture {
+            background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noiseFilter'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.65' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noiseFilter)' opacity='0.05'/%3E%3C/svg%3E");
+        }
+
+        .tilt-1 {
+            transform: rotate(1.2deg);
+        }
+
+        .tilt-2 {
+            transform: rotate(-1.5deg);
+        }
+
+        .tilt-3 {
+            transform: rotate(0.8deg);
+        }
+
+        .tilt-4 {
+            transform: rotate(-1.1deg);
+        }
+
+        .card-fuchsia {
+            background-color: rgba(255, 214, 0, 0.12);
+        }
+
+        /* Electric Yellow */
+        .card-purple {
+            background-color: rgba(255, 77, 77, 0.12);
+        }
+
+        /* Coral Red */
+        .card-lime {
+            background-color: rgba(124, 58, 237, 0.12);
+        }
+
+        /* Violet */
+        .card-orange {
+            background-color: rgba(34, 197, 94, 0.12);
+        }
+
+        /* Lime Green */
+    </style>
+
+
+
+    <style>
+        /* Active Navigation Link Styling */
+        nav div a.active:not(.bg-primary-container) {
+            color: #776300 !important;
+            border-bottom: 3px solid #fdd400;
+            padding-bottom: 2px;
+        }
+    </style>
+
+</head>
+
+<body class="bg-surface font-body text-on-surface doodle-bg min-h-screen flex flex-col">
+    <!-- TopNavBar -->
+    <nav
+        class="bg-surface border-b-4 border-stone-800 flex justify-between items-center w-full px-6 py-4 max-w-7xl mx-auto sticky top-0 z-50 gap-8">
+        <a href="index.html" class="text-3xl font-black text-[#383833] tracking-tighter font-marker">FinanceHive</a>
+        <div class="hidden md:flex gap-6 items-center">
+            <a class="text-on-surface hover:text-secondary font-marker font-black text-base transition-all duration-200"
+                href="learn-finance.html">Concepts</a>
+            <a class="text-on-surface hover:text-secondary font-marker font-black text-base transition-all duration-200"
+                href="sectors.html">Sectors</a>
+            <a class="text-on-surface hover:text-secondary font-marker font-black text-base transition-all duration-200"
+                href="request-topic.html">Request a Topic</a>
+            <a class="text-on-surface hover:text-secondary font-marker font-black text-base transition-all duration-200"
+                href="about.html">About</a>
+        </div>
+        <div class="flex items-center gap-4 lg:gap-6">
+            <div class="relative group flex items-center">
+                <input
+                    class="bg-white sketch-border px-4 py-2 pr-10 font-marker font-bold focus:outline-none focus:ring-2 focus:ring-primary w-48 md:w-64 transition-all"
+                    placeholder="Search concepts..." type="text" />
+                <span class="material-symbols-outlined absolute right-3 text-on-surface font-black">search</span>
+            </div>
+
+
+            <a href="learn-finance.html"
+                class="bg-primary-container text-on-primary-container px-6 py-2 sketch-border font-black hover:translate-x-1 hover:translate-y-1 transition-all">
+                Start Learning
+            </a>
+        </div>
+    </nav>
+    <main class="flex-grow max-w-screen-2xl mx-auto px-6 py-12 w-full">
+        <!-- Header Section -->
+        <header class="mb-16 text-center">
+            <h1
+                class="text-5xl md:text-7xl font-black font-headline text-on-surface mb-6 tracking-tighter leading-none">
+                Learn Finance from <span class="scribble-underline">Zero to Clarity</span>
+            </h1>
+            <p class="text-xl md:text-2xl font-medium text-on-surface/80 max-w-2xl mx-auto">
+                50 concepts. Explained simply. No jargon.
+            </p>
+        </header>
+        <p style="font-size: 14px; color: #888888; text-align: center; font-style: italic; margin-bottom: 16px;">Click
+            any concept to understand it in 3 ways →</p>
+
+        <!-- Concepts Grid: Strict Level Layout -->
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-8 mb-16">
+            <!-- Card 1: Yellow -->
+            <article
+                class="p-8 sketch-border sketch-texture relative flex flex-col h-full hover:translate-y-[-4px] transition-transform duration-200 cursor-pointer card-fuchsia tilt-1"
+                onclick="window.location.href='concept-equity.html'">
+
+                <div class="mb-6 flex items-center justify-start h-16">
+                    <svg class="w-12 h-12 text-[#FFD600] doodle-icon" fill="none" stroke="currentColor"
+                        stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewbox="0 0 24 24">
+                        <path d="M12 20v-6M6 20V10M18 20V4M3 20h18"></path>
+                    </svg>
+                </div>
+                <h3 class="text-2xl font-black font-headline mb-3 uppercase tracking-tight">Equity</h3>
+                <p class="text-on-surface/70 text-sm leading-relaxed">Own a piece of a company – like owning a slice of
+                    a pizza place.</p>
+                <div class="mt-auto text-right text-on-surface/70 text-[13px] pt-4">Explore →</div>
+            </article>
+            <!-- Card 2: Coral -->
+            <article
+                class="p-8 sketch-border sketch-texture relative flex flex-col h-full hover:translate-y-[-4px] transition-transform duration-200 cursor-pointer card-purple tilt-2"
+                onclick="window.location.href='concept-inflation.html'">
+
+                <div class="mb-6 flex items-center justify-start h-16">
+                    <svg class="w-12 h-12 text-[#FF4D4D] doodle-icon" fill="none" stroke="currentColor"
+                        stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewbox="0 0 24 24">
+                        <path d="M17.5 19c.7-1.3 1-2.8 1-4.5 0-4.7-3.8-8.5-8.5-8.5S1.5 9.8 1.5 14.5c0 1.7.3 3.2 1 4.5">
+                        </path>
+                        <path d="M12 14.5l3-3M12 14.5l-3-3M12 14.5V22"></path>
+                    </svg>
+                </div>
+                <h3 class="text-2xl font-black font-headline mb-3 uppercase tracking-tight">Inflation</h3>
+                <p class="text-on-surface/70 text-sm leading-relaxed">Prices rising over time – the reason ₹100 today
+                    buys less than ₹100 did 10 years ago.</p>
+                <div class="mt-auto text-right text-on-surface/70 text-[13px] pt-4">Explore →</div>
+            </article>
+            <!-- Card 3: Violet -->
+            <article
+                class="p-8 sketch-border sketch-texture relative flex flex-col h-full hover:translate-y-[-4px] transition-transform duration-200 cursor-pointer card-lime tilt-3"
+                onclick="window.location.href='concept-ipo.html'">
+
+                <div class="mb-6 flex items-center justify-start h-16">
+                    <svg class="w-12 h-12 text-[#7C3AED] doodle-icon" fill="none" stroke="currentColor"
+                        stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewbox="0 0 24 24">
+                        <path d="M4.5 16.5c-1.5 1.26-2 3-2 3s1.74-.5 3-2M19.5 4.5c1.5-1.26 2-3 2-3s-1.74.5-3 2"></path>
+                        <path d="M13.5 17.5L21 10M17.5 13.5L10 21"></path>
+                    </svg>
+                </div>
+                <h3 class="text-2xl font-black font-headline mb-3 uppercase tracking-tight">IPO</h3>
+                <p class="text-on-surface/70 text-sm leading-relaxed">When a private company sells shares to the public
+                    for the very first time.</p>
+                <div class="mt-auto text-right text-on-surface/70 text-[13px] pt-4">Explore →</div>
+            </article>
+            <!-- Card 4: Green -->
+            <article
+                class="p-8 sketch-border sketch-texture relative flex flex-col h-full hover:translate-y-[-4px] transition-transform duration-200 cursor-pointer card-orange tilt-4"
+                onclick="window.location.href='concept-assets.html'">
+
+                <div class="mb-6 flex items-center justify-start h-16">
+                    <svg class="w-12 h-12 text-[#22C55E] doodle-icon" fill="none" stroke="currentColor"
+                        stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewbox="0 0 24 24">
+                        <path d="M21 8a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2h14a2 2 0 002-2V8zM3 10h18"></path>
+                    </svg>
+                </div>
+                <h3 class="text-2xl font-black font-headline mb-3 uppercase tracking-tight">Assets</h3>
+                <p class="text-on-surface/70 text-sm leading-relaxed">Anything you own that has value or can make you
+                    money in the future.</p>
+                <div class="mt-auto text-right text-on-surface/70 text-[13px] pt-4">Explore →</div>
+            </article>
+            <!-- Card 5: Yellow (Repeat Pattern) -->
+            <article
+                class="p-8 sketch-border sketch-texture relative flex flex-col h-full hover:translate-y-[-4px] transition-transform duration-200 cursor-pointer card-fuchsia tilt-1"
+                onclick="window.location.href='concept-liabilities.html'">
+
+                <div class="mb-6 flex items-center justify-start h-16">
+                    <svg class="w-12 h-12 text-[#FFD600] doodle-icon" fill="none" stroke="currentColor"
+                        stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewbox="0 0 24 24">
+                        <path d="M19 5H5a2 2 0 00-2 2v10a2 2 0 002 2h14a2 2 0 002-2V7a2 2 0 00-2-2z"></path>
+                    </svg>
+                </div>
+                <h3 class="text-2xl font-black font-headline mb-3 uppercase tracking-tight">Liabilities</h3>
+                <p class="text-on-surface/70 text-sm leading-relaxed">Money you owe to someone else – it pulls money OUT
+                    of your pocket.</p>
+                <div class="mt-auto text-right text-on-surface/70 text-[13px] pt-4">Explore →</div>
+            </article>
+            <!-- Card 6: Coral (Repeat Pattern) -->
+            <article
+                class="p-8 sketch-border sketch-texture relative flex flex-col h-full hover:translate-y-[-4px] transition-transform duration-200 cursor-pointer card-purple tilt-2"
+                onclick="window.location.href='concept-dividends.html'">
+
+                <div class="mb-6 flex items-center justify-start h-16">
+                    <svg class="w-12 h-12 text-[#FF4D4D] doodle-icon" fill="none" stroke="currentColor"
+                        stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewbox="0 0 24 24">
+                        <circle cx="12" cy="12" r="9"></circle>
+                        <path d="M12 8v8M8 12h8"></path>
+                    </svg>
+                </div>
+                <h3 class="text-2xl font-black font-headline mb-3 uppercase tracking-tight">Dividends</h3>
+                <p class="text-on-surface/70 text-sm leading-relaxed">Some companies share their profits with you — just
+                    for owning their shares.</p>
+                <div class="mt-auto text-right text-on-surface/70 text-[13px] pt-4">Explore →</div>
+            </article>
+            <!-- Card 7: Violet (Repeat Pattern) -->
+            <article
+                class="p-8 sketch-border sketch-texture relative flex flex-col h-full hover:translate-y-[-4px] transition-transform duration-200 cursor-pointer card-lime tilt-3"
+                onclick="window.location.href='concept-derivatives.html'">
+
+                <div class="mb-6 flex items-center justify-start h-16">
+                    <svg class="w-12 h-12 text-[#7C3AED] doodle-icon" fill="none" stroke="currentColor"
+                        stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewbox="0 0 24 24">
+                        <path d="M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                        <path d="M12 3v18M3 12h18" stroke-dasharray="2 2"></path>
+                    </svg>
+                </div>
+                <h3 class="text-2xl font-black font-headline mb-3 uppercase tracking-tight">Derivatives</h3>
+                <p class="text-on-surface/70 text-sm leading-relaxed">Financial contracts whose value is DERIVED from
+                    another asset – like stocks, gold, or currency.</p>
+                <div class="mt-auto text-right text-on-surface/70 text-[13px] pt-4">Explore →</div>
+            </article>
+            <!-- Card 8: Green (Repeat Pattern) -->
+            <article
+                class="p-8 sketch-border sketch-texture relative flex flex-col h-full hover:translate-y-[-4px] transition-transform duration-200 cursor-pointer card-orange tilt-4"
+                onclick="window.location.href='concept-yield.html'">
+
+                <div class="mb-6 flex items-center justify-start h-16">
+                    <svg class="w-12 h-12 text-[#22C55E] doodle-icon" fill="none" stroke="currentColor"
+                        stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewbox="0 0 24 24">
+                        <path d="M3 3v18h18"></path>
+                        <path d="M7 16l3-4 4 2 5-6"></path>
+                    </svg>
+                </div>
+                <h3 class="text-2xl font-black font-headline mb-3 uppercase tracking-tight">Yield</h3>
+                <p class="text-on-surface/70 text-sm leading-relaxed">The rate of return you earn on an investment,
+                    usually expressed as a percentage.</p>
+                <div class="mt-auto text-right text-on-surface/70 text-[13px] pt-4">Explore →</div>
+            </article>
+            <!-- Card 9: Yellow -->
+            <article
+                class="p-8 sketch-border sketch-texture relative flex flex-col h-full hover:translate-y-[-4px] transition-transform duration-200 cursor-pointer card-fuchsia tilt-1"
+                onclick="window.location.href='concept-mutual-funds.html'">
+
+                <div class="mb-6 flex items-center justify-start h-16">
+                    <svg class="w-12 h-12 text-[#FFD600] doodle-icon" fill="none" stroke="currentColor"
+                        stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewbox="0 0 24 24">
+                        <circle cx="9" cy="7" r="4"></circle>
+                        <path d="M3 21v-2a4 4 0 014-4h4a4 4 0 014 4v2"></path>
+                    </svg>
+                </div>
+                <h3 class="text-2xl font-black font-headline mb-3 uppercase tracking-tight">Mutual Funds</h3>
+                <p class="text-on-surface/70 text-sm leading-relaxed">Pool your money with thousands of others and let
+                    an expert invest it for you.</p>
+                <div class="mt-auto text-right text-on-surface/70 text-[13px] pt-4">Explore →</div>
+            </article>
+            <!-- Card 10: Coral -->
+            <article
+                class="p-8 sketch-border sketch-texture relative flex flex-col h-full hover:translate-y-[-4px] transition-transform duration-200 cursor-pointer card-purple tilt-2"
+                onclick="window.location.href='concept-bear-market.html'">
+
+                <div class="mb-6 flex items-center justify-start h-16">
+                    <svg class="w-12 h-12 text-[#FF4D4D] doodle-icon" fill="none" stroke="currentColor"
+                        stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewbox="0 0 24 24">
+                        <path d="M3 7l9 9 9-9"></path>
+                        <path d="M12 16V4"></path>
+                    </svg>
+                </div>
+                <h3 class="text-2xl font-black font-headline mb-3 uppercase tracking-tight">Bear Market</h3>
+                <p class="text-on-surface/70 text-sm leading-relaxed">When stock prices keep falling and fear takes over
+                    the market.</p>
+                <div class="mt-auto text-right text-on-surface/70 text-[13px] pt-4">Explore →</div>
+            </article>
+            <!-- Card 11: Violet -->
+            <article
+                class="p-8 sketch-border sketch-texture relative flex flex-col h-full hover:translate-y-[-4px] transition-transform duration-200 cursor-pointer card-lime tilt-3"
+                onclick="window.location.href='concept-bull-market.html'">
+
+                <div class="mb-6 flex items-center justify-start h-16">
+                    <svg class="w-12 h-12 text-[#7C3AED] doodle-icon" fill="none" stroke="currentColor"
+                        stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewbox="0 0 24 24">
+                        <path d="M3 17l9-9 9 9"></path>
+                        <path d="M12 8v12"></path>
+                    </svg>
+                </div>
+                <h3 class="text-2xl font-black font-headline mb-3 uppercase tracking-tight">Bull Market</h3>
+                <p class="text-on-surface/70 text-sm leading-relaxed">When stock prices keep rising and everyone feels
+                    like a genius investor.</p>
+                <div class="mt-auto text-right text-on-surface/70 text-[13px] pt-4">Explore →</div>
+            </article>
+            <!-- Card 12: Green -->
+            <article
+                class="p-8 sketch-border sketch-texture relative flex flex-col h-full hover:translate-y-[-4px] transition-transform duration-200 cursor-pointer card-orange tilt-4"
+                onclick="window.location.href='concept-compounding.html'">
+
+                <div class="mb-6 flex items-center justify-start h-16">
+                    <svg class="w-12 h-12 text-[#22C55E] doodle-icon" fill="none" stroke="currentColor"
+                        stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewbox="0 0 24 24">
+                        <circle cx="12" cy="12" r="9"></circle>
+                        <path d="M12 12l4 4"></path>
+                    </svg>
+                </div>
+                <h3 class="text-2xl font-black font-headline mb-3 uppercase tracking-tight">Compounding</h3>
+                <p class="text-on-surface/70 text-sm leading-relaxed">Earning returns on your returns – the magical
+                    engine of long-term wealth creation.</p>
+                <div class="mt-auto text-right text-on-surface/70 text-[13px] pt-4">Explore →</div>
+            </article>
+            <!-- Card 13: Yellow -->
+            <article
+                class="p-8 sketch-border sketch-texture relative flex flex-col h-full hover:translate-y-[-4px] transition-transform duration-200 cursor-pointer card-fuchsia tilt-1"
+                onclick="window.location.href='concept-stockmarket.html'">
+
+                <div class="mb-6 flex items-center justify-start h-16">
+                    <svg class="w-12 h-12 text-[#FFD600] doodle-icon" fill="none" stroke="currentColor"
+                        stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24">
+                        <path d="M3 3v18h18"></path>
+                        <path d="M18 9l-5 5-4-4-6 6"></path>
+                    </svg>
+                </div>
+                <h3 class="text-2xl font-black font-headline mb-3 uppercase tracking-tight">Stock Market</h3>
+                <p class="text-on-surface/70 text-sm leading-relaxed">The big marketplace where shares of thousands of
+                    companies are bought and sold every day.</p>
+                <div class="mt-auto text-right text-on-surface/70 text-[13px] pt-4">Explore →</div>
+            </article>
+            <!-- Card 14: Coral -->
+            <article
+                class="p-8 sketch-border sketch-texture relative flex flex-col h-full hover:translate-y-[-4px] transition-transform duration-200 cursor-pointer card-purple tilt-2"
+                onclick="window.location.href='concept-portfolio.html'">
+
+                <div class="mb-6 flex items-center justify-start h-16">
+                    <svg class="w-12 h-12 text-[#FF4D4D] doodle-icon" fill="none" stroke="currentColor"
+                        stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24">
+                        <rect x="2" y="7" width="20" height="14" rx="2" ry="2"></rect>
+                        <path d="M16 21V5a2 2 0 00-2-2h-4a2 2 0 00-2 2v16"></path>
+                    </svg>
+                </div>
+                <h3 class="text-2xl font-black font-headline mb-3 uppercase tracking-tight">Portfolio</h3>
+                <p class="text-on-surface/70 text-sm leading-relaxed">Your personal collection of all the investments
+                    you own.</p>
+                <div class="mt-auto text-right text-on-surface/70 text-[13px] pt-4">Explore →</div>
+            </article>
+            <!-- Card 15: Violet -->
+            <article
+                class="p-8 sketch-border sketch-texture relative flex flex-col h-full hover:translate-y-[-4px] transition-transform duration-200 cursor-pointer card-lime tilt-3"
+                onclick="window.location.href='concept-networth.html'">
+
+                <div class="mb-6 flex items-center justify-start h-16">
+                    <svg class="w-12 h-12 text-[#7C3AED] doodle-icon" fill="none" stroke="currentColor"
+                        stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24">
+                        <path d="M12 3v18"></path>
+                        <path d="M3 7h18"></path>
+                        <path d="M6 7l-3 7s1 2 3 2 3-2 3-2l-3-7"></path>
+                        <path d="M18 7l-3 7s1 2 3 2 3-2 3-2l-3-7"></path>
+                    </svg>
+                </div>
+                <h3 class="text-2xl font-black font-headline mb-3 uppercase tracking-tight">Net Worth</h3>
+                <p class="text-on-surface/70 text-sm leading-relaxed">The true measure of your wealth – what you truly
+                    own after subtracting what you owe.</p>
+                <div class="mt-auto text-right text-on-surface/70 text-[13px] pt-4">Explore →</div>
+            </article>
+            <!-- Card 16: Green -->
+            <article
+                class="p-8 sketch-border sketch-texture relative flex flex-col h-full hover:translate-y-[-4px] transition-transform duration-200 cursor-pointer card-orange tilt-4"
+                onclick="window.location.href='concept-interestrate.html'">
+
+                <div class="mb-6 flex items-center justify-start h-16">
+                    <svg class="w-12 h-12 text-[#22C55E] doodle-icon" fill="none" stroke="currentColor"
+                        stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24">
+                        <path d="M19 5L5 19"></path>
+                        <circle cx="6.5" cy="6.5" r="2.5"></circle>
+                        <circle cx="17.5" cy="17.5" r="2.5"></circle>
+                    </svg>
+                </div>
+                <h3 class="text-2xl font-black font-headline mb-3 uppercase tracking-tight">Interest Rate</h3>
+                <p class="text-on-surface/70 text-sm leading-relaxed">The price you pay to borrow money – or the reward
+                    you earn for lending it.</p>
+                <div class="mt-auto text-right text-on-surface/70 text-[13px] pt-4">Explore →</div>
+            </article>
+            <!-- Card 17: Yellow -->
+            <article
+                class="p-8 sketch-border sketch-texture relative flex flex-col h-full hover:translate-y-[-4px] transition-transform duration-200 cursor-pointer card-fuchsia tilt-1"
+                onclick="window.location.href='concept-sip.html'">
+                <div class="mb-6 flex items-center justify-start h-16">
+                    <svg class="w-12 h-12 text-[#FFD600] doodle-icon" fill="none" stroke="currentColor"
+                        stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24">
+                        <rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect>
+                        <path d="M16 2v4M8 2v4M3 10h18"></path>
+                        <path d="M10 16l2-2 4 4"></path>
+                    </svg>
+                </div>
+                <h3 class="text-2xl font-black font-headline mb-3 uppercase tracking-tight">SIP</h3>
+                <p class="text-on-surface/70 text-sm leading-relaxed">Invest a fixed small amount every month – the most
+                    beginner-friendly way to build wealth.</p>
+                <div class="mt-auto text-right text-on-surface/70 text-[13px] pt-4">Explore →</div>
+            </article>
+            <!-- Card 18: Coral -->
+            <article
+                class="p-8 sketch-border sketch-texture relative flex flex-col h-full hover:translate-y-[-4px] transition-transform duration-200 cursor-pointer card-purple tilt-2"
+                onclick="window.location.href='concept-fixeddeposit.html'">
+                <div class="mb-6 flex items-center justify-start h-16">
+                    <svg class="w-12 h-12 text-[#FF4D4D] doodle-icon" fill="none" stroke="currentColor"
+                        stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24">
+                        <rect x="3" y="11" width="18" height="11" rx="2" ry="2"></rect>
+                        <path d="M7 11V7a5 5 0 0110 0v4"></path>
+                    </svg>
+                </div>
+                <h3 class="text-2xl font-black font-headline mb-3 uppercase tracking-tight">Fixed Deposit</h3>
+                <p class="text-on-surface/70 text-sm leading-relaxed">Lock your money in the bank for a fixed time and
+                    earn a guaranteed interest.</p>
+                <div class="mt-auto text-right text-on-surface/70 text-[13px] pt-4">Explore →</div>
+            </article>
+            <!-- Card 19: Violet -->
+            <article
+                class="p-8 sketch-border sketch-texture relative flex flex-col h-full hover:translate-y-[-4px] transition-transform duration-200 cursor-pointer card-lime tilt-3"
+                onclick="window.location.href='concept-savingsaccount.html'">
+                <div class="mb-6 flex items-center justify-start h-16">
+                    <svg class="w-12 h-12 text-[#7C3AED] doodle-icon" fill="none" stroke="currentColor"
+                        stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24">
+                        <path d="M3 21h18M3 10h18M5 6l7-3 7 3M4 10v11m16-11v11M8 14v3m4-3v3m4-3v3"></path>
+                    </svg>
+                </div>
+                <h3 class="text-2xl font-black font-headline mb-3 uppercase tracking-tight">Savings Account</h3>
+                <p class="text-on-surface/70 text-sm leading-relaxed">Your basic bank account that keeps money safe and
+                    gives small interest daily.</p>
+                <div class="mt-auto text-right text-on-surface/70 text-[13px] pt-4">Explore →</div>
+            </article>
+            <!-- Card 20: Green -->
+            <article
+                class="p-8 sketch-border sketch-texture relative flex flex-col h-full hover:translate-y-[-4px] transition-transform duration-200 cursor-pointer card-orange tilt-4"
+                onclick="window.location.href='concept-creditscore.html'">
+                <div class="mb-6 flex items-center justify-start h-16">
+                    <svg class="w-12 h-12 text-[#22C55E] doodle-icon" fill="none" stroke="currentColor"
+                        stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24">
+                        <path
+                            d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z">
+                        </path>
+                    </svg>
+                </div>
+                <h3 class="text-2xl font-black font-headline mb-3 uppercase tracking-tight">Credit Score</h3>
+                <p class="text-on-surface/70 text-sm leading-relaxed">Your financial report card – a number that shows
+                    how trustworthy you are as a borrower.</p>
+                <div class="mt-auto text-right text-on-surface/70 text-[13px] pt-4">Explore →</div>
+            </article>
+            <!-- Card 21: Yellow -->
+            <article
+                class="p-8 sketch-border sketch-texture relative flex flex-col h-full hover:translate-y-[-4px] transition-transform duration-200 cursor-pointer card-fuchsia tilt-1"
+                onclick="window.location.href='concept-loan.html'">
+                <div class="mb-6 flex items-center justify-start h-16">
+                    <svg class="w-12 h-12 text-[#FFD600] doodle-icon" fill="none" stroke="currentColor"
+                        stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24">
+                        <path d="M12 2v20M17 5H9.5a3.5 3.5 0 000 7h5a3.5 3.5 0 010 7H6"></path>
+                        <path d="M18 13l3 3-3 3M6 11L3 8l3-3"></path>
+                    </svg>
+                </div>
+                <h3 class="text-2xl font-black font-headline mb-3 uppercase tracking-tight">Loan</h3>
+                <p class="text-on-surface/70 text-sm leading-relaxed">Borrowed money that you promise to repay with
+                    interest over time.</p>
+                <div class="mt-auto text-right text-on-surface/70 text-[13px] pt-4">Explore →</div>
+            </article>
+            <!-- Card 22: Coral -->
+            <article
+                class="p-8 sketch-border sketch-texture relative flex flex-col h-full hover:translate-y-[-4px] transition-transform duration-200 cursor-pointer card-purple tilt-2"
+                onclick="window.location.href='concept-emi.html'">
+                <div class="mb-6 flex items-center justify-start h-16">
+                    <svg class="w-12 h-12 text-[#FF4D4D] doodle-icon" fill="none" stroke="currentColor"
+                        stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24">
+                        <rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect>
+                        <path d="M16 2v4M8 2v4M3 10h18"></path>
+                        <path d="M8 14h.01M12 14h.01M16 14h.01M8 18h.01M12 18h.01M16 18h.01"></path>
+                    </svg>
+                </div>
+                <h3 class="text-2xl font-black font-headline mb-3 uppercase tracking-tight">EMI</h3>
+                <p class="text-on-surface/70 text-sm leading-relaxed">Your fixed monthly payment to repay a loan – part
+                    goes to principal, part to interest.</p>
+                <div class="mt-auto text-right text-on-surface/70 text-[13px] pt-4">Explore →</div>
+            </article>
+            <!-- Card 23: Violet -->
+            <article
+                class="p-8 sketch-border sketch-texture relative flex flex-col h-full hover:translate-y-[-4px] transition-transform duration-200 cursor-pointer card-lime tilt-3"
+                onclick="window.location.href='concept-insurance.html'">
+                <div class="mb-6 flex items-center justify-start h-16">
+                    <svg class="w-12 h-12 text-[#7C3AED] doodle-icon" fill="none" stroke="currentColor"
+                        stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24">
+                        <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path>
+                        <path d="M9 12l2 2 4-4"></path>
+                    </svg>
+                </div>
+                <h3 class="text-2xl font-black font-headline mb-3 uppercase tracking-tight">Insurance</h3>
+                <p class="text-on-surface/70 text-sm leading-relaxed">Pay a small amount now to be protected against a
+                    huge financial loss later.</p>
+                <div class="mt-auto text-right text-on-surface/70 text-[13px] pt-4">Explore →</div>
+            </article>
+            <!-- Card 24: Green -->
+            <article
+                class="p-8 sketch-border sketch-texture relative flex flex-col h-full hover:translate-y-[-4px] transition-transform duration-200 cursor-pointer card-orange tilt-4"
+                onclick="window.location.href='concept-diversification.html'">
+                <div class="mb-6 flex items-center justify-start h-16">
+                    <svg class="w-12 h-12 text-[#22C55E] doodle-icon" fill="none" stroke="currentColor"
+                        stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24">
+                        <circle cx="12" cy="12" r="10"></circle>
+                        <path d="M12 2v10l8.66 5"></path>
+                        <path d="M12 12L3.34 7"></path>
+                    </svg>
+                </div>
+                <h3 class="text-2xl font-black font-headline mb-3 uppercase tracking-tight">Diversification</h3>
+                <p class="text-on-surface/70 text-sm leading-relaxed">Do not put all eggs in one basket – spread your
+                    investments to reduce risk.</p>
+                <div class="mt-auto text-right text-on-surface/70 text-[13px] pt-4">Explore →</div>
+            </article>
+            <!-- Card 25: Yellow -->
+            <article
+                class="p-8 sketch-border sketch-texture relative flex flex-col h-full hover:translate-y-[-4px] transition-transform duration-200 cursor-pointer card-fuchsia tilt-1"
+                onclick="window.location.href='concept-riskreturn.html'">
+                <div class="mb-6 flex items-center justify-start h-16">
+                    <svg class="w-12 h-12 text-[#FFD600] doodle-icon" fill="none" stroke="currentColor"
+                        stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24">
+                        <path d="M7 11V3l4 4M7 3L3 7"></path>
+                        <path d="M17 13v8l-4-4M17 21l4-4"></path>
+                    </svg>
+                </div>
+                <h3 class="text-2xl font-black font-headline mb-3 uppercase tracking-tight">Risk &amp; Return</h3>
+                <p class="text-on-surface/70 text-sm leading-relaxed">Higher the risk, higher the potential reward – the
+                    core trade-off of all investing.</p>
+                <div class="mt-auto text-right text-on-surface/70 text-[13px] pt-4">Explore →</div>
+            </article>
+            <!-- Card 26: Coral -->
+            <article
+                class="p-8 sketch-border sketch-texture relative flex flex-col h-full hover:translate-y-[-4px] transition-transform duration-200 cursor-pointer card-purple tilt-2"
+                onclick="window.location.href='concept-liquidity.html'">
+                <div class="mb-6 flex items-center justify-start h-16">
+                    <svg class="w-12 h-12 text-[#FF4D4D] doodle-icon" fill="none" stroke="currentColor"
+                        stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24">
+                        <path d="M12 2.69l5.66 5.66a8 8 0 11-11.31 0z"></path>
+                    </svg>
+                </div>
+                <h3 class="text-2xl font-black font-headline mb-3 uppercase tracking-tight">Liquidity</h3>
+                <p class="text-on-surface/70 text-sm leading-relaxed">How quickly and easily you can convert an
+                    investment into cash without losing value.</p>
+                <div class="mt-auto text-right text-on-surface/70 text-[13px] pt-4">Explore →</div>
+            </article>
+            <!-- Card 27: Violet -->
+            <article
+                class="p-8 sketch-border sketch-texture relative flex flex-col h-full hover:translate-y-[-4px] transition-transform duration-200 cursor-pointer card-lime tilt-3"
+                onclick="window.location.href='concept-indexfund.html'">
+                <div class="mb-6 flex items-center justify-start h-16">
+                    <svg class="w-12 h-12 text-[#7C3AED] doodle-icon" fill="none" stroke="currentColor"
+                        stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24">
+                        <path d="M8 6h13M8 12h13M8 18h13M3 6h.01M3 12h.01M3 18h.01"></path>
+                    </svg>
+                </div>
+                <h3 class="text-2xl font-black font-headline mb-3 uppercase tracking-tight">Index Fund</h3>
+                <p class="text-on-surface/70 text-sm leading-relaxed">Automatically invest in the top companies of a
+                    market index without any fund manager deciding.</p>
+                <div class="mt-auto text-right text-on-surface/70 text-[13px] pt-4">Explore →</div>
+            </article>
+            <!-- Card 28: Green -->
+            <article
+                class="p-8 sketch-border sketch-texture relative flex flex-col h-full hover:translate-y-[-4px] transition-transform duration-200 cursor-pointer card-orange tilt-4"
+                onclick="window.location.href='concept-etf.html'">
+                <div class="mb-6 flex items-center justify-start h-16">
+                    <svg class="w-12 h-12 text-[#22C55E] doodle-icon" fill="none" stroke="currentColor"
+                        stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24">
+                        <path
+                            d="M21 16V8a2 2 0 00-1-1.73l-7-4a2 2 0 00-2 0l-7 4A2 2 0 003 8v8a2 2 0 001 1.73l7 4a2 2 0 002 0l7-4A2 2 0 0021 16z">
+                        </path>
+                        <path d="M3.27 6.96L12 12.01l8.73-5.05M12 22.08V12"></path>
+                    </svg>
+                </div>
+                <h3 class="text-2xl font-black font-headline mb-3 uppercase tracking-tight">ETF</h3>
+                <p class="text-on-surface/70 text-sm leading-relaxed">A basket of stocks you can buy in one click —
+                    trades like a share on the stock exchange.</p>
+                <div class="mt-auto text-right text-on-surface/70 text-[13px] pt-4">Explore →</div>
+            </article>
+            <!-- Card 29: Yellow -->
+            <article
+                class="p-8 sketch-border sketch-texture relative flex flex-col h-full hover:translate-y-[-4px] transition-transform duration-200 cursor-pointer card-fuchsia tilt-1"
+                onclick="window.location.href='concept-marketcapitalization.html'">
+                <div class="mb-6 flex items-center justify-start h-16">
+                    <svg class="w-12 h-12 text-[#FFD600] doodle-icon" fill="none" stroke="currentColor"
+                        stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24">
+                        <rect x="4" y="2" width="16" height="20" rx="2" ry="2"></rect>
+                        <path
+                            d="M9 22v-4h6v4M8 6h.01M16 6h.01M12 6h.01M12 10h.01M16 10h.01M8 10h.01M8 14h.01M12 14h.01M16 14h.01">
+                        </path>
+                    </svg>
+                </div>
+                <h3 class="text-2xl font-black font-headline mb-3 uppercase tracking-tight">Market Capitalisation</h3>
+                <p class="text-on-surface/70 text-sm leading-relaxed">The total market value of a company — size
+                    measured in money.</p>
+                <div class="mt-auto text-right text-on-surface/70 text-[13px] pt-4">Explore →</div>
+            </article>
+            <!-- Card 30: Coral -->
+            <article
+                class="p-8 sketch-border sketch-texture relative flex flex-col h-full hover:translate-y-[-4px] transition-transform duration-200 cursor-pointer card-purple tilt-2"
+                onclick="window.location.href='concept-roi.html'">
+                <div class="mb-6 flex items-center justify-start h-16">
+                    <svg class="w-12 h-12 text-[#FF4D4D] doodle-icon" fill="none" stroke="currentColor"
+                        stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24">
+                        <path d="M21 2v6h-6"></path>
+                        <path d="M3 12a9 9 0 0115-6.7L21 8"></path>
+                        <path d="M3 22v-6h6"></path>
+                        <path d="M21 12a9 9 0 01-15 6.7L3 16"></path>
+                    </svg>
+                </div>
+                <h3 class="text-2xl font-black font-headline mb-3 uppercase tracking-tight">ROI</h3>
+                <p class="text-on-surface/70 text-sm leading-relaxed">How much money did you earn back for every rupee
+                    you put in?</p>
+                <div class="mt-auto text-right text-on-surface/70 text-[13px] pt-4">Explore →</div>
+            </article>
+            <!-- Card 31: Violet -->
+            <article
+                class="p-8 sketch-border sketch-texture relative flex flex-col h-full hover:translate-y-[-4px] transition-transform duration-200 cursor-pointer card-lime tilt-3"
+                onclick="window.location.href='concept-bonds.html'">
+                <div class="mb-6 flex items-center justify-start h-16">
+                    <svg class="w-12 h-12 text-[#7C3AED] doodle-icon" fill="none" stroke="currentColor"
+                        stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24">
+                        <path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path>
+                        <path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path>
+                    </svg>
+                </div>
+                <h3 class="text-2xl font-black font-headline mb-3 uppercase tracking-tight">Bonds &amp; Debt</h3>
+                <p class="text-on-surface/70 text-sm leading-relaxed">Lend money to companies or government and earn
+                    fixed interest – a safer, steadier way to invest.</p>
+                <div class="mt-auto text-right text-on-surface/70 text-[13px] pt-4">Explore →</div>
+            </article>
+            <!-- Card 32: Green -->
+            <article
+                class="p-8 sketch-border sketch-texture relative flex flex-col h-full hover:translate-y-[-4px] transition-transform duration-200 cursor-pointer card-orange tilt-4"
+                onclick="window.location.href='concept-simple-interest.html'">
+                <div class="mb-6 flex items-center justify-start h-16">
+                    <svg class="w-12 h-12 text-[#22C55E] doodle-icon" fill="none" stroke="currentColor"
+                        stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24">
+                        <rect x="4" y="2" width="16" height="20" rx="2" ry="2"></rect>
+                        <line x1="8" y1="6" x2="16" y2="6"></line>
+                        <line x1="16" y1="14" x2="16" y2="14"></line>
+                        <line x1="8" y1="10" x2="8" y2="10"></line>
+                        <line x1="12" y1="10" x2="12" y2="10"></line>
+                        <line x1="16" y1="10" x2="16" y2="10"></line>
+                        <line x1="8" y1="14" x2="8" y2="14"></line>
+                        <line x1="12" y1="14" x2="12" y2="14"></line>
+                        <line x1="8" y1="18" x2="8" y2="18"></line>
+                        <line x1="12" y1="18" x2="12" y2="18"></line>
+                        <line x1="16" y1="18" x2="16" y2="18"></line>
+                    </svg>
+                </div>
+                <h3 class="text-2xl font-black font-headline mb-3 uppercase tracking-tight">Simple Interest</h3>
+                <p class="text-on-surface/70 text-sm leading-relaxed">Interest calculated only on the original amount
+                    you deposited or borrowed – straightforward and predictable.</p>
+                <div class="mt-auto text-right text-on-surface/70 text-[13px] pt-4">Explore →</div>
+            </article>
+            <!-- Card 33: Yellow -->
+            <article
+                class="p-8 sketch-border sketch-texture relative flex flex-col h-full hover:translate-y-[-4px] transition-transform duration-200 cursor-pointer card-fuchsia tilt-1"
+                onclick="window.location.href='concept-compound-interest.html'">
+                <div class="mb-6 flex items-center justify-start h-16">
+                    <svg class="w-12 h-12 text-[#FFD600] doodle-icon" fill="none" stroke="currentColor"
+                        stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24">
+                        <polygon points="12 2 2 7 12 12 22 7 12 2"></polygon>
+                        <polyline points="2 17 12 22 22 17"></polyline>
+                        <polyline points="2 12 12 17 22 12"></polyline>
+                    </svg>
+                </div>
+                <h3 class="text-2xl font-black font-headline mb-3 uppercase tracking-tight">Compound Interest</h3>
+                <p class="text-on-surface/70 text-sm leading-relaxed">Interest on interest – the weapon of the patient
+                    investor and the secret behind long-term wealth.</p>
+                <div class="mt-auto text-right text-on-surface/70 text-[13px] pt-4">Explore →</div>
+            </article>
+            <!-- Card 34: Coral -->
+            <article
+                class="p-8 sketch-border sketch-texture relative flex flex-col h-full hover:translate-y-[-4px] transition-transform duration-200 cursor-pointer card-purple tilt-2"
+                onclick="window.location.href='concept-gdp.html'">
+                <div class="mb-6 flex items-center justify-start h-16">
+                    <svg class="w-12 h-12 text-[#FF4D4D] doodle-icon" fill="none" stroke="currentColor"
+                        stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24">
+                        <circle cx="12" cy="12" r="10"></circle>
+                        <line x1="2" y1="12" x2="22" y2="12"></line>
+                        <path
+                            d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z">
+                        </path>
+                    </svg>
+                </div>
+                <h3 class="text-2xl font-black font-headline mb-3 uppercase tracking-tight">GDP</h3>
+                <p class="text-on-surface/70 text-sm leading-relaxed">The total value of everything a country produces –
+                    the single biggest measure of economic health.</p>
+                <div class="mt-auto text-right text-on-surface/70 text-[13px] pt-4">Explore →</div>
+            </article>
+            <!-- Card 35: Violet -->
+            <article
+                class="p-8 sketch-border sketch-texture relative flex flex-col h-full hover:translate-y-[-4px] transition-transform duration-200 cursor-pointer card-lime tilt-3"
+                onclick="window.location.href='concept-recession.html'">
+                <div class="mb-6 flex items-center justify-start h-16">
+                    <svg class="w-12 h-12 text-[#7C3AED] doodle-icon" fill="none" stroke="currentColor"
+                        stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24">
+                        <line x1="12" y1="5" x2="12" y2="19"></line>
+                        <polyline points="19 12 12 19 5 12"></polyline>
+                    </svg>
+                </div>
+                <h3 class="text-2xl font-black font-headline mb-3 uppercase tracking-tight">Recession</h3>
+                <p class="text-on-surface/70 text-sm leading-relaxed">When the economy shrinks and jobs disappear –
+                    understanding it helps you protect your money.</p>
+                <div class="mt-auto text-right text-on-surface/70 text-[13px] pt-4">Explore →</div>
+            </article>
+            <!-- Card 36: Green -->
+            <article
+                class="p-8 sketch-border sketch-texture relative flex flex-col h-full hover:translate-y-[-4px] transition-transform duration-200 cursor-pointer card-orange tilt-4"
+                onclick="window.location.href='concept-pe-ratio.html'">
+                <div class="mb-6 flex items-center justify-start h-16">
+                    <svg class="w-12 h-12 text-[#22C55E] doodle-icon" fill="none" stroke="currentColor"
+                        stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24">
+                        <path d="M20.59 13.41l-7.17 7.17a2 2 0 0 1-2.83 0L2 12V2h10l8.59 8.59a2 2 0 0 1 0 2.82z"></path>
+                        <line x1="7" y1="7" x2="7.01" y2="7"></line>
+                    </svg>
+                </div>
+                <h3 class="text-2xl font-black font-headline mb-3 uppercase tracking-tight">P/E Ratio</h3>
+                <p class="text-on-surface/70 text-sm leading-relaxed">A number that tells you if a stock is cheap or
+                    expensive relative to the profits it earns.</p>
+                <div class="mt-auto text-right text-on-surface/70 text-[13px] pt-4">Explore →</div>
+            </article>
+            <!-- Card 37: Yellow -->
+            <article
+                class="p-8 sketch-border sketch-texture relative flex flex-col h-full hover:translate-y-[-4px] transition-transform duration-200 cursor-pointer card-fuchsia tilt-1"
+                onclick="window.location.href='concept-eps.html'">
+                <div class="mb-6 flex items-center justify-start h-16">
+                    <svg class="w-12 h-12 text-[#FFD600] doodle-icon" fill="none" stroke="currentColor"
+                        stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24">
+                        <circle cx="12" cy="12" r="8"></circle>
+                        <line x1="12" y1="8" x2="12" y2="16"></line>
+                        <line x1="8" y1="12" x2="16" y2="12"></line>
+                    </svg>
+                </div>
+                <h3 class="text-2xl font-black font-headline mb-3 uppercase tracking-tight">EPS</h3>
+                <p class="text-on-surface/70 text-sm leading-relaxed">How many profit a company earns for every single
+                    share – a quick window into company health.</p>
+                <div class="mt-auto text-right text-on-surface/70 text-[13px] pt-4">Explore →</div>
+            </article>
+            <!-- Card 38: Coral -->
+            <article
+                class="p-8 sketch-border sketch-texture relative flex flex-col h-full hover:translate-y-[-4px] transition-transform duration-200 cursor-pointer card-purple tilt-2"
+                onclick="window.location.href='concept-revenue.html'">
+                <div class="mb-6 flex items-center justify-start h-16">
+                    <svg class="w-12 h-12 text-[#FF4D4D] doodle-icon" fill="none" stroke="currentColor"
+                        stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24">
+                        <polygon points="22 3 2 3 10 12.46 10 19 14 21 14 12.46 22 3"></polygon>
+                    </svg>
+                </div>
+                <h3 class="text-2xl font-black font-headline mb-3 uppercase tracking-tight">Revenue</h3>
+                <p class="text-on-surface/70 text-sm leading-relaxed">Total money a company earns before any expenses
+                    are deducted – the top line of the business.</p>
+                <div class="mt-auto text-right text-on-surface/70 text-[13px] pt-4">Explore →</div>
+            </article>
+            <!-- Card 39: Violet -->
+            <article
+                class="p-8 sketch-border sketch-texture relative flex flex-col h-full hover:translate-y-[-4px] transition-transform duration-200 cursor-pointer card-lime tilt-3"
+                onclick="window.location.href='concept-profit-loss.html'">
+                <div class="mb-6 flex items-center justify-start h-16">
+                    <svg class="w-12 h-12 text-[#7C3AED] doodle-icon" fill="none" stroke="currentColor"
+                        stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24">
+                        <path d="M3 14l3-7 3 7zM15 14l3-7 3 7zM12 2v20M6 7h12M12 22h-4"></path>
+                    </svg>
+                </div>
+                <h3 class="text-2xl font-black font-headline mb-3 uppercase tracking-tight">Profit &amp; Loss</h3>
+                <p class="text-on-surface/70 text-sm leading-relaxed">Whether a company made money or lost it in a
+                    period – the most watched number in any business.</p>
+                <div class="mt-auto text-right text-on-surface/70 text-[13px] pt-4">Explore →</div>
+            </article>
+            <!-- Card 40: Green -->
+            <article
+                class="p-8 sketch-border sketch-texture relative flex flex-col h-full hover:translate-y-[-4px] transition-transform duration-200 cursor-pointer card-orange tilt-4"
+                onclick="window.location.href='concept-cash-flow.html'">
+                <div class="mb-6 flex items-center justify-start h-16">
+                    <svg class="w-12 h-12 text-[#22C55E] doodle-icon" fill="none" stroke="currentColor"
+                        stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24">
+                        <line x1="12" y1="2" x2="12" y2="18"></line>
+                        <path d="M8 14l4 4 4-4"></path>
+                    </svg>
+                </div>
+                <h3 class="text-2xl font-black font-headline mb-3 uppercase tracking-tight">Cash Flow</h3>
+                <p class="text-on-surface/70 text-sm leading-relaxed">The actual money moving in and out of a business –
+                    profit looks good, but cash keeps it alive.</p>
+                <div class="mt-auto text-right text-on-surface/70 text-[13px] pt-4">Explore →</div>
+            </article>
+            <!-- Card 41: Yellow -->
+            <article
+                class="p-8 sketch-border sketch-texture relative flex flex-col h-full hover:translate-y-[-4px] transition-transform duration-200 cursor-pointer card-fuchsia tilt-1"
+                onclick="window.location.href='concept-balance-sheet.html'">
+                <div class="mb-6 flex items-center justify-start h-16">
+                    <svg class="w-12 h-12 text-[#FFD600] doodle-icon" fill="none" stroke="currentColor"
+                        stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24">
+                        <rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect>
+                        <line x1="16" y1="2" x2="16" y2="6"></line>
+                        <line x1="8" y1="2" x2="8" y2="6"></line>
+                        <line x1="3" y1="10" x2="21" y2="10"></line>
+                    </svg>
+                </div>
+                <h3 class="text-2xl font-black font-headline mb-3 uppercase tracking-tight">Balance Sheet</h3>
+                <p class="text-on-surface/70 text-sm leading-relaxed">A company's financial ID card showing everything
+                    it owns, owes, and is worth at a point in time.</p>
+                <div class="mt-auto text-right text-on-surface/70 text-[13px] pt-4">Explore →</div>
+            </article>
+            <!-- Card 42: Coral -->
+            <article
+                class="p-8 sketch-border sketch-texture relative flex flex-col h-full hover:translate-y-[-4px] transition-transform duration-200 cursor-pointer card-purple tilt-2"
+                onclick="window.location.href='concept-trading.html'">
+                <div class="mb-6 flex items-center justify-start h-16">
+                    <svg class="w-12 h-12 text-[#FF4D4D] doodle-icon" fill="none" stroke="currentColor"
+                        stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24">
+                        <polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"></polygon>
+                    </svg>
+                </div>
+                <h3 class="text-2xl font-black font-headline mb-3 uppercase tracking-tight">Trading</h3>
+                <p class="text-on-surface/70 text-sm leading-relaxed">Buying and selling financial assets like stocks to
+                    make a profit – faster and riskier than investing.</p>
+                <div class="mt-auto text-right text-on-surface/70 text-[13px] pt-4">Explore →</div>
+            </article>
+            <!-- Card 43: Violet -->
+            <article
+                class="p-8 sketch-border sketch-texture relative flex flex-col h-full hover:translate-y-[-4px] transition-transform duration-200 cursor-pointer card-lime tilt-3"
+                onclick="window.location.href='concept-demat-account.html'">
+                <div class="mb-6 flex items-center justify-start h-16">
+                    <svg class="w-12 h-12 text-[#7C3AED] doodle-icon" fill="none" stroke="currentColor"
+                        stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24">
+                        <rect x="3" y="4" width="18" height="16" rx="2" ry="2"></rect>
+                        <circle cx="12" cy="12" r="2"></circle>
+                        <line x1="12" y1="14" x2="12" y2="16"></line>
+                    </svg>
+                </div>
+                <h3 class="text-2xl font-black font-headline mb-3 uppercase tracking-tight">Demat Account</h3>
+                <p class="text-on-surface/70 text-sm leading-relaxed">Your digital locker for storing shares
+                    electronically – no physical certificates, fully secure.</p>
+                <div class="mt-auto text-right text-on-surface/70 text-[13px] pt-4">Explore →</div>
+            </article>
+            <!-- Card 44: Green -->
+            <article
+                class="p-8 sketch-border sketch-texture relative flex flex-col h-full hover:translate-y-[-4px] transition-transform duration-200 cursor-pointer card-orange tilt-4"
+                onclick="window.location.href='concept-sensex-nifty.html'">
+                <div class="mb-6 flex items-center justify-start h-16">
+                    <svg class="w-12 h-12 text-[#22C55E] doodle-icon" fill="none" stroke="currentColor"
+                        stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24">
+                        <rect x="10" y="9" width="4" height="12"></rect>
+                        <rect x="3" y="15" width="4" height="6"></rect>
+                        <rect x="17" y="3" width="4" height="18"></rect>
+                    </svg>
+                </div>
+                <h3 class="text-2xl font-black font-headline mb-3 uppercase tracking-tight">Sensex &amp; Nifty</h3>
+                <p class="text-on-surface/70 text-sm leading-relaxed">India's two most watched stock market indices –
+                    the pulse check of the entire Indian market.</p>
+                <div class="mt-auto text-right text-on-surface/70 text-[13px] pt-4">Explore →</div>
+            </article>
+            <!-- Card 45: Yellow -->
+            <article
+                class="p-8 sketch-border sketch-texture relative flex flex-col h-full hover:translate-y-[-4px] transition-transform duration-200 cursor-pointer card-fuchsia tilt-1"
+                onclick="window.location.href='concept-sebi.html'">
+                <div class="mb-6 flex items-center justify-start h-16">
+                    <svg class="w-12 h-12 text-[#FFD600] doodle-icon" fill="none" stroke="currentColor"
+                        stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24">
+                        <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path>
+                    </svg>
+                </div>
+                <h3 class="text-2xl font-black font-headline mb-3 uppercase tracking-tight">SEBI</h3>
+                <p class="text-on-surface/70 text-sm leading-relaxed">India's stock market regulator that makes sure
+                    markets are fair, transparent, and investor-friendly.</p>
+                <div class="mt-auto text-right text-on-surface/70 text-[13px] pt-4">Explore →</div>
+            </article>
+            <!-- Card 46: Coral -->
+            <article
+                class="p-8 sketch-border sketch-texture relative flex flex-col h-full hover:translate-y-[-4px] transition-transform duration-200 cursor-pointer card-purple tilt-2"
+                onclick="window.location.href='concept-broker.html'">
+                <div class="mb-6 flex items-center justify-start h-16">
+                    <svg class="w-12 h-12 text-[#FF4D4D] doodle-icon" fill="none" stroke="currentColor"
+                        stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24">
+                        <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path>
+                        <circle cx="9" cy="7" r="4"></circle>
+                        <path d="M23 21v-2a4 4 0 0 0-3-3.87"></path>
+                        <path d="M16 3.13a4 4 0 0 1 0 7.75"></path>
+                    </svg>
+                </div>
+                <h3 class="text-2xl font-black font-headline mb-3 uppercase tracking-tight">Broker</h3>
+                <p class="text-on-surface/70 text-sm leading-relaxed">The middleman who connects you to the stock
+                    exchange – without one, you cannot trade.</p>
+                <div class="mt-auto text-right text-on-surface/70 text-[13px] pt-4">Explore →</div>
+            </article>
+            <!-- Card 47: Violet -->
+            <article
+                class="p-8 sketch-border sketch-texture relative flex flex-col h-full hover:translate-y-[-4px] transition-transform duration-200 cursor-pointer card-lime tilt-3"
+                onclick="window.location.href='concept-blue-chip.html'">
+                <div class="mb-6 flex items-center justify-start h-16">
+                    <svg class="w-12 h-12 text-[#7C3AED] doodle-icon" fill="none" stroke="currentColor"
+                        stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24">
+                        <polygon
+                            points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2">
+                        </polygon>
+                    </svg>
+                </div>
+                <h3 class="text-2xl font-black font-headline mb-3 uppercase tracking-tight">Blue Chip Stocks</h3>
+                <p class="text-on-surface/70 text-sm leading-relaxed">Shares of India's largest, most trusted companies
+                    – stable, reliable, and built to last.</p>
+                <div class="mt-auto text-right text-on-surface/70 text-[13px] pt-4">Explore →</div>
+            </article>
+            <!-- Card 48: Green -->
+            <article
+                class="p-8 sketch-border sketch-texture relative flex flex-col h-full hover:translate-y-[-4px] transition-transform duration-200 cursor-pointer card-orange tilt-4"
+                onclick="window.location.href='concept-cagr.html'">
+                <div class="mb-6 flex items-center justify-start h-16">
+                    <svg class="w-12 h-12 text-[#22C55E] doodle-icon" fill="none" stroke="currentColor"
+                        stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24">
+                        <polyline points="3 3 3 21 21 21"></polyline>
+                        <polyline points="3 17 9 11 15 15 21 5"></polyline>
+                    </svg>
+                </div>
+                <h3 class="text-2xl font-black font-headline mb-3 uppercase tracking-tight">CAGR</h3>
+                <p class="text-on-surface/70 text-sm leading-relaxed">The steady annual growth rate over multiple years
+                    – the fairest way to compare investment returns.</p>
+                <div class="mt-auto text-right text-on-surface/70 text-[13px] pt-4">Explore →</div>
+            </article>
+            <!-- Card 49: Yellow -->
+            <article
+                class="p-8 sketch-border sketch-texture relative flex flex-col h-full hover:translate-y-[-4px] transition-transform duration-200 cursor-pointer card-fuchsia tilt-1"
+                onclick="window.location.href='concept-nav.html'">
+                <div class="mb-6 flex items-center justify-start h-16">
+                    <svg class="w-12 h-12 text-[#FFD600] doodle-icon" fill="none" stroke="currentColor"
+                        stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24">
+                        <rect x="4" y="4" width="16" height="16" rx="2" ry="2"></rect>
+                        <rect x="9" y="9" width="6" height="6"></rect>
+                    </svg>
+                </div>
+                <h3 class="text-2xl font-black font-headline mb-3 uppercase tracking-tight">NAV</h3>
+                <p class="text-on-surface/70 text-sm leading-relaxed">The price of one unit of a mutual fund – tells you
+                    how much each slice of the fund is worth today.</p>
+                <div class="mt-auto text-right text-on-surface/70 text-[13px] pt-4">Explore →</div>
+            </article>
+            <!-- Card 50: Coral -->
+            <article
+                class="p-8 sketch-border sketch-texture relative flex flex-col h-full hover:translate-y-[-4px] transition-transform duration-200 cursor-pointer card-purple tilt-2"
+                onclick="window.location.href='concept-financial-planning.html'">
+                <div class="mb-6 flex items-center justify-start h-16">
+                    <svg class="w-12 h-12 text-[#FF4D4D] doodle-icon" fill="none" stroke="currentColor"
+                        stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24">
+                        <circle cx="12" cy="12" r="10"></circle>
+                        <polygon points="16.24 7.76 14.12 14.12 7.76 16.24 9.88 9.88 16.24 7.76"></polygon>
+                    </svg>
+                </div>
+                <h3 class="text-2xl font-black font-headline mb-3 uppercase tracking-tight">Financial Planning</h3>
+                <p class="text-on-surface/70 text-sm leading-relaxed">The complete roadmap for your financial life –
+                    goals, savings, investments, and protection in one plan.</p>
+                <div class="mt-auto text-right text-on-surface/70 text-[13px] pt-4">Explore →</div>
+            </article>
+        </div>
+        <!-- Show More Button -->
+        <div class="flex flex-col items-center justify-center mb-24 mt-12 gap-8">
+            <button
+                class="px-12 py-5 bg-[#FFD600] sketch-border font-headline font-black text-xl uppercase tracking-widest hover:translate-y-[-4px] hover:translate-x-[-4px] active:translate-y-[0px] active:translate-x-[0px] transition-all">
+                Show More Concepts
+            </button>
+            <p class="max-w-2xl text-on-surface-variant text-base font-medium opacity-80 px-4"
+                style="text-align: center; line-height: 1.6; margin-top: 20px;">
+                <span class="font-bold text-on-surface text-lg">🌱 Many more concepts coming soon!</span><br>
+                We're working hard to explain the rest of the finance world from basics to advanced in our simple,
+                visual style.
+            </p>
+        </div>
+    </main>
+    <!-- Footer -->
+    <footer
+        class="bg-stone-900 text-white border-t-8 border-stone-800 flex flex-col md:flex-row justify-between items-center w-full px-8 py-16 gap-8">
+        <div class="max-w-7xl mx-auto w-full flex flex-col md:flex-row justify-between items-baseline gap-8">
+            <div class="flex flex-col items-start">
+                <a href="index.html" class="text-3xl font-black text-white font-marker tracking-tighter">FinanceHive</a>
+                <p class="text-stone-400 font-medium text-xs">Hand-drawn for Indian minds. ✏️</p>
+            </div>
+            <div class="flex flex-wrap justify-center gap-6 md:gap-8 font-marker font-black text-base">
+                <a class="hover:text-primary transition-colors" href="privacy.html">Privacy</a>
+                <span class="text-stone-700 hidden md:inline">|</span>
+                <a class="hover:text-primary transition-colors" href="terms.html">Terms</a>
+                <span class="text-stone-700 hidden md:inline">|</span>
+                <a class="hover:text-primary transition-colors" href="disclaimer.html">Disclaimer</a>
+                <span class="text-stone-700 hidden md:inline">|</span>
+                <a class="hover:text-primary transition-colors"
+                    href="mailto:startfinanacejourney@gmail.com?subject=Inquiry%20from%20FinanceHive">Contact</a>
+            </div>
+            <div class="text-stone-500 font-bold text-sm whitespace-nowrap">© 2026 FinanceHive. All rights reserved.
+            </div>
+        </div>
+    </footer>
+
+
+
+
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const cards = document.querySelectorAll('.grid > article');
+            const showMoreBtn = document.querySelector('.mb-24.mt-12 > button');
+            let isShowingMore = false;
+
+            if (cards.length > 8) {
+                cards.forEach((card, index) => {
+                    if (index >= 8) {
+                        card.style.display = 'none';
+                    }
+                });
+
+                if (showMoreBtn) {
+                    showMoreBtn.addEventListener('click', () => {
+                        isShowingMore = !isShowingMore;
+
+                        cards.forEach((card, index) => {
+                            if (index >= 8) {
+                                card.style.display = isShowingMore ? 'flex' : 'none';
+                            }
+                        });
+
+                        showMoreBtn.textContent = isShowingMore ? 'SHOW LESS' : 'SHOW MORE CONCEPTS';
+                    });
+                }
+            }
+        });
+    </script>
+    <script>
+        (function () { if (!window.chatbase || window.chatbase("getState") !== "initialized") { window.chatbase = (...arguments) => { if (!window.chatbase.q) { window.chatbase.q = [] } window.chatbase.q.push(arguments) }; window.chatbase = new Proxy(window.chatbase, { get(target, prop) { if (prop === "q") { return target.q } return (...args) => target(prop, ...args) } }) } const onLoad = function () { const script = document.createElement("script"); script.src = "https://www.chatbase.co/embed.min.js"; script.id = "okRPgozu3doX4vY4MK0UV"; script.domain = "www.chatbase.co"; document.body.appendChild(script) }; if (document.readyState === "complete") { onLoad() } else { window.addEventListener("load", onLoad) } })();
+    </script>
+
+
+
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            // Search Filtering & Focus
+            const searchInput = document.querySelector('nav input[placeholder="Search concepts..."]');
+            if (searchInput) {
+                const searchIcon = searchInput.nextElementSibling;
+                if (searchIcon && searchIcon.textContent.trim() === 'search') {
+                    searchIcon.style.cursor = 'pointer';
+                    searchIcon.addEventListener('click', () => searchInput.focus());
+                }
+
+                searchInput.addEventListener('input', function () {
+                    const query = this.value.toLowerCase().trim();
+                    // Target concept cards (article) and sector cards (sketch-border items in grids)
+                    const cards = document.querySelectorAll('article, .grid > .sketch-border, .grid > div[onclick*="sector-"]');
+
+                    cards.forEach(card => {
+                        const text = card.textContent.toLowerCase();
+                        if (text.includes(query)) {
+                            card.style.display = ''; // Revert to original layout (flex/block etc)
+                        } else {
+                            card.style.display = 'none';
+                        }
+                    });
+                });
+            }
+
+            // Active Navigation Highlighting
+            const navLinks = document.querySelectorAll('nav a');
+            let currentPath = window.location.pathname.split('/').pop().split('?')[0].split('#')[0];
+            if (!currentPath || currentPath === '') {
+                currentPath = 'index.html';
+            }
+            navLinks.forEach(link => {
+                const href = link.getAttribute('href');
+                if (href && (href === currentPath || (currentPath === 'index.html' && href === 'index.html'))) {
+                    link.classList.add('active');
+                }
+            });
+        });
+    </script>
+
+
+
+</body>
+
+</html>
