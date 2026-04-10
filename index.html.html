@@ -1,0 +1,391 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>FinanceHive | Finance Made Simple</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Epilogue:wght@700;800;900&amp;family=Plus+Jakarta+Sans:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                    "tertiary-container": "#c0a0ff",
+                    "surface-container": "#fdfbe2",
+                    "tertiary-dim": "#6d24de",
+                    "secondary": "#c31f29",
+                    "on-primary-container": "#594a00",
+                    "on-tertiary": "#ffffff",
+                    "secondary-dim": "#e60000",
+                    "on-tertiary-container": "#3f008e",
+                    "outline-variant": "#bab9b2",
+                    "primary-container": "#fdd400",
+                    "on-background": "#383833",
+                    "tertiary-fixed-dim": "#b48fff",
+                    "outline": "#383833",
+                    "on-primary": "#ffffff",
+                    "surface-tint": "#776300",
+                    "error-container": "#ff6b4a",
+                    "on-surface": "#383833",
+                    "error": "#be2d06",
+                    "surface-container-low": "#fffdef",
+                    "inverse-primary": "#fdd400",
+                    "on-primary-fixed": "#000000",
+                    "primary-fixed-dim": "#edc600",
+                    "tertiary": "#7a37eb",
+                    "primary": "#776300",
+                    "primary-fixed": "#fdd400",
+                    "surface-container-lowest": "#ffffff",
+                    "inverse-on-surface": "#9e9d96",
+                    "inverse-surface": "#0e0f0a",
+                    "on-surface-variant": "#4a4a44",
+                    "on-secondary": "#ffffff",
+                    "on-error": "#ffffff",
+                    "on-primary-fixed-variant": "#000000",
+                    "on-secondary-container": "#510000",
+                    "surface-container-high": "#f9f7d0",
+                    "surface": "#fffdf2",
+                    "on-secondary-fixed-variant": "#a60018",
+                    "background": "#fffdf2",
+                    "secondary-fixed-dim": "#ffafaa",
+                    "error-dim": "#b92902",
+                    "surface-dim": "#f5f3e0",
+                    "surface-container-highest": "#f2f0c5",
+                    "surface-bright": "#fffdf2",
+                    "secondary-container": "#ff8e8e",
+                    "on-error-container": "#520c00",
+                    "on-tertiary-fixed": "#200051",
+                    "surface-variant": "#f2f0c5",
+                    "on-tertiary-fixed-variant": "#4a00a4",
+                    "tertiary-fixed": "#c0a0ff",
+                    "on-secondary-fixed": "#70000d",
+                    "secondary-fixed": "#ffc3be"
+            },
+            "borderRadius": {
+                    "DEFAULT": "0.125rem",
+                    "lg": "0.25rem",
+                    "xl": "0.5rem",
+                    "full": "0.75rem"
+            },
+            "fontFamily": {
+                    "headline": ["Epilogue"],
+                    "body": ["Plus Jakarta Sans"],
+                    "label": ["Plus Jakarta Sans"]
+            }
+          },
+        },
+      }
+    </script>
+<style>body {
+    font-family: "Plus Jakarta Sans", sans-serif;
+    background-color: #fffdf2;
+    background-image: radial-gradient(#d1d1cf 0.5px, transparent 0.5px);
+    background-size: 24px 24px
+    }
+.font-marker {
+    font-family: "Epilogue", sans-serif
+    }
+.sketch-border {
+    border: 2px solid #383833;
+    box-shadow: 4px 4px 0px 0px #383833
+    }
+.sketch-shadow {
+    box-shadow: 10px 10px 0 0 #383833
+    }
+.highlight-yellow {
+    background: linear-gradient(180deg, transparent 50%, #fdd400 50%)
+    }
+.highlight-orange {
+    background: linear-gradient(180deg, transparent 50%, #ff8c00 50%)
+    }
+.highlight-fuchsia {
+    background: linear-gradient(180deg, transparent 50%, #f0f 50%)
+    }
+.material-symbols-outlined {
+    font-variation-settings: "FILL" 0, "wght" 600, "GRAD" 0, "opsz" 24
+    }
+/* Doodle Backgrounds */
+.sketchbook-bg {
+    position: relative
+    }
+.sketchbook-bg::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image: url(https://lh3.googleusercontent.com/aida-public/AB6AXuDeEzL56vC1kZKbRg4BSpPiKjJEFv3ShHxaTyZdzXIS3nJeJRmA57LF9JLpTDf9MtutYmFmZZG9LkrOaoGTKADnzOR1LYCK80CIC77X_-M6xTdFjQwcOPHUv8_lqa_JIH4doRHBm4dzRG8xMlMtr8Ndab9tuqH2sOnq5JXQK5hgMz_2hJYwYyg74OHIx8qYwWBAZCsfoTro-x0HErE271AWcAqXNpx7J3eQHd_Sfp0xBySwzpf4cHe1U0RXEvcsltKAF3ycF1PLseI), url(https://img.icons8.com/material-outlined/48/383833/star.png), url(https://img.icons8.com/material-outlined/48/383833/rupee.png);
+    background-repeat: no-repeat;
+    background-position: 5% 10%, 90% 15%, 85% 85%;
+    opacity: 0.1;
+    pointer-events: none;
+    z-index: 0
+    }</style>
+
+    
+
+    <style>
+        /* Active Navigation Link Styling */
+        nav div a.active:not(.bg-primary-container) {
+            color: #776300 !important;
+            border-bottom: 3px solid #fdd400;
+            padding-bottom: 2px;
+        }
+    </style>
+
+</head>
+
+<body class="bg-surface text-on-surface sketchbook-bg">
+<!-- TopNavBar -->
+<header class="w-full border-b-4 border-black bg-[#fdfbe2] sticky top-0 z-50">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="flex justify-between items-center h-16">
+      <!-- Logo -->
+      <div class="flex-shrink-0 flex items-center">
+        <a href="index.html" class="font-black text-2xl tracking-tighter hover:text-[#6d24de] transition-colors">
+          Finance<span class="text-[#c0a0ff]">Hive</span>
+        </a>
+      </div>
+      
+      <!-- Desktop Menu -->
+      <nav class="hidden md:flex space-x-8 font-bold">
+        <a href="index.html" class="text-black hover:bg-[#c0a0ff] hover:shadow-[2px_2px_0px_rgba(0,0,0,1)] border-2 border-transparent hover:border-black px-3 py-1 transition-all rounded-sm">Home</a>
+        <a href="learn-finance.html" class="text-black hover:bg-[#c0a0ff] hover:shadow-[2px_2px_0px_rgba(0,0,0,1)] border-2 border-transparent hover:border-black px-3 py-1 transition-all rounded-sm">Learn</a>
+        <a href="about.html" class="text-black hover:bg-[#c0a0ff] hover:shadow-[2px_2px_0px_rgba(0,0,0,1)] border-2 border-transparent hover:border-black px-3 py-1 transition-all rounded-sm">About</a>
+      </nav>
+
+      <!-- Mobile Button -->
+      <div class="md:hidden flex items-center">
+        <button id="mobile-menu-btn" class="border-2 border-black bg-[#c0a0ff] p-2 shadow-[2px_2px_0px_rgba(0,0,0,1)] active:shadow-none active:translate-y-[2px] active:translate-x-[2px]">
+          <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M4 6h16M4 12h16M4 18h16"></path></svg>
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Mobile Menu -->
+  <div id="mobile-menu" class="hidden md:hidden border-t-4 border-black bg-white flex flex-col font-bold">
+    <a href="index.html" class="block px-6 py-4 border-b-2 border-black hover:bg-[#c0a0ff]">Home</a>
+    <a href="learn-finance.html" class="block px-6 py-4 border-b-2 border-black hover:bg-[#c0a0ff]">Learn</a>
+    <a href="about.html" class="block px-6 py-4 hover:bg-[#c0a0ff]">About</a>
+  </div>
+</header>
+<!-- Hero Section -->
+<section class="max-w-7xl mx-auto px-6 py-24 grid md:grid-cols-2 gap-12 items-center relative">
+<div class="z-10">
+<span class="inline-block bg-primary px-4 py-1 text-sm font-black font-marker mb-6 sketch-border rotate-[-2deg]">100% Pure Education ✏️</span>
+<h1 class="text-5xl md:text-6xl font-black font-marker leading-[1] mb-6">
+            Learn Finance. <br/>
+<span class="highlight-orange">Decode Businesses.</span> <br/>
+            Understand How Money <span class="highlight-fuchsia">Really Moves.</span>
+</h1>
+<p class="text-lg text-on-surface-variant mb-10 max-w-lg font-medium">
+            Ditch the boring textbooks. Learn equity, bonds, crypto, sectors, markets, and many more – step-by-step through intuitive, clear, and real-world examples.
+        </p>
+<div class="flex flex-wrap gap-6 items-baseline">
+<a href="learn-finance.html.html" class="bg-primary-container text-on-primary-container px-10 py-5 text-xl font-black sketch-border sketch-shadow active:translate-x-1 active:translate-y-1 active:shadow-none transition-all">👉 Start Learning</a>
+<a href="sectors.html.html" class="bg-white border-4 border-tertiary text-tertiary px-10 py-5 text-xl font-black sketch-border active:scale-95 transition-transform">👉 Explore Sectors</a>
+</div>
+</div>
+<div class="relative group">
+<!-- Decorative Doodles -->
+<div class="absolute -top-10 -right-5 text-6xl text-primary transform rotate-12 drop-shadow-lg">⭐</div>
+<div class="absolute top-1/2 -left-10 text-5xl text-secondary animate-bounce drop-shadow-md">₹</div>
+<div class="absolute -bottom-5 right-20 text-5xl text-tertiary drop-shadow-md">💡</div>
+<div class="bg-surface-container sketch-border p-8 transform transition-transform duration-500 sketch-shadow">
+<img class="w-full h-auto rounded" data-alt="A flat vector doodle illustration featuring hand-drawn bar charts, floating rupee symbols, stars, arrows, and a notebook on a cream background" src="https://lh3.googleusercontent.com/aida-public/AB6AXuA_JZMdAc-JMl_nfa0zEdMr9N4hiMqmfLjDKmXqeyDSuRyD5aZ8PuY5awp_tgn-3mT3-VHV7V-DlTrSLrlKUrzQmj4SL4XqK3upWQWDSDx5eZQm0YKq3Y11RQREAuI74fugG5als9jOHLMQI_XHmRgvbTplLA-D8hUv4f4BI5_bS3dvaiUOWMKxnqC78bkKgKHOixLr75aVmMvRk0OYmzFEipm3pQb-vFMRAFfR8RqqZ1dQ0obeEpfh_qjOk6UsXw0MV89Y3Is19xE"/>
+</div>
+<div class="absolute -bottom-10 left-10">
+<span class="material-symbols-outlined text-7xl text-primary transform -rotate-45 font-black">south_east</span>
+</div>
+</div>
+</section>
+<!-- Sound Familiar Section -->
+<section class="bg-surface-container-highest py-24 border-y-4 border-stone-800">
+<div class="max-w-7xl mx-auto px-6 grid md:grid-cols-2 gap-12 items-center">
+<div>
+<h2 class="text-5xl font-black font-marker text-on-surface mb-2">Confused by Finance?</h2>
+<h2 class="text-5xl font-black font-marker text-tertiary mb-12">You're Not Alone.</h2>
+<ul class="space-y-6">
+<li class="flex items-center gap-4 text-on-surface text-xl font-marker">
+<span class="bg-secondary text-white rounded-full w-10 h-10 flex items-center justify-center sketch-border font-black" style="font-size:1.25rem;">✕</span>
+                    “Why is this bank statement so long?”
+                </li>
+<li class="flex items-center gap-4 text-on-surface text-xl font-marker">
+<span class="bg-orange-500 text-white rounded-full w-10 h-10 flex items-center justify-center sketch-border font-black" style="font-size:1.25rem;">✕</span>
+                    “What even is a P/E ratio?”
+                </li>
+<li class="flex items-center gap-4 text-on-surface text-xl font-marker">
+<span class="bg-yellow-500 text-white rounded-full w-10 h-10 flex items-center justify-center sketch-border font-black" style="font-size:1.25rem;">✕</span>
+                    “Am I losing money to inflation?”
+                </li>
+</ul>
+</div>
+<div class="relative">
+<div class="bg-secondary p-12 sketch-border sketch-shadow text-white">
+<h3 class="text-4xl font-black font-marker mb-6 leading-tight">We replace the noise with clarity.</h3>
+<p class="text-xl font-medium mb-8">FinanceHive replaces confusion with clarity using simple, step-by-step explanations anyone can understand.</p>
+<div class="text-8xl opacity-30 absolute bottom-4 right-4">🖍️</div>
+</div>
+</div>
+</div>
+</section>
+<!-- The Platform Battle -->
+<section class="max-w-7xl mx-auto px-6 py-24">
+<div class="text-center mb-20">
+<h2 class="text-5xl font-black font-marker inline-block border-b-8 border-primary-container pb-2">The Platform Battle</h2>
+</div>
+<div class="grid md:grid-cols-2 gap-8 max-w-5xl mx-auto items-stretch">
+<!-- Competitors -->
+<div class="bg-white p-10 sketch-border flex flex-col justify-between opacity-80">
+<div>
+<h3 class="text-3xl font-black font-marker mb-8 text-stone-400">Other Platforms ❌</h3>
+<ul class="space-y-6">
+<li class="flex items-start gap-3 font-bold text-lg"><span class="text-secondary text-2xl">✗</span> Heavy jargon and textbooks</li>
+<li class="flex items-start gap-3 font-bold text-lg"><span class="text-secondary text-2xl">✗</span> Generic global examples</li>
+<li class="flex items-start gap-3 font-bold text-lg"><span class="text-secondary text-2xl">✗</span> Only theory, no context</li>
+<li class="flex items-start gap-3 font-bold text-lg"><span class="text-secondary text-2xl">✗</span> One-size-fits-all content</li>
+<li class="flex items-start gap-3 font-bold text-lg"><span class="text-secondary text-2xl">✗</span> Stock tips disguised as education</li>
+</ul>
+</div>
+</div>
+<!-- FinanceHive -->
+<div class="bg-primary-container p-10 sketch-border sketch-shadow flex flex-col justify-between relative z-10">
+<div class="absolute -top-8 -right-8 bg-secondary text-white px-6 py-3 sketch-border font-black rotate-12 text-lg shadow-xl">Smarter Choice 🏆</div>
+<div>
+<h3 class="text-3xl font-black font-marker mb-8">FinanceHive ✅</h3>
+<ul class="space-y-6"><li class="flex items-center gap-3 font-black text-lg"><span class="text-green-600 text-3xl flex-shrink-0">✓</span> Plain language even a 15-year-old understands</li>
+<li class="flex items-center gap-3 font-black text-lg"><span class="text-green-600 text-3xl flex-shrink-0">✓</span> Indian stock market &amp; real business examples</li>
+<li class="flex items-center gap-3 font-black text-lg"><span class="text-green-600 text-3xl flex-shrink-0">✓</span> Sector-wise business model breakdowns</li>
+<li class="flex items-center gap-3 font-black text-lg"><span class="text-green-600 text-3xl flex-shrink-0">✓</span> 3-level learning: Beginner → Intermediate → Advanced</li>
+<li class="flex items-center gap-3 font-black text-lg"><span class="text-green-600 text-3xl flex-shrink-0">✓</span> 100% pure education – no tips, no bias</li></ul>
+</div>
+</div>
+</div>
+</section>
+<!-- What You'll Learn Here -->
+<section class="max-w-7xl mx-auto px-6 py-24">
+<h2 class="text-5xl font-black font-marker text-center mb-20">What You'll Learn Here</h2>
+<div class="grid md:grid-cols-2 gap-12 max-w-5xl mx-auto items-stretch">
+<!-- Pillar 1 -->
+<div class="group">
+<div class="w-48 h-10 bg-tertiary-container sketch-border border-b-0 rounded-t-xl w-full"></div>
+<div class="bg-white sketch-border p-10 sketch-shadow group-hover:-translate-y-2 transition-transform h-full relative overflow-hidden">
+<div class="text-6xl mb-6">📘</div>
+<h3 class="text-3xl font-black font-marker mb-6">Finance Terms</h3>
+<p class="text-on-surface-variant mb-8 text-lg font-medium leading-relaxed">&gt;100 finance concepts explained in 3 levels — Beginner, Intermediate, Advanced. From what is profit to how derivatives work.</p>
+<div class="absolute -right-4 -bottom-4 opacity-10 group-hover:opacity-20 transition-opacity">
+<span class="material-symbols-outlined text-9xl">menu_book</span>
+</div>
+</div>
+</div>
+<!-- Pillar 2 -->
+<div class="group">
+<div class="w-48 h-10 bg-secondary-container sketch-border border-b-0 rounded-t-xl w-full"></div>
+<div class="bg-white sketch-border p-10 sketch-shadow group-hover:-translate-y-2 transition-transform h-full relative overflow-hidden">
+<div class="text-6xl mb-6">🏭</div>
+<h3 class="text-3xl font-black font-marker mb-6">Sectors of Indian Stock Market</h3>
+<p class="text-on-surface-variant mb-8 text-lg font-medium leading-relaxed">Deep-dive into FMCG, Banking, IT, Energy, Telecom, and more — understand how each sector earns money and what drives its growth.</p>
+<div class="absolute -right-4 -bottom-4 opacity-10 group-hover:opacity-20 transition-opacity">
+<span class="material-symbols-outlined text-9xl">factory</span>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Final CTA -->
+<section class="max-w-4xl mx-auto px-6 py-32 text-center relative">
+<div class="absolute -top-10 left-0 text-7xl transform -rotate-12 animate-pulse">✨</div>
+<div class="absolute bottom-10 right-0 text-7xl transform rotate-12 animate-bounce">🚀</div>
+<h2 class="text-5xl md:text-7xl font-black font-marker mb-8 leading-[1.1]">Start Your Financial Journey Today</h2>
+<p class="text-2xl text-on-surface-variant mb-14 font-black">No jargon. No confusion. Just clarity.</p>
+<div class="relative inline-block group">
+<span class="material-symbols-outlined absolute -left-24 top-1/2 -translate-y-1/2 text-7xl text-primary transform -rotate-12 group-hover:-translate-x-4 transition-transform hidden lg:block font-black">trending_flat</span>
+<a href="learn-finance.html.html" class="bg-primary-container text-on-primary-container px-16 py-8 text-3xl font-black sketch-border sketch-shadow hover:scale-105 active:scale-95 transition-all inline-block">
+            Get Started Now
+        </a>
+<span class="material-symbols-outlined absolute -right-24 top-1/2 -translate-y-1/2 text-7xl text-primary transform rotate-12 group-hover:translate-x-4 transition-transform hidden lg:block font-black">star</span>
+</div>
+</section>
+<!-- Footer -->
+<footer class="bg-stone-900 text-white border-t-8 border-stone-800 flex flex-col md:flex-row justify-between items-center w-full px-8 py-16 gap-8">
+<div class="max-w-7xl mx-auto w-full flex flex-col md:flex-row justify-between items-baseline gap-8">
+<div class="flex flex-col items-start">
+<a href="index.html.html" class="text-3xl font-black text-white font-marker tracking-tighter">FinanceHive</a>
+<p class="text-stone-400 font-medium text-xs">Hand-drawn for Indian minds. ✏️</p>
+</div>
+<div class="flex flex-wrap justify-center gap-6 md:gap-8 font-marker font-black text-base">
+<a class="hover:text-primary transition-colors" href="privacy.html">Privacy</a>
+<span class="text-stone-700 hidden md:inline">|</span>
+<a class="hover:text-primary transition-colors" href="terms.html">Terms</a>
+<span class="text-stone-700 hidden md:inline">|</span>
+<a class="hover:text-primary transition-colors" href="disclaimer.html.html">Disclaimer</a>
+<span class="text-stone-700 hidden md:inline">|</span>
+<a class="hover:text-primary transition-colors" href="mailto:startfinanacejourney@gmail.com?subject=Inquiry%20from%20FinanceHive">Contact</a>
+</div>
+<div class="text-stone-500 font-bold text-sm whitespace-nowrap">© 2026 FinanceHive. All rights reserved.</div>
+</div>
+</footer>
+<script>
+(function(){if(!window.chatbase||window.chatbase("getState")!=="initialized"){window.chatbase=(...arguments)=>{if(!window.chatbase.q){window.chatbase.q=[]}window.chatbase.q.push(arguments)};window.chatbase=new Proxy(window.chatbase,{get(target,prop){if(prop==="q"){return target.q}return(...args)=>target(prop,...args)}})}const onLoad=function(){const script=document.createElement("script");script.src="https://www.chatbase.co/embed.min.js";script.id="okRPgozu3doX4vY4MK0UV";script.domain="www.chatbase.co";document.body.appendChild(script)};if(document.readyState==="complete"){onLoad()}else{window.addEventListener("load",onLoad)}})();
+</script>
+
+    
+
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            // Search Filtering & Focus
+            const searchInput = document.querySelector('nav input[placeholder="Search concepts..."]');
+            if (searchInput) {
+                const searchIcon = searchInput.nextElementSibling;
+                if (searchIcon && searchIcon.textContent.trim() === 'search') {
+                    searchIcon.style.cursor = 'pointer';
+                    searchIcon.addEventListener('click', () => searchInput.focus());
+                }
+
+                searchInput.addEventListener('input', function() {
+                    const query = this.value.toLowerCase().trim();
+                    // Target concept cards (article) and sector cards (sketch-border items in grids)
+                    const cards = document.querySelectorAll('article, .grid > .sketch-border, .grid > div[onclick*="sector-"]');
+                    
+                    cards.forEach(card => {
+                        const text = card.textContent.toLowerCase();
+                        if (text.includes(query)) {
+                            card.style.display = ''; // Revert to original layout (flex/block etc)
+                        } else {
+                            card.style.display = 'none';
+                        }
+                    });
+                });
+            }
+            
+            // Active Navigation Highlighting
+            const navLinks = document.querySelectorAll('nav a');
+            let currentPath = window.location.pathname.split('/').pop().split('?')[0].split('#')[0];
+            if (!currentPath || currentPath === '') {
+                currentPath = 'index.html.html';
+            }
+            navLinks.forEach(link => {
+                const href = link.getAttribute('href');
+                if (href && (href === currentPath || (currentPath === 'index.html.html' && href === 'index.html.html'))) {
+                    link.classList.add('active');
+                }
+            });
+        });
+    </script>
+
+<script>
+  const btn = document.getElementById('mobile-menu-btn');
+  const menu = document.getElementById('mobile-menu');
+  if(btn && menu) {
+    btn.addEventListener('click', () => {
+      menu.classList.toggle('hidden');
+    });
+  }
+</script>
+</body>
+</html>
