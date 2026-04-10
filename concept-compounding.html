@@ -1,0 +1,321 @@
+﻿<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Learn Finance - FinanceHive</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Epilogue:wght@800;900&amp;family=Plus+Jakarta+Sans:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+ tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "secondary-dim": "#b10e1e",
+                        "on-tertiary-container": "#3f008e",
+                        "tertiary-fixed-dim": "#b48fff",
+                        "primary-fixed": "#fdd400",
+                        "outline": "#81817a",
+                        "on-tertiary": "#ffffff",
+                        "secondary": "#c31f29",
+                        "on-surface-variant": "#65655f",
+                        "secondary-container": "#ffc3be",
+                        "on-primary-fixed-variant": "#645300",
+                        "on-primary-fixed": "#433700",
+                        "inverse-surface": "#0e0f0a",
+                        "error": "#be2d06",
+                        "on-error": "#ffffff",
+                        "on-tertiary-fixed-variant": "#4a00a4",
+                        "inverse-primary": "#fdd400",
+                        "error-container": "#f95630",
+                        "surface-container-highest": "#e9e9de",
+                        "tertiary-fixed": "#c0a0ff",
+                        "on-secondary": "#ffffff",
+                        "surface-variant": "#e9e9de",
+                        "on-secondary-fixed": "#70000d",
+                        "surface": "#fefcf4",
+                        "on-secondary-fixed-variant": "#a60018",
+                        "primary-fixed-dim": "#edc600",
+                        "on-tertiary-fixed": "#200051",
+                        "background": "#fefcf4",
+                        "surface-container-low": "#fbf9f1",
+                        "surface-container": "#f5f4eb",
+                        "on-background": "#383833",
+                        "surface-container-high": "#efeee5",
+                        "tertiary": "#7a37eb",
+                        "on-error-container": "#520c00",
+                        "surface-bright": "#fefcf4",
+                        "primary-container": "#fdd400",
+                        "surface-dim": "#e4e3d8",
+                        "on-surface": "#383833",
+                        "error-dim": "#b92902",
+                        "tertiary-container": "#c0a0ff",
+                        "outline-variant": "#bab9b2",
+                        "on-secondary-container": "#940014",
+                        "secondary-fixed": "#ffc3be",
+                        "on-primary": "#ffffff",
+                        "secondary-fixed-dim": "#ffafaa",
+                        "on-primary-container": "#594a00"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.125rem",
+                        "lg": "0.25rem",
+                        "xl": "0.5rem",
+                        "full": "0.75rem"
+                    },
+                    "fontFamily": {
+                        "headline": ["Epilogue"],
+                        "body": ["Plus Jakarta Sans"],
+                        "label": ["Plus Jakarta Sans"]
+                    }
+                },
+            },
+        }
+    </script>
+<style>
+ .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .sketch-border {
+            border: 2px solid #383833;
+            box-shadow: 4px 4px 0px 0px #383833;
+        }
+        .scribble-underline {
+            background-image: url("data:image/svg+xml,%3Csvg width='200' height='20' viewBox='0 0 200 20' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M2 15C20 12 180 12 198 15' stroke='%23FFD600' stroke-width='4' stroke-linecap='round'/%3E%3C/svg%3E");
+            background-repeat: no-repeat;
+            background-position: bottom;
+            padding-bottom: 8px;
+        }
+        .doodle-bg {
+            background-image: url("data:image/svg+xml,%3Csvg width='100' height='100' viewBox='0 0 100 100' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M10 10L20 20M20 10L10 20' stroke='%23383833' stroke-opacity='0.02'/%3E%3C/svg%3E");
+        }
+        .footer-doodle-line {
+            height: 4px;
+            background-image: url("data:image/svg+xml,%3Csvg width='400' height='10' viewBox='0 0 400 10' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M0 5C50 2 100 8 150 5C200 2 250 8 300 5C350 2 400 8 450 5' stroke='%23383833' stroke-width='2' stroke-linecap='round' opacity='0.2'/%3E%3C/svg%3E");
+            background-repeat: repeat-x;
+        }
+        .doodle-icon {
+            filter: drop-shadow(1px 1px 0px rgba(0,0,0,0.1));
+        }
+        .sketch-texture {
+            background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noiseFilter'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.65' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noiseFilter)' opacity='0.05'/%3E%3C/svg%3E");
+        }
+    
+        .tilt-1 { transform: rotate(1.2deg); }
+        .tilt-2 { transform: rotate(-1.5deg); }
+        .tilt-3 { transform: rotate(0.8deg); }
+        .tilt-4 { transform: rotate(-1.1deg); }
+        .card-fuchsia { background-color: rgba(255, 214, 0, 0.12); } /* Electric Yellow */
+        .card-purple { background-color: rgba(255, 77, 77, 0.12); } /* Coral Red */
+        .card-lime { background-color: rgba(124, 58, 237, 0.12); } /* Violet */
+        .card-orange { background-color: rgba(34, 197, 94, 0.12); } /* Lime Green */
+    </style>
+
+ 
+
+    <style>
+ /* Active Navigation Link Styling */
+        nav div a.active:not(.bg-primary-container) {
+            color: #776300 !important;
+            border-bottom: 3px solid #fdd400;
+            padding-bottom: 2px;
+        }
+    </style>
+
+</head>
+
+<body class="bg-surface font-body text-on-surface doodle-bg min-h-screen flex flex-col">
+<!-- TopNavBar -->
+<nav class="bg-surface border-b-4 border-stone-800 flex justify-between items-center w-full px-6 py-4 max-w-7xl mx-auto sticky top-0 z-50 gap-8">
+<a href="index.html.html" class="text-3xl font-black text-[#383833] tracking-tighter font-marker">FinanceHive</a>
+<div class="hidden md:flex gap-6 items-center ml-auto">
+<a class="text-on-surface hover:text-secondary font-marker font-black text-base transition-all duration-200" href="learn-finance.html.html">Concepts</a>
+<a class="text-on-surface hover:text-secondary font-marker font-black text-base transition-all duration-200" href="sectors.html.html">Sectors</a>
+<a class="text-on-surface hover:text-secondary font-marker font-black text-base transition-all duration-200" href="request-topic.html.html">Request a Topic</a>
+<a class="text-on-surface hover:text-secondary font-marker font-black text-base transition-all duration-200" href="about.html.html">About</a>
+</div>
+<div class="flex items-center gap-4 lg:gap-6">
+
+
+
+<a href="learn-finance.html.html" class="bg-primary-container text-on-primary-container px-6 py-2 sketch-border font-black hover:translate-x-1 hover:translate-y-1 transition-all">
+ Start Learning
+  </a>
+</div>
+</nav>
+<main class="flex-grow max-w-screen-md mx-auto px-6 py-12 w-full">
+ <div class="mb-12">
+ <a href="learn-finance.html.html" class="inline-block text-[#383833] font-bold font-marker hover:text-secondary transition-colors text-lg">
+ &larr; Back to All Concepts
+        </a>
+ </div>
+ 
+    <header class="mb-12 text-center">
+ <h1 class="text-5xl md:text-7xl font-black font-headline text-on-surface mb-6 tracking-tighter capitalize"><span class="scribble-underline">Compounding</span></h1>
+ <p class="text-xl font-medium text-on-surface/60 max-w-2xl mx-auto">Earning returns on your returns – the magical engine of long-term wealth creation</p>
+ </header>
+
+ <section class="bg-white p-8 sketch-border sketch-texture mb-16 rounded-xl">
+ <div class="flex flex-wrap gap-4 mb-8 justify-center border-b-2 border-stone-800/10 pb-8">
+ <button onclick="switchTab('beg')" id="tab-beg" class="px-8 py-3 bg-primary-container sketch-border font-headline font-black uppercase tracking-widest transition-all hover:translate-y-[-2px] hover:translate-x-[-2px]">Beginner</button>
+ <button onclick="switchTab('int')" id="tab-int" class="px-8 py-3 bg-surface-container-high border-2 border-on-surface/20 font-headline font-black uppercase tracking-widest transition-all hover:bg-secondary-container">Intermediate</button>
+ <button onclick="switchTab('adv')" id="tab-adv" class="px-8 py-3 bg-surface-container-high border-2 border-on-surface/20 font-headline font-black uppercase tracking-widest transition-all hover:bg-tertiary-container">Advanced</button>
+ </div>
+
+ <div id="content-beg" class="concept-content text-lg text-on-surface/90 leading-relaxed font-body">
+            <h3 class='font-black text-xl mb-2'>Compounding in one minute</h3><p>You invest ₹1,000. After year 1, you earn ₹100 interest = ₹1,100. Year 2, interest is on ₹1,100 not ₹1,000 = ₹110 interest. Year 3: interest on ₹1,210. Your interest is earning interest. That is compounding – Einstein called it the 8th wonder of the world</p>
+ </div>
+ <div id="content-int" class="concept-content hidden text-lg text-on-surface/90 leading-relaxed font-body">
+ <h3 class='font-black text-xl mb-4'>A little deeper</h3><strong class='block mt-4 mb-1 text-secondary'>Power of time</strong><p>₹10,000 invested at 12% for 10 years = ₹31,058. For 30 years = ₹2,99,599. Same rate, wildly different result due to time.</p><strong class='block mt-4 mb-1 text-secondary'>Compounding frequency</strong><p>Daily compounding > monthly > annual. More frequent = faster growth. Most mutual funds compound daily.</p><strong class='block mt-4 mb-1 text-secondary'>Rule of 72</strong><p>Divide 72 by your annual return rate = years to double money. At 12% → 72÷12 = 6 years to double.</p><strong class='block mt-4 mb-1 text-secondary'>Start early</strong><p>₹1,000/month from age 22 vs ₹2,000/month from age 32 – the person who started earlier often ends up richer.</p>
+ </div>
+ <div id="content-adv" class="concept-content hidden text-lg text-on-surface/90 leading-relaxed font-body">
+ <h3 class='font-black text-xl mb-4'>How people making money from this</h3><strong class='block mt-4 mb-1 text-secondary'>The biggest mistake</strong><p>Withdrawing investments early kills compounding. Stay invested for as long as possible.</p><strong class='block mt-4 mb-1 text-secondary'>Reinvest dividends</strong><p>Instead of spending dividends, reinvest them. This accelerates compounding.</p><strong class='block mt-4 mb-1 text-secondary'>Risk</strong><p>Compounding requires time and consistent returns. Market crashes can set it back temporarily. But long-term it overwhelms short-term losses.</p>
+ </div>
+ </section>
+
+ <!-- Concept Navigation Buttons -->
+ <div id="concept-nav-buttons" style="display:flex; justify-content:space-between; align-items:center; margin-top:40px; padding-bottom:40px;">
+ <a href="concept-bull-market.html" style="display:inline-flex; align-items:center; gap:8px; padding:12px 24px; background:#fefcf4; border:2px solid #383833; box-shadow:3px 3px 0px 0px #383833; font-family:'Epilogue', sans-serif; font-weight:800; font-size:15px; color:#383833; text-decoration:none; text-transform:uppercase; letter-spacing:0.03em; transition:all 0.15s;" onmouseover="this.style.transform='translate(-2px,-2px)'; this.style.boxShadow='5px 5px 0px 0px #383833';" onmouseout="this.style.transform=''; this.style.boxShadow='3px 3px 0px 0px #383833';">&larr; Previous</a>
+ <a href="concept-stockmarket.html" style="display:inline-flex; align-items:center; gap:8px; padding:12px 24px; background:#fdd400; border:2px solid #383833; box-shadow:3px 3px 0px 0px #383833; font-family:'Epilogue', sans-serif; font-weight:800; font-size:15px; color:#383833; text-decoration:none; text-transform:uppercase; letter-spacing:0.03em; transition:all 0.15s;" onmouseover="this.style.transform='translate(-2px,-2px)'; this.style.boxShadow='5px 5px 0px 0px #383833';" onmouseout="this.style.transform=''; this.style.boxShadow='3px 3px 0px 0px #383833';">Next &rarr;</a>
+ </div>
+</main>
+<!-- Footer -->
+<footer class="bg-stone-900 text-white border-t-8 border-stone-800 flex flex-col md:flex-row justify-between items-center w-full px-8 py-16 gap-8">
+<div class="max-w-7xl mx-auto w-full flex flex-col md:flex-row justify-between items-baseline gap-8">
+<div class="flex flex-col items-start">
+<a href="index.html.html" class="text-3xl font-black text-white font-marker tracking-tighter">FinanceHive</a>
+<p class="text-stone-400 font-medium text-xs">Hand-drawn for Indian minds. ✏️</p>
+</div>
+<div class="flex flex-wrap justify-center gap-6 md:gap-8 font-marker font-black text-base">
+<a class="hover:text-primary transition-colors" href="privacy.html">Privacy</a>
+<span class="text-stone-700 hidden md:inline">|</span>
+<a class="hover:text-primary transition-colors" href="terms.html">Terms</a>
+<span class="text-stone-700 hidden md:inline">|</span>
+<a class="hover:text-primary transition-colors" href="disclaimer.html.html">Disclaimer</a>
+<span class="text-stone-700 hidden md:inline">|</span>
+<a class="hover:text-primary transition-colors" href="mailto:startfinanacejourney@gmail.com?subject=Inquiry%20from%20FinanceHive">Contact</a>
+</div>
+<div class="text-stone-500 font-bold text-sm whitespace-nowrap">© 2026 FinanceHive. All rights reserved.</div>
+</div>
+</footer>
+
+
+
+
+
+ 
+
+    <script>
+ document.addEventListener('DOMContentLoaded', () => {
+ // Search Filtering & Focus
+            const searchInput = document.querySelector('nav input[placeholder="Search concepts..."]');
+            if (searchInput) {
+                const searchIcon = searchInput.nextElementSibling;
+                if (searchIcon && searchIcon.textContent.trim() === 'search') {
+                    searchIcon.style.cursor = 'pointer';
+                    searchIcon.addEventListener('click', () => searchInput.focus());
+ }
+
+                searchInput.addEventListener('input', function() {
+                    const query = this.value.toLowerCase().trim();
+                    // Target concept cards (article) and sector cards (sketch-border items in grids)
+                    const cards = document.querySelectorAll('article, .grid > .sketch-border, .grid > div[onclick*="sector-"]');
+ 
+                    cards.forEach(card => {
+ const text = card.textContent.toLowerCase();
+                        if (text.includes(query)) {
+                            card.style.display = ''; // Revert to original layout (flex/block etc)
+                        } else {
+                            card.style.display = 'none';
+                        }
+                    });
+                });
+            }
+            
+            // Active Navigation Highlighting
+            const navLinks = document.querySelectorAll('nav a');
+            let currentPath = window.location.pathname.split('/').pop().split('?')[0].split('#')[0];
+            if (!currentPath || currentPath === '') {
+                currentPath = 'index.html.html';
+            }
+            navLinks.forEach(link => {
+ const href = link.getAttribute('href');
+                if (href && (href === currentPath || (currentPath === 'index.html.html' && href === 'index.html.html'))) {
+                    link.classList.add('active');
+                }
+            });
+        });
+    </script>
+
+</body>
+
+
+<script>
+function switchTab(level) {
+ document.querySelectorAll('.concept-content').forEach(el => el.classList.add('hidden'));
+ 
+    const inactiveClass = 'px-8 py-3 bg-surface-container-high border-2 border-on-surface/20 font-headline font-black uppercase tracking-widest transition-all';
+    
+    document.getElementById('tab-beg').className = inactiveClass + ' hover:bg-primary-container hover:translate-y-[-2px] hover:translate-x-[-2px]';
+    document.getElementById('tab-int').className = inactiveClass + ' hover:bg-secondary-container';
+    document.getElementById('tab-adv').className = inactiveClass + ' hover:bg-tertiary-container';
+    
+    document.getElementById('content-' + level).classList.remove('hidden');
+    
+    const activeClass = 'px-8 py-3 bg-primary-container sketch-border font-headline font-black uppercase tracking-widest transition-all hover:translate-y-[-2px] hover:translate-x-[-2px]';
+    document.getElementById('tab-' + level).className = activeClass;
+}
+</script>
+<script>
+(function(){if(!window.chatbase||window.chatbase("getState")!=="initialized"){window.chatbase=(...arguments)=>{if(!window.chatbase.q){window.chatbase.q=[]}window.chatbase.q.push(arguments)};window.chatbase=new Proxy(window.chatbase,{get(target,prop){if(prop==="q"){return target.q}return(...args)=>target(prop,...args)}})}const onLoad=function(){const script=document.createElement("script");script.src="https://www.chatbase.co/embed.min.js";script.id="okRPgozu3doX4vY4MK0UV";script.domain="www.chatbase.co";document.body.appendChild(script)};if(document.readyState==="complete"){onLoad()}else{window.addEventListener("load",onLoad)}})();
+</script>
+
+ 
+
+    <script>
+ document.addEventListener('DOMContentLoaded', () => {
+ // Search Filtering & Focus
+            const searchInput = document.querySelector('nav input[placeholder="Search concepts..."]');
+            if (searchInput) {
+                const searchIcon = searchInput.nextElementSibling;
+                if (searchIcon && searchIcon.textContent.trim() === 'search') {
+                    searchIcon.style.cursor = 'pointer';
+                    searchIcon.addEventListener('click', () => searchInput.focus());
+ }
+
+                searchInput.addEventListener('input', function() {
+                    const query = this.value.toLowerCase().trim();
+                    // Target concept cards (article) and sector cards (sketch-border items in grids)
+                    const cards = document.querySelectorAll('article, .grid > .sketch-border, .grid > div[onclick*="sector-"]');
+ 
+                    cards.forEach(card => {
+ const text = card.textContent.toLowerCase();
+                        if (text.includes(query)) {
+                            card.style.display = ''; // Revert to original layout (flex/block etc)
+                        } else {
+                            card.style.display = 'none';
+                        }
+                    });
+                });
+            }
+            
+            // Active Navigation Highlighting
+            const navLinks = document.querySelectorAll('nav a');
+            let currentPath = window.location.pathname.split('/').pop().split('?')[0].split('#')[0];
+            if (!currentPath || currentPath === '') {
+                currentPath = 'index.html.html';
+            }
+            navLinks.forEach(link => {
+ const href = link.getAttribute('href');
+                if (href && (href === currentPath || (currentPath === 'index.html.html' && href === 'index.html.html'))) {
+                    link.classList.add('active');
+                }
+            });
+        });
+    </script>
+
+</body>
+
+</html>
