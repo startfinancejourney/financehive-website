@@ -108,6 +108,16 @@
     }
   </style>
 
+<style>
+/* CRITICAL DESIGN RULES MOBILE FIXES v2 */
+@media (max-width: 768px) {
+    /* FIX 2: Hide Start Learning button */
+    nav a[href="learn-finance.html"].bg-primary-container,
+    nav a[href="learn-finance.html.html"].bg-primary-container {
+      display: none !important;
+    }
+}
+</style>
 </head>
 
 <body class="bg-[#FFFDF5] text-on-surface font-body selection:bg-primary-container min-h-screen flex flex-col">
