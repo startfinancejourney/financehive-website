@@ -1,0 +1,522 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>Healthcare Sector | FinanceHive</title>
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Epilogue:wght@400;700;900&amp;family=Plus+Jakarta+Sans:wght@400;500;600;700&amp;display=swap"
+        rel="stylesheet" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
+        rel="stylesheet" />
+    <script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "on-primary": "#ffffff",
+                        "on-tertiary-fixed-variant": "#4a00a4",
+                        "error": "#be2d06",
+                        "surface-container": "#f5f4eb",
+                        "on-secondary-container": "#940014",
+                        "tertiary-container": "#c0a0ff",
+                        "surface-tint": "#776300",
+                        "on-error-container": "#520c00",
+                        "on-tertiary-fixed": "#200051",
+                        "error-container": "#f95630",
+                        "inverse-primary": "#fdd400",
+                        "primary-fixed": "#fdd400",
+                        "on-surface": "#383833",
+                        "on-background": "#383833",
+                        "surface-container-low": "#fbf9f1",
+                        "inverse-surface": "#0e0f0a",
+                        "on-secondary": "#ffffff",
+                        "surface-dim": "#e4e3d8",
+                        "on-secondary-fixed": "#70000d",
+                        "tertiary-fixed-dim": "#b48fff",
+                        "primary-dim": "#695700",
+                        "secondary-dim": "#b10e1e",
+                        "on-error": "#ffffff",
+                        "on-secondary-fixed-variant": "#a60018",
+                        "secondary": "#c31f29",
+                        "surface-container-high": "#efeee5",
+                        "secondary-fixed-dim": "#ffafaa",
+                        "on-primary-container": "#594a00",
+                        "outline": "#81817a",
+                        "tertiary-fixed": "#c0a0ff",
+                        "primary-container": "#fdd400",
+                        "surface-container-lowest": "#ffffff",
+                        "on-tertiary-container": "#3f008e",
+                        "secondary-container": "#ffc3be",
+                        "surface": "#fefcf4",
+                        "surface-variant": "#e9e9de",
+                        "inverse-on-surface": "#9e9d96",
+                        "error-dim": "#b92902",
+                        "on-primary-fixed": "#433700",
+                        "secondary-fixed": "#ffc3be",
+                        "background": "#fefcf4",
+                        "on-tertiary": "#ffffff",
+                        "surface-container-highest": "#e9e9de",
+                        "primary-fixed-dim": "#edc600",
+                        "outline-variant": "#bab9b2",
+                        "primary": "#776300",
+                        "on-surface-variant": "#65655f",
+                        "tertiary": "#7a37eb",
+                        "tertiary-dim": "#6d24de",
+                        "on-primary-fixed-variant": "#645300",
+                        "surface-bright": "#fefcf4"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.125rem",
+                        "lg": "0.25rem",
+                        "xl": "0.5rem",
+                        "full": "0.75rem"
+                    },
+                    "fontFamily": {
+                        "headline": ["Epilogue"],
+                        "body": ["Plus Jakarta Sans"],
+                        "label": ["Plus Jakarta Sans"]
+                    }
+                },
+            },
+        }
+    </script>
+    <style>
+        .sketch-border {
+            border: 2px solid #383833;
+            box-shadow: 4px 4px 0px 0px #383833;
+        }
+
+        .scribble-underline {
+            background-image: linear-gradient(120deg, #FFD600 0%, #FFD600 100%);
+            background-repeat: no-repeat;
+            background-size: 100% 0.3em;
+            background-position: 0 88%;
+        }
+
+        .marker-highlight {
+            background: linear-gradient(100deg, rgba(255, 214, 0, 0.3) 0%, rgba(255, 214, 0, 0.7) 100%);
+            padding: 0 4px;
+        }
+    </style>
+
+
+
+    <style>
+        /* Active Navigation Link Styling */
+        nav div a.active:not(.bg-primary-container) {
+            color: #776300 !important;
+            border-bottom: 3px solid #fdd400;
+            padding-bottom: 2px;
+        }
+    </style>
+
+<style>
+/* CRITICAL DESIGN RULES MOBILE FIXES v2 */
+@media (max-width: 768px) {
+    /* FIX 1: Search bar on mobile */
+    nav {
+      padding-bottom: 65px !important;
+    }
+    nav .relative.group.flex.items-center {
+      position: absolute !important;
+      bottom: 12px !important;
+      left: 16px !important;
+      right: 16px !important;
+      width: calc(100% - 32px) !important;
+      margin: 0 !important;
+    }
+    nav input[placeholder*="Search"] {
+      width: 100% !important;
+      max-width: 100% !important;
+      height: 40px !important;
+      font-size: 14px !important;
+    }
+    #mobile-menu {
+      top: 135px !important; 
+    }
+
+    /* FIX 2: Hide Start Learning button */
+    nav a[href="learn-finance.html"].bg-primary-container,
+    nav a[href="learn-finance.html.html"].bg-primary-container {
+      display: none !important;
+    }
+}
+</style>
+</head>
+
+<body class="bg-[#FFFDF5] text-on-surface font-body selection:bg-primary-container min-h-screen flex flex-col">
+    <!-- TopNavBar -->
+    <nav
+        class="bg-surface border-b-4 border-stone-800 flex justify-between items-center w-full px-6 py-4 max-w-7xl mx-auto sticky top-0 z-50 gap-8">
+        <a href="index.html" class="text-3xl font-black text-[#383833] tracking-tighter font-marker">FinanceHive</a>
+        <div class="hidden md:flex gap-6 items-center ml-auto">
+            <a class="text-on-surface hover:text-secondary font-marker font-black text-base transition-all duration-200"
+                href="learn-finance.html">Concepts</a>
+            <a class="text-on-surface hover:text-secondary font-marker font-black text-base transition-all duration-200"
+                href="sectors.html">Sectors</a>
+            <a class="text-on-surface hover:text-secondary font-marker font-black text-base transition-all duration-200"
+                href="request-topic.html">Request a Topic</a>
+            <a class="text-on-surface hover:text-secondary font-marker font-black text-base transition-all duration-200"
+                href="about.html">About</a>
+        </div>
+        <div class="flex items-center gap-4 lg:gap-6">
+
+
+
+            <a href="learn-finance.html"
+                class="bg-primary-container text-on-primary-container px-6 py-2 sketch-border font-black hover:translate-x-1 hover:translate-y-1 transition-all">
+                Start Learning
+            </a>
+        
+        <!-- Mobile Hamburger Button -->
+        <button id="mobile-menu-btn" class="md:hidden text-[#383833] hover:text-secondary focus:outline-none flex items-center justify-center ml-2 p-1 transition-colors">
+            <span class="material-symbols-outlined text-4xl font-black">menu</span>
+        </button>
+    </div>
+    </nav>
+    
+    <!-- Mobile Menu -->
+    <div id="mobile-menu" class="hidden md:hidden bg-surface border-b-4 border-stone-800 flex-col items-center py-4 w-full shadow-lg fixed left-0 right-0 z-40 transition-all font-marker" style="top: 86px;">
+        <a class="text-on-surface hover:text-secondary font-black text-xl w-full text-center py-3 border-b-2 border-stone-800/10" href="learn-finance.html">Concepts</a>
+        <a class="text-on-surface hover:text-secondary font-black text-xl w-full text-center py-3 border-b-2 border-stone-800/10" href="sectors.html">Sectors</a>
+        <a class="text-on-surface hover:text-secondary font-black text-xl w-full text-center py-3 border-b-2 border-stone-800/10" href="request-topic.html">Request a Topic</a>
+        <a class="text-on-surface hover:text-secondary font-black text-xl w-full text-center py-3" href="about.html">About</a>
+    </div>
+
+    <!-- Mobile Menu Script -->
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const btn = document.getElementById('mobile-menu-btn');
+            const menu = document.getElementById('mobile-menu');
+            const nav = document.querySelector('nav');
+            
+            if (btn && menu && nav) {
+                btn.addEventListener('click', () => {
+                    // Position menu strictly below navbar
+                    menu.style.top = nav.getBoundingClientRect().bottom + 'px';
+                    menu.classList.toggle('hidden');
+                    menu.classList.toggle('flex');
+                    
+                    // Change icon based on menu state
+                    const icon = btn.querySelector('.material-symbols-outlined');
+                    if (icon) {
+                        icon.textContent = menu.classList.contains('hidden') ? 'menu' : 'close';
+                    }
+                });
+                
+                // Close menu when a link is tapped
+                menu.querySelectorAll('a').forEach(link => {
+                    link.addEventListener('click', () => {
+                        menu.classList.add('hidden');
+                        menu.classList.remove('flex');
+                        const icon = btn.querySelector('.material-symbols-outlined');
+                        if (icon) icon.textContent = 'menu';
+                    });
+                });
+            }
+        });
+    </script>
+    
+
+    <main class="flex-grow max-w-screen-xl mx-auto px-6 py-12 w-full">
+        <div class="mb-12">
+            <a href="sectors.html"
+                class="inline-block text-[#383833] font-bold font-headline hover:text-primary transition-colors text-lg font-black">
+                &larr; Back to All Sectors
+            </a>
+        </div>
+
+        <!-- Header Section -->
+        <header class="mb-16">
+            <h1
+                class="text-5xl md:text-7xl font-black font-headline text-on-surface mb-6 tracking-tighter leading-none">
+                <span class="scribble-underline">Healthcare Sector</span></h1>
+            <p
+                class="text-xl md:text-2xl font-medium text-on-surface/80 max-w-3xl border-l-4 border-primary pl-4 bg-primary/5 py-2">
+                Medicines, hospitals, diagnostics – the sector that runs on human need</p>
+        </header>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-8 mb-16">
+            <!-- SECTION 1 -->
+            <article
+                class="bg-surface p-8 rounded-xl shadow-sm border-l-8 border-[#FFD600] border-t border-b border-r border-outline-variant/30 relative sketch-border hover:translate-y-[-2px] transition-transform duration-200">
+                <h2 class="font-headline font-black text-2xl mb-4 text-on-surface">How They Make Money</h2>
+                <div class="space-y-4 text-on-surface/80 leading-relaxed font-body">
+                    <p>India is called the Pharmacy of the World – supplying over 20% of global generic medicines.
+                        The healthcare sector earns through several distinct models. Pharma companies manufacture
+                        medicines and earn by selling APIs (the active chemical ingredients that make a drug work)
+                        and finished formulations (the actual tablets, capsules, and syrups patients take). Generic
+                        drug makers earn by selling cheaper versions of off-patent drugs – the same molecule, same
+                        efficacy, but at a fraction of the innovator's price.</p>
+                    <p>Hospitals earn through patient visits – outpatient consultations, inpatient admissions,
+                        surgeries, and diagnostic tests. Revenue per bed, occupancy rate, and average revenue per
+                        occupied bed (ARPOB) are the key drivers. Diagnostic chains like Dr Lal PathLabs and
+                        Metropolis earn by processing millions of blood tests, scans, and health check-ups – high
+                        volume, low per-test cost, strong operating leverage. Medical device companies earn by
+                        selling equipment like MRI machines, ventilators, surgical instruments, and consumables
+                        like stents and implants to hospitals.</p>
+                </div>
+            </article>
+
+            <!-- SECTION 2 -->
+            <article
+                class="bg-surface p-8 rounded-xl shadow-sm border-l-8 border-[#FFD600] border-t border-b border-r border-outline-variant/30 relative sketch-border hover:translate-y-[-2px] transition-transform duration-200">
+                <h2 class="font-headline font-black text-2xl mb-4 text-on-surface">Key Players in India</h2>
+                <div class="space-y-3 text-on-surface/80 leading-relaxed font-body">
+                    <p><strong>Large-Cap Pharma:</strong> Sun Pharmaceutical (India's largest, specialty and
+                        generic drugs globally), Dr Reddy's Laboratories (strong US generics and biosimilars),
+                        Cipla (respiratory and anti-retroviral leader), Divi's Laboratories (world's largest
+                        custom API manufacturer)</p>
+                    <p><strong>Hospitals:</strong> Apollo Hospitals (India's largest private hospital chain, 10,000+
+                        beds), Max Healthcare (dominant in Delhi-NCR), Fortis Healthcare (pan-India, IHH
+                        Healthcare-backed), Narayana Health (affordable cardiac care model)</p>
+                    <p><strong>Diagnostics:</strong> Dr Lal PathLabs (largest pathology chain), Metropolis Healthcare
+                        (premium diagnostics), Thyrocare (high-volume, low-cost model)</p>
+                    <p><strong>Medical Devices and Health Insurance:</strong> Poly Medicure (disposable medical
+                        devices), Star Health Insurance (India's largest standalone health insurer)</p>
+                </div>
+            </article>
+
+            <!-- SECTION 3 -->
+            <article
+                class="bg-surface p-8 rounded-xl shadow-sm border-l-8 border-[#FFD600] border-t border-b border-r border-outline-variant/30 relative sketch-border hover:translate-y-[-2px] transition-transform duration-200">
+                <h2 class="font-headline font-black text-2xl mb-4 text-on-surface">3 Terms Every Learner Must Know</h2>
+                <div class="space-y-4 text-on-surface/80 leading-relaxed font-body">
+                    <p><strong>ARPOB (Average Revenue Per Occupied Bed):</strong> The single most important metric
+                        for hospital companies. It measures how much revenue each occupied bed generates per day.
+                        Rising ARPOB signals better case mix (more complex and higher-value surgeries), pricing
+                        power, or improved payor mix (more insured patients paying full rates). Falling ARPOB
+                        suggests lower acuity cases or pricing pressure.</p>
+                    <p><strong>API (Active Pharmaceutical Ingredient):</strong> The actual chemical compound in a
+                        medicine that produces the therapeutic effect. India manufactures APIs for the world –
+                        companies like Divi's Labs and Laurus Labs are global-scale API suppliers. When China
+                        restricted API exports during COVID, India's dependence on Chinese raw materials became a
+                        national security concern – leading to the PLI scheme for bulk drugs.</p>
+                    <p><strong>ANDA (Abbreviated New Drug Application):</strong> The US FDA filing that allows an
+                        Indian generic company to sell a copy of an off-patent drug in the United States. Each
+                        approved ANDA is essentially a license to print money in the world's largest pharma market.
+                        Companies like Sun Pharma and Dr Reddy's track ANDA filings and approvals as a key
+                        forward-looking growth indicator.</p>
+                </div>
+            </article>
+
+            <!-- SECTION 4 -->
+            <article
+                class="bg-surface p-8 rounded-xl shadow-sm border-l-8 border-[#FFD600] border-t border-b border-r border-outline-variant/30 relative sketch-border hover:translate-y-[-2px] transition-transform duration-200">
+                <h2 class="font-headline font-black text-2xl mb-4 text-on-surface">What to Watch as a Learner</h2>
+                <ul class="list-disc pl-5 space-y-3 text-on-surface/80 leading-relaxed font-body font-medium">
+                    <li>US FDA inspection outcomes for Indian pharma plants – a warning letter or import alert can
+                        wipe out years of US revenue overnight; watch for Form 483 observations</li>
+                    <li>Hospital occupancy rates and ARPOB trends quarterly – rising occupancy above 65-70% with
+                        stable ARPOB signals strong demand and operating leverage kicking in</li>
+                    <li>ANDA approvals and first-to-file opportunities – each new US generic launch is a step-change
+                        in revenue for mid-cap pharma companies</li>
+                    <li>Government drug price controls via NPPA (National Pharmaceutical Pricing Authority) – price
+                        caps on essential medicines directly compress margins for affected products</li>
+                    <li>Health insurance penetration trends – rising insurance coverage drives more patients to
+                        private hospitals and diagnostics chains, improving payor mix and reducing bad debt</li>
+                </ul>
+            </article>
+        </div>
+
+        <!-- View Full Analysis Button -->
+        <div class="flex justify-center mb-16">
+            <button id="toggleAnalysisBtn"
+                class="bg-primary-container text-on-primary-container px-8 py-3 text-lg sketch-border font-black hover:translate-x-1 hover:translate-y-1 transition-all">View
+                Full Analysis ↓</button>
+        </div>
+
+        <!-- Hidden Sections (6 sections) -->
+        <div id="fullAnalysisSections" style="display: none;">
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8 mb-16">
+                <!-- SECTION 5 -->
+                <article
+                    class="bg-surface p-8 rounded-xl shadow-sm border-l-8 border-[#FFD600] border-t border-b border-r border-outline-variant/30 relative sketch-border hover:translate-y-[-2px] transition-transform duration-200">
+                    <h2 class="font-headline font-black text-2xl mb-4 text-on-surface">Value Chain</h2>
+                    <div class="space-y-4 text-on-surface/80 leading-relaxed font-body">
+                        <p>The healthcare value chain begins at basic chemistry. For pharma, it runs from basic chemicals to API manufacturing to drug formulation to packaging to distribution to the pharmacy or hospital to the patient. Each step adds margin, with the highest margin captured at the formulation and branded stage – a painkiller API may cost ₹1 but the branded tablet sells at ₹15.</p>
+                        <p>For diagnostics, a patient feeling unwell visits a doctor who recommends tests. The sample goes to a central processing lab, a report is generated, the doctor reviews it, and treatment begins. Diagnostic chains earn per test – specialized tests like cancer genomics command far higher margins than basic blood counts.</p>
+                        <p>For hospitals, every step of a patient's visit generates revenue – OPD consultation, diagnostic tests, pharmacy, operation theatre, ICU bed, and post-operative care can all be billed in a single admission.</p>
+                        <p>For CDMOs, the global pharma company has a molecule idea and outsources research, development, and manufacturing to an Indian CDMO like Syngene or Divi's. India's CDMO strength comes from combining scientific expertise with 30-40% cost advantage over comparable Western facilities.</p>
+                    </div>
+                </article>
+
+                <!-- SECTION 6 -->
+                <article
+                    class="bg-surface p-8 rounded-xl shadow-sm border-l-8 border-[#FFD600] border-t border-b border-r border-outline-variant/30 relative sketch-border hover:translate-y-[-2px] transition-transform duration-200">
+                    <h2 class="font-headline font-black text-2xl mb-4 text-on-surface">Revenue Model</h2>
+                    <div class="space-y-4 text-on-surface/80 leading-relaxed font-body">
+                        <p>Branded pharma earns through doctor prescriptions – a doctor prescribes a branded drug, the patient buys it at a pharmacy. The brand name commands a price premium over the unbranded generic. Marketing to doctors through medical representatives is how brand loyalty is built.</p>
+                        <p>Generic export revenue to the US is earned when an ANDA is approved and the company launches its generic version of an off-patent drug. First-to-file generics get 180 days of exclusivity – during which margins can reach 60-70% gross margin for the first mover.</p>
+                        <p>Hospital revenue has two components – occupancy-driven (how many beds are filled) and case-mix (how complex and high-value the cases are). A cardiac surgery generates far more revenue than a routine admission. ARPOB and bed occupancy together determine a hospital's financial health.</p>
+                        <p>CDMO revenue comes from long-term contracts with global pharma clients – typically 3-7 year supply agreements. Revenue is relatively stable and visible once contracts are signed.</p>
+                        <p>Diagnostics earn on test volume – the hub-and-spoke model means a central lab processes thousands of samples daily from hundreds of collection points, spreading fixed lab costs across maximum volume.</p>
+                    </div>
+                </article>
+
+                <!-- SECTION 7 -->
+                <article
+                    class="bg-surface p-8 rounded-xl shadow-sm border-l-8 border-[#FFD600] border-t border-b border-r border-outline-variant/30 relative sketch-border hover:translate-y-[-2px] transition-transform duration-200">
+                    <h2 class="font-headline font-black text-2xl mb-4 text-on-surface">Cost Structure</h2>
+                    <div class="space-y-4 text-on-surface/80 leading-relaxed font-body">
+                        <p>For pharma manufacturers, raw material cost (APIs and excipients) is the largest expense at 35-45% of revenue. Regulatory compliance – maintaining USFDA, WHO-GMP, and European approvals – is a significant fixed cost that competitors without these approvals cannot easily replicate. R&amp;D spending is critical – innovative pharma and biotech companies spend 8-15% of revenue on research. Generic pharma spends 5-8%.</p>
+                        <p>For hospitals, employee costs dominate – doctors, nurses, technicians, and support staff. Specialist doctors in high-demand fields like oncology and cardiac surgery command very high fees or revenue shares. Real estate and facility costs are large and fixed – a 500-bed hospital requires enormous capital to build before earning a single rupee.</p>
+                        <p>For CDMOs, the cost structure is heavily weighted toward skilled scientific talent and regulatory infrastructure – chemists, biochemists, quality control specialists, and the cost of maintaining approved manufacturing facilities.</p>
+                        <p>Government price controls (DPCO) directly cap the maximum retail price of essential medicines, compressing margins for affected drugs regardless of manufacturing cost.</p>
+                    </div>
+                </article>
+
+                <!-- SECTION 8 -->
+                <article
+                    class="bg-surface p-8 rounded-xl shadow-sm border-l-8 border-[#FFD600] border-t border-b border-r border-outline-variant/30 relative sketch-border hover:translate-y-[-2px] transition-transform duration-200">
+                    <h2 class="font-headline font-black text-2xl mb-4 text-on-surface">Key KPIs</h2>
+                    <div class="space-y-4 text-on-surface/80 leading-relaxed font-body">
+                        <p><strong>EBITDA Margin (%):</strong> Operating profitability as a percentage of revenue. Healthy benchmarks – branded pharma 20-30%, hospitals 15-25%, diagnostics 20-30%, CDMOs 25-35%. Falling EBITDA margin over multiple quarters signals rising costs, pricing pressure, or regulatory issues.</p>
+                        <p><strong>Bed Occupancy Rate (Hospitals):</strong> Percentage of hospital beds occupied on average. Good hospitals target 70-80%+ occupancy. Higher occupancy means more revenue from the same fixed cost base. Below 60% is a concern.</p>
+                        <p><strong>ARPOB (Average Revenue Per Occupied Bed):</strong> Revenue earned per occupied bed per day. Rising ARPOB signals the hospital is treating more complex, higher-value cases. Falling ARPOB means case mix is deteriorating or pricing power is weakening.</p>
+                        <p><strong>ANDA Pipeline and Approvals:</strong> Number of ANDA filings pending with USFDA and approvals received. A strong pipeline of 50-100+ pending ANDAs means future US revenue is being built. First-to-file opportunities generate disproportionate early revenue.</p>
+                        <p><strong>R&amp;D as Percentage of Revenue:</strong> Rising R&amp;D spend signals future product pipeline is being built. Falling R&amp;D in an innovative company is a warning sign – the company is milking existing products without investing in new ones.</p>
+                        <p><strong>Domestic versus Export Revenue Split:</strong> The balance between India domestic revenue (stable, branded, regulated pricing) and export revenue (higher margin but regulatory risk) determines business quality and risk.</p>
+                    </div>
+                </article>
+
+                <!-- SECTION 9 -->
+                <article
+                    class="bg-surface p-8 rounded-xl shadow-sm border-l-8 border-[#FFD600] border-t border-b border-r border-outline-variant/30 relative sketch-border hover:translate-y-[-2px] transition-transform duration-200">
+                    <h2 class="font-headline font-black text-2xl mb-4 text-on-surface">Growth Drivers</h2>
+                    <div class="space-y-4 text-on-surface/80 leading-relaxed font-body">
+                        <p>India's chronic disease burden is growing structurally – diabetes, hypertension, cancer, and heart disease are rising as diets change, stress increases, and populations age. Each chronically ill patient requires lifelong medication, regular diagnostic tests, and periodic hospital visits – creating recurring non-discretionary demand that grows every year.</p>
+                        <p>India as Pharmacy of the World is a durable structural advantage – supplying over 20% of global generic medicines at costs 30-50% below US or European manufacturers. The global patent cliff creates continuous opportunities for Indian generic manufacturers to enter new markets as blockbuster drugs lose patent protection.</p>
+                        <p>The CDMO opportunity is potentially India's next IT-style structural story – global pharma companies are diversifying supply chains away from China, and Indian CDMOs with regulatory approvals, scientific talent, and cost advantages are well positioned to capture this shift over the next decade.</p>
+                        <p>Health insurance penetration in India is still under 40% of the population. Government schemes like Ayushman Bharat PM-JAY are extending coverage to the poor, and private health insurance premiums are growing as urban India becomes aware of healthcare costs. Each new insured person is a potential new patient for private hospital chains and diagnostic companies.</p>
+                        <p>Diagnostic penetration is rising as awareness grows – preventive health check-ups, annual screenings, and home sample collection are growing rapidly into smaller cities and towns, driven by companies like Thyrocare and Dr Lal PathLabs.</p>
+                    </div>
+                </article>
+
+                <!-- SECTION 10 -->
+                <article
+                    class="bg-surface p-8 rounded-xl shadow-sm border-l-8 border-[#FFD600] border-t border-b border-r border-outline-variant/30 relative sketch-border hover:translate-y-[-2px] transition-transform duration-200">
+                    <h2 class="font-headline font-black text-2xl mb-4 text-on-surface">Risks</h2>
+                    <div class="space-y-4 text-on-surface/80 leading-relaxed font-body">
+                        <p><strong>USFDA Regulatory Risk:</strong> A warning letter or import alert from the US Food and Drug Administration can shut a manufacturing plant's US export business immediately. Sun Pharma, Wockhardt, and others have experienced temporary US market closures. Maintaining USFDA compliance is a constant, expensive operational challenge for every Indian pharma exporter.</p>
+                        <p><strong>Government Drug Price Controls:</strong> The NPPA can add drugs to the price-controlled DPCO list at any time. When a high-margin branded drug faces price control, the company's domestic revenue and margin are immediately affected with no warning. Dependence on a small number of price-controlled molecules is a concentration risk.</p>
+                        <p><strong>Talent Shortage in Hospitals:</strong> India has a doctor-to-population ratio of approximately 1:811. Specialist doctors – particularly oncologists, cardiac surgeons, and neurologists – are severely scarce. Hospital chains face high costs to attract and retain quality doctors, especially in smaller cities.</p>
+                        <p><strong>Promoter and Governance Risk:</strong> Several Indian pharma companies have faced questions about related-party transactions and accounting quality. The sector has higher-than-average governance risk – careful scrutiny of annual reports and shareholding patterns is essential.</p>
+                        <p><strong>Insurance Claims Ratio Risk:</strong> Health insurance companies that underestimate claim frequency face a high claims ratio – paying out more than they collected in premiums. Rising medical inflation makes this risk structural unless premiums are adjusted regularly.</p>
+                    </div>
+                </article>
+            </div>
+        </div>
+
+    </main>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const btn = document.getElementById('toggleAnalysisBtn');
+            const sections = document.getElementById('fullAnalysisSections');
+
+            if (btn && sections) {
+                btn.addEventListener('click', () => {
+                    if (sections.style.display === 'none') {
+                        sections.style.display = 'block';
+                        btn.innerText = 'Hide Analysis ↑';
+                    } else {
+                        sections.style.display = 'none';
+                        btn.innerText = 'View Full Analysis ↓';
+                    }
+                });
+            }
+        });
+    </script>
+    <!-- Sector Navigation -->
+    <div
+        style="display: flex; justify-content: space-between; align-items: center; width: 100%; max-width: 900px; margin: 60px auto 40px auto; padding-top: 20px; border-top: 2px solid #E5E7EB; box-sizing: border-box;">
+        <a href="sector-realestate.html"
+            class="inline-block text-[#383833] font-bold font-headline hover:text-primary transition-colors text-lg font-black">
+            &larr; Previous Sector
+        </a>
+        <a href="sector-consumer-discretionary.html"
+            class="inline-block text-[#383833] font-bold font-headline hover:text-primary transition-colors text-lg font-black">
+            Next Sector &rarr;
+        </a>
+    </div>
+
+    <!-- Footer -->
+    <footer
+        class="bg-stone-900 text-white border-t-8 border-stone-800 flex flex-col md:flex-row justify-between items-center w-full px-8 py-16 gap-8">
+        <div class="max-w-7xl mx-auto w-full flex flex-col md:flex-row justify-between items-baseline gap-8">
+            <div class="flex flex-col items-start">
+                <a href="index.html" class="text-3xl font-black text-white font-marker tracking-tighter">FinanceHive</a>
+                <p class="text-stone-400 font-medium text-xs">Hand-drawn for Indian minds. ✏️</p>
+            </div>
+            <div class="flex flex-wrap justify-center gap-6 md:gap-8 font-marker font-black text-base">
+                <a class="hover:text-primary transition-colors" href="privacy.html">Privacy</a>
+                <span class="text-stone-700 hidden md:inline">|</span>
+                <a class="hover:text-primary transition-colors" href="terms.html">Terms</a>
+                <span class="text-stone-700 hidden md:inline">|</span>
+                <a class="hover:text-primary transition-colors" href="disclaimer.html">Disclaimer</a>
+                <span class="text-stone-700 hidden md:inline">|</span>
+                <a class="hover:text-primary transition-colors"
+                    href="mailto:startfinanacejourney@gmail.com?subject=Inquiry%20from%20FinanceHive">Contact</a>
+            </div>
+            <div class="text-stone-500 font-bold text-sm whitespace-nowrap">© 2026 FinanceHive. All rights reserved.
+            </div>
+        </div>
+    </footer>
+    <script>
+        (function () { if (!window.chatbase || window.chatbase("getState") !== "initialized") { window.chatbase = (...arguments) => { if (!window.chatbase.q) { window.chatbase.q = [] } window.chatbase.q.push(arguments) }; window.chatbase = new Proxy(window.chatbase, { get(target, prop) { if (prop === "q") { return target.q } return (...args) => target(prop, ...args) } }) } const onLoad = function () { const script = document.createElement("script"); script.src = "https://www.chatbase.co/embed.min.js"; script.id = "okRPgozu3doX4vY4MK0UV"; script.domain = "www.chatbase.co"; document.body.appendChild(script) }; if (document.readyState === "complete") { onLoad() } else { window.addEventListener("load", onLoad) } })();
+    </script>
+
+
+
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            // Search Filtering & Focus
+            const searchInput = document.querySelector('nav input[placeholder="Search concepts..."]');
+            if (searchInput) {
+                const searchIcon = searchInput.nextElementSibling;
+                if (searchIcon && searchIcon.textContent.trim() === 'search') {
+                    searchIcon.style.cursor = 'pointer';
+                    searchIcon.addEventListener('click', () => searchInput.focus());
+                }
+
+                searchInput.addEventListener('input', function () {
+                    const query = this.value.toLowerCase().trim();
+                    // Target concept cards (article) and sector cards (sketch-border items in grids)
+                    const cards = document.querySelectorAll('article, .grid > .sketch-border, .grid > div[onclick*="sector-"]');
+
+                    cards.forEach(card => {
+                        const text = card.textContent.toLowerCase();
+                        if (text.includes(query)) {
+                            card.style.display = ''; // Revert to original layout (flex/block etc)
+                        } else {
+                            card.style.display = 'none';
+                        }
+                    });
+                });
+            }
+
+            // Active Navigation Highlighting
+            const navLinks = document.querySelectorAll('nav a');
+            let currentPath = window.location.pathname.split('/').pop().split('?')[0].split('#')[0];
+            if (!currentPath || currentPath === '') {
+                currentPath = 'index.html';
+            }
+            navLinks.forEach(link => {
+                const href = link.getAttribute('href');
+                if (href && (href === currentPath || (currentPath === 'index.html' && href === 'index.html'))) {
+                    link.classList.add('active');
+                }
+            });
+        });
+    </script>
+
+</body>
+
+</html>

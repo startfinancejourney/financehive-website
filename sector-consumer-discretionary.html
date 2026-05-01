@@ -1,0 +1,479 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>Consumer Discretionary Sector | FinanceHive</title>
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Epilogue:wght@400;700;900&amp;family=Plus+Jakarta+Sans:wght@400;500;600;700&amp;display=swap"
+        rel="stylesheet" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
+        rel="stylesheet" />
+    <script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "on-primary": "#ffffff",
+                        "on-tertiary-fixed-variant": "#4a00a4",
+                        "error": "#be2d06",
+                        "surface-container": "#f5f4eb",
+                        "on-secondary-container": "#940014",
+                        "tertiary-container": "#c0a0ff",
+                        "surface-tint": "#776300",
+                        "on-error-container": "#520c00",
+                        "on-tertiary-fixed": "#200051",
+                        "error-container": "#f95630",
+                        "inverse-primary": "#fdd400",
+                        "primary-fixed": "#fdd400",
+                        "on-surface": "#383833",
+                        "on-background": "#383833",
+                        "surface-container-low": "#fbf9f1",
+                        "inverse-surface": "#0e0f0a",
+                        "on-secondary": "#ffffff",
+                        "surface-dim": "#e4e3d8",
+                        "on-secondary-fixed": "#70000d",
+                        "tertiary-fixed-dim": "#b48fff",
+                        "primary-dim": "#695700",
+                        "secondary-dim": "#b10e1e",
+                        "on-error": "#ffffff",
+                        "on-secondary-fixed-variant": "#a60018",
+                        "secondary": "#c31f29",
+                        "surface-container-high": "#efeee5",
+                        "secondary-fixed-dim": "#ffafaa",
+                        "on-primary-container": "#594a00",
+                        "outline": "#81817a",
+                        "tertiary-fixed": "#c0a0ff",
+                        "primary-container": "#fdd400",
+                        "surface-container-lowest": "#ffffff",
+                        "on-tertiary-container": "#3f008e",
+                        "secondary-container": "#ffc3be",
+                        "surface": "#fefcf4",
+                        "surface-variant": "#e9e9de",
+                        "inverse-on-surface": "#9e9d96",
+                        "error-dim": "#b92902",
+                        "on-primary-fixed": "#433700",
+                        "secondary-fixed": "#ffc3be",
+                        "background": "#fefcf4",
+                        "on-tertiary": "#ffffff",
+                        "surface-container-highest": "#e9e9de",
+                        "primary-fixed-dim": "#edc600",
+                        "outline-variant": "#bab9b2",
+                        "primary": "#776300",
+                        "on-surface-variant": "#65655f",
+                        "tertiary": "#7a37eb",
+                        "tertiary-dim": "#6d24de",
+                        "on-primary-fixed-variant": "#645300",
+                        "surface-bright": "#fefcf4"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.125rem",
+                        "lg": "0.25rem",
+                        "xl": "0.5rem",
+                        "full": "0.75rem"
+                    },
+                    "fontFamily": {
+                        "headline": ["Epilogue"],
+                        "body": ["Plus Jakarta Sans"],
+                        "label": ["Plus Jakarta Sans"]
+                    }
+                },
+            },
+        }
+    </script>
+    <style>
+        .sketch-border {
+            border: 2px solid #383833;
+            box-shadow: 4px 4px 0px 0px #383833;
+        }
+
+        .scribble-underline {
+            background-image: linear-gradient(120deg, #FFD600 0%, #FFD600 100%);
+            background-repeat: no-repeat;
+            background-size: 100% 0.3em;
+            background-position: 0 88%;
+        }
+
+        .marker-highlight {
+            background: linear-gradient(100deg, rgba(255, 214, 0, 0.3) 0%, rgba(255, 214, 0, 0.7) 100%);
+            padding: 0 4px;
+        }
+    </style>
+
+
+
+    <style>
+        /* Active Navigation Link Styling */
+        nav div a.active:not(.bg-primary-container) {
+            color: #776300 !important;
+            border-bottom: 3px solid #fdd400;
+            padding-bottom: 2px;
+        }
+    </style>
+
+<style>
+/* CRITICAL DESIGN RULES MOBILE FIXES v2 */
+@media (max-width: 768px) {
+    /* FIX 1: Search bar on mobile */
+    nav {
+      padding-bottom: 65px !important;
+    }
+    nav .relative.group.flex.items-center {
+      position: absolute !important;
+      bottom: 12px !important;
+      left: 16px !important;
+      right: 16px !important;
+      width: calc(100% - 32px) !important;
+      margin: 0 !important;
+    }
+    nav input[placeholder*="Search"] {
+      width: 100% !important;
+      max-width: 100% !important;
+      height: 40px !important;
+      font-size: 14px !important;
+    }
+    #mobile-menu {
+      top: 135px !important; 
+    }
+
+    /* FIX 2: Hide Start Learning button */
+    nav a[href="learn-finance.html"].bg-primary-container,
+    nav a[href="learn-finance.html.html"].bg-primary-container {
+      display: none !important;
+    }
+}
+</style>
+</head>
+
+<body class="bg-[#FFFDF5] text-on-surface font-body selection:bg-primary-container min-h-screen flex flex-col">
+    <!-- TopNavBar -->
+    <nav
+        class="bg-surface border-b-4 border-stone-800 flex justify-between items-center w-full px-6 py-4 max-w-7xl mx-auto sticky top-0 z-50 gap-8">
+        <a href="index.html" class="text-3xl font-black text-[#383833] tracking-tighter font-marker">FinanceHive</a>
+        <div class="hidden md:flex gap-6 items-center ml-auto">
+            <a class="text-on-surface hover:text-secondary font-marker font-black text-base transition-all duration-200"
+                href="learn-finance.html">Concepts</a>
+            <a class="text-on-surface hover:text-secondary font-marker font-black text-base transition-all duration-200"
+                href="sectors.html">Sectors</a>
+            <a class="text-on-surface hover:text-secondary font-marker font-black text-base transition-all duration-200"
+                href="request-topic.html">Request a Topic</a>
+            <a class="text-on-surface hover:text-secondary font-marker font-black text-base transition-all duration-200"
+                href="about.html">About</a>
+        </div>
+        <div class="flex items-center gap-4 lg:gap-6">
+
+
+
+            <a href="learn-finance.html"
+                class="bg-primary-container text-on-primary-container px-6 py-2 sketch-border font-black hover:translate-x-1 hover:translate-y-1 transition-all">
+                Start Learning
+            </a>
+        
+        <!-- Mobile Hamburger Button -->
+        <button id="mobile-menu-btn" class="md:hidden text-[#383833] hover:text-secondary focus:outline-none flex items-center justify-center ml-2 p-1 transition-colors">
+            <span class="material-symbols-outlined text-4xl font-black">menu</span>
+        </button>
+    </div>
+    </nav>
+    
+    <!-- Mobile Menu -->
+    <div id="mobile-menu" class="hidden md:hidden bg-surface border-b-4 border-stone-800 flex-col items-center py-4 w-full shadow-lg fixed left-0 right-0 z-40 transition-all font-marker" style="top: 86px;">
+        <a class="text-on-surface hover:text-secondary font-black text-xl w-full text-center py-3 border-b-2 border-stone-800/10" href="learn-finance.html">Concepts</a>
+        <a class="text-on-surface hover:text-secondary font-black text-xl w-full text-center py-3 border-b-2 border-stone-800/10" href="sectors.html">Sectors</a>
+        <a class="text-on-surface hover:text-secondary font-black text-xl w-full text-center py-3 border-b-2 border-stone-800/10" href="request-topic.html">Request a Topic</a>
+        <a class="text-on-surface hover:text-secondary font-black text-xl w-full text-center py-3" href="about.html">About</a>
+    </div>
+
+    <!-- Mobile Menu Script -->
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const btn = document.getElementById('mobile-menu-btn');
+            const menu = document.getElementById('mobile-menu');
+            const nav = document.querySelector('nav');
+            
+            if (btn && menu && nav) {
+                btn.addEventListener('click', () => {
+                    // Position menu strictly below navbar
+                    menu.style.top = nav.getBoundingClientRect().bottom + 'px';
+                    menu.classList.toggle('hidden');
+                    menu.classList.toggle('flex');
+                    
+                    // Change icon based on menu state
+                    const icon = btn.querySelector('.material-symbols-outlined');
+                    if (icon) {
+                        icon.textContent = menu.classList.contains('hidden') ? 'menu' : 'close';
+                    }
+                });
+                
+                // Close menu when a link is tapped
+                menu.querySelectorAll('a').forEach(link => {
+                    link.addEventListener('click', () => {
+                        menu.classList.add('hidden');
+                        menu.classList.remove('flex');
+                        const icon = btn.querySelector('.material-symbols-outlined');
+                        if (icon) icon.textContent = 'menu';
+                    });
+                });
+            }
+        });
+    </script>
+    
+
+    <main class="flex-grow max-w-screen-xl mx-auto px-6 py-12 w-full">
+        <div class="mb-12">
+            <a href="sectors.html"
+                class="inline-block text-[#383833] font-bold font-headline hover:text-primary transition-colors text-lg font-black">
+                &larr; Back to All Sectors
+            </a>
+        </div>
+
+        <!-- Header Section -->
+        <header class="mb-16">
+            <h1
+                class="text-5xl md:text-7xl font-black font-headline text-on-surface mb-6 tracking-tighter leading-none">
+                <span class="scribble-underline">Consumer Discretionary Sector</span></h1>
+            <p
+                class="text-xl md:text-2xl font-medium text-on-surface/80 max-w-3xl border-l-4 border-primary pl-4 bg-primary/5 py-2">
+                Everything India wants but doesn't need – bought when confidence is high, deferred when it's not</p>
+        </header>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-8 mb-16">
+            <!-- SECTION 1 -->
+            <article
+                class="bg-surface p-8 rounded-xl shadow-sm border-l-8 border-[#FFD600] border-t border-b border-r border-outline-variant/30 relative sketch-border hover:translate-y-[-2px] transition-transform duration-200">
+                <h2 class="font-headline font-black text-2xl mb-4 text-on-surface">How They Make Money</h2>
+                <div class="space-y-4 text-on-surface/80 leading-relaxed font-body">
+                    <p>Consumer Discretionary is everything you want but don't need to survive. You need food and medicine to live – but you want a new bike, a branded shirt, a hotel holiday, a smart TV, or a restaurant meal. These are bought when people feel financially confident and postponed when they don't. The entire sector runs on aspiration – the shift from necessity to discretionary spending happening across hundreds of millions of Indian households.</p>
+                    <p>Revenue flows in several ways. Automobile manufacturers earn from vehicle sales multiplied by average selling price, but also earn fat margins from after-sales service and spare parts – a car buyer is a recurring revenue customer for years. Retailers like D-Mart earn from merchandise sales at high inventory turns with thin margins, while fashion brands like Zudio earn higher margins by controlling their own product design. E-commerce platforms (Flipkart, Amazon) earn commissions from sellers, advertising fees, and logistics charges without owning most inventory. Hotels earn from room revenue, food and beverage, and banqueting. QSR chains like Jubilant FoodWorks (Domino's) earn royalties from franchisees plus direct store revenue. The defining feature of all these businesses is that revenue falls sharply when consumer confidence drops and rises powerfully when incomes and confidence grow.</p>
+                </div>
+            </article>
+
+            <!-- SECTION 2 -->
+            <article
+                class="bg-surface p-8 rounded-xl shadow-sm border-l-8 border-[#FFD600] border-t border-b border-r border-outline-variant/30 relative sketch-border hover:translate-y-[-2px] transition-transform duration-200">
+                <h2 class="font-headline font-black text-2xl mb-4 text-on-surface">Key Players in India</h2>
+                <div class="space-y-3 text-on-surface/80 leading-relaxed font-body">
+                    <p><strong>Automobiles:</strong> Maruti Suzuki (India's largest car maker, mass-market dominance), Tata Motors (SUVs and EVs, Jaguar Land Rover globally), Hero MotoCorp (world's largest two-wheeler manufacturer), Bajaj Auto (two and three wheelers, strong exports), Mahindra and Mahindra (SUVs, tractors, EVs)</p>
+                    <p><strong>Auto Ancillaries:</strong> MRF (India's largest tyre company), Apollo Tyres, Bosch India (fuel injection systems), Motherson Group (wiring harnesses and mirrors), Minda Industries</p>
+                    <p><strong>Organised Retail:</strong> D-Mart or Avenue Supermarts (everyday low price grocery model), Trent (Zudio and Westside, Tata Group), Reliance Retail (India's largest retailer)</p>
+                    <p><strong>QSR and Hotels:</strong> Jubilant FoodWorks (Domino's master franchisee), Westlife Foodworld (McDonald's), Indian Hotels Company or Taj Hotels, EIH or Oberoi Hotels</p>
+                    <p><strong>Consumer Durables:</strong> Voltas (air conditioners), Blue Star (commercial cooling), Havells India (electricals and fans), Whirlpool India</p>
+                    <p><strong>Textiles and Lifestyle:</strong> Vedant Fashions or Manyavar (wedding ethnic wear, 50-60% gross margins), Page Industries or Jockey India (premium innerwear), Bata India (footwear retail), Campus Activewear (affordable sports shoes)</p>
+                    <p><strong>Entertainment:</strong> PVR INOX (India's largest multiplex chain)</p>
+                </div>
+            </article>
+
+            <!-- SECTION 3 -->
+            <article
+                class="bg-surface p-8 rounded-xl shadow-sm border-l-8 border-[#FFD600] border-t border-b border-r border-outline-variant/30 relative sketch-border hover:translate-y-[-2px] transition-transform duration-200">
+                <h2 class="font-headline font-black text-2xl mb-4 text-on-surface">3 Terms Every Learner Must Know</h2>
+                <div class="space-y-4 text-on-surface/80 leading-relaxed font-body">
+                    <p><strong>SSSG (Same Store Sales Growth):</strong> Revenue growth from stores that have been operating for at least one full year – stripping out the contribution from newly opened stores. SSSG tells you whether existing locations are growing or declining. Positive SSSG means existing customers are buying more or new customers are coming. Negative SSSG is a serious warning – the business is shrinking at its existing locations even if total revenue looks flat because of new store openings.</p>
+                    <p><strong>ASP (Average Selling Price):</strong> The average price at which a unit is sold. In automobiles, rising ASP means consumers are upgrading to premium and SUV models – highly positive for margins. In retail and apparel, rising ASP signals premiumisation. Falling ASP signals either price cuts to drive volume or a mix shift toward cheaper products – both are margin negative.</p>
+                    <p><strong>Operating Leverage:</strong> The phenomenon where a company's profits grow faster than its revenue once fixed costs are covered. Hotels, malls, and multiplexes have very high fixed costs – whether 100 or 500 guests check in, the hotel pays the same rent, salaries, and maintenance. Once occupancy crosses a threshold, every additional guest is almost entirely profit. This works dramatically in both directions – high fixed costs amplify profits in good times and destroy them in bad times.</p>
+                </div>
+            </article>
+
+            <!-- SECTION 4 -->
+            <article
+                class="bg-surface p-8 rounded-xl shadow-sm border-l-8 border-[#FFD600] border-t border-b border-r border-outline-variant/30 relative sketch-border hover:translate-y-[-2px] transition-transform duration-200">
+                <h2 class="font-headline font-black text-2xl mb-4 text-on-surface">What to Watch as a Learner</h2>
+                <ul class="list-disc pl-5 space-y-3 text-on-surface/80 leading-relaxed font-body font-medium">
+                    <li>Monthly auto sales data published by SIAM – two-wheeler volumes reflect rural income and consumer confidence; passenger car volumes reflect urban demand and financing availability; both are leading economic indicators</li>
+                    <li>SSSG in quarterly results of retail, QSR, and hotel companies – this single number tells you whether core business momentum is positive or negative independent of new store expansion</li>
+                    <li>Hotel occupancy rates and ADR (Average Daily Rate) trends – rising ADR with stable occupancy signals pricing power; falling occupancy signals demand weakness</li>
+                    <li>EV penetration in two-wheelers and passenger cars – Tata Motors and Ola Electric are reshaping the auto sector; watch monthly EV registration data for the pace of transition</li>
+                    <li>Quick commerce profitability – Blinkit, Zepto, and Swiggy Instamart are changing retail; their path to profitability is the most consequential unanswered question in Indian consumer discretionary today</li>
+                </ul>
+            </article>
+        </div>
+
+        <!-- View Full Analysis Button -->
+        <div class="flex justify-center mb-16">
+            <button id="toggleAnalysisBtn"
+                class="bg-primary-container text-on-primary-container px-8 py-3 text-lg sketch-border font-black hover:translate-x-1 hover:translate-y-1 transition-all">View
+                Full Analysis ↓</button>
+        </div>
+
+        <!-- Hidden Sections (6 sections) -->
+        <div id="fullAnalysisSections" style="display: none;">
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8 mb-16">
+                <!-- SECTION 5 -->
+                <article class="bg-surface p-8 rounded-xl shadow-sm border-l-8 border-[#FFD600] border-t border-b border-r border-outline-variant/30 relative sketch-border hover:translate-y-[-2px] transition-transform duration-200">
+                    <h2 class="font-headline font-black text-2xl mb-4 text-on-surface">Value Chain</h2>
+                    <div class="space-y-4 text-on-surface/80 leading-relaxed font-body">
+                        <p>The Consumer Discretionary value chain varies significantly by industry but follows a common pattern – raw materials and components feed manufacturers, who sell through distribution channels to the final consumer.</p>
+                        <p>In automobiles, steel, aluminium, rubber, and electronics flow to auto ancillary companies that make components – tyres, brakes, wiring harnesses. The OEM (Tata Motors, Maruti) assembles the vehicle and sells through a dealer network. After-sales service at the dealership – the highest-margin part of the chain – generates 40-50% of dealer revenue from spare parts and servicing.</p>
+                        <p>In retail, manufacturers or brands produce goods that flow to modern trade stores (D-Mart, Reliance Retail) or online marketplaces (Flipkart, Amazon). Organised retailers skip traditional wholesale layers, buying directly from manufacturers to reduce cost. Quick commerce platforms add dark stores – micro-warehouses within 2km of consumers – enabling 10-30 minute delivery.</p>
+                        <p>In textiles, cotton or synthetic fibre moves through spinning mills, fabric manufacturers, and garment factories to brand or retailer and finally to the consumer. India has one of the world's most complete textile value chains – from cotton farms in Gujarat to garment exporters in Tirupur.</p>
+                        <p>In QSR, a central commissary produces sauces, dough, and frozen ingredients at scale and supplies franchise outlets. The franchise model means the parent company earns royalties without owning stores – capital-light and highly scalable.</p>
+                    </div>
+                </article>
+                <!-- SECTION 6 -->
+                <article class="bg-surface p-8 rounded-xl shadow-sm border-l-8 border-[#FFD600] border-t border-b border-r border-outline-variant/30 relative sketch-border hover:translate-y-[-2px] transition-transform duration-200">
+                    <h2 class="font-headline font-black text-2xl mb-4 text-on-surface">Revenue Model</h2>
+                    <div class="space-y-4 text-on-surface/80 leading-relaxed font-body">
+                        <p>Automobile revenue is units sold multiplied by average selling price. Premiumisation – the shift to SUVs from hatchbacks – has significantly raised average revenue per vehicle for Tata Motors and Mahindra. After-sales service and accessories generate recurring revenue for years after the initial vehicle sale at much higher margins than the vehicle itself.</p>
+                        <p>Retail revenue is footfall multiplied by conversion rate multiplied by average basket size. D-Mart's model is extremely high inventory turnover at thin margins – it turns its inventory faster than almost any retailer in India, which generates high returns on capital despite low per-unit margins. Fashion retailers like Zudio earn higher margins by controlling their own product design.</p>
+                        <p>E-commerce platforms earn commissions on each transaction, advertising fees from sellers who pay to appear higher in search results, and logistics and fulfilment fees.</p>
+                        <p>Hotel revenue comes from room revenue (occupancy multiplied by ADR), food and beverage, and events and banqueting. The management fee model – where a hotel brand manages a property owned by an investor – earns royalties without owning assets, making it highly capital-efficient.</p>
+                        <p>QSR franchisees pay a percentage of their sales as royalty to the parent company. Jubilant FoodWorks earns royalties from Domino's on every pizza sold across its franchise network plus revenue from its own company-operated stores.</p>
+                    </div>
+                </article>
+                <!-- SECTION 7 -->
+                <article class="bg-surface p-8 rounded-xl shadow-sm border-l-8 border-[#FFD600] border-t border-b border-r border-outline-variant/30 relative sketch-border hover:translate-y-[-2px] transition-transform duration-200">
+                    <h2 class="font-headline font-black text-2xl mb-4 text-on-surface">Cost Structure</h2>
+                    <div class="space-y-4 text-on-surface/80 leading-relaxed font-body">
+                        <p>For automobile OEMs, raw material cost – steel, aluminium, rubber, electronic components – represents 65-75% of vehicle cost. This makes them extremely sensitive to commodity price cycles. Employee costs for engineering, manufacturing, and sales are significant fixed expenses. R&amp;D spending for EV development is a large and rising investment that must be made even before EV revenue materialises.</p>
+                        <p>For retailers, cost of goods sold is the dominant expense at 70-80% of revenue. Rental costs for prime locations are fixed and substantial – a large D-Mart store in a prime location pays crores per year in rent regardless of sales volume. Employee costs for store staff are semi-fixed.</p>
+                        <p>For hotels and QSR, the cost structure is heavily fixed – property costs, maintenance, minimum staffing, and energy must be paid whether the hotel is at 30% or 90% occupancy. This creates powerful operating leverage in both directions.</p>
+                        <p>For fashion and lifestyle brands, cost of goods (fabric, manufacturing, logistics) plus marketing and advertising are the dominant costs. Brands like Manyavar spend significantly on advertising during wedding season to drive retail footfall and maintain top-of-mind awareness.</p>
+                    </div>
+                </article>
+                <!-- SECTION 8 -->
+                <article class="bg-surface p-8 rounded-xl shadow-sm border-l-8 border-[#FFD600] border-t border-b border-r border-outline-variant/30 relative sketch-border hover:translate-y-[-2px] transition-transform duration-200">
+                    <h2 class="font-headline font-black text-2xl mb-4 text-on-surface">Key KPIs</h2>
+                    <div class="space-y-4 text-on-surface/80 leading-relaxed font-body">
+                        <p><strong>Monthly Auto Wholesale Volumes:</strong> Units shipped from manufacturer to dealer – published monthly by SIAM. Rising volumes signal demand recovery. Two-wheeler volumes reflect rural income health. Passenger car volumes reflect urban consumer confidence.</p>
+                        <p><strong>SSSG (Same Store Sales Growth):</strong> Revenue growth from stores open for at least a year. The single most important operational metric for retail, QSR, and hotel companies. Positive SSSG means organic momentum. Negative SSSG is a structural warning regardless of total revenue growth from new locations.</p>
+                        <p><strong>Hotel Occupancy Rate and ADR:</strong> Occupancy (percentage of rooms filled) multiplied by ADR (average daily rate) gives RevPAR (Revenue Per Available Room) – the primary hotel performance metric. Rising RevPAR signals a strong hotel market.</p>
+                        <p><strong>Gross Margin (%):</strong> Revenue minus cost of goods sold as a percentage of revenue. Fashion and lifestyle brands with strong brand equity earn 40-60% gross margins. Commodity retailers earn 15-25%. Higher gross margin means more money left for marketing, expansion, and profit.</p>
+                        <p><strong>Inventory Days:</strong> How many days of sales are sitting as unsold inventory. For fashion retailers, high inventory days means products are not selling – markdowns and margin pressure follow. D-Mart targets extremely low inventory days as the core of its business model.</p>
+                    </div>
+                </article>
+                <!-- SECTION 9 -->
+                <article class="bg-surface p-8 rounded-xl shadow-sm border-l-8 border-[#FFD600] border-t border-b border-r border-outline-variant/30 relative sketch-border hover:translate-y-[-2px] transition-transform duration-200">
+                    <h2 class="font-headline font-black text-2xl mb-4 text-on-surface">Growth Drivers</h2>
+                    <div class="space-y-4 text-on-surface/80 leading-relaxed font-body">
+                        <p>India's rising middle class is the most powerful structural driver – hundreds of millions of households are crossing income thresholds where discretionary spending becomes possible for the first time. A family moving from ₹20,000 to ₹50,000 monthly income dramatically changes its spending on vehicles, branded clothing, restaurants, and appliances.</p>
+                        <p>Premiumisation is the defining demand trend of 2020-2026 – consumers are upgrading from hatchbacks to SUVs, from unbranded innerwear to Jockey, from local chai to café chains, from standard hotel rooms to premium properties. This premiumisation raises average revenue per transaction across every Consumer Discretionary sub-sector simultaneously.</p>
+                        <p>India's young demographic profile – median age of 28 – creates naturally high demand for aspirational spending on two-wheelers, fashion, entertainment, and eating out. Young consumers spend a higher proportion of income on discretionary categories than older ones.</p>
+                        <p>EV transition is creating a new growth cycle in automobiles – Tata Motors' Nexon EV and Ola Electric's scooters are driving the first genuine mass-market EV adoption wave in India. The EV transition also benefits auto ancillary companies supplying batteries, motors, and aluminium components.</p>
+                        <p>Quick commerce is fundamentally changing retail – Blinkit, Zepto, and Swiggy Instamart are building the infrastructure for instant gratification commerce that will expand the total addressable market for consumer spending by making buying more frictionless.</p>
+                    </div>
+                </article>
+                <!-- SECTION 10 -->
+                <article class="bg-surface p-8 rounded-xl shadow-sm border-l-8 border-[#FFD600] border-t border-b border-r border-outline-variant/30 relative sketch-border hover:translate-y-[-2px] transition-transform duration-200">
+                    <h2 class="font-headline font-black text-2xl mb-4 text-on-surface">Risks</h2>
+                    <div class="space-y-4 text-on-surface/80 leading-relaxed font-body">
+                        <p><strong>Cyclicality – The Core Risk:</strong> Consumer Discretionary is the most cyclical major sector in the Indian market. When incomes fall, jobs are lost, or interest rates rise, discretionary spending is the first to be cut. The 2019-2020 auto slowdown – triggered by the NBFC financing crisis and BSVI emission norm changes – saw passenger vehicle sales fall sharply over 18 months, hurting OEMs, ancillaries, and dealers simultaneously.</p>
+                        <p><strong>Input Cost Inflation:</strong> Automobile OEMs are highly exposed to steel, aluminium, and semiconductor prices. When commodity prices spike – as they did in 2021-22 – vehicle manufacturing costs rise but competitive pressure limits the ability to fully pass on costs to buyers, compressing margins.</p>
+                        <p><strong>EV Transition Risk for ICE Players:</strong> Automobile companies and auto ancillary manufacturers dependent on internal combustion engine components face structural risk as EV adoption grows. ICE-specific components – fuel systems, exhaust systems, gearboxes – may see structural volume decline over the next decade.</p>
+                        <p><strong>Real Estate and Rental Cost for Retailers:</strong> Retail chains with large store networks carry high fixed rental costs. If consumer footfall declines – due to e-commerce migration, economic slowdown, or pandemic – rental obligations remain. Retailers with long-term lease commitments in expensive locations are particularly vulnerable.</p>
+                        <p><strong>Quick Commerce Disruption:</strong> Blinkit and Zepto are fundamentally disrupting traditional kirana stores and grocery retail. Organised grocery retailers and FMCG distributors face an existential challenge as instant delivery captures more consumer spending. The ultimate winners of the commerce format war are still genuinely uncertain.</p>
+                    </div>
+                </article>
+            </div>
+        </div>
+
+    </main>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const btn = document.getElementById('toggleAnalysisBtn');
+            const sections = document.getElementById('fullAnalysisSections');
+
+            if (btn && sections) {
+                btn.addEventListener('click', () => {
+                    if (sections.style.display === 'none') {
+                        sections.style.display = 'block';
+                        btn.innerText = 'Hide Analysis ↑';
+                    } else {
+                        sections.style.display = 'none';
+                        btn.innerText = 'View Full Analysis ↓';
+                    }
+                });
+            }
+        });
+    </script>
+    <!-- Sector Navigation -->
+    <div
+        style="display: flex; justify-content: space-between; align-items: center; width: 100%; max-width: 900px; margin: 60px auto 40px auto; padding-top: 20px; border-top: 2px solid #E5E7EB; box-sizing: border-box;">
+        <a href="sector-healthcare.html"
+            class="inline-block text-[#383833] font-bold font-headline hover:text-primary transition-colors text-lg font-black">
+            &larr; Previous Sector
+        </a>
+        <a href="sector-materials.html"
+            class="inline-block text-[#383833] font-bold font-headline hover:text-primary transition-colors text-lg font-black">
+            Next Sector &rarr;
+        </a>
+    </div>
+
+    <!-- Footer -->
+    <footer
+        class="bg-stone-900 text-white border-t-8 border-stone-800 flex flex-col md:flex-row justify-between items-center w-full px-8 py-16 gap-8">
+        <div class="max-w-7xl mx-auto w-full flex flex-col md:flex-row justify-between items-baseline gap-8">
+            <div class="flex flex-col items-start">
+                <a href="index.html" class="text-3xl font-black text-white font-marker tracking-tighter">FinanceHive</a>
+                <p class="text-stone-400 font-medium text-xs">Hand-drawn for Indian minds. ✏️</p>
+            </div>
+            <div class="flex flex-wrap justify-center gap-6 md:gap-8 font-marker font-black text-base">
+                <a class="hover:text-primary transition-colors" href="privacy.html">Privacy</a>
+                <span class="text-stone-700 hidden md:inline">|</span>
+                <a class="hover:text-primary transition-colors" href="terms.html">Terms</a>
+                <span class="text-stone-700 hidden md:inline">|</span>
+                <a class="hover:text-primary transition-colors" href="disclaimer.html">Disclaimer</a>
+                <span class="text-stone-700 hidden md:inline">|</span>
+                <a class="hover:text-primary transition-colors"
+                    href="mailto:startfinanacejourney@gmail.com?subject=Inquiry%20from%20FinanceHive">Contact</a>
+            </div>
+            <div class="text-stone-500 font-bold text-sm whitespace-nowrap">© 2026 FinanceHive. All rights reserved.
+            </div>
+        </div>
+    </footer>
+    <script>
+        (function () { if (!window.chatbase || window.chatbase("getState") !== "initialized") { window.chatbase = (...arguments) => { if (!window.chatbase.q) { window.chatbase.q = [] } window.chatbase.q.push(arguments) }; window.chatbase = new Proxy(window.chatbase, { get(target, prop) { if (prop === "q") { return target.q } return (...args) => target(prop, ...args) } }) } const onLoad = function () { const script = document.createElement("script"); script.src = "https://www.chatbase.co/embed.min.js"; script.id = "okRPgozu3doX4vY4MK0UV"; script.domain = "www.chatbase.co"; document.body.appendChild(script) }; if (document.readyState === "complete") { onLoad() } else { window.addEventListener("load", onLoad) } })();
+    </script>
+
+
+
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            // Search Filtering & Focus
+            const searchInput = document.querySelector('nav input[placeholder="Search concepts..."]');
+            if (searchInput) {
+                const searchIcon = searchInput.nextElementSibling;
+                if (searchIcon && searchIcon.textContent.trim() === 'search') {
+                    searchIcon.style.cursor = 'pointer';
+                    searchIcon.addEventListener('click', () => searchInput.focus());
+                }
+
+                searchInput.addEventListener('input', function () {
+                    const query = this.value.toLowerCase().trim();
+                    // Target concept cards (article) and sector cards (sketch-border items in grids)
+                    const cards = document.querySelectorAll('article, .grid > .sketch-border, .grid > div[onclick*="sector-"]');
+
+                    cards.forEach(card => {
+                        const text = card.textContent.toLowerCase();
+                        if (text.includes(query)) {
+                            card.style.display = ''; // Revert to original layout (flex/block etc)
+                        } else {
+                            card.style.display = 'none';
+                        }
+                    });
+                });
+            }
+
+            // Active Navigation Highlighting
+            const navLinks = document.querySelectorAll('nav a');
+            let currentPath = window.location.pathname.split('/').pop().split('?')[0].split('#')[0];
+            if (!currentPath || currentPath === '') {
+                currentPath = 'index.html';
+            }
+            navLinks.forEach(link => {
+                const href = link.getAttribute('href');
+                if (href && (href === currentPath || (currentPath === 'index.html' && href === 'index.html'))) {
+                    link.classList.add('active');
+                }
+            });
+        });
+    </script>
+
+</body>
+
+</html>
